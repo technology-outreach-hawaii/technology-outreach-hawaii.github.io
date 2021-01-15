@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@400;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+h1 { font-family: "Archivo", sans-serif; font-size: 50px; font-weight: 700; letter-spacing: 1px; line-height: 1.5; }
+
+h2 { font-family: "Archivo Narrow", sans-serif; font-size: 30px; font-weight: 700; letter-spacing: 3px; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+h3 { font-family: "Archivo Narrow", sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+
+p { font-family: "Open Sans", sans-serif; font-size: 20px; line-height: 1.5; }
+
+li { font-family: "Archivo Narrow", sans-serif; }
+
+a { text-decoration: none; font-family: "Archivo Narrow", sans-serif; letter-spacing: 1px; font-size: 20px; color: #F8CF1E; font-weight: 700; }
+
+a:hover { color: #B8CED1; }
+
+button { padding: 10px; background-color: #F8CF1E; color: #0A303B; font-size: 30px; border-radius: 10px; letter-spacing: 1px; font-family: "Archivo Narrow", sans-serif; font-weight: 700; }
+
+button:hover { box-shadow: 0 1px 3px #B8CED1, 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+button:focus { outline: 0; }
+
+.current { color: #E4FCFF; }
+
+nav { width: 100%; background-color: #0A303B; display: flex; flex-direction: row; justify-content: center; align-items: center; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); position: relative; z-index: 1; }
+
+nav ul { width: 60%; height: 100%; display: flex; flex-direction: row; justify-content: space-around; align-items: center; }
+
+nav li { height: 100%; letter-spacing: 1px; list-style-type: none; cursor: pointer; color: #B8CED1; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+nav #logo { width: 45%; }
+
+#footer { width: 100%; height: 100px; background-color: #0A303B; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+#footer-main { width: 80%; display: flex; justify-content: space-between; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+
+#footer h2 { font-family: "Archivo Narrow", sans-serif; font-weight: 700; letter-spacing: 1px; font-size: 15px; color: #F8CF1E; }
+
+.social img { width: 50px; border-radius: 50%; margin: 5px; }
+
+#sidebar { background-color: #0A303B; height: 100%; width: 30%; overflow-y: scroll; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-end; }
+
+#sidebar #sidebar-post-ul { margin-top: 40px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+#sidebar #sidebar-post-ul a { display: block; width: 100%; padding: 10px; display: flex; flex-direction: row; justify-content: flex-end; align-items: center; }
+
+#sidebar #sidebar-post-ul li { width: 80%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+
+#sidebar #sidebar-post-ul li h3 { font-size: 20px; }
+
+#sidebar #sidebar-post-ul li p { font-size: 15px; }
+
+#sidebar #sidebar-post-ul a:hover { background-color: #f0f2f5; color: #2E2E2E; }
+
+#construction { width: calc(100vw); height: calc(100vh); background-color: #B8CED1; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+#search-container { width: 90%; height: 5%; position: sticky; top: 20px; right: 20px; font-family: "Archivo Narrow", sans-serif; color: #B8CED1; }
+
+#search-container p { font-size: 15px; }
+
+#search-input { width: 100%; height: 100%; border-radius: 5px; border-width: 0px; border-style: none; }
+
+#results-container { width: 100%; border-radius: 10px; }
+
+#results-container .search-output { display: block; width: 95%; padding: 10px; display: flex; flex-direction: row; justify-content: flex-end; align-items: center; }
+
+#results-container .search-output-item { width: 100%; margin-top: 10px; }
+
+#results-container .search-output:nth-child(odd) { background-color: #1a1b1c; }
+
+#results-container .search-output:nth-child(even) { background-color: #2E2E2E; }
+
+#results-container .search-output:hover { background-color: #f0f2f5; color: #2E2E2E; }
+
+.main { width: 100%; display: flex; flex-direction: row; align-items: flex-start; background-image: url("../../assets/images/bg.png"); background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; }
+
+.main h1 { color: #E4FCFF; margin-bottom: 30px; }
+
+.main p { width: 85%; }
+
+.main .main-inner { width: 80%; }
+
+.main .section { height: 300px; margin-top: 100px; margin-bottom: 100px; color: #E4FCFF; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+
+.main .text { width: 50%; height: 100%; display: flex; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+
+.main #news { width: 50%; height: 100%; border-left: 1px solid #B8CED1; overflow-y: scroll; }
+
+.main #news li { text-align: left; margin-top: 30px; padding-left: 30px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+
+.main button { margin-top: 30px; }
+
+.main #goal { width: 40%; height: 100%; }
+
+.main #team { width: 60%; height: 100%; border-left: 1px solid #B8CED1; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+
+.main #team .profile-section { width: 100%; height: 60%; display: flex; flex-direction: row; justify-content: space-around; align-items: center; overflow-x: scroll; }
+
+.main #team .profile-section .profile { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.main #team .profile-section .profile img { width: 100px; height: 100px; border-radius: 50%; padding: 10px; }
+
+.main #last { margin-bottom: 100px; }
+
+#post { background-color: #f0f2f5; height: calc(100vh); width: calc(100vw); display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+#post #post-section { height: 100%; width: 70%; padding: 5%; overflow-y: scroll; }
+
+#post #post-section #post-info { margin-top: 5%; }
+
+#post #post-section #post-info .author-date_container { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+
+#post #post-section #post-info .author-date_container img { width: 50px; border-radius: 100px; margin-left: 10px; }
+
+#post #post-section #post-content { margin-top: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

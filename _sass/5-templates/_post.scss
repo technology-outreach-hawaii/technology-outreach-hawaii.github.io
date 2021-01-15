@@ -1,0 +1,31 @@
+#post {
+  background-color: $light-grey;
+  height: calc(100vh);
+  width: calc(100vw);
+  @include flex(row, center, center);
+
+  #post-section {
+    height: 100%;
+    width: 70%;
+    padding: 5%;
+    overflow-y: scroll;
+
+    #post-info {
+      margin-top: 5%;
+
+      .author-date_container {
+        @include flex(row, flex-start, center);
+        img {
+          width: 50px;
+          border-radius: 100px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    #post-content {
+      margin-top: $text-margin;
+    }
+  }
+
+}

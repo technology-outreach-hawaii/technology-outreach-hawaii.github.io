@@ -1,0 +1,34 @@
+boyang:
+  full_name: Boyang Zhang
+  github: P
+  interests: Python, Machine Learning
+  bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I came to Hawaii from China in Fall 2016. I like the weather and beautiful views here and enjoy the multi-cultural environment very much. I like hiking, playing tennis, trying different restaurants and I want to visit other islands when I am free. Currently, I am doing data analysis with python for a physics research project. Python is one of the most popular and easy-to-learn programming language. If you are interested in learning python, feel free to contact me.
+  profile: assets/images/profiles/boyang_zhang.png
+
+gina:
+  full_name: Gina Watanabe
+  github: ginawatanabe
+  interests: Data Visualization, Image Navigation, Web Development
+  bio: Hi! I am a medical student looking to incorporate more technology with medicine. My interest in computer science began with great mentors in high school and college. Learning more about technology is valuable in every field - I hope to foster a tech-savvy youth community here in Hawaii.
+  profile: assets/images/profiles/gina_watanabe.jpg
+
+kanai:
+  full_name: Kanai Gooding
+  github: P
+  interests: P
+  bio: P
+  profile: P
+
+patrick:
+  full_name: Patrick McCrindle
+  github: P
+  interests: P
+  bio: Placeholder
+  profile: P
+
+robert:
+  full_name: Robert Lemon
+  github: P
+  interests: Low-Level Programming, Machine Learning, Algorithms
+  bio: Hey! I'm a UH Student studying Computer Science, expected to graduate in 2022 with a B.S. degree.  I love programming and computer science, and want to give back to my community and help share my technical knowledge.  I am also a board member of the Programs and Algorithms club here on campus.  When I am not coding, I enjoy hiking and playing video games with my friends.
+  profile: assets/images/profiles/robert_lemon.png

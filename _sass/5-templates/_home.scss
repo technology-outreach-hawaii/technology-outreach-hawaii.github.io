@@ -1,0 +1,90 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-image: url('../../assets/images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include flex(row, center, flex-start);
+
+  h1 {
+    color: $light-blue;
+    margin-bottom: $text-margin;
+  }
+
+  p {
+    width: 85%;
+  }
+
+  .main-inner {
+    width: 80%;
+  }
+
+  .section {
+    height: 300px;
+    margin-top: $section-margin;
+    margin-bottom: $section-margin;
+    color: $light-blue;
+    @include flex(row, space-between, center);
+  }
+
+  .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    @include flex(column, center, flex-start);
+  }
+
+  #news {
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid $grey;
+    overflow-y: scroll;
+
+    li {
+      text-align: left;
+      margin-top: $text-margin;
+      padding-left: $text-margin;
+      @include flex(column, center, flex-start);
+    }
+  }
+
+  button {
+    margin-top: $text-margin;
+  }
+
+  #goal {
+    width: 40%;
+    height: 100%;
+  }
+
+  #team {
+    width: 60%;
+    height: 100%;
+    border-left: 1px solid $grey;
+    @include flex(column, space-between, center);
+
+    .profile-section {
+      width: 100%;
+      height: 60%;
+      @include flex(row, space-around, center);
+      overflow-x: scroll;
+
+      .profile {
+        height: 100%;
+        @include flex(column, center, center);
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  #last {
+    margin-bottom: $section-margin;
+  }
+}

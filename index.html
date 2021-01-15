@@ -1,0 +1,49 @@
+---
+layout: default
+title: Home
+---
+<div class="main">
+  <div class="main-inner">
+
+    <div class="section">
+      <div class="text">
+        <h1>Bridging the digital divide</h1>
+        <p>A network of young adults and teens interested in technology, mentorship and service projects to promote digital literacy across Hawaii.</p>
+        <button>Learn more</button>
+      </div>
+
+      <div id="news">
+        <h2>NEWS</h2>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <h2><a href="{{ post.url }}">{{ post.title }}, {{ post.date | date: "%b %d, %Y" }}</a></h2>
+              {{ post.excerpt }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div id="goal">
+        <h1>Our goal</h1>
+        <p>Technology Outreach Hawaii aims to guide Hawaii towards confidence in being users and/or creators of technology while empowering youth. We are working to partner with libraries and community organizations across the state to offer student-driven digital literacy initiatives.</p>
+      </div>
+
+      <div id="team">
+        <h2>OUR TEAM</h2>
+        <p>Meet our mix of undergraduate and graduate students with interests in computer science, physics, math, and medicine.</p>
+        <div class="profile-section">
+          {% for member in site.data.members %}
+          <div class="profile">
+            <img src="{{ member[1].profile }}" alt="">
+            <h3>{{ member[1].full_name }}</h3>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

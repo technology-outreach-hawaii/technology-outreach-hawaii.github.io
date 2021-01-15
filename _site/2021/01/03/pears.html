@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pears are not your friend</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <nav>
+  <ul>
+    <li><a href="/" >HOME</a></li>
+    <li><a href="/projects.html" >PROJECTS</a></li>
+    <img id="logo" src="/assets/images/logo.svg" alt="">
+    <li><a href="/team.html" >TEAM</a></li>
+    <li><a href="/support.html" >SUPPORT</a></li>
+  </ul>
+</nav>
+
+  
+
+<div id="post">
+  <div id="sidebar">
+  <!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="Search...">
+<ul id="results-container"></ul>
+</div>
+
+<!-- Script pointing to search-script.js -->
+<script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  searchResultTemplate: '<div class="search-output"><a class="search-output-item" href="{url}"><h4>{title}</h4><p>{date}</p></a></div>',
+  json: '/search.json'
+})
+</script>
+
+
+  <ul id="sidebar-post-ul">
+    
+    <a href="/2021/01/04/boooh.html">
+      <li>
+        <h3>Another post</h3>
+        <p>Jan 04, 2021</p>
+      </li>
+    </a>
+      <!-- <li>
+        <h2><a href="/2021/01/04/boooh.html">Another post <br> Jan 04, 2021</a></h2>
+      </li> -->
+    
+    <a href="/2021/01/03/pears.html">
+      <li>
+        <h3>Pears are not your friend</h3>
+        <p>Jan 03, 2021</p>
+      </li>
+    </a>
+      <!-- <li>
+        <h2><a href="/2021/01/03/pears.html">Pears are not your friend <br> Jan 03, 2021</a></h2>
+      </li> -->
+    
+    <a href="/2021/01/01/apples.html">
+      <li>
+        <h3>Apples</h3>
+        <p>Jan 01, 2021</p>
+      </li>
+    </a>
+      <!-- <li>
+        <h2><a href="/2021/01/01/apples.html">Apples <br> Jan 01, 2021</a></h2>
+      </li> -->
+    
+  </ul>
+</div>
+
+  <div id="post-section">
+    <div id="post-info">
+      <h1>Pears are not your friend</h1>
+      <div class="author-date_container">
+        <p>Jan 03, 2021 by Robert Lemon</p>
+        <img class="profile" src="../../../assets/images/profiles/robert_lemon.png" alt="">
+      </div>
+    </div>
+    <div id="post-content">
+      <p>Pears are sweet, edible fruit produced by pear trees.</p>
+
+<p><br />Apple trees are cultivated worldwide, and are the most widely grown species in
+the genus Malus. The tree originated in Central Asia, where its wild ancestor,
+Malus sieversii, is still found today. Apples have been grown for thousands of
+years in Asia and Europe, and were brought to North America by European
+colonists.<br />
+<br />
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+  </div>
+</div>
+
+  <div id="footer">
+  <div id="footer-main">
+    <div class="footer-section">
+      <h2>TECHOUTREACHHI@GMAIL.COM</h2>
+    </div>
+    <div class="footer-section social">
+      <a href=""><img src="/assets/images/fb-white.png" alt=""></a>
+      <a href=""><img src="/assets/images/github-white.png" alt=""></a>
+      <a href=""><img src="/assets/images/mailchimp-white.png" alt=""></a>
+    </div>
+    <div class="footer-section">
+      <h2>COPRYIGHT 2020.</h2>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
