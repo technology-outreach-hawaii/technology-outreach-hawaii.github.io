@@ -1,14 +1,14 @@
 h1 {
   font-family: $archivo;
-  font-size: $main-title;
+  font-size: $h1;
   font-weight: 700;
   letter-spacing: 1px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 h2 {
   font-family: $archivo-narrow;
-  font-size: $sub-title;
+  font-size: $h2;
   font-weight: 700;
   letter-spacing: 3px;
   @include flex(row, center, center);
@@ -16,14 +16,22 @@ h2 {
 
 h3 {
   font-family: $archivo-narrow;
-  font-size: $small;
+  font-size: $h3;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-family: $archivo-narrow;
+  font-size: $p;
+  color: $yellow;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 p {
   font-family: $open-sans;
-  font-size: $paragraph;
+  font-size: $p;
   line-height: 1.5;
 }
 
@@ -35,7 +43,7 @@ a {
   text-decoration: none;
   font-family: $archivo-narrow;
   letter-spacing: 1px;
-  font-size: $paragraph;
+  font-size: $p;
   color: $yellow;
   font-weight: 700;
   &:hover {
@@ -47,7 +55,7 @@ button {
   padding: 10px;
   background-color: $yellow;
   color: $dark-blue;
-  font-size: $sub-title;
+  font-size: $h3;
   border-radius: 10px;
   letter-spacing: 1px;
   font-family: $archivo-narrow;

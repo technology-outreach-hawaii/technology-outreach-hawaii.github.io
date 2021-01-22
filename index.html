@@ -7,13 +7,13 @@ title: Home
 
     <div class="section">
       <div class="text">
-        <h1>Test Bridging the digital divide</h1>
+        <h1>Bridging the digital divide</h1>
         <p>A network of young adults and teens interested in technology, mentorship and service projects to promote digital literacy across Hawaii.</p>
-        <button>Learn more</button>
+        <button><a href="{{ site.posts[0].url }}">Learn more</a></button>
       </div>
 
       <div id="news">
-        <h2>NEWS</h2>
+        <h2>UPDATES</h2>
         <ul>
           {% for post in site.posts %}
             <li>
@@ -38,12 +38,70 @@ title: Home
           {% for member in site.data.members %}
           <div class="profile">
             <img src="{{ member[1].profile }}" alt="">
-            <h3>{{ member[1].full_name }}</h3>
+            <!-- <h4>{{ member[1].full_name }}</h4> -->
           </div>
           {% endfor %}
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="section" id="resources-section">
+    <div id="resources-inner">
+      <div id="resources-text-container">
+        <h1>Resources</h1>
+        <p>Curated resources for all ages.</p>
+      </div>
+      <div id="resources-links">
+        <div class="resource-group">
+          <div class="resource-title">
+            <h2>STUDENTS</h2>
+          </div>
+          <div class="resource-body">
+            <ul>
+              {% for post in site.posts %}
+                {% if post.tags contains "student" %}
+                <li>
+                  <h2><a href="{{ post.url }}">{{ post.title }}, {{ post.date | date: "%b %d, %Y" }}</a></h2>
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="resource-group">
+          <div class="resource-title">
+            <h2>TEACHERS</h2>
+          </div>
+          <div class="resource-body">
+            <ul>
+              {% for post in site.posts %}
+                {% if post.tags contains "teacher" %}
+                <li>
+                  <h2><a href="{{ post.url }}">{{ post.title }}, {{ post.date | date: "%b %d, %Y" }}</a></h2>
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="resource-group">
+          <div class="resource-title">
+            <h2>PUBLIC</h2>
+          </div>
+          <div class="resource-body">
+            <ul>
+              {% for post in site.posts %}
+                {% if post.tags contains "public" %}
+                <li>
+                  <h2><a href="{{ post.url }}">{{ post.title }}, {{ post.date | date: "%b %d, %Y" }}</a></h2>
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button><a href="{{ site.posts[0].url }}">All Resources</a></button>
+    </div>
   </div>
 </div>

@@ -2,33 +2,11 @@
   
     {
 
-      "title"    : "Another post",
-      "url"      : "/2021/01/04/boooh.html",
+      "title"    : "New site under construction",
+      "url"      : "/2021/01/21/New-site.html",
       "category" : "",
-      "tags"     : "",
-      "date"     : "Jan 04, 2021",
-      "description" : ""
-
-    } ,
-  
-    {
-
-      "title"    : "Pears are not your friend",
-      "url"      : "/2021/01/03/pears.html",
-      "category" : "",
-      "tags"     : "",
-      "date"     : "Jan 03, 2021",
-      "description" : ""
-
-    } ,
-  
-    {
-
-      "title"    : "Apples",
-      "url"      : "/2021/01/01/apples.html",
-      "category" : "",
-      "tags"     : "internet, things, apples",
-      "date"     : "Jan 01, 2021",
+      "tags"     : "update",
+      "date"     : "Jan 21, 2021",
       "description" : ""
 
     } 

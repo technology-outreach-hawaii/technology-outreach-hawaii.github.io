@@ -14,6 +14,7 @@
       margin-top: 5%;
 
       .author-date_container {
+        margin-top: $text-margin;
         @include flex(row, flex-start, center);
         img {
           width: 50px;
@@ -24,7 +25,7 @@
     }
 
     #post-content {
-      margin-top: $text-margin;
+      margin-top: $text-margin*2;
     }
   }
 

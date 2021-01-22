@@ -15,17 +15,19 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-h1 { font-family: "Archivo", sans-serif; font-size: 50px; font-weight: 700; letter-spacing: 1px; line-height: 1.5; }
+h1 { font-family: "Archivo", sans-serif; font-size: 50px; font-weight: 700; letter-spacing: 1px; line-height: 1.2; }
 
-h2 { font-family: "Archivo Narrow", sans-serif; font-size: 30px; font-weight: 700; letter-spacing: 3px; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+h2 { font-family: "Archivo Narrow", sans-serif; font-size: 40px; font-weight: 700; letter-spacing: 3px; display: flex; flex-direction: row; justify-content: center; align-items: center; }
 
-h3 { font-family: "Archivo Narrow", sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+h3 { font-family: "Archivo Narrow", sans-serif; font-size: 30px; font-weight: 700; letter-spacing: 1px; }
 
-p { font-family: "Open Sans", sans-serif; font-size: 20px; line-height: 1.5; }
+h4 { font-family: "Archivo Narrow", sans-serif; font-size: 19px; color: #F8CF1E; font-weight: 700; letter-spacing: 1px; }
+
+p { font-family: "Open Sans", sans-serif; font-size: 19px; line-height: 1.5; }
 
 li { font-family: "Archivo Narrow", sans-serif; }
 
-a { text-decoration: none; font-family: "Archivo Narrow", sans-serif; letter-spacing: 1px; font-size: 20px; color: #F8CF1E; font-weight: 700; }
+a { text-decoration: none; font-family: "Archivo Narrow", sans-serif; letter-spacing: 1px; font-size: 19px; color: #F8CF1E; font-weight: 700; }
 
 a:hover { color: #B8CED1; }
 
@@ -45,11 +47,11 @@ nav li { height: 100%; letter-spacing: 1px; list-style-type: none; cursor: point
 
 nav #logo { width: 45%; }
 
-#footer { width: 100%; height: 100px; background-color: #0A303B; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+#footer { width: 100%; height: 100px; background-color: #0A303B; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 #footer-main { width: 80%; display: flex; justify-content: space-between; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
 
-#footer h2 { font-family: "Archivo Narrow", sans-serif; font-weight: 700; letter-spacing: 1px; font-size: 15px; color: #F8CF1E; }
+#footer h2 { font-family: "Archivo Narrow", sans-serif; font-weight: 700; letter-spacing: 1px; color: #F8CF1E; }
 
 .social img { width: 50px; border-radius: 50%; margin: 5px; }
 
@@ -87,7 +89,7 @@ nav #logo { width: 45%; }
 
 #results-container .search-output:hover { background-color: #f0f2f5; color: #2E2E2E; }
 
-.main { width: 100%; display: flex; flex-direction: row; align-items: flex-start; background-image: url("../../assets/images/bg.png"); background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; }
+.main { width: 100%; display: flex; flex-direction: row; align-items: flex-start; background-image: url("../../assets/images/bg.png"); background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 .main h1 { color: #E4FCFF; margin-bottom: 30px; }
 
@@ -105,15 +107,33 @@ nav #logo { width: 45%; }
 
 .main button { margin-top: 30px; }
 
+.main button a { color: #0A303B; font-size: 30px; }
+
 .main #goal { width: 40%; height: 100%; }
 
 .main #team { width: 60%; height: 100%; border-left: 1px solid #B8CED1; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
 
-.main #team .profile-section { width: 100%; height: 60%; display: flex; flex-direction: row; justify-content: space-around; align-items: center; overflow-x: scroll; }
+.main #team .profile-section { width: 100%; height: 60%; display: flex; flex-direction: row; justify-content: center; align-items: center; overflow-x: scroll; }
 
 .main #team .profile-section .profile { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-.main #team .profile-section .profile img { width: 100px; height: 100px; border-radius: 50%; padding: 10px; }
+.main #team .profile-section .profile h4 { font-size: 15px; color: #f0f2f5; }
+
+.main #team .profile-section .profile img { width: 100px; height: 100px; border-radius: 50%; margin-left: 20px; }
+
+.main #resources-section { height: 600px; width: 100%; background-image: url("../../assets/images/blue-div.svg"); background-repeat: no-repeat; background-size: cover; margin-bottom: 0px; margin-top: 0px; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+.main #resources-inner { width: 80%; }
+
+.main #resources-links { margin-top: 30px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+
+.main .resource-group { height: 200px; width: 30%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
+
+.main .resource-group .resource-title { margin-bottom: 30px; }
+
+.main .resource-group .resource-body { width: 100%; height: 100%; overflow-y: scroll; }
+
+.main .resource-group .resource-body li { margin-bottom: 10px; }
 
 .main #last { margin-bottom: 100px; }
 
@@ -123,10 +143,10 @@ nav #logo { width: 45%; }
 
 #post #post-section #post-info { margin-top: 5%; }
 
-#post #post-section #post-info .author-date_container { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+#post #post-section #post-info .author-date_container { margin-top: 30px; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
 
 #post #post-section #post-info .author-date_container img { width: 50px; border-radius: 100px; margin-left: 10px; }
 
-#post #post-section #post-content { margin-top: 30px; }
+#post #post-section #post-content { margin-top: 60px; }
 
 /*# sourceMappingURL=styles.css.map */
