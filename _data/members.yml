@@ -18,8 +18,8 @@ kanai:
   full_name: Kanai Gooding
   github: P
   linkedin:
-  interests: P
-  bio: P
+  interests: Data Science, Algorithms, Intelligence and Computer Vision
+  bio: My name is Kana'i, I am junior in a Mathematics - Data Science Track.  I am interested in giving back to the community and especially helping our keiki to pursue careers in computer science.  I hope to learn and help others learn at the same time.
   profile: assets/images/profiles/kanai_gooding.jpg
 
 patrick:
@@ -37,3 +37,11 @@ robert:
   interests: Low-Level Programming, Machine Learning, Algorithms
   bio: Hey! I'm a UH Student studying Computer Science, expected to graduate in 2022 with a B.S. degree.  I love programming and computer science, and want to give back to my community and help share my technical knowledge.  I am also a board member of the Programs and Algorithms club here on campus.  When I am not coding, I enjoy hiking and playing video games with my friends.
   profile: assets/images/profiles/robert_lemon.png
+
+timothy:
+  full_name: Timothy Huo
+  github: P
+  linkedin:
+  interests: Web Development
+  bio: Hello everyone! My name is Timothy and I am a Sophomore majoring in Computer Science at the University of Hawaii at Manoa. I enjoy playing video games and hiking. I can't wait to meet you all!
+  profile: assets/images/profiles/timothy_huo.jpg

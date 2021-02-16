@@ -13,7 +13,8 @@ title: Home
       </div>
 
       <div id="news">
-        <h2>UPDATES</h2>
+        <h2 id="update">UPDATES</h2>
+        <br>
         <ul>
           {% for post in site.posts %}
             <li>
@@ -30,7 +31,6 @@ title: Home
         <h1>Our goal</h1>
         <p>Technology Outreach Hawaii aims to guide Hawaii towards confidence in being users and/or creators of technology while empowering youth. We are working to partner with libraries and community organizations across the state to offer student-driven digital literacy initiatives.</p>
       </div>
-
       <div id="team">
         <h2>OUR TEAM</h2>
         <p>Meet our mix of undergraduate and graduate students with interests in computer science, physics, math, and medicine.</p>
@@ -86,7 +86,9 @@ title: Home
         </div>
         <div class="resource-group">
           <div class="resource-title">
-            <h2>PUBLIC</h2>
+              <div class="resource-shift">
+                <h2>PUBLIC</h2>
+              </div>
           </div>
           <div class="resource-body">
             <ul>
@@ -101,7 +103,9 @@ title: Home
           </div>
         </div>
       </div>
-      <button><a href="{{ site.posts[0].url }}">All Resources</a></button>
+      <div class="left">
+        <button><a href="{{ site.posts[0].url }}">All Resources</a></button>
+      </div>
     </div>
   </div>
 </div>

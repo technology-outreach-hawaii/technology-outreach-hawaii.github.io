@@ -73,11 +73,12 @@
     .profile-section {
       width: 100%;
       height: 60%;
-      @include flex(row, center, center);
+      display: flex;
+      flex-direction: row;
       overflow-x: scroll;
 
       .profile {
-        height: 100%;
+        width: 100%;
         @include flex(column, center, center);
 
         h4 {
@@ -136,5 +137,50 @@
 
   #last {
     margin-bottom: $section-margin;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .main{
+    .section {
+      @include flex(column, space-between, flex-start);
+      margin-bottom: 0px;
+      margin-top: 10px;
+    }
+
+    #team, #news, #goal, .text, .left {
+      width: 100%;
+      margin-bottom: $text-margin;
+    }
+
+    .resource-group, .section, #resource-links {
+      height: 100%;
+    }
+
+    .resource-shift {
+      margin-left: -60px;
+    }
+
+    .profile-section {
+      margin-left: -20px;
+    }
+
+    #news, #team {
+      border-left: none;
+      align-items: flex-start;
+    }
+
+    #update, .left {
+        float: left;
+    }
+
+    #news li {
+        padding: 0;
+    }
+
+    #resources-links {
+      flex-direction: column;
+      float: left;
+    }
   }
 }
