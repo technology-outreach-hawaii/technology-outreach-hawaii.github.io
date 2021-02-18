@@ -8,22 +8,22 @@
 
 // BREAKPOINTS
 @mixin desktop {
-  @media (min-width: #{$desktop}) {
+  @media (max-width: #{$desktop}) {
     @content;
   }
 }
 @mixin laptop {
-  @media (min-width: #{$laptop}) {
+  @media (max-width: #{$laptop}) {
     @content;
   }
 }
 @mixin tablet {
-  @media (min-width: #{$tablet}) {
+  @media (max-width: #{$tablet}) {
     @content;
   }
 }
 @mixin mobile {
-  @media (min-width: #{$mobile}) {
+  @media (max-width: #{$mobile}) {
     @content;
   }
 }
