@@ -43,6 +43,10 @@ button:focus { outline: 0; }
 
 @media (max-width: 768px) { #nav-mobile { display: flex; } }
 
+#nav-mobile ul { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+
+#nav-mobile ul li { padding: 20px; }
+
 nav { width: 100%; background-color: #0A303B; display: flex; flex-direction: row; justify-content: center; align-items: center; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); position: relative; z-index: 1; }
 
 @media (max-width: 768px) { nav .nav-link { display: none; } }
