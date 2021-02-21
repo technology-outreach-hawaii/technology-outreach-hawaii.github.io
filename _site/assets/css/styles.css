@@ -183,8 +183,46 @@ nav #logo { width: 45%; }
 
 .team-individual .team-body #team-three { font-family: "Open Sans", sans-serif; font-size: 19px; font-weight: 300; letter-spacing: 0.5px; line-height: 1.3; color: white; }
 
-hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2f5; height: 1px; }
+hr { border: 0; clear: both; display: block; width: 100%; background-color: #f0f2f5; height: 1px; }
 
 @media only screen and (max-width: 960px) { .team-individual { display: flex; flex-direction: column; justify-content: center; align-items: center; } .team-individual img { border-radius: 50%; width: 200px; height: 200px; } }
+
+.body { background-color: #0A303B; color: white; }
+
+a { color: white; }
+
+.body-box { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px 100px; position: relative; }
+
+.b-section1 { width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 20px; }
+
+.b-section1 a { font-family: "Archivo", sans-serif; font-size: 30px; font-weight: 700; }
+
+.b-section1 img { width: 100%; height: 100%; }
+
+.b-section1 .b-image { float: left; width: 50%; }
+
+.b-section1 .b-body { float: right; margin-left: 30px; font-family: "Archivo", sans-serif; font-size: 25px; width: 50%; }
+
+.b-one { font-family: "Archivo", sans-serif; font-size: 40px; font-weight: 700; color: #F8CF1E; }
+
+.b-two { font-family: "Archivo", sans-serif; font-size: 30px; font-weight: 700; }
+
+.b-five { font-family: "Archivo", sans-serif; font-size: 25px; font-weight: 700; color: #F8CF1E; }
+
+.b-three { font-weight: 700; line-height: 1.3; }
+
+.b-four { font-weight: 300; letter-spacing: 0.5px; opacity: 50%; }
+
+.b-heading { width: 100%; text-align: center; padding: 20px; }
+
+.b-title { width: 100%; text-align: left; }
+
+.b-section2 { background-color: #C0C0C0; width: 400px; height: 250px; flex-direction: column; padding: 20px; margin: 10px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.b-section2 .b-section-img, .b-section2 img { width: 100%; }
+
+.b-main { width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 20px; }
+
+@media only screen and (max-width: 960px) { .b-section1 { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; } .b-section1 .b-image, .b-section1 .b-body { width: 100%; } .b-section1 img { min-width: 300px; } .b-section1 .b-body { margin: 0px; } .b-section2 { min-width: 100px; } }
 
 /*# sourceMappingURL=styles.css.map */

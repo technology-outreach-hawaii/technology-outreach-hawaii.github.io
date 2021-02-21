@@ -1,0 +1,109 @@
+---
+layout: default
+title: Blog
+---
+<div class="body">
+  <div class="body-box">
+
+    <!-- Start Of Community Resource -->
+    <div class="b-heading">
+      <p class="b-one">Community Resources</p>
+      <p class="b-three">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. xercitation ullamco laboris nisi ut aliquip ex ea commodo conseat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <!-- Section 1 (Pic | Info) -->
+    <div class="b-section1">
+      <div class="b-image">
+        <img src="{{site.posts[0].picture}}" alt="">
+      </div>
+      <div class="b-body">
+        <p class="b-two"><a href="{{ site.posts[0].url }}">{{site.posts[0].title}}</a></p>
+        <p>{{site.posts[0].excerpt}}</p>
+        <p class="b-four">{{site.posts[0].author}}</p>
+      </div>
+    </div>
+
+    <!-- Start Of My Blog -->
+    <div class="b-heading">
+      <p class="b-one">My Blog</p>
+      <p class="b-three">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. xercitation ullamco laboris nisi ut aliquip ex ea commodo conseat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <!-- Section 1 (Pic | Info) -->
+    <div class="b-section1">
+      <div class="b-image">
+        <img src="{{site.posts[0].picture}}" alt="">
+      </div>
+      <div class="b-body">
+        <p class="b-two"><a href="{{ site.posts[0].url }}">{{site.posts[0].title}}</a></p>
+        <p>{{site.posts[0].excerpt}}</p>
+        <p class="b-four">{{site.posts[0].author}}</p>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Section 2 (Card | Card | Card | Card) -->
+
+    <div class="b-title">
+      <p class="b-five">Technology</p>
+    </div>
+    <div class="b-main">
+
+      {% for post in site.posts %}
+        {% if forloop.rindex == 5 %}
+          {% break %}
+        {% endif %}
+        <div class="b-section2">
+          <div class="b-section-img">
+            <img src="{{post.picture}}" alt="">
+          </div>
+          <p class="b-three"><a href="{{ post.url }}">{{post.title}}</a></p>
+          <p class="b-four">{{post.author}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <hr>
+
+    <!-- Section 2 (Card | Card | Card | Card) -->
+
+    <div class="b-title">
+      <p class="b-five">Social Media</p>
+    </div>
+    <div class="b-main">
+      {% for post in site.posts %}
+        {% if forloop.rindex == 5 %}
+          {% break %}
+        {% endif %}
+        <div class="b-section2">
+          <div class="b-section-img">
+            <img src="{{post.picture}}" alt="">
+          </div>
+          <p class="b-three"><a href="{{ post.url }}">{{post.title}}</a></p>
+          <p class="b-four">{{post.author}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <hr>
+
+    <!-- Section 2 (Card | Card | Card | Card) -->
+
+    <div class="b-title">
+      <p class="b-five">Coding</p>
+    </div>
+    <div class="b-main">
+      {% for post in site.posts %}
+        {% if forloop.rindex == 5 %}
+          {% break %}
+        {% endif %}
+        <div class="b-section2">
+          <div class="b-section-img">
+            <img src="{{post.picture}}" alt="">
+          </div>
+          <p class="b-three"><a href="{{ post.url }}">{{post.title}}</a></p>
+          <p class="b-four">{{post.author}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <hr>
+  </div>
+</div>
