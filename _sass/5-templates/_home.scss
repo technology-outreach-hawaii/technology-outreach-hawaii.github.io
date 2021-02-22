@@ -46,6 +46,7 @@
       text-align: left;
       margin-top: $text-margin;
       padding-left: $text-margin;
+      line-height: 1.5;
       @include flex(column, center, flex-start);
     }
   }
@@ -145,7 +146,7 @@
     .section {
       @include flex(column, space-between, flex-start);
       margin-bottom: 0px;
-      margin-top: 10px;
+      margin-top: $text-margin;
     }
 
     #team, #news, #goal, .text, .left {
