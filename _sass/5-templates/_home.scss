@@ -69,26 +69,32 @@
     width: 60%;
     height: 100%;
     border-left: 1px solid $grey;
-    @include flex(column, space-between, center);
+    @include flex(column, center, center);
+
+    .profile-header {
+      width: 100%;
+      text-align: center;
+
+      p {
+        width: 100%;
+      }
+    }
 
     .profile-section {
-      width: 100%;
-      height: 60%;
-      display: flex;
-      flex-direction: row;
-      overflow-x: scroll;
+      height: 100%;
+      @include flex(row, space-between, flex-start);
 
       .profile {
-        width: 100%;
         @include flex(column, center, center);
+        height: 100%;
 
         h4 {
           font-size: $small;
           color: $light-grey;
         }
         img {
-          width: 100px;
-          height: 100px;
+          width: 120px;
+          height: 120px;
           border-radius: 50%;
           margin-left: 20px;
           // padding: 10px;
@@ -97,48 +103,63 @@
     }
   }
 
-  #resources-section {
-    height: 600px;
+  #stand-section {
     width: 100%;
+    height: 700px;
     background-image: url('../../assets/images/blue-div.svg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0px;
     margin-top: 0px;
-    @include flex(row, center, center);
-  }
 
-  #resources-inner {
-    width: 80%;
-    // background-color: blue;
-  }
+    @include flex(column, flex-start, flex-start);
 
-  #resources-links {
-    margin-top: $text-margin;
-    @include flex(row,space-between,center);
-  }
-
-  .resource-group {
-    height: 200px;
-    width: 30%;
-    @include flex(column, flex-start, center);
-    .resource-title {
-      margin-bottom: $text-margin;
-    }
-    .resource-body {
+    .stand-layout {
       width: 100%;
-      height: 100%;
-      overflow-y: scroll;
+    }
 
-      li {
-        margin-bottom: 10px;
+    .stand-box {
+      padding: 150px;
+    }
+
+    .stand-individual {
+      width: 100%;
+      @include flex(row, center, center);
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .stand-heading {
+      width: 100%;
+      float: left;
+      a {
+        font-size: 30px;
+        float: left;
+        margin: 10px;
+      }
+    }
+
+    .stand-img {
+      float: left;
+    }
+
+    .stand-body {
+      float: right;
+      margin-left: 30px;
+      width: 100%;
+      text-align: left;
+
+      a {
+        width: 100%;
       }
     }
   }
 
-  #last {
-    margin-bottom: $section-margin;
-  }
+
 }
 
 @media only screen and (max-width: 960px) {
@@ -154,21 +175,33 @@
       margin-bottom: $text-margin;
     }
 
-    .resource-group, .section, #resource-links {
+    .section, #resource-links {
       height: 100%;
-    }
-
-    .resource-shift {
-      margin-left: -60px;
     }
 
     .profile-section {
       margin-left: -20px;
-    }
+      }
+
+      #team {
+        .profile-header {
+          text-align: left;
+        }
+
+        .profile-header h2 {
+          justify-content: left;
+        }
+
+        .profile-section .profile {
+              img {
+                height: 100px;
+                width: 100px;
+              }
+            }
+      }
 
     #news, #team {
       border-left: none;
-      align-items: flex-start;
     }
 
     #update, .left {
@@ -179,9 +212,16 @@
         padding: 0;
     }
 
-    #resources-links {
-      flex-direction: column;
-      float: left;
-    }
+  //   #stand-section {
+  //     height: 1%;
+  //
+  //     .stand-layout {
+  //       padding-top: 20px;
+  //     }
+  //
+  //     .stand-individual {
+  //      @include flex(column, center, center);
+  //    }
+  //   }
   }
 }

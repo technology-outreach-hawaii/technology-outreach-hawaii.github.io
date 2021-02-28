@@ -127,33 +127,41 @@ nav #logo { width: 45%; }
 
 .main #goal { width: 40%; height: 100%; }
 
-.main #team { width: 60%; height: 100%; border-left: 1px solid #B8CED1; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.main #team { width: 60%; height: 100%; border-left: 1px solid #B8CED1; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-.main #team .profile-section { width: 100%; height: 60%; display: flex; flex-direction: row; overflow-x: scroll; }
+.main #team .profile-header { width: 100%; text-align: center; }
 
-.main #team .profile-section .profile { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.main #team .profile-header p { width: 100%; }
+
+.main #team .profile-section { height: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+
+.main #team .profile-section .profile { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; }
 
 .main #team .profile-section .profile h4 { font-size: 15px; color: #f0f2f5; }
 
-.main #team .profile-section .profile img { width: 100px; height: 100px; border-radius: 50%; margin-left: 20px; }
+.main #team .profile-section .profile img { width: 120px; height: 120px; border-radius: 50%; margin-left: 20px; }
 
-.main #resources-section { height: 600px; width: 100%; background-image: url("../../assets/images/blue-div.svg"); background-repeat: no-repeat; background-size: cover; margin-bottom: 0px; margin-top: 0px; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+.main #stand-section { width: 100%; height: 700px; background-image: url("../../assets/images/blue-div.svg"); background-repeat: no-repeat; background-size: cover; margin-bottom: 0px; margin-top: 0px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
-.main #resources-inner { width: 80%; }
+.main #stand-section .stand-layout { width: 100%; }
 
-.main #resources-links { margin-top: 30px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+.main #stand-section .stand-box { padding: 150px; }
 
-.main .resource-group { height: 200px; width: 30%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
+.main #stand-section .stand-individual { width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center; }
 
-.main .resource-group .resource-title { margin-bottom: 30px; }
+.main #stand-section img { width: 100px; height: 100px; border-radius: 50%; }
 
-.main .resource-group .resource-body { width: 100%; height: 100%; overflow-y: scroll; }
+.main #stand-section .stand-heading { width: 100%; float: left; }
 
-.main .resource-group .resource-body li { margin-bottom: 10px; }
+.main #stand-section .stand-heading a { font-size: 30px; float: left; margin: 10px; }
 
-.main #last { margin-bottom: 100px; }
+.main #stand-section .stand-img { float: left; }
 
-@media only screen and (max-width: 960px) { .main .section { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-bottom: 0px; margin-top: 30px; } .main #team, .main #news, .main #goal, .main .text, .main .left { width: 100%; margin-bottom: 30px; } .main .resource-group, .main .section, .main #resource-links { height: 100%; } .main .resource-shift { margin-left: -60px; } .main .profile-section { margin-left: -20px; } .main #news, .main #team { border-left: none; align-items: flex-start; } .main #update, .main .left { float: left; } .main #news li { padding: 0; } .main #resources-links { flex-direction: column; float: left; } }
+.main #stand-section .stand-body { float: right; margin-left: 30px; width: 100%; text-align: left; }
+
+.main #stand-section .stand-body a { width: 100%; }
+
+@media only screen and (max-width: 960px) { .main .section { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-bottom: 0px; margin-top: 30px; } .main #team, .main #news, .main #goal, .main .text, .main .left { width: 100%; margin-bottom: 30px; } .main .section, .main #resource-links { height: 100%; } .main .profile-section { margin-left: -20px; } .main #team .profile-header { text-align: left; } .main #team .profile-header h2 { justify-content: left; } .main #team .profile-section .profile img { height: 100px; width: 100px; } .main #news, .main #team { border-left: none; } .main #update, .main .left { float: left; } .main #news li { padding: 0; } }
 
 #post { background-color: #f0f2f5; height: calc(100vh); width: calc(100vw); display: flex; flex-direction: row; justify-content: center; align-items: center; }
 
@@ -186,5 +194,3 @@ nav #logo { width: 45%; }
 hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2f5; height: 1px; }
 
 @media only screen and (max-width: 960px) { .team-individual { display: flex; flex-direction: column; justify-content: center; align-items: center; } .team-individual img { border-radius: 50%; width: 200px; height: 200px; } }
-
-/*# sourceMappingURL=styles.css.map */
