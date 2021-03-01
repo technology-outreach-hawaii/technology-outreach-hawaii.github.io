@@ -32,80 +32,83 @@ title: Home
         <p>Technology Outreach Hawaii aims to guide Hawaii towards confidence in being users and/or creators of technology while empowering youth. We are working to partner with libraries and community organizations across the state to offer student-driven digital literacy initiatives.</p>
       </div>
       <div id="team">
-        <h2>OUR TEAM</h2>
-        <p>Meet our mix of undergraduate and graduate students with interests in computer science, physics, math, and medicine.</p>
+        <div class="profile-header">
+          <h2>OUR TEAM</h2>
+          <p>Meet our mix of undergraduate and graduate students with interests in computer science, physics, math, and medicine.</p>
+        </div>
+        <br>
         <div class="profile-section">
-          {% for member in site.data.members %}
-          <div class="profile">
-            <img src="{{ member[1].profile }}" alt="">
-            <!-- <h4>{{ member[1].full_name }}</h4> -->
-          </div>
+          {% for member in site.data.members limit: 4 %}
+            <div class="profile">
+              <img src="{{ member[1].profile }}" alt="">
+              <!-- <h4>{{ member[1].full_name }}</h4> -->
+            </div>
+          {% endfor %}
+        </div>
+        <br>
+        <div class="profile-section">
+          {% for member in site.data.members limit: 4 offset: 4%}
+            <div class="profile">
+              <img src="{{ member[1].profile }}" alt="">
+              <!-- <h4>{{ member[1].full_name }}</h4> -->
+            </div>
           {% endfor %}
         </div>
       </div>
     </div>
   </div>
-  <div class="section" id="resources-section">
-    <div id="resources-inner">
-      <div id="resources-text-container">
-        <h1>Resources</h1>
-        <p>Curated resources for all ages.</p>
+  <div class="section" id="stand-section">
+    <div class="stand-box">
+      <div class="stand-heading">
+        <h1>What we do</h1>
       </div>
-      <div id="resources-links">
-        <div class="resource-group">
-          <div class="resource-title">
-            <h2>STUDENTS</h2>
-          </div>
-          <div class="resource-body">
-            <ul>
-              {% for post in site.posts %}
-                {% if post.tags contains "student" %}
-                <li>
-                  <h2><a href="{{ post.url }}">{{ post.title }}, {{ post.date | date: "%b %d, %Y" }}</a></h2>
-                </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
+
+      <!-- First section -->
+      <div class="stand-layout">
+        <div class="stand-heading">
+          <h1><a href="/">Promote technology education</a></h1>
         </div>
-        <div class="resource-group">
-          <div class="resource-title">
-            <h2>TEACHERS</h2>
+        <div class="stand-individual">
+          <div class="stand-img">
+            <img src="{{site.url}}/assets/images/github-white.png" alt="">
           </div>
-          <div class="resource-body">
-            <ul>
-              {% for post in site.posts %}
-                {% if post.tags contains "teacher" %}
-                <li>
-                  <h2><a href="{{ post.url }}">{{ post.title }}, {{ post.date | date: "%b %d, %Y" }}</a></h2>
-                </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-        <div class="resource-group">
-          <div class="resource-title">
-              <div class="resource-shift">
-                <h2>PUBLIC</h2>
-              </div>
-          </div>
-          <div class="resource-body">
-            <ul>
-              {% for post in site.posts %}
-                {% if post.tags contains "public" %}
-                <li>
-                  <h2><a href="{{ post.url }}">{{ post.title }}, {{ post.date | date: "%b %d, %Y" }}</a></h2>
-                </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
+          <div class="stand-body">
+            <p>We start and support projects related to technology education. </p>
+            <h2><a href="/">Explore our current projects</a></h2>
           </div>
         </div>
       </div>
-      <div class="left">
-        <button><a href="{{ site.posts[0].url }}">All Resources</a></button>
+
+      <!-- Second section -->
+      <div class="stand-layout">
+        <div class="stand-heading">
+          <h1><a href="/">Make resources accessible </a></h1>
+        </div>
+        <div class="stand-individual">
+          <div class="stand-img">
+            <img src="{{site.url}}/assets/images/github-white.png" alt="">
+          </div>
+          <div class="stand-body">
+            <p>We aim to be the hub for all free community technology resources across the state.  </p>
+            <h2><a href="/">View the list of community resources </a></h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third section -->
+      <div class="stand-layout">
+        <div class="stand-heading">
+          <h1><a href="/">Promote technology education</a></h1>
+        </div>
+        <div class="stand-individual">
+          <div class="stand-img">
+            <img src="{{site.url}}/assets/images/github-white.png" alt="">
+          </div>
+          <div class="stand-body">
+            <p>We encourage mentorship, service, and character building activities for youth. </p>
+            <h2><a href="/">Join our volunteer network </a></h2>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
