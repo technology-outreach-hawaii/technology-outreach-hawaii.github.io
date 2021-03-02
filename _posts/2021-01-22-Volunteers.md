@@ -3,6 +3,8 @@ layout: post
 author: gina
 title: Recruiting motivated high school students!
 tags: update
+picture: assets/images/fill.png
+summary: A nice excerpt from the blog writing
 ---
 
 Are you a high school student interested in learning more about technology,  networking with peers, and making a positive community difference during the pandemic?
