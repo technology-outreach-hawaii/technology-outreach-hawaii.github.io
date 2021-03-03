@@ -6,34 +6,134 @@ title: Blog
 {% assign author = site.data.members[name] %}
 
 <div class="blog-main">
-  <div class="blog-background">
-    <div class="blog-box">
+    <div class="blog-background">
+        <!-- a -->
+        <div class="blog-box">
 
-      <div class="blog-header">
-        <h1>Our Blog</h1>
-      </div>
-
-      <div class="blog-front">
-        <div class="blog-left">
-          <div class="blog-left-img">
-            <img src="{{site.posts[0].picture}}" alt="">
+          <div class="blog-header">
+            <h1>Our Blog</h1>
           </div>
-            <div class="blog-left-text">
-              <p><a href="{{ site.posts[0].url }}">{{site.posts[0].title}}</a></p>
-              <p> {{ site.posts[0].summary }} </p>
-              <p>
-                <img class="blog-left-profile" src="../../../{{ author.profile }}" alt="">
-                {{ site.posts[0].date | date: "%b %d, %Y" }} by {{ author.full_name }}
-              </p>
+
+          <div class="blog-front">
+            <div class="blog-left">
+              <div class="blog-left-img">
+                <img src="{{site.posts[0].picture}}" alt="">
+              </div>
+                <div class="blog-left-text">
+                  <p><a href="{{ site.posts[0].url }}">{{site.posts[0].title}}</a></p>
+                  <p> {{ site.posts[0].summary }} </p>
+                  <p class="blog-left-center">
+                    <img class="blog-left-profile" src="../../../{{ author.profile }}" alt="">
+                    {{ site.posts[0].date | date: "%b %d, %Y" }} by {{ author.full_name }}
+                  </p>
+                </div>
+            </div>
+
+            <div class="blog-right">
+              {{site.posts[0].excerpt}}
+              <a id="blog-right-read" href="/">read more</a>
             </div>
         </div>
 
-        <div class="blog-right">
-          {{site.posts[0].excerpt}}
-          <a id="blog-right-read" href="/">read more</a>
-        </div>
       </div>
-
+      <!-- a -->
     </div>
-  </div>
-</div>
+
+    <br>
+    <br>
+
+      <!-- SPLIT -->
+       <div class="blog-box">
+        <div class="blog-topic">
+          <div class="blog-topic-des">
+            <p>Have topic suggestions or questions that would be interesting to discuss? Fill out this form and we might consider it as the focus of our next blog post! </p>
+          </div>
+          <div class="blog-topic-but">
+            <button type="button" name="button">Submit A Topic</button>
+          </div>
+        </div>
+        </div>
+
+        <div class="blog-box">
+          <div class="blog-holder">
+
+            {% for post in site.posts %}
+              {% if forloop.rindex == 3 %}
+                {% break %}
+              {% endif %}
+            <div class="blog-section">
+              <div class="blog-section-side">
+                <div class="blog-section-img">
+                  <img src="{{post.picture}}" alt="">
+                </div>
+                  <div class="blog-section-text">
+                    <p><a href="{{ site.posts[0].url }}">{{post.title}}</a></p>
+                    <p> {{ post.summary }} </p>
+                    <p class="blog-section-bottom">
+                      <img class="blog-section-profile" src="../../../{{ author.profile }}" alt="">
+                      {{ post.date | date: "%b %d, %Y" }} by {{ author.full_name }}
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+        <div class="blog-box">
+          <div class="blog-holder">
+
+            {% for post in site.posts %}
+              {% if forloop.rindex == 3 %}
+                {% break %}
+              {% endif %}
+            <div class="blog-section">
+              <div class="blog-section-side">
+                <div class="blog-section-img">
+                  <img src="{{post.picture}}" alt="">
+                </div>
+                  <div class="blog-section-text">
+                    <p><a href="{{ site.posts[0].url }}">{{post.title}}</a></p>
+                    <p> {{ post.summary }} </p>
+                    <p class="blog-section-bottom">
+                      <img class="blog-section-profile" src="../../../{{ author.profile }}" alt="">
+                      {{ post.date | date: "%b %d, %Y" }} by {{ author.full_name }}
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="blog-box">
+          <div class="blog-holder">
+
+            {% for post in site.posts %}
+              {% if forloop.rindex == 3 %}
+                {% break %}
+              {% endif %}
+            <div class="blog-section">
+              <div class="blog-section-side">
+                <div class="blog-section-img">
+                  <img src="{{post.picture}}" alt="">
+                </div>
+                  <div class="blog-section-text">
+                    <p><a href="{{ site.posts[0].url }}">{{post.title}}</a></p>
+                    <p> {{ post.summary }} </p>
+                    <p class="blog-section-bottom">
+                      <img class="blog-section-profile" src="../../../{{ author.profile }}" alt="">
+                      {{ post.date | date: "%b %d, %Y" }} by {{ author.full_name }}
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+        
+        <br>
+        <br>
+      </div>

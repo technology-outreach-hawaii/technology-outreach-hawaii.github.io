@@ -1,29 +1,29 @@
 .blog-main {
-    display: flex;
+    width: 100%;
+    background-color: white;
+    @include flex(column, center, center);
 
     h1, p {
       color: white;
     }
 
   .blog-background {
-    display: flex;
-    margin: 0;
-    padding: 0;
+    @include flex(column, flex-start, center);
     width: 100%;
+    height: 560px;
     background-image: url('../../assets/images/test.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .blog-box {
-    width: 100%;
-    padding: 90px;
+    width: 90%;
     @include flex(column, space-between, flex-start);
   }
 
   .blog-header{
+    padding: 40px 0px;
     width: 100%;
-    padding-bottom: 50px;
 
     h1 {
       width: 100%;
@@ -35,17 +35,32 @@
     width: 100%;
     display: flex;
 
-      img {
-        width: 100%;
-      }
-
       .blog-left  {
         width: 40%;
         background-color: $dark-blue;
         @include flex(column, center, flex-start);
+        margin-right: 20px;
+
+        img {
+          width: 100%;
+        }
 
           .blog-left-text {
             padding: 20px;
+
+            .blog-left-center {
+              @include flex(row, flex-start, center);
+
+              .blog-left-profile {
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                margin-top: 10px;
+                margin-right: 10px;
+
+              }
+
+            }
           }
 
           .blog-left-img{
@@ -53,17 +68,10 @@
             height: 300px;
             display: flex;
           }
-
-          .blog-left-profile {
-            border-radius: 50%;
-            height: 50px;
-            width: 50px;
-          }
       }
   }
 
   .blog-right {
-    margin-left: 50px;
     width: 60%;
     @include flex(column, flex-start, flex-start);
 
@@ -72,6 +80,71 @@
         text-align: right;
       }
 
+  }
+
+  .blog-topic {
+    margin: 50px 0px;
+    width: 100%;
+    @include flex(row, flex-start, flex-start);
+
+    .blog-topic-des {
+      width: 80%;
+
+      p {
+        color: black;
+      }
+    }
+
+    .blog-topic-but {
+      text-align: right;
+      width: 20%;
+    }
+  }
+
+  .blog-holder {
+    width: 100%;
+    @include flex(row, space-between, flex-start);
+  }
+
+  .blog-section {
+    width: 40%;
+    @include flex(row, flex-start, flex-start);
+    margin: 20px 60px;
+
+    .blog-section-side {
+      width: 100%;
+      background-color: $dark-blue;
+      @include flex(column, center, flex-start);
+
+        img {
+          width: 100%;
+        }
+
+        .blog-section-img  {
+          width: 100%;
+          height: 300px;
+          display: flex;
+        }
+
+        .blog-section-text {
+          padding: 20px;
+
+          .blog-section-bottom {
+            @include flex(row, flex-start, center);
+
+              .blog-section-profile {
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                margin-top: 10px;
+                margin-right: 10px;
+
+              }
+          }
+        }
+
+
+    }
   }
 
 }
