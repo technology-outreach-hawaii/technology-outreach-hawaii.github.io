@@ -163,15 +163,17 @@ nav #logo { width: 45%; }
 
 @media only screen and (max-width: 960px) { .main .section { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-bottom: 0px; margin-top: 30px; } .main #team, .main #news, .main #goal, .main .text, .main .left { width: 100%; margin-bottom: 30px; } .main .section, .main #resource-links { height: 100%; } .main .profile-section { margin-left: -20px; } .main #team .profile-header { text-align: left; } .main #team .profile-header p { padding-left: 0; } .main #team .profile-header h2 { justify-content: left; } .main #team .profile-section .profile img { height: 100px; width: 100px; } .main #news, .main #team { border-left: none; } .main #update, .main .left { float: left; } .main #news li { padding: 0; } .main #stand-section .stand-box { padding: 0px; padding-top: 150px; padding-left: 30px; } }
 
-#post { background-color: #f0f2f5; height: calc(100vh); width: calc(100vw); display: flex; flex-direction: row; justify-content: center; align-items: center; }
+#post { background-color: #f0f2f5; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-#post #post-section { height: 100%; width: 70%; padding: 5%; overflow-y: scroll; }
+#post #background { width: 100%; height: 400px; }
 
-#post #post-section #post-info { margin-top: 5%; }
+#post #post-section { height: 100%; width: 70%; padding: 3% 5%; }
 
-#post #post-section #post-info .author-date_container { margin-top: 30px; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+#post #post-section #post-info { text-align: center; }
 
-#post #post-section #post-info .author-date_container img { width: 50px; border-radius: 100px; margin-left: 10px; }
+#post #post-section #post-info .author-date_container { display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+#post #post-section #post-info .author-date_container img { width: 50px; border-radius: 100px; margin-right: 10px; }
 
 #post #post-section #post-content { margin-top: 60px; }
 
@@ -233,9 +235,9 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .blog-main .blog-topic .blog-topic-but { text-align: right; width: 20%; }
 
-.blog-main .blog-holder { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+.blog-main .blog-holder { width: 100%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: flex-start; }
 
-.blog-main .blog-section { width: 40%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; margin: 20px 60px; }
+.blog-main .blog-section { width: 40%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; margin: 20px 0px; }
 
 .blog-main .blog-section .blog-section-side { width: 100%; background-color: #0A303B; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
 
@@ -248,5 +250,7 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 .blog-main .blog-section .blog-section-side .blog-section-text .blog-section-bottom { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
 
 .blog-main .blog-section .blog-section-side .blog-section-text .blog-section-bottom .blog-section-profile { border-radius: 50%; height: 50px; width: 50px; margin-top: 10px; margin-right: 10px; }
+
+@media only screen and (max-width: 960px) { .blog-main .blog-background { height: 800px; } .blog-main .blog-front { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; } .blog-main .blog-front .blog-left { width: 70%; } .blog-main .blog-front .blog-right p { color: black; } .blog-main .blog-box { width: 90%; display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-main .blog-topic { width: 70%; display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-main .blog-topic .blog-topic-des, .blog-main .blog-topic .blog-topic-but { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; } .blog-main .blog-holder { display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-main .blog-section { width: 70%; } }
 
 /*# sourceMappingURL=styles.css.map */

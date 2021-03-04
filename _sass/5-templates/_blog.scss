@@ -103,13 +103,13 @@
 
   .blog-holder {
     width: 100%;
-    @include flex(row, space-between, flex-start);
+    @include flex(row, space-evenly, flex-start);
   }
 
   .blog-section {
     width: 40%;
     @include flex(row, flex-start, flex-start);
-    margin: 20px 60px;
+    margin: 20px 0px;
 
     .blog-section-side {
       width: 100%;
@@ -147,4 +147,47 @@
     }
   }
 
+}
+
+@media only screen and (max-width: 960px) {
+  .blog-main {
+    .blog-background {
+      height: 800px;
+    }
+
+    .blog-front {
+      height: 100%;
+      @include flex(column, center, center);
+      color: black;
+
+      .blog-left {
+        width: 70%;
+      }
+      .blog-right p{
+        color: black;
+      }
+    }
+
+    .blog-box {
+      width: 90%;
+      @include flex(column, center, center);
+    }
+
+    .blog-topic {
+      width: 70%;
+      @include flex(column, center, center);
+
+      .blog-topic-des, .blog-topic-but {
+        @include flex(column, center, center);
+        width: 100%;
+      }
+    }
+
+    .blog-holder {
+      @include flex(column, center, center);
+    }
+    .blog-section {
+      width: 70%;
+    }
+  }
 }
