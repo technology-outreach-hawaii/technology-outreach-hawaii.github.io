@@ -3,7 +3,7 @@ layout: post
 author: gina
 title: Recruiting motivated high school students!
 tags: update
-picture: assets/images/fill.png
+picture: assets/images/blog/2021-01-22.png
 summary: A nice excerpt from the blog writing
 ---
 
