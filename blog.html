@@ -38,7 +38,7 @@ title: Blog
       </div>
       <!-- a -->
     </div>
-    
+
       <!-- SPLIT -->
        <div class="blog-box">
         <div class="blog-topic">
@@ -51,8 +51,7 @@ title: Blog
         </div>
         </div>
 
-        <div class="blog-box2">
-          <div class="blog-container">
+        <div class="blog-box">
             <div class="blog-holder">
 
               {% for post in site.posts %}
@@ -73,14 +72,12 @@ title: Blog
                       <p class="blog-section-bottom">
                         <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="">
                         {{ post.date | date: "%b %d, %Y" }} by {{ bauthor.full_name }}
-                      </p>
                     </div>
                 </div>
               </div>
 
               {% endfor %}
             </div>
-          </div>
         </div>
 
         <br>
