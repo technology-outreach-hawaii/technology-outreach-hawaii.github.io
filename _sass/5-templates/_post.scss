@@ -4,6 +4,7 @@
   @include flex(column, center, center);
 
   #background {
+    object-fit: cover;
     width: 100%;
     height: 400px;
   }

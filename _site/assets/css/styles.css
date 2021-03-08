@@ -165,7 +165,7 @@ nav #logo { width: 45%; }
 
 #post { background-color: #f0f2f5; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-#post #background { width: 100%; height: 400px; }
+#post #background { object-fit: cover; width: 100%; height: 400px; }
 
 #post #post-section { height: 100%; width: 70%; padding: 3% 5%; }
 
