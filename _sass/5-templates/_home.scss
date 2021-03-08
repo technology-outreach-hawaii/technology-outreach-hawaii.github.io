@@ -1,8 +1,5 @@
 .main {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   background-image: url('../../assets/images/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,7 +113,6 @@
 
     .stand-layout {
       width: 100%;
-      padding-bottom: 15px;
     }
 
     .stand-box {
@@ -132,6 +128,7 @@
       width: 100px;
       height: 100px;
       border-radius: 50%;
+      border: 5px solid white;
     }
 
     .stand-heading {
