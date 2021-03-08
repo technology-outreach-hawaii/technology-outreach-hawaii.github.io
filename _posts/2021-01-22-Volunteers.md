@@ -4,8 +4,8 @@ author: gina
 title: Recruiting motivated high school students!
 tags: update
 picture: assets/images/blog/2021-01-22.png
-summary: A nice excerpt from the blog writing
-quote: An interesting quote from the blog can go here as an eye catcher
+summary: Learn, collaborate, and contribute during the pandemic
+quote: Learn, collaborate, and contribute during the pandemic 
 ---
 
 Are you a high school student interested in learning more about technology,  networking with peers, and making a positive community difference during the pandemic?
