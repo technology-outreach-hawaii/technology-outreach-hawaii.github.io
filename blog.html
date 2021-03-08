@@ -5,41 +5,40 @@ title: Blog
 {% assign name = site.posts[0].author %}
 {% assign author = site.data.members[name] %}
 
-<div class="blog-main">
+<div class="blog-container">
     <div class="blog-background">
-        <!-- a -->
-        <div class="blog-box">
 
+        <!-- Header Section -->
+        <div class="blog-box">
           <div class="blog-header">
             <h1>Our Blog</h1>
           </div>
 
-          <div class="blog-front">
-            <div class="blog-left">
-              <div class="blog-left-img">
+          <!-- Featured Section -->
+          <div class="blog-main">
+            <div class="blog-main-card">
+              <div class="blog-main-img">
                 <img src="{{site.posts[0].picture}}" alt="">
               </div>
-                <div class="blog-left-text">
+                <div class="blog-main-text">
                   <p><a href="{{ site.posts[0].url }}">{{site.posts[0].title}}</a></p>
                   <p> {{ site.posts[0].summary }} </p>
-                  <p class="blog-left-center">
-                    <img class="blog-left-profile" src="../../../{{ author.profile }}" alt="">
+                  <p class="blog-main-center">
+                    <img class="blog-main-profile" src="../../../{{ author.profile }}" alt="">
                     {{ site.posts[0].date | date: "%b %d, %Y" }} by {{ author.full_name }}
                   </p>
                 </div>
             </div>
 
-            <div class="blog-right">
+            <div class="blog-main-summary">
               <p>{{site.posts[0].excerpt}}</p>
-              <a id="blog-right-read" href="/">read more</a>
+              <a id="blog-main-link" href="/">read more</a>
             </div>
         </div>
-
       </div>
-      <!-- a -->
     </div>
 
-      <!-- SPLIT -->
+      <!-- Topic section -->
        <div class="blog-box">
         <div class="blog-topic">
           <div class="blog-topic-des">
@@ -51,6 +50,7 @@ title: Blog
         </div>
         </div>
 
+        <!-- Blog Section -->
         <div class="blog-box">
             <div class="blog-holder">
 

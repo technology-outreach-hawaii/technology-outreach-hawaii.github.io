@@ -1,4 +1,4 @@
-.blog-main {
+.blog-container {
     width: 100%;
     @include flex(column, center, center);
 
@@ -23,6 +23,7 @@
     @include flex(column, space-between, flex-start);
   }
 
+  // Header Section
   .blog-header{
     padding: 40px 0px;
     width: 100%;
@@ -33,57 +34,55 @@
     }
   }
 
-  .blog-front {
+  // Featured Section
+  .blog-main {
     width: 100%;
     display: flex;
 
-      .blog-left  {
+      .blog-main-card  {
         width: 43%;
         background-color: $dark-blue;
         @include flex(column, center, flex-start);
         margin-right: 40px;
 
-        img {
-          width: 100%;
-        }
-
-          .blog-left-text {
-            padding: 20px;
-
-            .blog-left-center {
-              @include flex(row, flex-start, center);
-
-              .blog-left-profile {
-                border-radius: 50%;
-                height: 50px;
-                width: 50px;
-                margin-top: 10px;
-                margin-right: 10px;
-
-              }
-
+            img {
+              width: 100%;
             }
-          }
 
-          .blog-left-img{
+            .blog-main-img {
+              width: 100%;
+              height: 300px;
+              display: flex;
+            }
+
+            .blog-main-text {
+              padding: 20px;
+
+                .blog-main-center {
+                  @include flex(row, flex-start, center);
+
+                .blog-main-profile {
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    margin: 10px 10px 0 0;
+                    }
+                  }
+              }
+      }
+
+      .blog-main-summary {
+        width: 60%;
+        @include flex(column, flex-start, flex-start);
+
+          #blog-main-link{
             width: 100%;
-            height: 300px;
-            display: flex;
+            text-align: right;
           }
       }
   }
 
-  .blog-right {
-    width: 60%;
-    @include flex(column, flex-start, flex-start);
-
-      #blog-right-read{
-        width: 100%;
-        text-align: right;
-      }
-
-  }
-
+  // Topic Section
   .blog-topic {
     padding: 50px 0px;
     width: 100%;
@@ -103,14 +102,10 @@
     }
   }
 
+  // Blog Section
   .blog-holder {
     width: 100%;
     @include flex(row, space-evenly, flex-start);
-  }
-
-  .blog-container {
-    @include flex(row, flex-start, flex-start);
-    width: 100%;
   }
 
   .blog-section:hover {
@@ -141,17 +136,17 @@
         .blog-section-text {
           padding: 20px;
 
-          .blog-section-bottom {
+            .blog-section-bottom {
             @include flex(row, flex-start, center);
             opacity: 0.8;
-              .blog-section-profile {
-                border-radius: 50%;
-                height: 50px;
-                width: 50px;
-                margin: 10px 10px 0px 0px;
 
+                  .blog-section-profile {
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    margin: 10px 10px 0px 0px;
+                  }
               }
-          }
         }
 
 
@@ -161,27 +156,10 @@
 }
 
 @media only screen and (max-width: 960px) {
-  .blog-main {
+  .blog-container {
+
     .blog-background {
       height: 50%;
-    }
-
-    .blog-front {
-      height: 100%;
-      @include flex(column, center, center);
-      color: black;
-
-      .blog-left {
-        width: 70%;
-        margin-right: 0px;
-      }
-
-      .blog-right {
-        padding-top: 20px;
-        p{
-          color: black;
-        }
-      }
     }
 
     .blog-box {
@@ -189,6 +167,27 @@
       @include flex(column, center, center);
     }
 
+    // Featured Section
+    .blog-main {
+      height: 100%;
+      @include flex(column, center, center);
+      color: black;
+
+      .blog-main-card {
+        width: 70%;
+        margin-right: 0px;
+      }
+
+      .blog-main-summary {
+        padding-top: 20px;
+
+        p {
+          color: black;
+        }
+      }
+    }
+
+    // Topic Section
     .blog-topic {
       @include flex(column, center, center);
       width: 70%;
@@ -202,6 +201,7 @@
       }
     }
 
+    // Blog Section
     .blog-holder {
       @include flex(column, center, center);
     }
