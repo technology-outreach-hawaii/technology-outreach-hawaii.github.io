@@ -250,7 +250,7 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .blog-container .blog-section .blog-section-side .blog-section-img { width: 100%; height: 250px; display: flex; }
 
-.blog-container .blog-section .blog-section-side .blog-section-text { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; min-height: 160px; width: 90%; padding: 20px; }
+.blog-container .blog-section .blog-section-side .blog-section-text { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; min-height: 189px; width: 90%; padding: 20px; }
 
 .blog-container .blog-section .blog-section-side .blog-section-text .blog-section-bottom { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; opacity: 0.9; }
 
