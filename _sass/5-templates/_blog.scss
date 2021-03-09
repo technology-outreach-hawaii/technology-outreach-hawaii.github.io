@@ -134,6 +134,9 @@
         }
 
         .blog-section-text {
+          @include flex(column, space-between, flex-start);
+          min-height: 189px;
+          width: 90%;
           padding: 20px;
 
             .blog-section-bottom {
