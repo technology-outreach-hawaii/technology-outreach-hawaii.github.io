@@ -12,7 +12,9 @@ layout: default
         <img class="profile" src="../../../{{ author.profile }}" alt="">
         <p>{{ page.date | date: "%b %d, %Y" }} by {{ author.full_name }}</p>
       </div>
-      <p id="quote">{{page.quote}}</p>
+      <div id="quote">
+        {{page.quote}}
+      </div>
     </div>
     <div id="post-content">
       {{ content }}
