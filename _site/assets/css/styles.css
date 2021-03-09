@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
@@ -163,7 +164,7 @@ nav #logo { width: 45%; }
 
 @media only screen and (max-width: 960px) { .main .section { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-bottom: 0px; margin-top: 30px; } .main #team, .main #news, .main #goal, .main .text, .main .left { width: 100%; margin-bottom: 30px; } .main .section, .main #resource-links { height: 100%; } .main .profile-section { margin-left: -20px; } .main #team .profile-header { text-align: left; } .main #team .profile-header p { padding-left: 0; } .main #team .profile-header h2 { justify-content: left; } .main #team .profile-section .profile img { height: 100px; width: 100px; } .main #news, .main #team { border-left: none; } .main #update, .main .left { float: left; } .main #news li { padding: 0; } .main #stand-section .stand-box { padding: 0px; padding-top: 150px; padding-left: 30px; } }
 
-#post { background-color: #f0f2f5; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+#post { background-color: #f0f2f5; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #2E2E2E; }
 
 #post #background { object-fit: cover; width: 100%; height: 400px; }
 
@@ -175,7 +176,7 @@ nav #logo { width: 45%; }
 
 #post #post-section #post-info .author-date_container img { width: 50px; border-radius: 100px; margin-right: 10px; }
 
-#post #post-section #post-info #quote { padding: 50px 0; font-size: 25px; }
+#post #post-section #post-info #quote { padding: 40px 0; font-size: 30px; font-family: "Shippori Mincho B1", sans-serif; }
 
 .team-box { display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0px; padding: 20px 100px; position: relative; }
 
@@ -213,11 +214,11 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .blog-container .blog-main { width: 100%; display: flex; }
 
-.blog-container .blog-main .blog-main-card { width: 43%; background-color: #0A303B; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; margin-right: 40px; }
+.blog-container .blog-main .blog-main-card { width: 45%; background-color: #0A303B; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
 
 .blog-container .blog-main .blog-main-card img { width: 100%; }
 
-.blog-container .blog-main .blog-main-card .blog-main-img { width: 100%; height: 300px; display: flex; }
+.blog-container .blog-main .blog-main-card .blog-main-img { width: 100%; height: 250px; display: flex; }
 
 .blog-container .blog-main .blog-main-card .blog-main-text { padding: 20px; }
 
@@ -225,7 +226,7 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .blog-container .blog-main .blog-main-card .blog-main-text .blog-main-center .blog-main-profile { border-radius: 50%; height: 50px; width: 50px; margin: 10px 10px 0 0; }
 
-.blog-container .blog-main .blog-main-summary { width: 60%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+.blog-container .blog-main .blog-main-summary { padding-left: 30px; width: 55%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
 .blog-container .blog-main .blog-main-summary #blog-main-link { width: 100%; text-align: right; }
 
@@ -241,20 +242,20 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .blog-container .blog-section:hover { box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
 
-.blog-container .blog-section { background-color: #0A303B; min-height: 455px; border: black 1px solid; width: 43%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+.blog-container .blog-section { background-color: #0A303B; min-height: 455px; border: black 1px solid; width: 43%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; }
 
-.blog-container .blog-section .blog-section-side { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.blog-container .blog-section .blog-section-side { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
 
 .blog-container .blog-section .blog-section-side img { width: 100%; }
 
 .blog-container .blog-section .blog-section-side .blog-section-img { width: 100%; height: 250px; display: flex; }
 
-.blog-container .blog-section .blog-section-side .blog-section-text { padding: 20px; }
+.blog-container .blog-section .blog-section-side .blog-section-text { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; min-height: 160px; width: 90%; padding: 20px; }
 
-.blog-container .blog-section .blog-section-side .blog-section-text .blog-section-bottom { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; opacity: 0.8; }
+.blog-container .blog-section .blog-section-side .blog-section-text .blog-section-bottom { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; opacity: 0.9; }
 
 .blog-container .blog-section .blog-section-side .blog-section-text .blog-section-bottom .blog-section-profile { border-radius: 50%; height: 50px; width: 50px; margin: 10px 10px 0px 0px; }
 
-@media only screen and (max-width: 960px) { .blog-container .blog-background { height: 50%; } .blog-container .blog-box { width: 90%; display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-container .blog-main { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; } .blog-container .blog-main .blog-main-card { width: 70%; margin-right: 0px; } .blog-container .blog-main .blog-main-summary { padding-top: 20px; } .blog-container .blog-main .blog-main-summary p { color: black; } .blog-container .blog-topic { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 70%; padding: 20px 0px; margin: 0; } .blog-container .blog-topic .blog-topic-des, .blog-container .blog-topic .blog-topic-but { display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 5px; width: 100%; } .blog-container .blog-holder { display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-container .blog-section { margin-top: 40px; width: 65%; } }
+@media only screen and (max-width: 960px) { .blog-container .blog-background { height: 50%; } .blog-container .blog-box { width: 90%; display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-container .blog-main { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; } .blog-container .blog-main .blog-main-card { width: 70%; margin-right: 0px; } .blog-container .blog-main .blog-main-summary { padding-top: 20px; padding-left: 0; } .blog-container .blog-main .blog-main-summary p { color: black; } .blog-container .blog-topic { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 70%; padding: 20px 0px; margin: 0; } .blog-container .blog-topic .blog-topic-des, .blog-container .blog-topic .blog-topic-but { display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 5px; width: 100%; } .blog-container .blog-holder { display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-container .blog-section { margin-top: 40px; width: 65%; } }
 
 /*# sourceMappingURL=styles.css.map */

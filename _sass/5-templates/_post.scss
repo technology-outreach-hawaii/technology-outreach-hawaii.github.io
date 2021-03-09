@@ -2,6 +2,7 @@
   background-color: $light-grey;
   height: 100%;
   @include flex(column, center, center);
+  color: $black;
 
   #background {
     object-fit: cover;
@@ -27,8 +28,9 @@
       }
 
       #quote {
-        padding: 50px 0;
-        font-size: $h4;
+        padding: 40px 0;
+        font-size: 30px;
+        font-family: $shippori-mincho;
       }
     }
   }
