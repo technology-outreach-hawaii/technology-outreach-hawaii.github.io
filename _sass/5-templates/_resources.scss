@@ -2,6 +2,14 @@
   width: 100%;
   @include flex(column, center, center);
 
+  hr {
+    width: 100%;
+  }
+
+  a {
+    font-size: $h4;
+  }
+
   .resources-box {
     width: 80%;
     @include flex(column, space-between, flex-start);
@@ -19,6 +27,21 @@
     }
   }
 
+  // Island section
+  .resources-island {
+    width: 100%;
+    @include flex(column, flex-start, flex-start);
+
+    .resources-island-bar {
+      width: 50%;
+      @include flex(row, space-between, flex-start);
+
+      a {
+        @include flex(row, flex-start, flex-start);
+      }
+    }
+  }
+
   // Online Section
   .resources-online {
     width: 100%;
@@ -28,7 +51,11 @@
 
     .resources-online-bar{
       width: 100%;
-      @include flex(row, space-around, space-around);
+      @include flex(row, space-between, flex-start);
+
+      a {
+          @include flex(row, flex-start, flex-start);
+      }
     }
 
     .resources-online-summary {
