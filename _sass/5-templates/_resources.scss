@@ -1,0 +1,39 @@
+.resources-container {
+  width: 100%;
+  @include flex(column, center, center);
+
+  .resources-box {
+    width: 80%;
+    @include flex(column, space-between, flex-start);
+  }
+
+  // Submit Section
+  .resources-submit {
+    width: 100%;
+    @include flex(column, center, center);
+    // border: 5px solid green;
+
+    .resources-submit-text {
+      text-align: center;
+      width: 70%;
+    }
+  }
+
+  // Online Section
+  .resources-online {
+    width: 100%;
+    padding: 20px 0px;
+    // border: 5px solid red;
+    @include flex(column, flex-start, flex-start);
+
+    .resources-online-bar{
+      width: 100%;
+      @include flex(row, space-around, space-around);
+    }
+
+    .resources-online-summary {
+      width: 100%;
+      @include flex(column, flex-start, flex-start);
+    }
+  }
+}
