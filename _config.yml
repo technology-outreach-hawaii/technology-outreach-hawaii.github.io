@@ -1,0 +1,4 @@
+collections:
+  sources:
+    output: true
+    permalink: /sources/:path/

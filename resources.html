@@ -26,6 +26,21 @@ title: Resources
         <a href="">Kauai</a>
       </div>
       <div class="resources-island-section">
+        {% for source in site.sources%}
+          <div class="resources-island-section-container">
+            <div class="resources-island-section-container-img">
+              <img src="{{ source.picture }}" alt="">
+            </div>
+            <div class="resources-island-section-container-body">
+              <div class="resources-island-section-container-body-top">
+                <h3>{{ source.title }}</h3>
+                <br>
+                <p>{{ source.excerpt }}</p>
+              </div>
+              <p>{{ source.tags }}</p>
+            </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
 

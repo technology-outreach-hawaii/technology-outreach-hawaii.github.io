@@ -276,6 +276,18 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-island .resources-island-bar a { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
 
+.resources-container .resources-island .resources-island-section { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; color: black; width: 100%; }
+
+.resources-container .resources-island .resources-island-section img { width: 200px; height: 170px; border-radius: 50%; border: 1px solid black; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container { padding: 10px 0px; width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-img { float: left; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { height: 170px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; float: right; margin-left: 30px; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body .resources-island-section-container-body-top { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+
 .resources-container .resources-online { width: 100%; padding: 20px 0px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
 .resources-container .resources-online .resources-online-bar { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }

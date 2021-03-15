@@ -40,6 +40,38 @@
         @include flex(row, flex-start, flex-start);
       }
     }
+
+    .resources-island-section {
+      @include flex(column, flex-start, flex-start);
+      color: black;
+      width: 100%;
+
+      img {
+        width: 200px;
+        height: 170px;
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+
+      .resources-island-section-container {
+      padding: 10px 0px;
+      width: 100%;
+      @include flex(row, flex-start, flex-start);
+        .resources-island-section-container-img {
+          float: left;
+        }
+        .resources-island-section-container-body {
+          height: 170px;
+          @include flex(column, space-between, flex-start);
+          float: right;
+          margin-left: 30px;
+
+          .resources-island-section-container-body-top {
+            @include flex(column, flex-start, flex-start);
+          }
+        }
+      }
+    }
   }
 
   // Online Section
