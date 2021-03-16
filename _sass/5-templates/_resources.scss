@@ -15,6 +15,24 @@
     @include flex(column, space-between, flex-start);
   }
 
+  // Banner section
+  .resources-banner {
+    @include flex(column, flex-start, flex-start);
+    width: 100%;
+    background-image: url("/assets/images/blog/fill.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+
+    .resources-banner-text {
+      padding: 40px;
+      @include flex(column, flex-start, flex-start);
+      width: 40%;
+    }
+  }
+
+
   // Submit Section
   .resources-submit {
     width: 100%;

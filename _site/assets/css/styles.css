@@ -266,6 +266,10 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-box { width: 80%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
 
+.resources-container .resources-banner { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; background-image: url("/assets/images/blog/fill.png"); background-repeat: no-repeat; background-size: cover; height: 500px; color: white; }
+
+.resources-container .resources-banner .resources-banner-text { padding: 40px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 40%; }
+
 .resources-container .resources-submit { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 .resources-container .resources-submit .resources-submit-text { text-align: center; width: 70%; }
