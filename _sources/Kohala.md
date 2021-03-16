@@ -1,7 +1,7 @@
 ---
-island: Oahu
+island: Maui
 layout: resource
-title: ICSpark
+title: Kohala
 tags: classes
 picture: assets/images/blog/2021-01-21.png
 ---
