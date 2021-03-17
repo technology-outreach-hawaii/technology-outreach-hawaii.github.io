@@ -1,5 +1,5 @@
 ---
-island: Maui
+island: maui
 layout: resource
 title: Haleakala
 tags: classes

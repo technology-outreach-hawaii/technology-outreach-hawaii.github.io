@@ -1,5 +1,5 @@
 ---
-island: Oahu
+island: oahu
 layout: resource
 title: ICSpark
 tags: classes

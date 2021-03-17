@@ -1,5 +1,5 @@
 ---
-island: Kauai
+island: kauai
 layout: resource
 title: Waialeale
 tags: classes

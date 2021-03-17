@@ -1,5 +1,5 @@
 ---
-island: Big Island
+island: bigisland
 layout: resource
 title: Kilauea
 tags: classes

@@ -1,15 +1,15 @@
 ---
 ---
 [
-  {% for post in site.posts %}
+  {% for source in site.sources %}
     {
 
-      "title"    : "{{ post.title | strip_html | escape }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "category" : "{{post.categories | join: ', '}}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "date"     : "{{ post.date | date: "%b %d, %Y" }}",
-      "description" : "{{post.description | strip_html | strip_newlines | escape }}"
+      "title"    : "{{ source.title | strip_html | escape }}",
+      "url"      : "{{ site.baseurl }}{{ source.url }}",
+      "tags"     : "{{ source.tags | join: ', ' }}",
+      "island"   : "{{ source.island | join: ', ' }}",
+      "picture"  : "{{source.picture | join: ', '}}",
+      "description" : "{{source.description | strip_html | strip_newlines | escape }}"
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}

@@ -7,14 +7,14 @@ title: Resources
 <div class="resources-island" id="bigisland">
   <h2>Resources in Hawaii</h2>
   <div class="resources-island-bar">
-    <a href="/resource-oahu.html#oahu" {% if page.url == "/resource-oahu.html" %}style="color: black; text-decoration: underline;"{% endif %}>Oahu</a></li>
-    <a href="/resource-bigisland.html#bigisland" {% if page.url == "/resource-bigisland.html" %}style="color: black; text-decoration: underline;"{% endif %}>Big Island</a></li>
-    <a href="/resource-maui.html#maui" {% if page.url == "/resource-maui.html" %}style="color: black; text-decoration: underline;"{% endif %}>Maui</a></li>
-    <a href="/resource-kauai.html#kauai" {% if page.url == "/resource-kauai.html" %}style="color: black; text-decoration: underline;"{% endif %}>Kauai</a></li>
+    <a href="/resource-oahu.html#oahu" {% if page.url == "/resource-oahu.html" %}style="color: black; text-decoration: underline;"{% endif %}>Oahu</a>
+    <a href="/resource-bigisland.html#bigisland" {% if page.url == "/resource-bigisland.html" %}style="color: black; text-decoration: underline;"{% endif %}>Big Island</a>
+    <a href="/resource-maui.html#maui" {% if page.url == "/resource-maui.html" %}style="color: black; text-decoration: underline;"{% endif %}>Maui</a>
+    <a href="/resource-kauai.html#kauai" {% if page.url == "/resource-kauai.html" %}style="color: black; text-decoration: underline;"{% endif %}>Kauai</a>
   </div>
   <div class="resources-island-section">
     {% for source in site.sources%}
-      {% if source.island == 'Maui' %}
+      {% if source.island == 'bigisland' %}
         <div class="resources-island-section-container">
           <div class="resources-island-section-container-img">
             <img src="{{ source.picture }}" alt="">
@@ -32,3 +32,14 @@ title: Resources
     {% endfor %}
   </div>
 </div>
+
+<!-- Test -->
+<div class="resources-island">
+  <h1>TEST</h1>
+  <div class="searchWrapper">
+    <input type="text" name="searchBar" id="searchBar" placeholder="search" value=""/>
+  </div>
+  <ul id="sourceList"></ul>
+</div>
+
+<script src="/assets/js/search.js"></script>

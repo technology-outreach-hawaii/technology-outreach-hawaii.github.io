@@ -1,8 +1,8 @@
 ---
-island: Oahu
+island: oahu
 layout: resource
 title: CodeForHawaii
-tags: classes
+tags: [classes]
 picture: assets/images/blog/2021-01-21.png
 ---
 
