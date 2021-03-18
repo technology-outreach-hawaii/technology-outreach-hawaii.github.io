@@ -276,9 +276,15 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-island { width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
-.resources-container .resources-island .resources-island-bar { padding: 20px 0px; width: 40%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+.resources-container .resources-island .resources-island-bar { padding: 20px 0; width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
 
-.resources-container .resources-island .resources-island-bar a { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+.resources-container .resources-island .resources-island-bar .resources-island-bar-list { width: 40%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+
+.resources-container .resources-island .resources-island-bar .resources-island-bar-list a { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-island .resources-island-bar .resources-island-bar-img { display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end; }
+
+.resources-container .resources-island .resources-island-bar .resources-island-bar-img img { float: right; }
 
 .resources-container .resources-island .resources-island-section { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; color: black; width: 100%; }
 

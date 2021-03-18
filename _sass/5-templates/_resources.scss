@@ -52,12 +52,23 @@
     @include flex(column, flex-start, flex-start);
 
     .resources-island-bar {
-      padding: 20px 0px;
-      width: 40%;
-      @include flex(row, space-between, flex-start);
+      padding: 20px 0;
+    width: 100%;
+    @include flex(row, space-between, center);
+      .resources-island-bar-list {
+        width: 40%;
+        @include flex(row, space-between, flex-start);
 
-      a {
-        @include flex(row, flex-start, flex-start);
+        a {
+          @include flex(row, flex-start, flex-start);
+        }
+      }
+
+      .resources-island-bar-img {
+        @include flex(row, flex-end, flex-end);
+        img {
+          float: right;
+        }
       }
     }
 
