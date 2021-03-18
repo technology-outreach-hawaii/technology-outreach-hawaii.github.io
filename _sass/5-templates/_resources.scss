@@ -35,6 +35,7 @@
 
   // Submit Section
   .resources-submit {
+    padding: 20px 0px;
     width: 100%;
     @include flex(column, center, center);
     // border: 5px solid green;
@@ -51,7 +52,8 @@
     @include flex(column, flex-start, flex-start);
 
     .resources-island-bar {
-      width: 50%;
+      padding: 20px 0px;
+      width: 40%;
       @include flex(row, space-between, flex-start);
 
       a {
@@ -69,6 +71,26 @@
         height: 170px;
         border-radius: 50%;
         border: 1px solid black;
+      }
+
+      .resources-island-section-search {
+        border-radius: 10px;
+        background-color: $dark-blue;
+        @include flex(row, flex-end, flex-end);
+        width: 40%;
+        padding: 10px 0px;
+        margin-bottom: 50px;
+
+        .resources-island-section-search-bar {
+          width: 80%;
+          padding-right: 20px;
+
+          input {
+            float: right;
+            width: 100%;
+            height: 30px;
+          }
+        }
       }
 
       .resources-island-section-container {
@@ -94,12 +116,22 @@
 
   // Online Section
   .resources-online {
-    width: 100%;
-    padding: 20px 0px;
+    background-image: url('../../assets/images/wave-blue.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100.1%;
+    padding: 70px 0px;
     // border: 5px solid red;
-    @include flex(column, flex-start, flex-start);
+    @include flex(column, center, center);
 
-    .resources-online-bar{
+    .resources-box {
+      color: white;
+    }
+    .resources-online-text {
+      padding: 100px 0px 50px 0px;
+    }
+
+    .resources-online-bar {
       width: 100%;
       @include flex(row, space-between, flex-start);
 

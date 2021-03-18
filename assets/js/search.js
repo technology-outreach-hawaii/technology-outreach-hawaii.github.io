@@ -8,6 +8,18 @@ const findIsland = () => {
   return island;
 }
 
+const defaultOahu = (sources) => {
+  const oahuList = [];
+  let x = 0;
+  sources.map((source) => {
+    if(source.island == 'oahu') {
+      oahuList[x] = source;
+      x++;
+    }
+  })
+  return oahuList;
+}
+
 console.log(findIsland());
 
 searchBar.addEventListener('keyup', (e) => {
@@ -27,7 +39,6 @@ const loadSources = async () => {
     try {
         const res = await fetch('/search.json');
         sources = await res.json();
-        console.log(sources);
         let i = 0;
         const list = [];
         const island = findIsland();
@@ -37,8 +48,13 @@ const loadSources = async () => {
             i++;
           }
         })
-        sources = list;
-        displaySources(sources);
+        if(list == ''){
+          const oahu = defaultOahu(sources);
+          displaySources(oahu);
+        } else {
+          sources = list;
+          displaySources(sources);
+        }
     } catch (err) {
         console.error(err);
     }
@@ -48,10 +64,15 @@ const displaySources = (sources) => {
     const htmlString = sources
         .map((source) => {
             return `
-            <li class="source">
+            <li class="resources-island-section-container">
+                <div class="resources-island-section-container-img">
+                  <img src="${source.picture}"/>
+                </div>
+                <div class="resources-island-section-container-body">
                 <h2>${source.title}</h2>
+                <p>${source.excerpt}</p>
                 <p>${source.tags}</p>
-                <p>${source.island}</p>
+                </div>
             </li>
         `;
         })

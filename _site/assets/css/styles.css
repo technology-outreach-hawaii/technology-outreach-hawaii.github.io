@@ -270,19 +270,25 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-banner .resources-banner-text { padding: 40px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 40%; }
 
-.resources-container .resources-submit { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.resources-container .resources-submit { padding: 20px 0px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 .resources-container .resources-submit .resources-submit-text { text-align: center; width: 70%; }
 
 .resources-container .resources-island { width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
-.resources-container .resources-island .resources-island-bar { width: 50%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+.resources-container .resources-island .resources-island-bar { padding: 20px 0px; width: 40%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
 
 .resources-container .resources-island .resources-island-bar a { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
 
 .resources-container .resources-island .resources-island-section { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; color: black; width: 100%; }
 
 .resources-container .resources-island .resources-island-section img { width: 200px; height: 170px; border-radius: 50%; border: 1px solid black; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-search { border-radius: 10px; background-color: #0A303B; display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end; width: 40%; padding: 10px 0px; margin-bottom: 50px; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar { width: 80%; padding-right: 20px; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar input { float: right; width: 100%; height: 30px; }
 
 .resources-container .resources-island .resources-island-section .resources-island-section-container { padding: 10px 0px; width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
 
@@ -292,7 +298,11 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body .resources-island-section-container-body-top { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
-.resources-container .resources-online { width: 100%; padding: 20px 0px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+.resources-container .resources-online { background-image: url("../../assets/images/wave-blue.svg"); background-repeat: no-repeat; background-size: cover; width: 100.1%; padding: 70px 0px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.resources-container .resources-online .resources-box { color: white; }
+
+.resources-container .resources-online .resources-online-text { padding: 100px 0px 50px 0px; }
 
 .resources-container .resources-online .resources-online-bar { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
 
