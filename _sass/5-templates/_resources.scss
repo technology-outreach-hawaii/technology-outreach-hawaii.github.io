@@ -1,6 +1,15 @@
 .resources-container {
   width: 100%;
   @include flex(column, center, center);
+    color: $dark-blue;
+
+  .tags {
+    color: $dark-blue;
+    padding: 0px 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #D5D5D5;
+  }
 
   hr {
     width: 100%;
@@ -74,7 +83,6 @@
 
     .resources-island-section {
       @include flex(column, flex-start, flex-start);
-      color: black;
       width: 100%;
 
       img {

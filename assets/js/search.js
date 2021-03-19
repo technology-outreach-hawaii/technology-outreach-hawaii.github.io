@@ -71,7 +71,7 @@ const displaySources = (sources) => {
                 <div class="resources-island-section-container-body">
                 <h2>${source.title}</h2>
                 <p>${source.excerpt}</p>
-                <p>${source.tags}</p>
+                <p class='tags'>${source.tags}</p>
                 </div>
             </li>
         `;
