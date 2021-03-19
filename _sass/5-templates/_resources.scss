@@ -165,3 +165,38 @@
     }
   }
 }
+
+@media only screen and (max-width: 960px) {
+  .resources-container {
+
+    // Banner Section
+    .resources-banner {
+      height: 100%;
+    }
+
+    // Island section
+    .resources-island {
+
+      .resources-island-bar {
+        .resources-island-bar-list {
+          width: 300px;
+        }
+      }
+
+      .resources-island-section {
+
+        .resources-island-section-search {
+          width: 300px;
+        }
+
+        .resources-island-section-container {
+        @include flex(column, flex-start, flex-start);
+          .resources-island-section-container-body {
+            margin: 0px;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
