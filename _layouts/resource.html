@@ -9,7 +9,13 @@ layout: default
       <h2>Community Spotlight</h2>
       <h2> {{site.sources[2].title}}</h2>
       <br>
-      <p class='tags'>{{site.sources[2].tags}}</p>
+      <div class="tags-horizontal">
+        {% for tag in site.sources[2].tags %}
+        <p class='tags'>
+          {{tag}}
+        </p>
+        {% endfor %}
+      </div>
       <br>
       <h3>{{site.sources[2].excerpt}}</h3>
     </div>
@@ -43,20 +49,20 @@ layout: default
         </div>
         <hr>
         <div class="resources-online-summary">
-          <p>Learning how to use the computer for the first time? This section includes resources that show beginners how to symmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer.</p>
+          <p class="resources-online-summary-intro">Learning how to use the computer for the first time? This section includes resources that show beginners how to symmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer.</p>
           <br>
           <div class="resources-online-summary-section">
-            <a href="/">NorthStar</a>
+            <a href="/" target=“_blank”>NorthStar</a>
             <p>Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer.</p>
             <br>
           </div>
           <div class="resources-online-summary-section">
-            <a href="/">NorthStar</a>
+            <a href="/" target=“_blank”>NorthStar</a>
             <p>Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer.</p>
             <br>
           </div>
           <div class="resources-online-summary-section">
-            <a href="/">NorthStar</a>
+            <a href="/" target=“_blank”>NorthStar</a>
             <p>Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer.</p>
             <br>
           </div>

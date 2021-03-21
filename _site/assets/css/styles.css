@@ -260,7 +260,9 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #0A303B; }
 
-.resources-container .tags { color: #0A303B; padding: 0px 10px; border: 1px solid black; border-radius: 50px; background-color: #D5D5D5; }
+.resources-container .tags { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; color: #0A303B; padding: 0px 10px; border: 1px solid black; border-radius: 50px; background-color: #D5D5D5; margin-right: 10px; }
+
+.resources-container .tags-horizontal { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; width: 100%; }
 
 .resources-container hr { width: 100%; }
 
@@ -282,13 +284,13 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-island .resources-island-bar .resources-island-bar-list { width: 40%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
 
-.resources-container .resources-island .resources-island-bar .resources-island-bar-list a { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+.resources-container .resources-island .resources-island-bar .resources-island-bar-list a { background: -webkit-linear-gradient(#F8CF1E, orange); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
 
 .resources-container .resources-island .resources-island-bar .resources-island-bar-img { display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end; }
 
 .resources-container .resources-island .resources-island-bar .resources-island-bar-img img { float: right; }
 
-.resources-container .resources-island .resources-island-section { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; }
+.resources-container .resources-island .resources-island-section { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; padding-bottom: 20px; }
 
 .resources-container .resources-island .resources-island-section img { width: 200px; height: 170px; border-radius: 50%; border: 1px solid black; }
 
@@ -298,11 +300,13 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar input { float: right; width: 100%; height: 30px; }
 
-.resources-container .resources-island .resources-island-section .resources-island-section-container { padding: 10px 0px; width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+.resources-container .resources-island .resources-island-section .resources-island-section-container:hover { box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container { padding: 10px 0px; margin-bottom: 10px; width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
 
 .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-img { float: left; }
 
-.resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { height: 170px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; float: right; margin-left: 30px; }
+.resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { padding: 10px 0px; height: 170px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; float: right; margin-left: 30px; }
 
 .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body .resources-island-section-container-body-top { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
@@ -317,6 +321,8 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 .resources-container .resources-online .resources-online-bar a { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
 
 .resources-container .resources-online .resources-online-summary { width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-online .resources-online-summary .resources-online-summary-intro { padding-bottom: 20px; }
 
 @media only screen and (max-width: 960px) { .resources-container .resources-banner { height: 100%; } .resources-container .resources-island .resources-island-bar .resources-island-bar-list { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-search { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-container { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; } .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { margin: 0px; height: 100%; } }
 

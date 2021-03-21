@@ -60,18 +60,28 @@ const loadSources = async () => {
     }
 };
 
+const seperateTags = (tags) => {
+  var arr = tags.split(',');
+  return arr;
+}
+
 const displaySources = (sources) => {
     const htmlString = sources
         .map((source) => {
+          totalTags = seperateTags(source.tags);
+          link = source.link;
             return `
-            <li class="resources-island-section-container">
+            <li onclick="window.open(link);" class="resources-island-section-container">
                 <div class="resources-island-section-container-img">
                   <img src="${source.picture}"/>
                 </div>
                 <div class="resources-island-section-container-body">
-                <h2>${source.title}</h2>
-                <p>${source.excerpt}</p>
-                <p class='tags'>${source.tags}</p>
+                  <h2>${source.title}</h2>
+                  <p>${source.excerpt}</p>
+                  <div class="tags-horizontal">
+                  <p class='tags'>${totalTags[0]}</p>
+                  <p class='tags'>${totalTags[1]}</p>
+                  </div>
                 </div>
             </li>
         `;
