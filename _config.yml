@@ -2,3 +2,5 @@ collections:
   sources:
     output: true
     permalink: /sources/:path/
+  onlines:
+    output: true
