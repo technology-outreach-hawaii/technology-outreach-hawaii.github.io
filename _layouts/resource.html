@@ -43,9 +43,9 @@ layout: default
           <h2>Online Resources</h2>
         </div>
         <div class="resources-online-bar">
-          <a href="/">Basic Digital Skills</a>
-          <a href="/">Intermediate</a>
-          <a href="/">Advance</a>
+          <a id="link-basic">Basic Digital Skills</a>
+          <a id="link-intermediate">Intermediate</a>
+          <a id="link-hard">Advance</a>
         </div>
         <hr>
         <div class="resources-online-summary">
@@ -53,7 +53,7 @@ layout: default
           <br>
 
           <!-- BASIC -->
-          <div class="resources-online-summary-basic">
+          <div id="basic" class="resources-online-summary-basic">
             {% for online in site.onlines %}
               {% if online.level == 'basic' %}
                 <div class="resources-online-summary-section">
@@ -66,7 +66,7 @@ layout: default
           </div>
 
           <!-- INTERMEDIATE -->
-          <div class="resources-online-summary-intermediate">
+          <div id="intermediate" class="resources-online-summary-intermediate" style="display: none;">
             {% for online in site.onlines %}
               {% if online.level == 'intermediate' %}
                 <div class="resources-online-summary-section">
@@ -79,7 +79,7 @@ layout: default
           </div>
 
           <!-- HARD -->
-          <div class="resources-online-summary-hard">
+          <div id="hard" class="resources-online-summary-hard" style="display: none;">
             {% for online in site.onlines %}
               {% if online.level == 'hard' %}
                 <div class="resources-online-summary-section">
@@ -95,3 +95,4 @@ layout: default
       </div>
     </div>
 </div>
+<script src="/assets/js/hideOnline.js"></script>
