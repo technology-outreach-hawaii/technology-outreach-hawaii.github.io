@@ -2,7 +2,7 @@
 island: oahu
 layout: resource
 title: ICSpark
-tags: ["classes", "coding", "community spotlight"]
+tags: ["classes", "coding", "spotlight"]
 picture: assets/images/blog/2021-01-21.png
 link: https://www.google.com
 ---
