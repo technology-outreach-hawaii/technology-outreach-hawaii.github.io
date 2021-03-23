@@ -1,6 +1,5 @@
 ---
 island: oahu
-layout: resource
 title: ICSpark
 tags: ["classes", "coding", "spotlight"]
 picture: assets/images/blog/2021-01-21.png

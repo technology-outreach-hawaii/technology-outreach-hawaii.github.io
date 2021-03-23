@@ -1,6 +1,5 @@
 ---
 island: bigisland
-layout: resource
 title: Mauna Loa
 tags: classes
 picture: assets/images/blog/2021-01-22.png

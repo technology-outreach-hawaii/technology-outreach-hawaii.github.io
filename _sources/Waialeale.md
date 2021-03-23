@@ -1,6 +1,5 @@
 ---
 island: kauai
-layout: resource
 title: Waialeale
 tags: classes
 picture: assets/images/blog/fill.png

@@ -1,6 +1,5 @@
 ---
 island: maui
-layout: resource
 title: Haleakala
 tags: classes
 picture: assets/images/blog/fill.png

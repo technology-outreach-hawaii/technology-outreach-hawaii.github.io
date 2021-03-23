@@ -1,6 +1,5 @@
 ---
 island: bigisland
-layout: resource
 title: Kilauea
 tags: classes
 picture: assets/images/blog/fill.png

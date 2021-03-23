@@ -1,3 +1,56 @@
+const boahu = document.getElementById("oahu");
+const bbigisland = document.getElementById("bigisland");
+const bmaui = document.getElementById("maui");
+const bkauai = document.getElementById("kauai");
+
+function select(island) {
+  switch (island) {
+    case "oahu":
+      boahu.style.borderBottom = "1px solid black";
+      bbigisland.style.borderBottom = "none";
+      bmaui.style.borderBottom = "none";
+      bkauai.style.borderBottom = "none";
+      break;
+    case "bigisland":
+      boahu.style.borderBottom = "none";
+      bbigisland.style.borderBottom = "1px solid black";
+      bmaui.style.borderBottom = "none";
+      bkauai.style.borderBottom = "none";
+      break;
+    case "maui":
+      boahu.style.borderBottom = "none";
+      bbigisland.style.borderBottom = "none";
+      bmaui.style.borderBottom = "1px solid black";
+      bkauai.style.borderBottom = "none";
+      break;
+    case "kauai":
+      boahu.style.borderBottom = "none";
+      bbigisland.style.borderBottom = "none";
+      bmaui.style.borderBottom = "none";
+      bkauai.style.borderBottom = "1px solid black";
+      break;
+    default:
+      console.log("no work");
+  }
+};
+
+boahu.addEventListener("click", function(){
+  select("oahu");
+  loadSources("oahu");
+});
+bbigisland.addEventListener("click", function(){
+  select("bigisland");
+  loadSources("bigisland");
+});
+bmaui.addEventListener("click", function(){
+  select("maui");
+  loadSources("maui");
+});
+bkauai.addEventListener("click", function(){
+  select("kauai");
+  loadSources("kauai");
+});
+// ---
 const sourceList = document.getElementById('sourceList');
 const searchBar = document.getElementById('searchBar');
 let sources = [];
@@ -7,20 +60,6 @@ const findIsland = () => {
   const island = link.substring((link.indexOf('#'))+1);
   return island;
 }
-
-const defaultOahu = (sources) => {
-  const oahuList = [];
-  let x = 0;
-  sources.map((source) => {
-    if(source.island == 'oahu') {
-      oahuList[x] = source;
-      x++;
-    }
-  })
-  return oahuList;
-}
-
-console.log(findIsland());
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
@@ -35,26 +74,20 @@ searchBar.addEventListener('keyup', (e) => {
     displaySources(filteredSources);
 });
 
-const loadSources = async () => {
+const loadSources = async (island) => {
     try {
         const res = await fetch('/search.json');
         sources = await res.json();
         let i = 0;
         const list = [];
-        const island = findIsland();
         sources.map((source) => {
           if(source.island == island) {
             list[i] = source;
             i++;
           }
         })
-        if(list == ''){
-          const oahu = defaultOahu(sources);
-          displaySources(oahu);
-        } else {
           sources = list;
           displaySources(sources);
-        }
     } catch (err) {
         console.error(err);
     }
@@ -89,5 +122,3 @@ const displaySources = (sources) => {
         .join('');
     sourceList.innerHTML = htmlString;
 };
-
-loadSources();

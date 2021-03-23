@@ -1,6 +1,5 @@
 ---
 island: maui
-layout: resource
 title: Kohala
 tags: classes
 picture: assets/images/blog/2021-01-21.png
