@@ -112,6 +112,8 @@
         margin-bottom: 50px;
 
         .resources-island-section-search-bar {
+          display: flex;
+          flex-direction: row;
           width: 80%;
           padding-right: 20px;
 
@@ -119,6 +121,15 @@
             float: right;
             width: 100%;
             height: 30px;
+          }
+
+          #submit {
+            background-image: url("/assets/images/search.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: $yellow;
+            height: 36px;
+            width: 20%;
           }
         }
       }

@@ -2,6 +2,34 @@ const boahu = document.getElementById("oahu");
 const bbigisland = document.getElementById("bigisland");
 const bmaui = document.getElementById("maui");
 const bkauai = document.getElementById("kauai");
+const sourceList = document.getElementById('sourceList');
+const searchBar = document.getElementById('searchBar');
+let sources = [];
+
+const submitButton = document.getElementById("submit");
+
+searchBar.addEventListener('keypress', function(e) {
+  if(e.key == 'Enter') {
+    search(searchBar);
+  }
+});
+
+submitButton.addEventListener("click", function() {
+  search(searchBar);
+});
+
+function search(t) {
+  const searchString = t.value.toLowerCase();
+
+  const filteredSources = sources.filter((source) => {
+      return (
+          source.title.toLowerCase().includes(searchString) ||
+          source.island.toLowerCase().includes(searchString) ||
+          source.tags.toLowerCase().includes(searchString)
+      );
+  });
+  displaySources(filteredSources);
+};
 
 function select(island) {
   switch (island) {
@@ -49,29 +77,6 @@ bmaui.addEventListener("click", function(){
 bkauai.addEventListener("click", function(){
   select("kauai");
   loadSources("kauai");
-});
-// ---
-const sourceList = document.getElementById('sourceList');
-const searchBar = document.getElementById('searchBar');
-let sources = [];
-
-const findIsland = () => {
-  const link = document.URL;
-  const island = link.substring((link.indexOf('#'))+1);
-  return island;
-}
-
-searchBar.addEventListener('keyup', (e) => {
-    const searchString = e.target.value.toLowerCase();
-
-    const filteredSources = sources.filter((source) => {
-        return (
-            source.title.toLowerCase().includes(searchString) ||
-            source.island.toLowerCase().includes(searchString) ||
-            source.tags.toLowerCase().includes(searchString)
-        );
-    });
-    displaySources(filteredSources);
 });
 
 const loadSources = async (island) => {
