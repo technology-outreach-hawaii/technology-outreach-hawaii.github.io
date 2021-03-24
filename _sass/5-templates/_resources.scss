@@ -45,6 +45,10 @@
       padding: 40px;
       @include flex(column, flex-start, flex-start);
       width: 40%;
+
+      a{
+        font-size: 22px;
+      }
     }
   }
 
@@ -216,13 +220,12 @@
       }
 
       .resources-island-section {
-
         .resources-island-section-search {
           width: 300px;
         }
 
         .resources-island-section-container {
-        @include flex(column, flex-start, flex-start);
+        @include flex(column, center, center);
           .resources-island-section-container-body {
             margin: 0px;
             height: 100%;

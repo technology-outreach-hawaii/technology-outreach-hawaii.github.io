@@ -274,6 +274,8 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-banner .resources-banner-text { padding: 40px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 40%; }
 
+.resources-container .resources-banner .resources-banner-text a { font-size: 22px; }
+
 .resources-container .resources-submit { padding: 20px 0px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 .resources-container .resources-submit .resources-submit-text { text-align: center; width: 70%; }
@@ -326,4 +328,6 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 .resources-container .resources-online .resources-online-summary .resources-online-summary-intro { padding-bottom: 20px; }
 
-@media only screen and (max-width: 960px) { .resources-container .resources-banner { height: 100%; } .resources-container .resources-island .resources-island-bar .resources-island-bar-list { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-search { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-container { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; } .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { margin: 0px; height: 100%; } }
+@media only screen and (max-width: 960px) { .resources-container .resources-banner { height: 100%; } .resources-container .resources-island .resources-island-bar .resources-island-bar-list { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-search { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-container { display: flex; flex-direction: column; justify-content: center; align-items: center; } .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { margin: 0px; height: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

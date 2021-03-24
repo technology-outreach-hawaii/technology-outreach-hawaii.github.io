@@ -3,6 +3,7 @@ island: oahu
 title: ICSpark
 tags: ["classes", "coding", "spotlight"]
 picture: assets/images/blog/2021-01-21.png
+readmore: https://icspark.github.io/
 link: https://www.google.com
 ---
 

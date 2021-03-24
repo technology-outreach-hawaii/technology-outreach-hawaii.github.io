@@ -127,3 +127,6 @@ const displaySources = (sources) => {
         .join('');
     sourceList.innerHTML = htmlString;
 };
+
+loadSources('oahu');
+select('oahu');
