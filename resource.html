@@ -1,0 +1,108 @@
+---
+layout: default
+title: resources
+---
+<div class="resources-container">
+  <!-- Banner Section -->
+  <div class="resources-banner">
+
+    <div class="resources-banner-text">
+      <h2>Community Spotlight</h2>
+      <h2> {{site.sources[2].title}}</h2>
+      <br>
+      <div class="tags-horizontal">
+        {% for tag in site.sources[2].tags %}
+        <p class='tags'>
+          {{tag}}
+        </p>
+        {% endfor %}
+      </div>
+      <br>
+      <h3>{{site.sources[2].excerpt}}</h3>
+      <a href="{{site.sources[2].readmore}}">read more</a>
+    </div>
+  </div>
+
+  <div class="resources-box">
+    <!-- Submit Section -->
+    <div class="resources-submit">
+      <div class="resources-submit-text">
+        <p>Know of a great resources not listed here?  Want to nominate an organization for our next community spotlight? </p>
+      </div>
+      <br>
+      <div class="resources-submit-button">
+        <button type="button" name="button">Submit a Resource</button>
+      </div>
+    </div>
+
+    <br>
+    {% include researchSearch.html %}
+  </div>
+    <!-- Online Section -->
+    <div class="resources-online">
+      <div class="resources-box">
+        <div class="resources-online-text">
+          <h2>Online Resources</h2>
+        </div>
+        <div class="resources-online-bar">
+          <a id="link-basic">Basic Digital Skills</a>
+          <a id="link-intermediate">Intermediate</a>
+          <a id="link-hard">Advance</a>
+        </div>
+        <hr>
+
+          <!-- BASIC -->
+          <div id="basic" class="resources-online-summary">
+            <p class="resources-online-summary-intro">Learning how to use the computer for the first time? This section includes resources that show beginners how to symmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer.</p>
+            <br>
+            <div class="resources-online-summary">
+              {% for online in site.onlines %}
+                {% if online.level == 'basic' %}
+                  <div class="resources-online-summary-section">
+                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
+                    <p>{{online.excerpt}}</p>
+                    <br>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- INTERMEDIATE -->
+          <div id="intermediate" class="resources-online-summary" style="display: none;">
+            <p class="resources-online-summary-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t</p>
+            <br>
+            <div class="resources-online-summary">
+              {% for online in site.onlines %}
+                {% if online.level == 'intermediate' %}
+                  <div class="resources-online-summary-section">
+                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
+                    <p>{{online.excerpt}}</p>
+                    <br>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- HARD -->
+          <div id="hard" class="resources-online-summary" style="display: none;">
+            <p class="resources-online-summary-intro">Running totals (also known as cumulative sums) are extensively used in data analysis. They are usually used with time series data to see how certain performance indicators are (or will be) developing over time. Like other advanced SQL concepts, running totals have a very broad practical use. </p>
+            <br>
+            <div class="resources-online-summary">
+              {% for online in site.onlines %}
+                {% if online.level == 'hard' %}
+                  <div class="resources-online-summary-section">
+                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
+                    <p>{{online.excerpt}}</p>
+                    <br>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+      </div>
+    </div>
+</div>
+<script src="/assets/js/hideOnline.js"></script>

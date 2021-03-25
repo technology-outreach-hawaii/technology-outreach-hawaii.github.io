@@ -258,4 +258,76 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 @media only screen and (max-width: 960px) { .blog-container .blog-background { height: 50%; } .blog-container .blog-box { width: 90%; display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-container .blog-main { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; } .blog-container .blog-main .blog-main-card { width: 70%; margin-right: 0px; } .blog-container .blog-main .blog-main-summary { padding-top: 20px; padding-left: 0; } .blog-container .blog-main .blog-main-summary p { color: black; } .blog-container .blog-topic { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 70%; padding: 20px 0px; margin: 0; } .blog-container .blog-topic .blog-topic-des, .blog-container .blog-topic .blog-topic-but { display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 5px; width: 100%; } .blog-container .blog-holder { display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-container .blog-section { margin-top: 40px; width: 65%; } }
 
+.resources-container { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #0A303B; }
+
+.resources-container .tags { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; color: #0A303B; padding: 0px 10px; border: 1px solid black; border-radius: 50px; background-color: #D5D5D5; margin-right: 10px; }
+
+.resources-container .tags-horizontal { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; width: 100%; }
+
+.resources-container hr { width: 100%; }
+
+.resources-container a { font-size: 25px; }
+
+.resources-container .resources-box { width: 80%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
+
+.resources-container .resources-banner { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; background-image: url("/assets/images/blog/fill.png"); background-repeat: no-repeat; background-size: cover; height: 500px; color: white; }
+
+.resources-container .resources-banner .resources-banner-text { padding: 40px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 40%; }
+
+.resources-container .resources-banner .resources-banner-text a { font-size: 22px; }
+
+.resources-container .resources-submit { padding: 20px 0px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.resources-container .resources-submit .resources-submit-text { text-align: center; width: 70%; }
+
+.resources-container .resources-island { width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-island .resources-island-bar { padding: 20px 0; width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+
+.resources-container .resources-island .resources-island-bar .resources-island-bar-list { width: 40%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+
+.resources-container .resources-island .resources-island-bar .resources-island-bar-list a { background: -webkit-linear-gradient(#F8CF1E, orange); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-island .resources-island-bar .resources-island-bar-img { display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end; }
+
+.resources-container .resources-island .resources-island-bar .resources-island-bar-img img { float: right; }
+
+.resources-container .resources-island .resources-island-section { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; padding-bottom: 20px; }
+
+.resources-container .resources-island .resources-island-section img { width: 200px; height: 170px; border-radius: 50%; border: 1px solid black; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-search { border-radius: 10px; background-color: #0A303B; display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end; width: 40%; padding: 10px 0px; margin-bottom: 50px; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar { display: flex; flex-direction: row; width: 80%; padding-right: 20px; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar input { float: right; width: 100%; height: 30px; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar #submit { background-image: url("/assets/images/search.png"); background-repeat: no-repeat; background-size: contain; background-color: #F8CF1E; height: 36px; width: 20%; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container:hover { box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container { padding: 10px 0px; margin-bottom: 10px; width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-img { float: left; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { padding: 10px 0px; height: 170px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; float: right; margin-left: 30px; }
+
+.resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body .resources-island-section-container-body-top { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-online { background-image: url("../../assets/images/wave-blue.svg"); background-repeat: no-repeat; background-size: cover; width: 100.1%; padding: 70px 0px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.resources-container .resources-online .resources-box { color: white; }
+
+.resources-container .resources-online .resources-online-text { padding: 100px 0px 50px 0px; }
+
+.resources-container .resources-online .resources-online-bar { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+
+.resources-container .resources-online .resources-online-bar a { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-online .resources-online-summary { width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+
+.resources-container .resources-online .resources-online-summary .resources-online-summary-intro { padding-bottom: 20px; }
+
+@media only screen and (max-width: 960px) { .resources-container .resources-banner { height: 100%; } .resources-container .resources-island .resources-island-bar .resources-island-bar-list { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-search { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-container { display: flex; flex-direction: column; justify-content: center; align-items: center; } .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { margin: 0px; height: 100%; } }
+
 /*# sourceMappingURL=styles.css.map */
