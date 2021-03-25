@@ -7,23 +7,25 @@ title: resources
   <div class="resources-banner">
 
     <div class="resources-banner-text">
-      <h2>Community Spotlight</h2>
-      <h2> {{site.sources[2].title}}</h2>
-      <br>
-      <div class="tags-horizontal">
-        {% for tag in site.sources[2].tags %}
-        <p class='tags'>
-          {{tag}}
-        </p>
-        {% endfor %}
+      <div class="resources-banner-text-box">
+        <div class="resources-banner-text-box-word">
+          <h2>Community Spotlight</h2>
+          <h2> {{site.sources[2].title}}</h2>
+          <br>
+          <div class="tags-horizontal">
+            {% for tag in site.sources[2].tags %}
+            <p class='tags'>
+              {{tag}}
+            </p>
+            {% endfor %}
+          </div>
+          <br>
+          <h3>{{site.sources[2].excerpt}}</h3>
+          <a href="{{site.sources[2].readmore}}">read more</a>
+        </div>
       </div>
-      <br>
-      <h3>{{site.sources[2].excerpt}}</h3>
-      <a href="{{site.sources[2].readmore}}">read more</a>
     </div>
-  </div>
-
-  <div class="resources-box">
+    <br>
     <!-- Submit Section -->
     <div class="resources-submit">
       <div class="resources-submit-text">
@@ -34,6 +36,9 @@ title: resources
         <button type="button" name="button">Submit a Resource</button>
       </div>
     </div>
+  </div>
+
+  <div class="resources-box">
 
     <br>
     {% include researchSearch.html %}
@@ -45,7 +50,7 @@ title: resources
           <h2>Online Resources</h2>
         </div>
         <div class="resources-online-bar">
-          <a id="link-basic">Basic Digital Skills</a>
+          <a id="link-basic">Basic</a>
           <a id="link-intermediate">Intermediate</a>
           <a id="link-hard">Advance</a>
         </div>
