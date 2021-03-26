@@ -1,0 +1,96 @@
+.project-container {
+ width: 100%;
+
+  .submit-box {
+    padding: 100px;
+  }
+  .submit-project {
+    width: 100%;
+    @include flex(row, flex-start, flex-start);
+
+    .submit-project-img {
+      padding-top: 50px;
+      width: 62%;
+      height: 350px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .submit-project-text {
+      padding: 0px 10px 0px 10px;
+      @include flex(column, space-between, center);
+      height: 400px;
+      width: 38%;
+      color: black;
+
+      #title{
+        font-weight: bold;
+        font-size: 40px;
+        padding-bottom: 40px;
+      }
+
+      #body{
+        font-size: $small;
+      }
+
+      .submit-project-text-sum {
+        height: 20%;
+        @include flex(column, flex-start, flex-start);
+        height: 100%;
+        width: 80%;
+      }
+
+      .submit-project-text-button {
+        @include flex(column, center, center);
+        width: 100%;
+
+      }
+    }
+  }
+
+  .cards {
+    padding: 0px 300px 40px 300px;
+  }
+
+  .side-project {
+    color: white;
+    background-color: $dark-blue;
+    padding: 40px;
+    .side-project-text {
+
+      .c1{
+        font-size: 40px;
+      }
+      .c2{
+        font-size: 25px;
+      }
+
+      .side-project-text-row {
+        @include flex(row, flex-start, flex-start);
+
+        .side-project-text-row-left {
+          width: 60%;
+        }
+
+        .side-project-text-row-right {
+          @include flex(row, center, center);
+          width: 40%;
+
+          img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+          }
+        }
+      }
+    }
+
+    .side-project-img {
+
+    }
+  }
+
+}

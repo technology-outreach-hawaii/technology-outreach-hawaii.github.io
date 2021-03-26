@@ -1,0 +1,55 @@
+---
+layout: default
+title: Project
+---
+
+<div class="project-container">
+
+  <!-- Submit Project -->
+  <div class="submit-box">
+    <div class="submit-project">
+      <div class="submit-project-img">
+        <img src="/assets/images/blog/fill.png" alt="">
+      </div>
+      <div class="submit-project-text">
+        <div class="submit-project-text-sum">
+          <p id="title">Our Projects</p>
+          <p id="body">It was a humorously perilous business for both of us. For, before we proctime, were wedded; and should poor Queequeg sink to rise no more, then both usage and honour hich the hempen bond entailed.</p>
+        </div>
+        <div class="submit-project-text-button">
+          <button type="button" name="button">Submit an Idea</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side Project -->
+  {% for project in site.projects %}
+  <div class="cards">
+    <div class="side-project">
+      <div class="side-project-text">
+        <p class="c1">{{project.title}}</p>
+
+        <div class="side-project-text-row">
+          <div class="side-project-text-row-left">
+            <p class="c2">{{project.range}}</p>
+            <p>{{project.excerpt}}</p>
+            <br>
+            <a href="{{project.link}}" ">Watch on the Library website</a>
+            <br>
+            <a href="{{project.link}}">Read more about this on our blog post</a>
+          </div>
+          <div class="side-project-text-row-right">
+            <img src="{{project.picture}}" alt="">
+          </div>
+        </div>
+        <br>
+        <p class="c2">Status: {{project.status}}</p>
+        <br>
+        <button type="button" name="button">Apply to Volunteer</button>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

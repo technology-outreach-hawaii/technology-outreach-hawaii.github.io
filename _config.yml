@@ -4,3 +4,5 @@ collections:
     permalink: /sources/:path/
   onlines:
     output: true
+  projects:
+    output: true

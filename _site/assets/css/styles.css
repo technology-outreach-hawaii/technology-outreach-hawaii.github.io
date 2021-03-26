@@ -348,4 +348,40 @@ hr { border: 0; clear: both; display: block; width: 96%; background-color: #f0f2
 
 @media only screen and (max-width: 960px) { .resources-container .resources-banner { height: 100%; } .resources-container .resources-island .resources-island-bar .resources-island-bar-list { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-search { width: 300px; } .resources-container .resources-island .resources-island-section .resources-island-section-container { display: flex; flex-direction: column; justify-content: center; align-items: center; } .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body { margin: 0px; height: 100%; } }
 
+.project-container { width: 100%; }
+
+.project-container .submit-box { padding: 100px; }
+
+.project-container .submit-project { width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+
+.project-container .submit-project .submit-project-img { padding-top: 50px; width: 62%; height: 350px; }
+
+.project-container .submit-project .submit-project-img img { width: 100%; height: 100%; }
+
+.project-container .submit-project .submit-project-text { padding: 0px 10px 0px 10px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 400px; width: 38%; color: black; }
+
+.project-container .submit-project .submit-project-text #title { font-weight: bold; font-size: 40px; padding-bottom: 40px; }
+
+.project-container .submit-project .submit-project-text #body { font-size: 15px; }
+
+.project-container .submit-project .submit-project-text .submit-project-text-sum { height: 20%; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; height: 100%; width: 80%; }
+
+.project-container .submit-project .submit-project-text .submit-project-text-button { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; }
+
+.project-container .cards { padding: 0px 300px 40px 300px; }
+
+.project-container .side-project { color: white; background-color: #0A303B; padding: 40px; }
+
+.project-container .side-project .side-project-text .c1 { font-size: 40px; }
+
+.project-container .side-project .side-project-text .c2 { font-size: 25px; }
+
+.project-container .side-project .side-project-text .side-project-text-row { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+
+.project-container .side-project .side-project-text .side-project-text-row .side-project-text-row-left { width: 60%; }
+
+.project-container .side-project .side-project-text .side-project-text-row .side-project-text-row-right { display: flex; flex-direction: row; justify-content: center; align-items: center; width: 40%; }
+
+.project-container .side-project .side-project-text .side-project-text-row .side-project-text-row-right img { border-radius: 50%; width: 200px; height: 200px; }
+
 /*# sourceMappingURL=styles.css.map */

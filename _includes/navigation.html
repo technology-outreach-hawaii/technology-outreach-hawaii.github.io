@@ -1,7 +1,7 @@
 <nav>
   <ul>
     <li class="nav-link"><a href="/" {% if page.url == "/" %}style="color: #E4FCFF;"{% endif %}>HOME</a></li>
-    <li class="nav-link"><a href="/" {% if page.url == "/" %}style="color: #E4FCFF;"{% endif %}>PROJECTS</a></li>
+    <li class="nav-link"><a href="/project.html" {% if page.url == "/project.html" %}style="color: #E4FCFF;"{% endif %}>PROJECTS</a></li>
     <img id="logo" src="/assets/images/logo.svg" alt="">
     <div class="dropdown nav-link">
       <li><a href="" {% if page.url == "/blog.html" || if page.url == "/resource.html" %}style="color: #E4FCFF;"{% endif %}>RESOURCES</a></li>
@@ -18,7 +18,7 @@
 <nav id="nav-mobile">
   <ul>
     <li><a href="/" {% if page.url == "/" %}style="color: #E4FCFF;"{% endif %}>HOME</a></li>
-    <li><a href="/" {% if page.url == "/" %}style="color: #E4FCFF;"{% endif %}>PROJECTS</a></li>
+    <li><a href="/project.html" {% if page.url == "/project.html" %}style="color: #E4FCFF;"{% endif %}>PROJECTS</a></li>
     <div class="dropdown">
       <li><a href="" {% if page.url == "/blog.html" || if page.url == "/resource.html" %}style="color: #E4FCFF;"{% endif %}>RESOURCES</a></li>
       <div class="dropdown-content">
