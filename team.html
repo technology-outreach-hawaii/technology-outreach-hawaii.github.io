@@ -2,26 +2,69 @@
 layout: default
 title: Team
 ---
-<div class="main">
+<div class="team-container">
+
+  <!-- ABOUT SECTION -->
   <div class="team-box">
-      <h1>OUR TEAM</h1>
-        <hr/>
-        {% for member in site.data.members %}
-        <br/>
-        <br/>
-        <div class="team-individual">
-          <div class="team-image">
-            <img src="{{ member[1].profile }}" alt="">
-          </div>
-          <div class="team-body">
-            <p id="team-one">{{ member[1].full_name }}</p>
-            <br/>
-            <p id="team-two"> Interests: {{ member[1].interests }}</p>
-            <br/>
-            <p id="team-three">{{ member[1].bio }}</p>
-          </div>
-        </div>
-        <!-- <hr/> -->
-        {% endfor %}
+    <div class="team-about">
+      <div class="team-about-img">
+        <img src="/assets/images/blog/fill.png" alt="">
+      </div>
+      <div class="team-about-text">
+          <h2>About Us</h2>
+          <p>It was a humorously perilous business for both of us. For, before we proctime, were wedded; and should poor Queequeg sink to rise no more, then both usage and honour hich the hempen bond entailed.</p>
+          <p>It was a humorously perilous business for both of us. For, before we proctime, were wedded; and should poor Queequeg sink to rise no more, then both usage and honour hich the hempen bond entailed.</p>
+      </div>
     </div>
   </div>
+
+  <!-- TEAM SECTION -->
+  <div class="team-box">
+    <div class="team-display">
+      <div class="team-display-head">
+        <h2>Our Team</h2>
+        <br>
+        <br>
+        <p>It was a humorously perilous business for both of us. For, before we proctime, were wedded; and should </p>
+      </div>
+      <div class="team-display-row">
+        {% for member in site.data.members limit: 3 offset: 0 %}
+          <div class="team-display-all">
+            <div class="team-display-all-img">
+              <img src="{{ member[1].profile }}" alt="">
+            </div>
+            <div class="team-display-all-text">
+                  <h3>{{ member[1].full_name }}</h3>
+                  <p style="font-style: italic;">{{ member[1].title }}</p>
+                  <p id="padding">{{ member[1].bio }}</p>
+            </div>
+            <div class="team-display-all-icon">
+              <img src="/assets/images/blog/fill.png" alt="">
+              <img src="/assets/images/blog/fill.png" alt="">
+              <img src="/assets/images/blog/fill.png" alt="">
+            </div>
+          </div>
+        {%  endfor %}
+      </div>
+      <div class="team-display-row">
+        {% for member in site.data.members limit: 3 offset: 3 %}
+          <div class="team-display-all">
+            <div class="team-display-all-img">
+              <img src="{{ member[1].profile }}" alt="">
+            </div>
+            <div class="team-display-all-text">
+                  <h3>{{ member[1].full_name }}</h3>
+                  <p style="font-style: italic;">{{ member[1].title }}</p>
+                  <p id="padding">{{ member[1].bio }}</p>
+            </div>
+            <div class="team-display-all-icon">
+              <img src="/assets/images/blog/fill.png" alt="">
+              <img src="/assets/images/blog/fill.png" alt="">
+              <img src="/assets/images/blog/fill.png" alt="">
+            </div>
+          </div>
+        {%  endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,47 +1,53 @@
 boyang:
   full_name: Boyang Zhang
+  title: Vice President
   github: P
   linkedin:
   interests: Python, Machine Learning
-  bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I came to Hawaii from China in Fall 2016. I like the weather and beautiful views here and enjoy the multi-cultural environment very much. I like hiking, playing tennis, trying different restaurants and I want to visit other islands when I am free. Currently, I am doing data analysis with python for a physics research project. Python is one of the most popular and easy-to-learn programming language. If you are interested in learning python, feel free to contact me.
+  bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I am doing data analysis with python.
   profile: assets/images/profiles/boyang_zhang.png
 
 gina:
   full_name: Gina Watanabe
+  title: President
   github: ginawatanabe
   linkedin:
   interests: Data Visualization, Image Navigation, Web Development
-  bio: Hi! I am a medical student looking to incorporate more technology with medicine. My interest in computer science began with great mentors in high school and college. Learning more about technology is valuable in every field - I hope to foster a tech-savvy youth community here in Hawaii.
+  bio: Hi! I am a medical student looking to incorporate more technology with medicine.
   profile: assets/images/profiles/gina_watanabe.jpg
 
 kanai:
   full_name: Kanai Gooding
+  title: Communications Director
   github: P
   linkedin:
   interests: Data Science, Algorithms, Intelligence and Computer Vision
-  bio: My name is Kana'i, I am junior in a Mathematics - Data Science Track.  I am interested in giving back to the community and especially helping our keiki to pursue careers in computer science.  I hope to learn and help others learn at the same time.
+  bio: My name is Kana'i, I am junior in a Mathematics - Data Science Track at UH Manoa.
   profile: assets/images/profiles/kanai_gooding.jpg
 
 patrick:
   full_name: Patrick McCrindle
+  title: Membership Director
   github: https://github.com/pmccrind/
   linkedin: https://www.linkedin.com/in/patrick-mccrindle/
   interests: Cybersecurity, Arduinos, Raspberry Pi
-  bio: I am currently a Junior majoring in Computer Science and pursuing a minor in mathematics. I will be graduating spring 2022. In my free time I like to read, play games, or fall down a YouTube rabbit hole.
+  bio: I am currently a Junior majoring in Computer Science and pursuing a minor in mathematics.
   profile: assets/images/profiles/patrick_mccrindle.jpg
 
 robert:
   full_name: Robert Lemon
+  title: Program Director
   github: P
   linkedin:
   interests: Low-Level Programming, Machine Learning, Algorithms
-  bio: Hey! I'm a UH Student studying Computer Science, expected to graduate in 2022 with a B.S. degree.  I love programming and computer science, and want to give back to my community and help share my technical knowledge.  I am also a board member of the Programs and Algorithms club here on campus.  When I am not coding, I enjoy hiking and playing video games with my friends.
+  bio: Hey! I'm a UH Student studying Computer Science, expected to graduate in 2022 with a B.S. degree.
   profile: assets/images/profiles/robert_lemon.png
 
 timothy:
   full_name: Timothy Huo
+  title: Webmaster
   github: P
   linkedin:
   interests: Web Development
-  bio: Hello everyone! My name is Timothy and I am a Sophomore majoring in Computer Science at the University of Hawaii at Manoa. I enjoy playing video games and hiking. I can't wait to meet you all!
+  bio: Hello! I am a Sophomore majoring in Computer Science at the University of Hawaii at Manoa.
   profile: assets/images/profiles/timothy_huo.jpg
