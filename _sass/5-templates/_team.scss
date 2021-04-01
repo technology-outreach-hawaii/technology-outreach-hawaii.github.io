@@ -40,9 +40,21 @@
   }
 
   // TEAM SECTION
+  .background {
+    margin-top: 40px;
+    @include flex(column, center, center);
+    background-image: url('../../assets/images/blue-div.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+  }
+
   .team-display {
     @include flex(column, flex-start, flex-start);
     width: 90%;
+    color: white;
+
 
     .team-display-head {
     @include flex(column, flex-start, flex-start);
@@ -114,9 +126,13 @@
     }
 
     // TEAM SECTION
+    .background {
+      margin-top: 0px;
+    }
     .team-display {
 
       .team-display-head {
+        color: black;
       @include flex(column, flex-start, flex-start);
       width: 100%;
       }
