@@ -1,11 +1,16 @@
 .project-container {
  width: 100%;
 
+  .box {
+  width: 100%;
+  background-image: url("/assets/images/blue_div-projects.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top top;
+  }
+
   .submit-box {
     padding: 100px;
-    // background-image: url("/assets/images/blue_div-projects.svg");
-    // background-repeat: no-repeat;
-    // background-size: cover;
   }
   .submit-project {
     width: 100%;
@@ -27,7 +32,7 @@
       @include flex(column, space-between, center);
       height: 400px;
       width: 38%;
-      color: black;
+      color: white;
 
       #title{
         // color: white;
@@ -57,7 +62,7 @@
   }
 
   .cards {
-    padding: 0px 250px 40px 250px;
+    padding: 20px 250px 40px 250px;
   }
 
   .side-project {

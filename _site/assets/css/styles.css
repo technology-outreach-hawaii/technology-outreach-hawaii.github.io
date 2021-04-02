@@ -216,8 +216,6 @@ nav #logo { width: 45%; }
 
 .team-container .team-display .team-display-row { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
 
-.team-container .team-display .team-display-all:hover { box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
-
 .team-container .team-display .team-display-all { padding: 20px; width: 33%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 .team-container .team-display .team-display-all .team-display-all-img { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; }
@@ -372,6 +370,8 @@ nav #logo { width: 45%; }
 
 .project-container { width: 100%; }
 
+.project-container .box { width: 100%; background-image: url("/assets/images/blue_div-projects.svg"); background-repeat: no-repeat; background-size: cover; background-position: top top; }
+
 .project-container .submit-box { padding: 100px; }
 
 .project-container .submit-project { width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
@@ -380,7 +380,7 @@ nav #logo { width: 45%; }
 
 .project-container .submit-project .submit-project-img img { width: 100%; height: 100%; }
 
-.project-container .submit-project .submit-project-text { padding: 0px 10px 0px 10px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 400px; width: 38%; color: black; }
+.project-container .submit-project .submit-project-text { padding: 0px 10px 0px 10px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 400px; width: 38%; color: white; }
 
 .project-container .submit-project .submit-project-text #title { font-weight: bold; font-size: 40px; padding-bottom: 40px; }
 
@@ -390,7 +390,7 @@ nav #logo { width: 45%; }
 
 .project-container .submit-project .submit-project-text .submit-project-text-button { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; }
 
-.project-container .cards { padding: 0px 250px 40px 250px; }
+.project-container .cards { padding: 20px 250px 40px 250px; }
 
 .project-container .side-project { color: white; background-color: #0A303B; padding: 40px; }
 
