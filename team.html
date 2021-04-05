@@ -2,26 +2,96 @@
 layout: default
 title: Team
 ---
-<div class="main">
+<div class="team-container">
+
+  <!-- ABOUT SECTION -->
   <div class="team-box">
-      <h1>OUR TEAM</h1>
-        <hr/>
-        {% for member in site.data.members %}
-        <br/>
-        <br/>
-        <div class="team-individual">
-          <div class="team-image">
-            <img src="{{ member[1].profile }}" alt="">
-          </div>
-          <div class="team-body">
-            <p id="team-one">{{ member[1].full_name }}</p>
-            <br/>
-            <p id="team-two"> Interests: {{ member[1].interests }}</p>
-            <br/>
-            <p id="team-three">{{ member[1].bio }}</p>
-          </div>
-        </div>
-        <!-- <hr/> -->
-        {% endfor %}
+    <div class="team-about">
+      <div class="team-about-img">
+        <img src="/assets/images/about/banner.jpg" alt="">
+      </div>
+      <div class="team-about-text">
+          <h2>About Us</h2>
+          <p>Technology Outreach Hawaii (TORCH) began in December 2020 to encourage technology education and access across the islands of Hawaii. Our founding members believe that technology is an essential part of our everyday lives, our professional endeavors, and our future. </p>
+          <br>
+          <p>Each day a child is born farther in time from the ideas that inspired the creation of the computer and the construction of the physical underpinnings of the Internet. Each day a senior citizen may not be able to register for vaccinations or doctor appointments because of technological difficulties. To use and advance technology to address complex world issues, we must pass the torch. </p>
+      </div>
     </div>
   </div>
+
+  <!-- TEAM SECTION -->
+  <div class="background">
+    <div class="team-box">
+      <div class="team-display">
+        <div class="team-display-head">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>Our Team</h2>
+          <br>
+          <br>
+          <p>Our members share a passion for technology and social change in their professional and academic endeavors.  </p>
+          <br>
+        </div>
+        <div class="team-display-row">
+          {% for member in site.data.members limit: 3 offset: 0 %}
+            <div class="team-display-all">
+              <div class="team-display-all-img">
+                <img src="{{ member[1].profile }}" alt="">
+              </div>
+              <div class="team-display-all-text">
+                    <h3>{{ member[1].full_name }}</h3>
+                    <p style="font-style: italic;">{{ member[1].title }}</p>
+                    <p id="padding">{{ member[1].bio }}</p>
+              </div>
+              <!-- <div class="team-display-all-icon">
+                <img src="/assets/images/blog/fill.png" alt="">
+                <img src="/assets/images/blog/fill.png" alt="">
+                <img src="/assets/images/blog/fill.png" alt="">
+              </div> -->
+            </div>
+          {%  endfor %}
+        </div>
+        <div class="team-display-row">
+          {% for member in site.data.members limit: 3 offset: 3 %}
+            <div class="team-display-all">
+              <div class="team-display-all-img">
+                <img src="{{ member[1].profile }}" alt="">
+              </div>
+              <div class="team-display-all-text">
+                    <h3>{{ member[1].full_name }}</h3>
+                    <p style="font-style: italic;">{{ member[1].title }}</p>
+                    <p id="padding">{{ member[1].bio }}</p>
+              </div>
+              <!-- <div class="team-display-all-icon">
+                <img src="/assets/images/blog/fill.png" alt="">
+                <img src="/assets/images/blog/fill.png" alt="">
+                <img src="/assets/images/blog/fill.png" alt="">
+              </div> -->
+            </div>
+          {%  endfor %}
+        </div>
+        <div class="team-display-row">
+          {% for member in site.data.members limit: 1 offset: 6 %}
+            <div class="team-display-all">
+              <div class="team-display-all-img">
+                <img src="{{ member[1].profile }}" alt="">
+              </div>
+              <div class="team-display-all-text">
+                    <h3>{{ member[1].full_name }}</h3>
+                    <p style="font-style: italic;">{{ member[1].title }}</p>
+                    <p id="padding">{{ member[1].bio }}</p>
+              </div>
+              <!-- <div class="team-display-all-icon">
+                <img src="/assets/images/blog/fill.png" alt="">
+                <img src="/assets/images/blog/fill.png" alt="">
+                <img src="/assets/images/blog/fill.png" alt="">
+              </div> -->
+            </div>
+          {%  endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

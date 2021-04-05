@@ -1,6 +1,6 @@
 ---
 title: NorthStar
-link: https://www.google.com
+link: https://www.digitalliteracyassessment.org/
 level: basic
 ---
-Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer.
+NorthStar is a digital literacy program with online, self-guided modules to assess the ability of individuals to perform digital tasks. Several NorthStar Online Learning units (Basic Computer Skills, Email, Microsoft Word, and Career Search Skills) are available for free now in the “Build Your Skills” section.

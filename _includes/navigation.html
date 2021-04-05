@@ -1,12 +1,13 @@
 <nav>
   <ul>
     <li class="nav-link"><a href="/" {% if page.url == "/" %}style="color: #E4FCFF;"{% endif %}>HOME</a></li>
-    <li class="nav-link"><a href="/resource.html" {% if page.url == "/resource.html" %}style="color: #E4FCFF;"{% endif %}>RESOURCES</a></li>
+    <li class="nav-link"><a href="/project.html" {% if page.url == "/project.html" %}style="color: #E4FCFF;"{% endif %}>PROJECTS</a></li>
     <img id="logo" src="/assets/images/logo.svg" alt="">
     <div class="dropdown nav-link">
-      <li><a href="" {% if page.url == "/blog.html" || if page.url == "/resources.html" %}style="color: #E4FCFF;"{% endif %}>RESOURCES</a></li>
+      <li><a href="" {% if page.url == "/blog.html" || if page.url == "/resource.html" %}style="color: #E4FCFF;"{% endif %}>RESOURCES</a></li>
       <div class="dropdown-content">
-        <li><a href="">COMMUNITY</a></li>
+        <br>
+        <li class="dropdown-content-last"><a href="/resource.html" {% if page.url == "/resource.html" %}style="color: #E4FCFF;"{% endif %}>COMMUNITY</a></li>
         <li class="dropdown-content-last"><a href="/blog.html" {% if page.url == "/blog.html" %}style="color: #E4FCFF;"{% endif %}>BLOG</a></li>
       </div>
     </div>
@@ -17,11 +18,11 @@
 <nav id="nav-mobile">
   <ul>
     <li><a href="/" {% if page.url == "/" %}style="color: #E4FCFF;"{% endif %}>HOME</a></li>
-    <li><a href="/projects.html" {% if page.url == "/projects.html" %}style="color: #E4FCFF;"{% endif %}>PROJECTS</a></li>
+    <li><a href="/project.html" {% if page.url == "/project.html" %}style="color: #E4FCFF;"{% endif %}>PROJECTS</a></li>
     <div class="dropdown">
-      <li><a href="" {% if page.url == "/blog.html" || if page.url == "/resources.html" %}style="color: #E4FCFF;"{% endif %}>RESOURCES</a></li>
+      <li><a href="" {% if page.url == "/blog.html" || if page.url == "/resource.html" %}style="color: #E4FCFF;"{% endif %}>RESOURCES</a></li>
       <div class="dropdown-content">
-        <li><a href="">COMMUNITY</a></li>
+        <li class="dropdown-content-last"><a href="/resource.html" {% if page.url == "/resource.html" %}style="color: #E4FCFF;"{% endif %}>COMMUNITY</a></li>
         <li class="dropdown-content-last"><a href="/blog.html" {% if page.url == "/blog.html" %}style="color: #E4FCFF;"{% endif %}>BLOG</a></li>
       </div>
     </div>

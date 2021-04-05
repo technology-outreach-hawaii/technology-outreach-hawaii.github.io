@@ -35,16 +35,34 @@
   .resources-banner {
     @include flex(column, flex-start, flex-start);
     width: 100%;
-    background-image: url("/assets/images/blog/fill.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 100%;
     color: white;
 
     .resources-banner-text {
-      padding: 40px;
-      @include flex(column, flex-start, flex-start);
-      width: 40%;
+      background-image: url("/assets/images/resources/banner.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 500px;
+
+      .resources-banner-text-box {
+        background-image: url("/assets/images/blue_div-spotlight.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 40px;
+        @include flex(column, flex-start, flex-start);
+        width: 750px;
+        height: 650px;
+
+        .resources-banner-text-box-word {
+          @include flex(column, flex-start, flex-start);
+          width: 50%;
+          height: 300px;
+        }
+      }
 
       a{
         font-size: 22px;
@@ -57,12 +75,14 @@
   .resources-submit {
     padding: 20px 0px;
     width: 100%;
+    height: 100%;
     @include flex(column, center, center);
     // border: 5px solid green;
 
     .resources-submit-text {
       text-align: center;
-      width: 70%;
+      width: 45%;
+      color: black;
     }
   }
 
@@ -131,6 +151,7 @@
             background-image: url("/assets/images/search.png");
             background-repeat: no-repeat;
             background-size: contain;
+            background-position: center center;
             background-color: $yellow;
             height: 36px;
             width: 20%;

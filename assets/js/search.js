@@ -117,8 +117,6 @@ const displaySources = (sources) => {
                   <h2>${source.title}</h2>
                   <p>${source.excerpt}</p>
                   <div class="tags-horizontal">
-                  <p class='tags'>${totalTags[0]}</p>
-                  <p class='tags'>${totalTags[1]}</p>
                   </div>
                 </div>
             </li>

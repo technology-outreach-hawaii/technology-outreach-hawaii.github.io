@@ -2,85 +2,13 @@
   
     {
 
-      "title"    : "CodeForHawaii",
-      "url"      : "/sources/CodeForHawaii/",
-      "tags"     : "classes",
-      "island"   : "oahu",
-      "picture"  : "assets/images/blog/2021-01-21.png",
-      "link"     : "https://www.google.com",
-      "excerpt"  : "Retro occupy organic, umblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literan shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal."
-
-    } ,
-  
-    {
-
-      "title"    : "Haleakala",
-      "url"      : "/sources/Haleakala/",
-      "tags"     : "classes",
-      "island"   : "maui",
-      "picture"  : "assets/images/blog/fill.png",
-      "link"     : "https://www.google.com",
-      "excerpt"  : "Retro occupy organic, umblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literan shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal."
-
-    } ,
-  
-    {
-
       "title"    : "ICSpark",
       "url"      : "/sources/ICSpark/",
       "tags"     : "classes, coding, spotlight",
       "island"   : "oahu",
-      "picture"  : "assets/images/blog/2021-01-21.png",
-      "link"     : "https://www.google.com",
+      "picture"  : "assets/images/resources/icspark.jpg",
+      "link"     : "https://icspark.github.io/",
       "excerpt"  : "Founded in 2019, ICSpark provides free Saturday coding classes to students in 6th - 12th grade during the Spring semester. Prior to COVID, classes were held on the UH Manoa campus. Now, classes are held online until further notice."
-
-    } ,
-  
-    {
-
-      "title"    : "Kilauea",
-      "url"      : "/sources/Kilauea/",
-      "tags"     : "classes",
-      "island"   : "bigisland",
-      "picture"  : "assets/images/blog/fill.png",
-      "link"     : "https://www.google.com",
-      "excerpt"  : "Retro occupy organic, umblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literan shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal."
-
-    } ,
-  
-    {
-
-      "title"    : "Kohala",
-      "url"      : "/sources/Kohala/",
-      "tags"     : "classes",
-      "island"   : "maui",
-      "picture"  : "assets/images/blog/2021-01-21.png",
-      "link"     : "https://www.google.com",
-      "excerpt"  : "Retro occupy organic, umblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literan shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal."
-
-    } ,
-  
-    {
-
-      "title"    : "Waialeale",
-      "url"      : "/sources/Waialeale/",
-      "tags"     : "classes",
-      "island"   : "kauai",
-      "picture"  : "assets/images/blog/fill.png",
-      "link"     : "https://www.google.com",
-      "excerpt"  : "Retro occupy organic, umblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literan shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal."
-
-    } ,
-  
-    {
-
-      "title"    : "Mauna Loa",
-      "url"      : "/sources/maunaLoa/",
-      "tags"     : "classes",
-      "island"   : "bigisland",
-      "picture"  : "assets/images/blog/2021-01-22.png",
-      "link"     : "https://www.google.com",
-      "excerpt"  : "Retro occupy organic, umblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literan shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal."
 
     } 
   

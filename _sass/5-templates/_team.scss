@@ -1,76 +1,146 @@
-.team-box{
-  @include flex(column, center, center);
-  margin: 0px;
-  padding: 20px 100px;
-  position: relative;
-}
-
-.team-individual{
+.team-container {
   width: 100%;
-  @include flex(row, center, center);
-  padding: 20px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  @include flex(column, center, center);
+  .team-box {
+    padding-top: 100px;
+    width: 90%;
+    @include flex(row, center, center);
   }
 
-  .team-image{
-    float: left;
+  // ABOUT SECTION
+  .team-about {
+    @include flex(row, center, center);
+
+    .team-about-img {
+      width: 65%;
+      height: 440px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .team-about-img:hover {
+      background-image: url("/assets/images/blog/2021-01-21.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      img{
+        width: 0px;
+        height: 0px;
+      }
+    }
+
+    .team-about-text {
+      padding-left: 60px;
+      @include flex(column, space-between, space-between);
+      width: 35%;
+      height: 449px;
+    }
   }
 
-  .team-body{
-    float: right;
-    margin-left: 30px;
-
-    #team-one{
-      font-family: $archivo;
-      font-size: $h2;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: $yellow;
-    }
-
-    #team-two{
-      font-family: $archivo;
-      font-size: $h4;
-      font-weight: 600;
-      letter-spacing: 1px;
-      color: white;
-    }
-
-    #team-three{
-      font-family: $open-sans;
-      font-size: $p;
-      font-weight: 300;
-      letter-spacing: 0.5px;
-      line-height: 1.3;
-      color: white;
-    }
-
+  // TEAM SECTION
+  .background {
+    margin-top: 40px;
+    @include flex(column, center, center);
+    background-image: url('../../assets/images/blue-div.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
   }
 
-}
+  .team-display {
+    @include flex(column, flex-start, flex-start);
+    width: 90%;
+    color: white;
 
-hr{
-  border: 0;
-  clear: both;
-  display: block;
-  width: 96%;
-  background-color: $light-grey;
-  height: 1px;
+
+    .team-display-head {
+    @include flex(column, flex-start, flex-start);
+    width: 50%;
+    }
+
+    .team-display-row {
+      @include flex(row, flex-start, flex-start);
+    }
+
+    .team-display-all {
+      padding: 20px;
+      width: 33%;
+      @include flex(column, center, center);
+      .team-display-all-img {
+        @include flex(column, center, center);
+        width: 100%;
+        img{
+          height: 180px;
+          width: 180px;
+          border-radius: 50%;
+        }
+      }
+      .team-display-all-text {
+        @include flex(column, center, center);
+        width: 90%;
+
+        #padding {
+          text-align: center;
+          padding-top: 17px;
+        }
+      }
+
+      .team-display-all-icon {
+        @include flex(row, center, center);
+        img {
+          padding: 5px;
+          height: 40px;
+          width: 40px;
+          border-radius: 25px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 960px) {
-  .team-individual {
-    @include flex(column, center, center);
+  .team-container {
+    // ABOUT SECTION
+    .team-about {
+      @include flex(column, center, center);
 
-    img {
-          border-radius: 50%;
-          width: 200px;
-          height: 200px;
+      .team-about-img {
+        width: 100%;
+        height: 400px;
+      }
+
+      .team-about-text {
+        padding-top: 20px;
+        @include flex(column, center, center);
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+      }
+    }
+
+    // TEAM SECTION
+    .background {
+      margin-top: 0px;
+    }
+    .team-display {
+      margin-top: -30px;
+      .team-display-head {
+        color: black;
+      @include flex(column, flex-start, flex-start);
+      width: 100%;
+      }
+
+      .team-display-row {
+        @include flex(column, flex-start, flex-start);
+      }
+
+      .team-display-all {
+        width: 100%;
+        @include flex(column, center, center);
+      }
     }
   }
 }
