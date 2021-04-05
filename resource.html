@@ -10,24 +10,29 @@ title: resources
       <div class="resources-banner-text-box">
         <div class="resources-banner-text-box-word">
           <h2>Community Spotlight</h2>
-          <h2> {{site.sources[2].title}}</h2>
+          <h2> {{site.sources[0].title}}</h2>
           <br>
           <div class="tags-horizontal">
-            {% for tag in site.sources[2].tags %}
+            {% for tag in site.sources[0].tags %}
             <p class='tags'>
               {{tag}}
             </p>
             {% endfor %}
           </div>
           <br>
-          <h3>{{site.sources[2].excerpt}}</h3>
-          <a href="{{site.sources[2].readmore}}">read more</a>
+          <h3>{{site.sources[0].excerpt}}</h3>
+          <a href="{{site.sources[0].readmore}}">read more</a>
         </div>
       </div>
     </div>
     <br>
+    <!-- temporary spacing once submit button as form -->
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Submit Section -->
-    <div class="resources-submit">
+    <!-- <div class="resources-submit">
       <div class="resources-submit-text">
         <p>Know of a great resources not listed here?  Want to nominate an organization for our next community spotlight? </p>
       </div>
@@ -35,7 +40,7 @@ title: resources
       <div class="resources-submit-button">
         <button type="button" name="button">Submit a Resource</button>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="resources-box">
@@ -50,7 +55,7 @@ title: resources
           <h2>Online Resources</h2>
         </div>
         <div class="resources-online-bar">
-          <a id="link-basic" style="color: #E4FCFF;">Basic</a>
+          <a id="link-basic" style="color: #E4FCFF;">Basic Digital Skills</a>
           <a id="link-intermediate">Intermediate</a>
           <a id="link-hard">Advance</a>
         </div>
@@ -58,7 +63,7 @@ title: resources
 
           <!-- BASIC -->
           <div id="basic" class="resources-online-summary">
-            <p class="resources-online-summary-intro">Learning how to use the computer for the first time? This section includes resources that show beginners how to symmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer.</p>
+            <p class="resources-online-summary-intro">Learning how to use the computer for the first time? This section includes online resources on basic digital skills for the beginner.</p>
             <br>
             <div class="resources-online-summary">
               {% for online in site.onlines %}
@@ -75,7 +80,7 @@ title: resources
 
           <!-- INTERMEDIATE -->
           <div id="intermediate" class="resources-online-summary" style="display: none;">
-            <p class="resources-online-summary-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t</p>
+            <p class="resources-online-summary-intro">Are you familiar with everyday technologies but are interested in learning more? This section includes online resources to explore a variety of tech interests (e.g. coding, intermediate to advanced usage of Excel). </p>
             <br>
             <div class="resources-online-summary">
               {% for online in site.onlines %}
@@ -92,7 +97,7 @@ title: resources
 
           <!-- HARD -->
           <div id="hard" class="resources-online-summary" style="display: none;">
-            <p class="resources-online-summary-intro">Running totals (also known as cumulative sums) are extensively used in data analysis. They are usually used with time series data to see how certain performance indicators are (or will be) developing over time. Like other advanced SQL concepts, running totals have a very broad practical use. </p>
+            <p class="resources-online-summary-intro">Are you looking for more in-depth courses or resources to understand the fundamentals of technology? This section includes online resources that dive deeper into the nitty gritty details of technology, research, and interdisciplinary uses. </p>
             <br>
             <div class="resources-online-summary">
               {% for online in site.onlines %}

@@ -8,12 +8,13 @@ title: Team
   <div class="team-box">
     <div class="team-about">
       <div class="team-about-img">
-        <img src="/assets/images/blog/fill.png" alt="">
+        <img src="/assets/images/about/banner.jpg" alt="">
       </div>
       <div class="team-about-text">
           <h2>About Us</h2>
-          <p>It was a humorously perilous business for both of us. For, before we proctime, were wedded; and should poor Queequeg sink to rise no more, then both usage and honour hich the hempen bond entailed.</p>
-          <p>It was a humorously perilous business for both of us. For, before we proctime, were wedded; and should poor Queequeg sink to rise no more, then both usage and honour hich the hempen bond entailed.</p>
+          <p>Technology Outreach Hawaii (TORCH) began in December 2020 to encourage technology education and access across the islands of Hawaii. Our founding members believe that technology is an essential part of our everyday lives, our professional endeavors, and our future. </p>
+          <br>
+          <p>Each day a child is born farther in time from the ideas that inspired the creation of the computer and the construction of the physical underpinnings of the Internet. Each day a senior citizen may not be able to register for vaccinations or doctor appointments because of technological difficulties. To use and advance technology to address complex world issues, we must pass the torch. </p>
       </div>
     </div>
   </div>
@@ -23,10 +24,14 @@ title: Team
     <div class="team-box">
       <div class="team-display">
         <div class="team-display-head">
+          <br>
+          <br>
+          <br>
+          <br>
           <h2>Our Team</h2>
           <br>
           <br>
-          <p>It was a humorously perilous business for both of us. For, before we proctime, were wedded; and should </p>
+          <p>Our members share a passion for technology and social change in their professional and academic endeavors.  </p>
           <br>
         </div>
         <div class="team-display-row">
@@ -40,11 +45,11 @@ title: Team
                     <p style="font-style: italic;">{{ member[1].title }}</p>
                     <p id="padding">{{ member[1].bio }}</p>
               </div>
-              <div class="team-display-all-icon">
+              <!-- <div class="team-display-all-icon">
                 <img src="/assets/images/blog/fill.png" alt="">
                 <img src="/assets/images/blog/fill.png" alt="">
                 <img src="/assets/images/blog/fill.png" alt="">
-              </div>
+              </div> -->
             </div>
           {%  endfor %}
         </div>
@@ -59,11 +64,30 @@ title: Team
                     <p style="font-style: italic;">{{ member[1].title }}</p>
                     <p id="padding">{{ member[1].bio }}</p>
               </div>
-              <div class="team-display-all-icon">
+              <!-- <div class="team-display-all-icon">
                 <img src="/assets/images/blog/fill.png" alt="">
                 <img src="/assets/images/blog/fill.png" alt="">
                 <img src="/assets/images/blog/fill.png" alt="">
+              </div> -->
+            </div>
+          {%  endfor %}
+        </div>
+        <div class="team-display-row">
+          {% for member in site.data.members limit: 1 offset: 6 %}
+            <div class="team-display-all">
+              <div class="team-display-all-img">
+                <img src="{{ member[1].profile }}" alt="">
               </div>
+              <div class="team-display-all-text">
+                    <h3>{{ member[1].full_name }}</h3>
+                    <p style="font-style: italic;">{{ member[1].title }}</p>
+                    <p id="padding">{{ member[1].bio }}</p>
+              </div>
+              <!-- <div class="team-display-all-icon">
+                <img src="/assets/images/blog/fill.png" alt="">
+                <img src="/assets/images/blog/fill.png" alt="">
+                <img src="/assets/images/blog/fill.png" alt="">
+              </div> -->
             </div>
           {%  endfor %}
         </div>

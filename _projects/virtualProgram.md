@@ -1,9 +1,9 @@
 ---
 title: Virtual Program
-range: March - December 2021
+range: Summer 2021 - Dates TBH
 picture: assets/images/blog/2021-01-21.png
 link: https://www.google.com
-status: Ongoing and Recruiting Volunteers
+status: Recruiting Volunteers
 ---
 
-It was a humorously perilous business for both of us. For, before we proctime, were wedded; and should poor Queequeg sink to rise no more, then both usage and honour hich the hempen bond entailed.
+Tune in to a virtual program series for the Hawaii State Library System on pertinent technological tidbits for the everyday user. We are looking for volunteers interested in video creation, voice-over, artistic/graphic design/animation.

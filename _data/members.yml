@@ -3,7 +3,7 @@ boyang:
   title: Vice President
   github: P
   linkedin:
-  interests: Python, Machine Learning
+  website:
   bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I am doing data analysis with python.
   profile: assets/images/profiles/boyang_zhang.png
 
@@ -51,3 +51,12 @@ timothy:
   interests: Web Development
   bio: Hello! I am a Sophomore majoring in Computer Science at the University of Hawaii at Manoa.
   profile: assets/images/profiles/timothy_huo.jpg
+
+christyn:
+  full_name: Christyn Mellor
+  title: Volunteer
+  github: P
+  linkedin:
+  interests:
+  bio: Hey! I go to UH Manoa And am studying biology with the ultimate aspiration of becoming a doctor!
+  profile: assets/images/profiles/christyn_mellor.jpg
