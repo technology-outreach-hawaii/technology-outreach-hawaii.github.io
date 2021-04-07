@@ -16,10 +16,11 @@ title: Blog
 
           <!-- Featured Section -->
           <div class="blog-main">
-            <div class="blog-main-card">
-              <div class="blog-main-img">
+            <div class="blog-main-card"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url({{site.posts[0].picture}});">
+              <!-- <div class="blog-main-img">
                 <img src="{{site.posts[0].picture}}" alt="">
-              </div>
+              </div> -->
                 <div class="blog-main-text">
                   <p><a href="{{ site.posts[0].url }}">{{site.posts[0].title}}</a></p>
                   <p> {{ site.posts[0].summary }} </p>
@@ -67,11 +68,9 @@ title: Blog
 
                 {% assign bname = post.author %}
                 {% assign bauthor = site.data.members[bname] %}
-              <div class="blog-section">
+              <div class="blog-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                         rgba(0, 0, 0, 0.5)), url({{post.picture}});">
                 <div class="blog-section-side">
-                  <div class="blog-section-img">
-                    <img src="{{post.picture}}" alt="">
-                  </div>
                     <div class="blog-section-text">
                       <p><a href="{{ post.url }}">{{post.title}}</a></p>
                       <p> {{ post.summary }} </p>
