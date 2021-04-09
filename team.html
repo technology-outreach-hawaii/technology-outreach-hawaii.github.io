@@ -73,7 +73,7 @@ title: Team
           {%  endfor %}
         </div>
         <div class="team-display-row">
-          {% for member in site.data.members limit: 1 offset: 6 %}
+          {% for member in site.data.members limit: 3 offset: 6 %}
             <div class="team-display-all">
               <div class="team-display-all-img">
                 <img src="{{ member[1].profile }}" alt="">
