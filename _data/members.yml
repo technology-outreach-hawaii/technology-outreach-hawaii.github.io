@@ -1,12 +1,3 @@
-boyang:
-  full_name: Boyang Zhang
-  title: Vice President
-  github: P
-  linkedin:
-  website:
-  bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I am doing data analysis with python.
-  profile: assets/images/profiles/boyang_zhang.png
-
 gina:
   full_name: Gina Watanabe
   title: President
@@ -15,6 +6,15 @@ gina:
   interests: Data Visualization, Image Navigation, Web Development
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
   profile: assets/images/profiles/gina_watanabe.jpg
+  
+boyang:
+  full_name: Boyang Zhang
+  title: Vice President
+  github: P
+  linkedin:
+  website:
+  bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I am doing data analysis with python.
+  profile: assets/images/profiles/boyang_zhang.png
 
 kanai:
   full_name: Kanai Gooding
@@ -78,3 +78,12 @@ nikki:
   interests:
   bio: Hi, I am a 3rd year undergraduate student at UH Manoa. I am pursuing Biology with a Public Health minor. My dream is to become a physician and practice medicine on my home island of Maui.
   profile: assets/images/profiles/nikki_zamani.jpg
+
+jennifer:
+  full_name: Jennifer Watanabe
+  title: Volunteer
+  github: P
+  linkedin:
+  interests:
+  bio: Hi! I’m a junior majoring in Elementary Education and Multilingual Learning at UH Manoa.
+  profile: assets/images/profiles/jennifer_watanabe.jpg
