@@ -61,6 +61,13 @@
     padding-top: 100px;
     @include flex(column, flex-start, flex-start);
     width: 50%;
+
+      h2 {
+        font-family: "Archivo Narrow", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
     }
 
     .team-display-row {
@@ -82,6 +89,7 @@
         }
       }
       .team-display-all-text {
+        padding-top: 5px;
         @include flex(column, center, center);
         width: 90%;
 
