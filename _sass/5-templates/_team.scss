@@ -25,6 +25,7 @@
       background-image: url("/assets/images/about/team-1.png");
       background-size: contain;
       background-repeat: no-repeat;
+      background-position: center center;
     }
     .team-about-img:hover {
       background-image: url("/assets/images/about/team-2.png");
@@ -120,7 +121,6 @@
 
       .team-about-img {
         width: 100%;
-        height: 400px;
       }
 
       .team-about-text {

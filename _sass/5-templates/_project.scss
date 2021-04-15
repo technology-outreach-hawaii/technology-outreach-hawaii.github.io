@@ -4,10 +4,10 @@
 
   .box {
   width: 100%;
-  background-image: url("/assets/images/blue_div-projects.svg");
+  background-image: url("/assets/images/projects/banner-t.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top top;
+  background-position: center center;
   }
 
   .submit-box {
@@ -18,9 +18,7 @@
     @include flex(row, flex-start, flex-start);
 
     .submit-project-img {
-      padding-top: 60px;
-      width: 62%;
-      height: 350px;
+      width: 60%;
 
       img {
         width: 100%;
@@ -122,12 +120,12 @@
     }
     .submit-project {
       width: 100%;
-      @include flex(column, flex-start, flex-start);
+      @include flex(column, center, center);
 
       .submit-project-img {
         padding: 0px;
         width: 100%;
-        height: 350px;
+        height: 100%;
       }
 
       .submit-project-text {
