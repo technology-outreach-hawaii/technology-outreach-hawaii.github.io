@@ -252,6 +252,8 @@ nav #logo { width: 45%; }
 
 .blog-container .blog-main { width: 100%; display: flex; }
 
+.blog-container .blog-main .blog-main-card:hover { box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
+
 .blog-container .blog-main .blog-main-card { min-width: 455px; min-height: 455px; background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; }
 
 .blog-container .blog-main .blog-main-card img { width: 100%; }

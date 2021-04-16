@@ -39,13 +39,16 @@
     width: 100%;
     display: flex;
 
+    .blog-main-card:hover {
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    }
+
       .blog-main-card  {
         min-width: 455px;
         min-height: 455px;
         background-repeat: no-repeat;
         background-size: cover;
         @include flex(column, flex-end, center);
-
 
             img {
               width: 100%;
@@ -59,6 +62,7 @@
 
             .blog-main-text {
               padding: 20px;
+
                 .blog-main-center {
                   @include flex(row, flex-start, center);
 
@@ -106,6 +110,7 @@
 
   // Blog Section
   .blog-holder {
+
     width: 100%;
     @include flex(row, space-evenly, center);
   }
