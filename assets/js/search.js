@@ -103,6 +103,12 @@ const seperateTags = (tags) => {
   return arr;
 }
 
+const displayTags = (totalTags) => {
+  totalTags.map(tags => {
+    document.getElementById('listTags').innerHTML += `<p class="tags">${tags}</p>`;
+  });
+}
+
 const displaySources = (sources) => {
     const htmlString = sources
         .map((source) => {
@@ -116,7 +122,7 @@ const displaySources = (sources) => {
                 <div class="resources-island-section-container-body">
                   <h2>${source.title}</h2>
                   <p>${source.excerpt}</p>
-                  <div class="tags-horizontal">
+                  <div id="listTags" class="tags-horizontal">
                   </div>
                 </div>
             </li>
@@ -124,6 +130,7 @@ const displaySources = (sources) => {
         })
         .join('');
     sourceList.innerHTML = htmlString;
+    displayTags(totalTags);
 };
 
 loadSources('oahu');
