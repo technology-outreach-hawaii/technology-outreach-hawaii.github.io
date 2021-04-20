@@ -4,7 +4,7 @@
 
   .box {
   width: 100%;
-  background-image: url("/assets/images/projects/banner-t.svg");
+  background-image: url("/assets/images/projects/banner-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -31,10 +31,9 @@
       @include flex(column, space-between, center);
       height: 400px;
       width: 38%;
-      color: white;
+      color: #E4FCFF;
 
       #title{
-        // color: white;
         font-family: $archivo;
         font-weight: bold;
         font-size: 50px;
@@ -69,7 +68,7 @@
   }
 
   .side-project {
-    color: white;
+    color: #E4FCFF;
     background-color: $dark-blue;
     padding: 40px;
     .side-project-text {
@@ -137,6 +136,7 @@
 
         #title{
           padding-bottom: 0;
+          color: black;
         }
 
         .submit-project-text-sum {

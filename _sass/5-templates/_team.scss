@@ -45,7 +45,7 @@
   // TEAM SECTION
   .background {
     @include flex(column, flex-start, center);
-    background-image: url('../../assets/images/blue-div.svg');
+    background-image: url('../../assets/images/about/team-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -55,7 +55,7 @@
   .team-display {
     @include flex(column, flex-start, flex-start);
     width: 90%;
-    color: white;
+    color: #E4FCFF;
 
 
     .team-display-head {

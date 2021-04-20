@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    color: white;
+    color: #E4FCFF;
 
     .resources-banner-text {
       background-image: url("/assets/images/resources/banner.jpg");
@@ -49,7 +49,7 @@
       height: 500px;
 
       .resources-banner-text-box {
-        background-image: url("/assets/images/blue_div-spotlight.svg");
+        background-image: url("/assets/images/resources/banner-bg.svg");
         background-repeat: no-repeat;
         background-size: contain;
         padding: 40px;
@@ -148,7 +148,7 @@
           }
 
           #submit {
-            background-image: url("/assets/images/search.png");
+            background-image: url("/assets/images/resources/search.png");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center center;
@@ -188,7 +188,7 @@
 
   // Online Section
   .resources-online {
-    background-image: url('../../assets/images/wave-blue.svg');
+    background-image: url('../../assets/images/resources/national-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100.1%;
@@ -197,7 +197,7 @@
     @include flex(column, center, center);
 
     .resources-box {
-      color: white;
+      color: #E4FCFF;
     }
     .resources-online-text {
       padding: 100px 0px 50px 0px;

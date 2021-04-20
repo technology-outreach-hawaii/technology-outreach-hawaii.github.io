@@ -3,7 +3,7 @@
     @include flex(column, center, center);
 
     h1, p {
-      color: white;
+      color: #E4FCFF;
     }
 
     a {
@@ -13,7 +13,7 @@
   .blog-background {
     @include flex(column, center, center);
     width: 100%;
-    background-image: url('../../assets/images/test.png');
+    background-image: url('../../assets/images/blog/banner-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
