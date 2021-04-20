@@ -1,8 +1,9 @@
 gina:
   full_name: Gina Watanabe
   title: President
-  github: ginawatanabe
+  github: 
   linkedin:
+  website:
   interests: Data Visualization, Image Navigation, Web Development
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
   profile: assets/images/profiles/gina_watanabe.jpg
@@ -10,7 +11,7 @@ gina:
 boyang:
   full_name: Boyang Zhang
   title: Vice President
-  github: 
+  github:
   linkedin:
   website:
   bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I am doing data analysis with python.
@@ -19,8 +20,9 @@ boyang:
 kanai:
   full_name: Kanai Gooding
   title: Communications Director
-  github: P
+  github:
   linkedin:
+  website:
   interests: Data Science, Algorithms, Intelligence and Computer Vision
   bio: My name is Kana'i, I am junior in a Mathematics - Data Science Track at UH Manoa.
   profile: assets/images/profiles/kanai_gooding.jpg
@@ -30,6 +32,7 @@ patrick:
   title: Membership Director
   github: https://github.com/pmccrind/
   linkedin: https://www.linkedin.com/in/patrick-mccrindle/
+  website:
   interests: Cybersecurity, Arduinos, Raspberry Pi
   bio: I am currently a Junior majoring in Computer Science and pursuing a minor in mathematics.
   profile: assets/images/profiles/patrick_mccrindle.jpg
@@ -37,8 +40,9 @@ patrick:
 robert:
   full_name: Robert Lemon
   title: Program Director
-  github: P
+  github:
   linkedin:
+  website:
   interests: Low-Level Programming, Machine Learning, Algorithms
   bio: Hey! I'm a UH Student studying Computer Science, expected to graduate in 2022 with a B.S. degree.
   profile: assets/images/profiles/robert_lemon.png
@@ -46,8 +50,9 @@ robert:
 timothy:
   full_name: Timothy Huo
   title: Webmaster
-  github: P
-  linkedin:
+  github: https://github.com/timothyhuo1
+  linkedin: https://www.linkedin.com/in/timothy-huo-087b121b5/
+  website: https://timothyhuo1.github.io/
   interests: Web Development
   bio: Hello! I am a Sophomore majoring in Computer Science at the University of Hawaii at Manoa.
   profile: assets/images/profiles/timothy_huo.jpg
@@ -55,8 +60,9 @@ timothy:
 christyn:
   full_name: Christyn Mellor
   title: Volunteer
-  github: P
+  github:
   linkedin:
+  website:
   interests:
   bio: Hey! I go to UH Manoa And am studying biology with the ultimate aspiration of becoming a doctor!
   profile: assets/images/profiles/christyn_mellor.jpg
@@ -64,8 +70,9 @@ christyn:
 krizhna:
   full_name: Krizhna Bayudan
   title: Volunteer
-  github: P
+  github:
   linkedin:
+  website:
   interests:
   bio: I am a 3rd year undergraduate student at UH Manoa pursuing majors in Biology and Ilokano. My ultimate goal is to become a bilingual physician and work in Hawaii.
   profile: assets/images/profiles/krizhna_bayudan.jpg
@@ -73,8 +80,9 @@ krizhna:
 nikki:
   full_name: Nikki Zamani
   title: Volunteer
-  github: P
+  github:
   linkedin:
+  website:
   interests:
   bio: Hi, I am a 3rd year undergraduate student at UH Manoa. I am pursuing Biology with a Public Health minor. My dream is to become a physician and practice medicine on my home island of Maui.
   profile: assets/images/profiles/nikki_zamani.jpg
@@ -82,8 +90,9 @@ nikki:
 jennifer:
   full_name: Jennifer Watanabe
   title: Volunteer
-  github: P
+  github:
   linkedin:
+  website:
   interests:
   bio: Hi! I’m a junior majoring in Elementary Education and Multilingual Learning at UH Manoa.
   profile: assets/images/profiles/jennifer_watanabe.jpg

@@ -38,11 +38,20 @@ title: Team
                     <p style="font-style: italic;">{{ member[1].title }}</p>
                     <p id="padding">{{ member[1].bio }}</p>
               </div>
-              <!-- <div class="team-display-all-icon">
-                <img src="/assets/images/blog/fill.png" alt="">
-                <img src="/assets/images/blog/fill.png" alt="">
-                <img src="/assets/images/blog/fill.png" alt="">
-              </div> -->
+              <!-- ICONS -->
+              <div class="team-display-all-icon">
+                {% if member[1].github != NULL %}
+                  <a href="{{ member[1].github }}">
+                    <img src="/assets/images/logo/github-white.png" alt="">
+                  </a>
+                {% endif %}
+                {% if member[1].linkedin != NULL %}
+                  <a href="{{ member[1].linkedin }}">
+                    <img src="/assets/images/logo/in-white.png" alt="">
+                  </a>
+                {% endif %}
+              </div>
+              <!-- END ICONS -->
             </div>
           {%  endfor %}
         </div>
@@ -57,11 +66,20 @@ title: Team
                     <p style="font-style: italic;">{{ member[1].title }}</p>
                     <p id="padding">{{ member[1].bio }}</p>
               </div>
+              <!-- ICONS -->
               <div class="team-display-all-icon">
-                <!-- <img src="/assets/images/blog/fill.png" alt="">
-                <img src="/assets/images/blog/fill.png" alt="">
-                <img src="/assets/images/blog/fill.png" alt=""> -->
+                {% if member[1].github != NULL %}
+                  <a href="{{ member[1].github }}">
+                    <img src="/assets/images/logo/github-white.png" alt="">
+                  </a>
+                {% endif %}
+                {% if member[1].linkedin != NULL %}
+                  <a href="{{ member[1].linkedin }}">
+                    <img src="/assets/images/logo/in-white.png" alt="">
+                  </a>
+                {% endif %}
               </div>
+              <!-- END ICONS -->
             </div>
           {%  endfor %}
         </div>
@@ -76,11 +94,20 @@ title: Team
                     <p style="font-style: italic;">{{ member[1].title }}</p>
                     <p id="padding">{{ member[1].bio }}</p>
               </div>
-              <!-- <div class="team-display-all-icon">
-                <img src="/assets/images/blog/fill.png" alt="">
-                <img src="/assets/images/blog/fill.png" alt="">
-                <img src="/assets/images/blog/fill.png" alt="">
-              </div> -->
+              <!-- ICONS -->
+              <div class="team-display-all-icon">
+                {% if member[1].github != NULL %}
+                  <a href="{{ member[1].github }}">
+                    <img src="/assets/images/logo/github-white.png" alt="">
+                  </a>
+                {% endif %}
+                {% if member[1].linkedin != NULL %}
+                  <a href="{{ member[1].linkedin }}">
+                    <img src="/assets/images/logo/in-white.png" alt="">
+                  </a>
+                {% endif %}
+              </div>
+              <!-- END ICONS -->
             </div>
           {%  endfor %}
         </div>
@@ -95,11 +122,20 @@ title: Team
                     <p style="font-style: italic;">{{ member[1].title }}</p>
                     <p id="padding">{{ member[1].bio }}</p>
               </div>
-              <!-- <div class="team-display-all-icon">
-                <img src="/assets/images/blog/fill.png" alt="">
-                <img src="/assets/images/blog/fill.png" alt="">
-                <img src="/assets/images/blog/fill.png" alt="">
-              </div> -->
+              <!-- ICONS -->
+              <div class="team-display-all-icon">
+                {% if member[1].github != NULL %}
+                  <a href="{{ member[1].github }}">
+                    <img src="/assets/images/logo/github-white.png" alt="">
+                  </a>
+                {% endif %}
+                {% if member[1].linkedin != NULL %}
+                  <a href="{{ member[1].linkedin }}">
+                    <img src="/assets/images/logo/in-white.png" alt="">
+                  </a>
+                {% endif %}
+              </div>
+              <!-- END ICONS -->
             </div>
           {%  endfor %}
         </div>
