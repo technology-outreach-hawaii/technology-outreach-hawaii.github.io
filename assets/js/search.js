@@ -121,7 +121,7 @@ const displaySources = (sources) => {
                 </div>
                 <div class="resources-island-section-container-body">
                   <h2>${source.title}</h2>
-                  <p>${source.excerpt}</p>
+                  <p>${source.summary}</p>
                   <div id="listTags" class="tags-horizontal">
                   </div>
                 </div>

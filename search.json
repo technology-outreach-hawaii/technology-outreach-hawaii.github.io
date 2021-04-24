@@ -10,6 +10,7 @@
       "island"   : "{{ source.island | join: ', ' }}",
       "picture"  : "{{source.picture | join: ', '}}",
       "link"     : "{{source.link | join: ', '}}",
+      "summary"  : "{{source.summary | join: ', '}}",
       "excerpt"  : "{{source.excerpt | strip_html | strip_newlines | escape }}"
 
     } {% unless forloop.last %},{% endunless %}
