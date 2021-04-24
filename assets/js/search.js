@@ -113,7 +113,7 @@ const displaySources = (sources) => {
     const htmlString = sources
         .map((source) => {
           totalTags = seperateTags(source.tags);
-          link = source.link;
+          link = source.url;
             return `
             <li onclick="window.open(link);" class="resources-island-section-container">
                 <div class="resources-island-section-container-img">
