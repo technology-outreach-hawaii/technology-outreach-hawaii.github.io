@@ -2,8 +2,11 @@
 layout: resource
 island: oahu
 title: ICSpark
+author: patrick
+day: Apr 24, 2021
+quote: Passing the knowledge on to the next generation
 tags: ["classes", "coding", "spotlight"]
-picture: assets/images/resources/ICSpark/icspark.jpg
+picture: assets/images/resources/banner.jpg
 summary: Founded in 2019, ICSpark provides free Saturday coding classes to students in 6th - 12th grade during the Spring semester. Prior to COVID, classes were held on the UH Manoa campus. Now, classes are held online until further notice.  
 ---
 <div class="template-resource-italic">Prior to COVID-19, classes were held on the UH Manoa campus. Now, classes are held online but ICSpark hopes to hold in-person classes as soon as it is safe to do so.</div>
