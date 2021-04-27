@@ -120,8 +120,10 @@
   }
 
   .blog-section {
-    min-width: 455px;
-    min-height: 455px;
+    margin: 5px;
+    min-width: 355px;
+    min-height: 355px;
+    max-width: 355px;
     background-repeat: no-repeat;
     background-size: cover;
     @include flex(column, flex-end, center);
@@ -205,10 +207,14 @@
     // Blog Section
     .blog-holder {
       @include flex(column, center, center);
+      min-width: 455px;
+      min-height: 455px;
     }
     .blog-section {
       margin-top: 40px;
       width: 70%;
+      min-height: 455px;
+      max-width: none;
     }
   }
 }
