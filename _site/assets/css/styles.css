@@ -148,13 +148,15 @@ nav #logo { width: 45%; }
 
 .main #team .profile-header p { width: 100%; padding-left: 30px; }
 
-.main #team .profile-section { height: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+.main #team .profile-section { padding-left: 30px; width: 100%; height: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+
+.main #team .profile-section .prev, .main #team .profile-section .next { cursor: pointer; height: 100%; display: flex; align-items: center; font-weight: bold; user-select: none; }
 
 .main #team .profile-section .profile { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; }
 
 .main #team .profile-section .profile h4 { font-size: 15px; color: #f0f2f5; }
 
-.main #team .profile-section .profile img { width: 120px; height: 120px; border-radius: 50%; margin-left: 20px; }
+.main #team .profile-section .profile img { width: 120px; height: 120px; border-radius: 50%; margin: 0px 10px; }
 
 .main #stand-section { width: 100%; height: 800px; background-image: url("../../assets/images/home/weDo-bg.svg"); background-repeat: no-repeat; background-size: cover; margin-bottom: 0px; margin-top: 0px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
@@ -176,7 +178,7 @@ nav #logo { width: 45%; }
 
 .main #stand-section .stand-body a { width: 100%; }
 
-@media only screen and (max-width: 960px) { .main .section { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-bottom: 0px; margin-top: 30px; } .main #team, .main #news, .main #goal, .main .text, .main .left { width: 100%; margin-bottom: 30px; } .main .section, .main #resource-links { height: 100%; } .main .profile-section { margin-left: -20px; } .main #team .profile-header { text-align: left; } .main #team .profile-header p { padding-left: 0; } .main #team .profile-header h2 { justify-content: left; } .main #team .profile-section .profile img { height: 100px; width: 100px; } .main #news, .main #team { border-left: none; } .main #update, .main .left { float: left; } .main #news li { padding: 0; } .main #stand-section .stand-box { padding: 0px; padding-top: 150px; padding-left: 30px; } }
+@media only screen and (max-width: 960px) { .main .section { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-bottom: 0px; margin-top: 30px; } .main #team, .main #news, .main #goal, .main .text, .main .left { width: 100%; margin-bottom: 30px; } .main .section, .main #resource-links { height: 100%; } .main #team .profile-header { text-align: left; } .main #team .profile-header p { padding-left: 0; } .main #team .profile-header h2 { justify-content: left; } .main #team .profile-section { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; } .main #team .profile-section .prev, .main #team .profile-section .next { height: 100px; } .main #team .profile-section .profile img { height: 110px; width: 110px; } .main #news, .main #team { border-left: none; } .main #update, .main .left { float: left; } .main #news li { padding: 0; } .main #stand-section .stand-box { padding: 0px; padding-top: 150px; padding-left: 30px; } }
 
 #post { background-color: #f0f2f5; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #2E2E2E; }
 

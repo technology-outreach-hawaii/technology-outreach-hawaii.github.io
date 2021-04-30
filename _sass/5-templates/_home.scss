@@ -79,8 +79,20 @@
     }
 
     .profile-section {
+      padding-left: $text-margin;
+      // border: red 5px solid;
+      width: 100%;
       height: 100%;
       @include flex(row, space-between, flex-start);
+
+      .prev, .next {
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        user-select: none;
+      }
 
       .profile {
         @include flex(column, center, center);
@@ -94,7 +106,7 @@
           width: 120px;
           height: 120px;
           border-radius: 50%;
-          margin-left: 20px;
+          margin: 0px 10px;
         }
       }
     }
@@ -177,10 +189,6 @@
       height: 100%;
     }
 
-    .profile-section {
-      margin-left: -20px;
-      }
-
       #team {
         .profile-header {
           text-align: left;
@@ -194,10 +202,18 @@
           justify-content: left;
         }
 
+        .profile-section {
+          @include flex(row, space-between, flex-start);
+
+            .prev, .next {
+              height: 100px;
+            }
+          }
+
         .profile-section .profile {
               img {
-                height: 100px;
-                width: 100px;
+                height: 110px;
+                width: 110px;
               }
             }
       }

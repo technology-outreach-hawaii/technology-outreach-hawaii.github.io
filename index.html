@@ -37,23 +37,34 @@ title: Home
           <p>Meet our mix of undergraduate and graduate students with interests in computer science, physics, math, and medicine.</p>
         </div>
         <br>
-        <div class="profile-section">
+        <div id="row1" class="profile-section">
+          <a id="prev1" class="prev">&#10094;</a>
           {% for member in site.data.members limit: 4 %}
             <div class="profile">
               <img src="{{ member[1].profile }}" alt="">
-              <!-- <h4>{{ member[1].full_name }}</h4> -->
             </div>
           {% endfor %}
+          <a id="next1" class="next">&#10095;</a>
         </div>
-        <br>
-        <div class="profile-section">
-          {% for member in site.data.members limit: 4 offset: 4%}
+        <div id="row2" class="profile-section" style="display: none;">
+          <a id="prev2" class="prev">&#10094;</a>
+          {% for member in site.data.members offset:4 limit: 4 %}
             <div class="profile">
               <img src="{{ member[1].profile }}" alt="">
-              <!-- <h4>{{ member[1].full_name }}</h4> -->
             </div>
           {% endfor %}
+          <a id="next2" class="next">&#10095;</a>
         </div>
+        <div id="row3" class="profile-section" style="display: none;">
+          <a id="prev3" class="prev">&#10094;</a>
+          {% for member in site.data.members offset:8 limit: 4 %}
+            <div class="profile">
+              <img src="{{ member[1].profile }}" alt="">
+            </div>
+          {% endfor %}
+          <a id="next3" class="next">&#10095;</a>
+        </div>
+        <br>
       </div>
     </div>
   </div>
@@ -112,3 +123,4 @@ title: Home
       </div>
     </div>
   </div>
+  <script src="/assets/js/slideshow.js"></script>
