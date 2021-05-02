@@ -1,7 +1,7 @@
 gina:
   full_name: Gina Watanabe
   title: President
-  github: 
+  github:
   linkedin:
   website:
   interests: Data Visualization, Image Navigation, Web Development
@@ -20,8 +20,8 @@ boyang:
 kanai:
   full_name: Kanai Gooding
   title: Communications Director
-  github:
-  linkedin:
+  github: https://github.com/kanaigooding
+  linkedin: https://www.linkedin.com/in/kanaigooding/
   website:
   interests: Data Science, Algorithms, Intelligence and Computer Vision
   bio: My name is Kana'i, I am junior in a Mathematics - Data Science Track at UH Manoa.
@@ -40,8 +40,8 @@ patrick:
 robert:
   full_name: Robert Lemon
   title: Program Director
-  github:
-  linkedin:
+  github: https://github.com/robert-lemon-uhm
+  linkedin: https://www.linkedin.com/in/robertlemon/
   website:
   interests: Low-Level Programming, Machine Learning, Algorithms
   bio: Hey! I'm a UH Student studying Computer Science, expected to graduate in 2022 with a B.S. degree.
