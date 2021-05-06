@@ -78,6 +78,19 @@
       }
     }
 
+    .place {
+      @include flex(row, center, center);
+    }
+
+    .place-dot{
+      margin: 5px;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: black;
+      opacity: 50%;
+    }
+
     .profile-section {
       padding-left: $text-margin;
       // border: red 5px solid;
