@@ -86,7 +86,7 @@ const loadSources = async (island) => {
         let i = 0;
         const list = [];
         sources.map((source) => {
-          if(source.island == island) {
+          if(source.island == island || source.island == 'all') {
             list[i] = source;
             i++;
           }
@@ -103,6 +103,15 @@ const seperateTags = (tags) => {
   return arr;
 }
 
+const splitTags = (tags) => {
+  var arr = tags.split(',');
+  var list = '';
+  arr.map(tags => {
+  list+='<p class="tags">'+tags+'</p>';
+  });
+  return list;
+}
+
 const displayTags = (totalTags) => {
   totalTags.map(tags => {
     document.getElementById('listTags').innerHTML += `<p class="tags">${tags}</p>`;
@@ -110,12 +119,12 @@ const displayTags = (totalTags) => {
 }
 
 const displaySources = (sources) => {
+    let total = '';
     const htmlString = sources
         .map((source) => {
-          totalTags = seperateTags(source.tags);
-          link = source.url;
-            return `
-            <li onclick="window.open(link);" class="resources-island-section-container">
+          var tags = splitTags(source.tags);
+            total+= `
+            <li onclick="window.open('${source.link}')" class="resources-island-section-container">
                 <div class="resources-island-section-container-img">
                   <img src="${source.picture}"/>
                 </div>
@@ -123,14 +132,13 @@ const displaySources = (sources) => {
                   <h2>${source.title}</h2>
                   <p>${source.summary}</p>
                   <div id="listTags" class="tags-horizontal">
+                  ${tags}
                   </div>
                 </div>
             </li>
         `;
-        })
-        .join('');
-    sourceList.innerHTML = htmlString;
-    displayTags(totalTags);
+      }).join('');
+      sourceList.innerHTML = total;
 };
 
 loadSources('oahu');

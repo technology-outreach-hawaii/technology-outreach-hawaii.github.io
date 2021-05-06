@@ -7,9 +7,22 @@
       "tags"     : "classes, coding, spotlight",
       "island"   : "oahu",
       "picture"  : "assets/images/resources/banner.jpg",
-      "link"     : "",
+      "link"     : "https://icspark.github.io/",
       "summary"  : "Founded in 2019, ICSpark provides free Saturday coding classes to students in 6th - 12th grade during the Spring semester. Prior to COVID, classes were held on the UH Manoa campus. Now, classes are held online until further notice.",
       "excerpt"  : "Prior to COVID-19, classes were held on the UH Manoa campus. Now, classes are held online but ICSpark hopes to hold in-person classes as soon as it is safe to do so."
+
+    } ,
+  
+    {
+
+      "title"    : "Hawaii Libraries",
+      "url"      : "/sources/library/",
+      "tags"     : "classes, resources",
+      "island"   : "all",
+      "picture"  : "assets/images/resources/Libraries/hawaiiLibraries.png",
+      "link"     : "https://www.librarieshawaii.org/learn/life-skills/basic-computer-skills/",
+      "summary"  : "The Hawaii State library provides various free resources that are intended to ensure everyone has access to basic digital literacy knowledge, such as how to use computers. Instructions on how to take advantage of the GALE online free courses can be found on the Library's website. Before COVID, there were occasional in-person classes offered at libraries.",
+      "excerpt"  : ""
 
     } 
   
