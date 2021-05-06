@@ -182,6 +182,7 @@
         }
         .resources-island-section-container-body {
           padding: 10px 5px;
+          padding-right: 15px;
           height: 100%;
           @include flex(column, space-between, flex-start);
           float: right;
