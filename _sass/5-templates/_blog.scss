@@ -110,9 +110,8 @@
 
   // Blog Section
   .blog-holder {
-
-    width: 100%;
-    @include flex(row, space-evenly, center);
+    width: 90%;
+    @include flex(row, flex-start, flex-start);
   }
 
   .blog-section:hover {
@@ -120,7 +119,7 @@
   }
 
   .blog-section {
-    margin: 5px;
+    margin: 10px;
     min-width: 355px;
     min-height: 355px;
     max-width: 355px;

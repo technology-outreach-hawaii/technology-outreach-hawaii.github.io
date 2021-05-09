@@ -62,10 +62,28 @@ title: Blog
         <div class="blog-box">
             <div class="blog-holder">
 
-              {% for post in site.posts %}
-                {% if forloop.rindex == 4 %}
-                  {% break %}
-                {% endif %}
+              {% for post in site.posts limit: 3%}
+
+                {% assign bname = post.author %}
+                {% assign bauthor = site.data.members[bname] %}
+              <div onclick="location.href='{{ post.url }}';" class="blog-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                         rgba(0, 0, 0, 0.5)), url({{post.picture}}); cursor: pointer;">
+                <div class="blog-section-side">
+                    <div class="blog-section-text">
+                      <p><a href="{{ post.url }}">{{post.title}}</a></p>
+                      <p> {{ post.summary }} </p>
+                      <p class="blog-section-bottom">
+                        <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="">
+                        {{ post.date | date: "%b %d, %Y" }} by {{ bauthor.full_name }}
+                    </div>
+                </div>
+              </div>
+
+              {% endfor %}
+            </div>
+            <div class="blog-holder">
+
+              {% for post in site.posts offset: 3 limit: 1%}
 
                 {% assign bname = post.author %}
                 {% assign bauthor = site.data.members[bname] %}
