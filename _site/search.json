@@ -2,6 +2,19 @@
   
     {
 
+      "title"    : "Digital Ready Hawaii",
+      "url"      : "/sources/Digital_Ready_Hawaii/",
+      "tags"     : "classes, resources",
+      "island"   : "oahu",
+      "picture"  : "assets/images/resources/Digital_Ready_Hawaii/digital.png",
+      "link"     : "http://digitalreadyhawaii.org/",
+      "summary"  : "Workforce Development Council is providing free 3-hour hands-on classes for adults with little or no computer experience. Get an introduction to computers, learn to navigate the web, and set up an email account! These classes have a small class size, printed materials, and resources for continued learning.",
+      "excerpt"  : ""
+
+    } ,
+  
+    {
+
       "title"    : "GenCyber",
       "url"      : "/sources/GenCyber/",
       "tags"     : "cybersecurity, resources",
