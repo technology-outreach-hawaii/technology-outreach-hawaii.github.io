@@ -10,18 +10,22 @@ title: Community
       <div class="resources-banner-text-box">
         <div class="resources-banner-text-box-word">
           <h2>Community Spotlight</h2>
-          <h2> {{site.sources[0].title}}</h2>
-          <br>
-          <div class="tags-horizontal">
-            {% for tag in site.sources[0].tags %}
-            <p class='tags'>
-              {{tag}}
-            </p>
-            {% endfor %}
-          </div>
-          <br>
-          <p>{{site.sources[0].summary}}</p>
-          <a href="{{site.sources[0].url}}">read more</a>
+          {% for sources in site.sources %}
+              {% if sources.spotlight != NULL %}
+              <h2> {{sources.title}}</h2>
+              <br>
+              <div class="tags-horizontal">
+                {% for tag in sources.tags %}
+                <p class='tags'>
+                  {{tag}}
+                </p>
+                {% endfor %}
+              </div>
+              <br>
+              <p>{{sources.summary}}</p>
+              <a href="{{sources.url}}" target=“_blank”>read more</a>
+              {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
