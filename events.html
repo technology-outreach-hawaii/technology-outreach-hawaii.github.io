@@ -48,7 +48,9 @@ title: Events
         <!-- <br>
         <p class="c2">Status: {{event.status}}</p> -->
         <br>
-        <!-- <button type="button" name="button">Apply to Volunteer</button> -->
+        {% if event.link != NULL %}
+        <button type="button" name="button" onclick="window.open('{{ event.link }}', '_blank')">Apply to Join</button>
+        {% endif %}
       </div>
     </div>
   </div>
