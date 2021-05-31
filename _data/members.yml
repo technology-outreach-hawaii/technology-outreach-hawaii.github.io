@@ -57,9 +57,19 @@ timothy:
   bio: Hello! I am a Sophomore majoring in Computer Science at the University of Hawaii at Manoa.
   profile: assets/images/profiles/timothy_huo.jpg
 
+jennifer:
+  full_name: Jennifer Watanabe
+  title: Creative Media Manager
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: Hi! I’m a junior majoring in Elementary Education and Multilingual Learning at UH Manoa.
+  profile: assets/images/profiles/jennifer_watanabe.jpg
+
 christyn:
   full_name: Christyn Mellor
-  title: Volunteer
+  title: Creative Media Associates
   github:
   linkedin:
   website:
@@ -69,7 +79,7 @@ christyn:
 
 krizhna:
   full_name: Krizhna Bayudan
-  title: Volunteer
+  title: Creative Media Associates
   github:
   linkedin:
   website:
@@ -79,20 +89,10 @@ krizhna:
 
 nikki:
   full_name: Nikki Zamani
-  title: Volunteer
+  title: Creative Media Associates
   github:
   linkedin:
   website:
   interests:
   bio: Hi, I am a 3rd year undergraduate student at UH Manoa. I am pursuing Biology with a Public Health minor. My dream is to become a physician and practice medicine on my home island of Maui.
   profile: assets/images/profiles/nikki_zamani.jpg
-
-jennifer:
-  full_name: Jennifer Watanabe
-  title: Volunteer
-  github:
-  linkedin:
-  website:
-  interests:
-  bio: Hi! I’m a junior majoring in Elementary Education and Multilingual Learning at UH Manoa.
-  profile: assets/images/profiles/jennifer_watanabe.jpg
