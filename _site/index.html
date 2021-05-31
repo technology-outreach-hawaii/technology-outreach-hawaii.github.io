@@ -234,8 +234,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var feed = new Instafeed({
           accessToken: data.Token,
           limit: 5,
+          sortBy: 'most-recent',
+          success: function(response){
+                      // Author: Benjamin Hull
+                      var maxLength = 30;
+                      response.data.forEach(function(e){
+                        if (!e.caption) {
+                          return false; //Skip if there's no caption
+                        }
+                        e.shortCaption = ''; //Initialize to an empty string
+                        var textParts = e.caption.split(' '); //Split the caption into words
+
+                        while(true) {
+                          var nextWord = textParts.shift();
+
+                          if (!nextWord) {
+                            break; //If we hit the end of the caption before we hit the limit, bail out
+                          }
+
+                          if (e.shortCaption.length + nextWord.length < maxLength - 1){ //Check if the next word will fit into the limit (minus 1 includes the space)
+                            e.shortCaption += ' ' + nextWord; //If so, append it with a space
+                          } else {
+                            e.shortCaption = e.shortCaption.trim() + '…'; //If not, finish with an ellipsis and bail out
+                            break;
+                          }
+                        }
+                      });
+                    },
+
           template: 
-          '<a href="{{link}}"><div class="post" style="background-image: url({{image}});"><div class="caption">{{caption}}</div></div></a>'
+          '<a href="{{link}}" target="_blank" ><div class="post" style="background-image: url({{image}});"><div class="caption">{{model.shortCaption}}</div></div></a>'
           ,
       });
       feed.run();
