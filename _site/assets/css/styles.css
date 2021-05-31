@@ -122,6 +122,26 @@ nav #logo { width: 45%; }
 
 .main { width: 100%; background-image: url("../../assets/images/home/index-bg.png"); background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
+.main .ig-container { background-color: #0A303B; width: 100%; border: 1px solid green; }
+
+.main .ig-container .ig-container-space { padding-left: 150px; padding-right: 150px; }
+
+.main .ig-container .ig-container-space .stand-heading { width: 100%; float: left; }
+
+.main .ig-container .ig-container-space .stand-heading a { font-size: 30px; float: left; margin: 10px; }
+
+.main #instafeed { width: 100%; border: 1px solid red; display: flex; flex-direction: row; justify-content: space-between; align-items: space-between; }
+
+.main #instafeed .item { z-index: -1; overflow: hidden; cursor: pointer; }
+
+.main #instafeed .item .image-img { border: 1px solid green; width: 90%; height: 100%; margin: 0px 10px; opacity: .66; }
+
+.main #instafeed .item .caption { color: white; z-index: 1; margin: 0; position: absolute; opacity: 0; -webkit-transition: all 0.4s; transition: all 0.4s; }
+
+.main #instafeed .item:hover img { -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all 0.8s; transition: all 0.8s; opacity: 0.5; }
+
+.main #instafeed .item:hover .caption { opacity: 1; border: 1px solid green; z-index: 1; }
+
 .main h1 { color: #E4FCFF; margin-bottom: 30px; }
 
 .main p { width: 85%; }
@@ -182,7 +202,7 @@ nav #logo { width: 45%; }
 
 .main #stand-section .stand-body a { width: 100%; }
 
-@media only screen and (max-width: 960px) { .main .section { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-bottom: 0px; margin-top: 30px; } .main #team, .main #news, .main #goal, .main .text, .main .left { width: 100%; margin-bottom: 30px; } .main .section, .main #resource-links { height: 100%; } .main #team .profile-header { text-align: left; } .main #team .profile-header p { padding-left: 0; } .main #team .profile-header h2 { justify-content: left; } .main #team .profile-section { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; } .main #team .profile-section .prev, .main #team .profile-section .next { height: 100px; } .main #team .profile-section .profile img { height: 110px; width: 110px; } .main #news, .main #team { border-left: none; } .main #update, .main .left { float: left; } .main #news li { padding: 0; } .main #stand-section .stand-box { padding: 0px; padding-top: 150px; padding-left: 30px; } }
+@media only screen and (max-width: 960px) { .main .section { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-bottom: 0px; margin-top: 30px; } .main .ig-container .ig-container-space { padding-left: 30px; padding-right: 30px; } .main #team, .main #news, .main #goal, .main .text, .main .left { width: 100%; margin-bottom: 30px; } .main .section, .main #resource-links { height: 100%; } .main #team .profile-header { text-align: left; } .main #team .profile-header p { padding-left: 0; } .main #team .profile-header h2 { justify-content: left; } .main #team .profile-section { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; } .main #team .profile-section .prev, .main #team .profile-section .next { height: 100px; } .main #team .profile-section .profile img { height: 110px; width: 110px; } .main #news, .main #team { border-left: none; } .main #update, .main .left { float: left; } .main #news li { padding: 0; } .main #stand-section .stand-box { padding: 0px; padding-top: 150px; padding-left: 30px; } }
 
 #post { background-color: #f0f2f5; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #2E2E2E; }
 

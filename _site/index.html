@@ -218,6 +218,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </div>
+    <div class="ig-container">
+  <div class="ig-container-space">
+    <div class="stand-heading">
+      <h1 class="stand-section"><a href="https://www.instagram.com/techoutreachhawaii/" target=“_blank”>Instagram</a></h1>
+    </div>
+    <div id="instafeed"></div>
+  </div>
+</div>
+<script src="/assets/instafeed/instafeed.min.js"></script>
+<script type="text/javascript">
+  fetch("https://ig.instant-tokens.com/users/184eb79c-de1e-48b5-8917-230ff4993396/instagram/17841448000944550/token?userSecret=pzxxas1hkxh5czq1ykcma6")
+.then(resp => resp.json())
+.then(data => {
+      var feed = new Instafeed({
+          accessToken: data.Token,
+          limit: 4,
+          template: 
+          '<a href="{{link}}"><div></div><div class="item"><img class="image-img" src="{{image}}" /><div class="caption">{{caption}}</div></div></a>'
+          ,
+      });
+      feed.run();
+  });
+  </script>
+
+  </div>
   <script src="/assets/js/slideshow.js"></script>
 
   <div id="footer">
