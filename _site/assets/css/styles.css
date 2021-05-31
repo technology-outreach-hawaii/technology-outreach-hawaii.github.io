@@ -122,25 +122,23 @@ nav #logo { width: 45%; }
 
 .main { width: 100%; background-image: url("../../assets/images/home/index-bg.png"); background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-.main .ig-container { background-color: #0A303B; width: 100%; border: 1px solid green; }
+.main .ig-container { background-color: #0A303B; width: 100%; }
 
-.main .ig-container .ig-container-space { padding-left: 150px; padding-right: 150px; }
+.main .ig-container .ig-container-space { padding-left: 150px; padding-right: 100px; }
 
 .main .ig-container .ig-container-space .stand-heading { width: 100%; float: left; }
 
 .main .ig-container .ig-container-space .stand-heading a { font-size: 30px; float: left; margin: 10px; }
 
-.main #instafeed { width: 100%; border: 1px solid red; display: flex; flex-direction: row; justify-content: space-between; align-items: space-between; }
+.main #instafeed { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: space-between; height: 250px; }
 
-.main #instafeed .item { z-index: -1; overflow: hidden; cursor: pointer; }
+.main #instafeed .post { border: 5px solid white; opacity: 0.5; width: 15vw; height: 15vw; background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; }
 
-.main #instafeed .item .image-img { border: 1px solid green; width: 90%; height: 100%; margin: 0px 10px; opacity: .66; }
+.main #instafeed .post:hover { opacity: 1; -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all 0.8s; transition: all 0.8s; }
 
-.main #instafeed .item .caption { color: white; z-index: 1; margin: 0; position: absolute; opacity: 0; -webkit-transition: all 0.4s; transition: all 0.4s; }
+.main #instafeed .post:hover .caption { opacity: 1; }
 
-.main #instafeed .item:hover img { -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all 0.8s; transition: all 0.8s; opacity: 0.5; }
-
-.main #instafeed .item:hover .caption { opacity: 1; border: 1px solid green; z-index: 1; }
+.main #instafeed .caption { color: white; padding-left: 10px; padding-bottom: 10px; opacity: 0; }
 
 .main h1 { color: #E4FCFF; margin-bottom: 30px; }
 
