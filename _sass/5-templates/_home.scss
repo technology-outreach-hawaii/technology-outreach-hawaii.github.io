@@ -27,17 +27,17 @@
 
   #instafeed {
     width: 100%;
-    @include flex(row, space-between, space-between);
-    height: 250px;
+    height: 100%;
 
     .post {
       border: 5px solid white;
       opacity: 0.7;
-      width: 15vw;
-      height: 15vw;
+      width: 200px;
+      height: 200px;
       background-repeat: no-repeat;
       background-size: cover;
       @include flex(column, flex-end, flex-start);
+      margin-bottom: 40px;
     }
 
     .post:hover {
