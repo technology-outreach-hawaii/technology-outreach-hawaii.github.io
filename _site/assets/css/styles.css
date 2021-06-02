@@ -2376,6 +2376,10 @@ nav #logo { width: 45%; }
 
 @media only screen and (max-width: 960px) { .blog-container .blog-background { height: 50%; } .blog-container .blog-box { width: 90%; display: flex; flex-direction: column; justify-content: center; align-items: center; } .blog-container .blog-main { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; } .blog-container .blog-main .blog-main-card { width: 70%; margin-right: 0px; } .blog-container .blog-main .blog-main-summary { padding-top: 20px; padding-left: 0; } .blog-container .blog-main .blog-main-summary p { color: black; } .blog-container .blog-topic { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 70%; padding: 20px 0px; margin: 0; } .blog-container .blog-topic .blog-topic-des, .blog-container .blog-topic .blog-topic-but { display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 5px; width: 100%; } .blog-container .blog-holder { display: flex; flex-direction: column; justify-content: center; align-items: center; min-width: 455px; min-height: 455px; } .blog-container .blog-section { margin-top: 40px; width: 70%; min-height: 455px; max-width: none; } }
 
+hr { border: 1px solid white; }
+
+a { cursor: pointer; }
+
 .template-resource-img { object-fit: cover; width: 100%; height: 400px; }
 
 .template-resource-italic { font-style: italic; font-size: 19px; }
@@ -2426,7 +2430,7 @@ nav #logo { width: 45%; }
 
 .resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar { display: flex; flex-direction: row; width: 80%; padding-right: 20px; }
 
-.resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar input { float: right; width: 100%; height: 30px; }
+.resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar input { float: right; width: 100%; height: 35px; }
 
 .resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar #submit { background-image: url("/assets/images/resources/search.png"); background-repeat: no-repeat; background-size: contain; background-position: center center; background-color: #F8CF1E; height: 36px; width: 20%; }
 
