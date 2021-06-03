@@ -40,3 +40,5 @@ function display(num) {
     hard.style.display = "inline";
   }
 }
+
+display(1);

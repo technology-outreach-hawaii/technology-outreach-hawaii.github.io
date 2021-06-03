@@ -6,3 +6,6 @@ collections:
     output: true
   events:
     output: true
+  sass:
+    sass_dir: assets/css
+    style:    compressed
