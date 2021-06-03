@@ -1,6 +1,7 @@
 [
-
+  
     {
+
       "title"    : "Digital Ready Hawaii",
       "url"      : "/sources/Digital_Ready_Hawaii/",
       "tags"     : "classes, resources",
@@ -11,8 +12,9 @@
       "excerpt"  : ""
 
     } ,
-
+  
     {
+
       "title"    : "GenCyber",
       "url"      : "/sources/GenCyber/",
       "tags"     : "cybersecurity, resources",
@@ -21,9 +23,11 @@
       "link"     : "https://gencyber-hi.org/",
       "summary"  : "GenCyber Hawaii is dedicated to introducing middle and high school students to the world of cybersecurity. This local branch of the national GenCyber program has been hosting events focused around cybersecurity since 2015.",
       "excerpt"  : ""
-    } ,
 
+    } ,
+  
     {
+
       "title"    : "ICSpark",
       "url"      : "/sources/ICSpark/",
       "tags"     : "classes, coding, spotlight",
@@ -34,7 +38,7 @@
       "excerpt"  : "Prior to COVID-19, classes were held on the UH Manoa campus. Now, classes are held online but ICSpark hopes to hold in-person classes as soon as it is safe to do so."
 
     } ,
-
+  
     {
 
       "title"    : "Hawaii Libraries",
@@ -46,6 +50,6 @@
       "summary"  : "The Hawaii State library provides various free resources that are intended to ensure everyone has access to basic digital literacy knowledge, such as how to use computers. Instructions on how to take advantage of the GALE online free courses can be found on the Library's website. Before COVID, there were occasional in-person classes offered at libraries.",
       "excerpt"  : ""
 
-    }
-
+    } 
+  
 ]
