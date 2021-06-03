@@ -99,7 +99,6 @@
 
       p {
         color: black;
-        font-size: 18px;
       }
     }
 
@@ -111,7 +110,7 @@
 
   // Blog Section
   .blog-holder {
-    width: 100%;
+    width: 90%;
     @include flex(row, flex-start, flex-start);
   }
 
@@ -121,8 +120,9 @@
 
   .blog-section {
     margin: 10px;
-    width: 25vw;
-    height: 25vw;
+    min-width: 355px;
+    min-height: 355px;
+    max-width: 355px;
     background-repeat: no-repeat;
     background-size: cover;
     @include flex(column, flex-end, center);
@@ -136,10 +136,6 @@
           @include flex(column, space-between, flex-start);
           width: 90%;
           padding-bottom: 20px;
-
-          p {
-            font-size: 18px;
-          }
 
             .blog-section-bottom {
             @include flex(row, flex-start, center);
