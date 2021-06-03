@@ -2356,19 +2356,21 @@ nav #logo { width: 45%; }
 
 .blog-container .blog-topic .blog-topic-des { width: 70%; }
 
-.blog-container .blog-topic .blog-topic-des p { color: black; }
+.blog-container .blog-topic .blog-topic-des p { color: black; font-size: 18px; }
 
 .blog-container .blog-topic .blog-topic-but { text-align: right; width: 20%; }
 
-.blog-container .blog-holder { width: 90%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
+.blog-container .blog-holder { width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
 
 .blog-container .blog-section:hover { box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
 
-.blog-container .blog-section { margin: 10px; min-width: 355px; min-height: 355px; max-width: 355px; background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; border: black 1px solid; }
+.blog-container .blog-section { margin: 10px; width: 25vw; height: 25vw; background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; border: black 1px solid; }
 
 .blog-container .blog-section .blog-section-side { width: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
 
 .blog-container .blog-section .blog-section-side .blog-section-text { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; width: 90%; padding-bottom: 20px; }
+
+.blog-container .blog-section .blog-section-side .blog-section-text p { font-size: 18px; }
 
 .blog-container .blog-section .blog-section-side .blog-section-text .blog-section-bottom { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; opacity: 0.9; }
 
