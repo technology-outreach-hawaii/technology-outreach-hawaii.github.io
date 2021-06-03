@@ -1,0 +1,192 @@
+.template-project-img {
+  width: 400px;
+  height: 300px;
+}
+
+.project-container {
+ width: 100%;
+ font-family: $archivo;
+
+  .box {
+  width: 100%;
+  background-image: url("/assets/images/projects/banner-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  }
+
+  .submit-box {
+    padding: 100px;
+  }
+  .submit-project {
+    width: 100%;
+    @include flex(row, flex-start, flex-start);
+
+    .submit-project-img {
+      width: 60%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .submit-project-text {
+      padding: 0px 10px 0px 10px;
+      @include flex(column, space-between, center);
+      height: 400px;
+      width: 38%;
+      color: #E4FCFF;
+
+      #title{
+        font-family: $archivo;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        font-weight: 700;
+        padding-bottom: 30px;
+      }
+
+      #body{
+        // color: white;
+        font-size: $p;
+      }
+
+      .submit-project-text-sum {
+        height: 20%;
+        @include flex(column, flex-start, flex-start);
+        height: 100%;
+        width: 80%;
+      }
+
+      .submit-project-text-button {
+        @include flex(column, center, center);
+        width: 100%;
+
+      }
+    }
+  }
+
+  .cards {
+    padding: 20px 250px 40px 250px;
+  }
+
+  .side-project {
+    color: #E4FCFF;
+    background-color: $dark-blue;
+    padding: 40px;
+    .side-project-text {
+
+      .c1{
+        font-family: $archivo;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        font-weight: 700;
+        padding-bottom: 5px;
+      }
+      .c2{
+        font-size: 25px;
+      }
+
+      .side-project-text-row {
+        @include flex(row, flex-start, flex-start);
+
+        .side-project-text-row-left {
+          width: 60%;
+        }
+
+        .side-project-text-row-right {
+          @include flex(row, center, center);
+          width: 40%;
+
+          img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+
+    .side-project-img {
+
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .template-project-img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-container {
+    .cards {
+      padding: 0px 150px 40px 150px;
+    }
+    .submit-project {
+      width: 100%;
+      @include flex(column, center, center);
+
+      .submit-project-img {
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+      }
+
+      .submit-project-text {
+        padding: 0px;
+        @include flex(column, center, center);
+        width: 100%;
+        height: 100%;
+        color: black;
+
+        #title{
+          padding-bottom: 0;
+          color: black;
+        }
+
+        .submit-project-text-sum {
+          padding: 0px;
+          height: 20%;
+          @include flex(column, flex-start, flex-start);
+          height: 100%;
+          width: 80%;
+        }
+
+        .submit-project-text-button {
+          @include flex(column, center, center);
+          width: 100%;
+
+        }
+      }
+    }
+
+    .side-project {
+      .side-project-text {
+        .side-project-text-row{
+          @include flex(column-reverse, flex-start, flex-start);
+          .side-project-text-row-left {
+            width: 100%;
+          }
+
+          .side-project-text-row-right {
+            @include flex(row, center, center);
+            width: 100%;
+
+            img {
+              width: 180px;
+              height: 180px;
+            }
+        }
+      }
+    }
+  }
+}
+}

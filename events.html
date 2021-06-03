@@ -1,0 +1,59 @@
+---
+layout: default
+title: Events
+---
+
+<div class="project-container">
+
+  <!-- Submit Event -->
+  <div class="box">
+    <div class="submit-box">
+      <div class="submit-project">
+        <div class="submit-project-img">
+          <img src="/assets/images/projects/banner.jpg" alt="">
+        </div>
+        <div class="submit-project-text">
+          <div class="submit-project-text-sum">
+            <p id="title">Our Events</p>
+            <p id="body">We take on events that can promote technology education, make resources accessible, and empower our youth to be skilled technology users, creators, and leaders of change. Projects must be manageable for our team of students. </p>
+          </div>
+          <!-- once we have form -->
+          <!-- <div class="submit-project-text-button">
+            <button type="button" name="button">Submit an Idea</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- Side Project -->
+  {% for event in site.events %}
+  <div class="cards">
+    <div class="side-project">
+      <div class="side-project-text">
+        <p class="c1">{{event.title}}</p>
+
+        <div class="side-project-text-row">
+          <div class="side-project-text-row-left">
+            <p class="c2">{{event.range}}</p>
+            <p>{{event.excerpt}}</p>
+            <br>
+            <!-- <a href="{{event.link}}">Read more about this on our blog post</a> -->
+          </div>
+          <div class="side-project-text-row-right">
+            <img src="{{event.picture}}" alt="">
+          </div>
+        </div>
+        <!-- <br>
+        <p class="c2">Status: {{event.status}}</p> -->
+        <br>
+        {% if event.link != NULL %}
+        <button type="button" name="button" onclick="window.open('{{ event.link }}', '_blank')">Apply to Join</button>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

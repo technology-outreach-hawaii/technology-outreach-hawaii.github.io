@@ -1,130 +1,219 @@
-.body{
-  background-color: $dark-blue;
-  color: white;
-}
-
-a {
-  color: white;
-}
-
-.body-box {
-  @include flex(column, center, center);
-  padding: 20px 100px;
-  position: relative;
-}
-
-.b-section1{
-  width: 100%;
-  @include flex(row, center, center);
-  padding: 20px;
-
-  a {
-    font-family: $archivo;
-    font-size: $h3;
-    font-weight: 700;
-  }
-
-  img {
+.blog-container {
     width: 100%;
-    height: 100%;
-  }
+    @include flex(column, center, center);
 
-  .b-image {
-    float: left;
-    width: 50%;
-  }
+    h1, p {
+      color: #E4FCFF;
+    }
 
-  .b-body {
-    float: right;
-    margin-left: 30px;
-    font-family: $archivo;
-    font-size: $h4;
-    width: 50%;
-  }
+    a {
+      font-size: $h4;
+    }
 
-}
-
-.b-one{
-  font-family: $archivo;
-  font-size: $h2;
-  font-weight: 700;
-  color: $yellow;
-}
-
-.b-two{
-  font-family: $archivo;
-  font-size: $h3;
-  font-weight: 700;
-}
-
-.b-five{
-  font-family: $archivo;
-  font-size: $h4;
-  font-weight: 700;
-  color: $yellow;
-}
-
-.b-three{
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.b-four{
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  opacity: 50%;
-}
-
-.b-heading{
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-}
-
-.b-title{
-  width: 100%;
-  text-align: left;
-}
-
-.b-section2{
-  background-color: #C0C0C0;
-  width: 400px;
-  height: 250px;
-  flex-direction: column;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-  .b-section-img, img{
+  .blog-background {
+    @include flex(column, center, center);
     width: 100%;
+    background-image: url('../../assets/images/blog/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-}
 
-.b-main{
-  width: 100%;
-  @include flex(row, center, center);
-  padding: 20px;
+  .blog-box {
+    width: 80%;
+    @include flex(column, space-between, flex-start);
+  }
+
+  // Header Section
+  .blog-header{
+    padding: 40px 0px;
+    width: 100%;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  // Featured Section
+  .blog-main {
+    width: 100%;
+    display: flex;
+
+    .blog-main-card:hover {
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    }
+
+      .blog-main-card  {
+        min-width: 455px;
+        min-height: 455px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include flex(column, flex-end, center);
+
+            img {
+              width: 100%;
+            }
+
+            .blog-main-img {
+              width: 100%;
+              height: 250px;
+              display: flex;
+            }
+
+            .blog-main-text {
+              padding: 20px;
+
+                .blog-main-center {
+                  @include flex(row, flex-start, center);
+
+                .blog-main-profile {
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    margin: 10px 10px 0 0;
+                    }
+                  }
+              }
+      }
+
+      .blog-main-summary {
+        padding-left: 30px;
+        width: 55%;
+        @include flex(column, flex-start, flex-start);
+
+          #blog-main-link{
+            width: 100%;
+            text-align: right;
+          }
+      }
+  }
+
+  // Topic Section
+  .blog-topic {
+    padding: 50px 0px;
+    width: 100%;
+    @include flex(row, center, center);
+
+    .blog-topic-des {
+      width: 70%;
+
+      p {
+        color: black;
+      }
+    }
+
+    .blog-topic-but {
+      text-align: right;
+      width: 20%;
+    }
+  }
+
+  // Blog Section
+  .blog-holder {
+    width: 90%;
+    @include flex(row, flex-start, flex-start);
+  }
+
+  .blog-section:hover {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+  }
+
+  .blog-section {
+    margin: 10px;
+    min-width: 355px;
+    min-height: 355px;
+    max-width: 355px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(column, flex-end, center);
+    border: black 1px solid;
+
+    .blog-section-side {
+      width: 100%;
+      @include flex(column, flex-start, center);
+
+        .blog-section-text {
+          @include flex(column, space-between, flex-start);
+          width: 90%;
+          padding-bottom: 20px;
+
+            .blog-section-bottom {
+            @include flex(row, flex-start, center);
+            opacity: 0.9;
+
+                  .blog-section-profile {
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    margin: 10px 10px 0px 0px;
+                  }
+              }
+        }
+
+
+    }
+  }
+
 }
 
 @media only screen and (max-width: 960px) {
-  .b-section1 {
-    @include flex(column, center, center);
-    text-align: center;
+  .blog-container {
 
-    .b-image, .b-body {
-      width: 100%;
+    .blog-background {
+      height: 50%;
     }
 
-    img {
-      min-width: 300px;
+    .blog-box {
+      width: 90%;
+      @include flex(column, center, center);
     }
 
-    .b-body {
-      margin: 0px;
-    }
-  }
+    // Featured Section
+    .blog-main {
+      height: 100%;
+      @include flex(column, center, center);
+      color: black;
 
-  .b-section2 {
-    min-width: 100px;
+      .blog-main-card {
+        width: 70%;
+        margin-right: 0px;
+      }
+
+      .blog-main-summary {
+        padding-top: 20px;
+        padding-left: 0;
+
+        p {
+          color: black;
+        }
+      }
+    }
+
+    // Topic Section
+    .blog-topic {
+      @include flex(column, center, center);
+      width: 70%;
+      padding: 20px 0px;
+      margin: 0;
+
+      .blog-topic-des, .blog-topic-but {
+        @include flex(column, center, center);
+        padding-bottom: 5px;
+        width: 100%;
+      }
+    }
+
+    // Blog Section
+    .blog-holder {
+      @include flex(column, center, center);
+      min-width: 455px;
+      min-height: 455px;
+    }
+    .blog-section {
+      margin-top: 40px;
+      width: 70%;
+      min-height: 455px;
+      max-width: none;
+    }
   }
 }

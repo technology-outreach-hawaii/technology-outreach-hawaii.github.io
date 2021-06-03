@@ -2,108 +2,108 @@
 layout: default
 title: Blog
 ---
-<div class="body">
-  <div class="body-box">
+{% assign name = site.posts[1].author %}
+{% assign author = site.data.members[name] %}
 
-    <!-- Start Of Community Resource -->
-    <div class="b-heading">
-      <p class="b-one">Community Resources</p>
-      <p class="b-three">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. xercitation ullamco laboris nisi ut aliquip ex ea commodo conseat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+<div class="blog-container">
+    <div class="blog-background">
 
-    <!-- Section 1 (Pic | Info) -->
-    <div class="b-section1">
-      <div class="b-image">
-        <img src="{{site.posts[0].picture}}" alt="">
-      </div>
-      <div class="b-body">
-        <p class="b-two"><a href="{{ site.posts[0].url }}">{{site.posts[0].title}}</a></p>
-        <p>{{site.posts[0].excerpt}}</p>
-        <p class="b-four">{{site.posts[0].author}}</p>
-      </div>
-    </div>
-
-    <!-- Start Of My Blog -->
-    <div class="b-heading">
-      <p class="b-one">My Blog</p>
-      <p class="b-three">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. xercitation ullamco laboris nisi ut aliquip ex ea commodo conseat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-
-    <!-- Section 1 (Pic | Info) -->
-    <div class="b-section1">
-      <div class="b-image">
-        <img src="{{site.posts[0].picture}}" alt="">
-      </div>
-      <div class="b-body">
-        <p class="b-two"><a href="{{ site.posts[0].url }}">{{site.posts[0].title}}</a></p>
-        <p>{{site.posts[0].excerpt}}</p>
-        <p class="b-four">{{site.posts[0].author}}</p>
-      </div>
-    </div>
-    <hr>
-
-    <!-- Section 2 (Card | Card | Card | Card) -->
-
-    <div class="b-title">
-      <p class="b-five">Technology</p>
-    </div>
-    <div class="b-main">
-
-      {% for post in site.posts %}
-        {% if forloop.rindex == 5 %}
-          {% break %}
-        {% endif %}
-        <div class="b-section2">
-          <div class="b-section-img">
-            <img src="{{post.picture}}" alt="">
+        <!-- Header Section -->
+        <div class="blog-box">
+          <div class="blog-header">
+            <h1>Our Blog</h1>
           </div>
-          <p class="b-three"><a href="{{ post.url }}">{{post.title}}</a></p>
-          <p class="b-four">{{post.author}}</p>
+
+          <!-- Featured Section -->
+          <div class="blog-main">
+            <div onclick="location.href='{{ site.posts[1].url }}';" class="blog-main-card"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url({{site.posts[1].picture}}); cursor: pointer;">
+            <!-- <a href="{{ site.posts[0].url }}" id="clickable"></a> -->
+              <!-- <div class="blog-main-img">
+                <img src="{{site.posts[0].picture}}" alt="">
+              </div> -->
+                <div class="blog-main-text">
+                  <p><a href="{{ site.posts[0].url }}">{{site.posts[1].title}}</a></p>
+                  <p> {{ site.posts[1].summary }} </p>
+                  <p class="blog-main-center">
+                    <img class="blog-main-profile" src="../../../{{ author.profile }}" alt="">
+                    {{ site.posts[1].date | date: "%b %d, %Y" }} by {{ author.full_name }}
+                  </p>
+                </div>
+            </div>
+
+            <div class="blog-main-summary">
+              <p>{{site.posts[1].excerpt}}</p>
+              <a id="blog-main-link" href="{{ site.posts[1].url }}" target=“_blank”>read more</a>
+            </div>
         </div>
-      {% endfor %}
+      </div>
     </div>
-    <hr>
 
-    <!-- Section 2 (Card | Card | Card | Card) -->
-
-    <div class="b-title">
-      <p class="b-five">Social Media</p>
-    </div>
-    <div class="b-main">
-      {% for post in site.posts %}
-        {% if forloop.rindex == 5 %}
-          {% break %}
-        {% endif %}
-        <div class="b-section2">
-          <div class="b-section-img">
-            <img src="{{post.picture}}" alt="">
+      <!-- Topic section -->
+       <!-- <div class="blog-box">
+        <div class="blog-topic">
+          <div class="blog-topic-des">
+            <p>Have topic suggestions or questions that would be interesting to discuss? Fill out this form and we might consider it as the focus of our next blog post! </p>
           </div>
-          <p class="b-three"><a href="{{ post.url }}">{{post.title}}</a></p>
-          <p class="b-four">{{post.author}}</p>
-        </div>
-      {% endfor %}
-    </div>
-    <hr>
-
-    <!-- Section 2 (Card | Card | Card | Card) -->
-
-    <div class="b-title">
-      <p class="b-five">Coding</p>
-    </div>
-    <div class="b-main">
-      {% for post in site.posts %}
-        {% if forloop.rindex == 5 %}
-          {% break %}
-        {% endif %}
-        <div class="b-section2">
-          <div class="b-section-img">
-            <img src="{{post.picture}}" alt="">
+          <div class="blog-topic-but">
+            <button type="button" name="button">Submit A Topic</button>
           </div>
-          <p class="b-three"><a href="{{ post.url }}">{{post.title}}</a></p>
-          <p class="b-four">{{post.author}}</p>
         </div>
-      {% endfor %}
-    </div>
-    <hr>
-  </div>
-</div>
+        </div> -->
+        <!-- Temporary spacing until we have a form -->
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- Blog Section -->
+        <div class="blog-box">
+            <div class="blog-holder">
+
+              {% for post in site.posts limit: 3%}
+
+                {% assign bname = post.author %}
+                {% assign bauthor = site.data.members[bname] %}
+              <div onclick="location.href='{{ post.url }}';" class="blog-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                         rgba(0, 0, 0, 0.5)), url({{post.picture}}); cursor: pointer;">
+                <div class="blog-section-side">
+                    <div class="blog-section-text">
+                      <p><a href="{{ post.url }}">{{post.title}}</a></p>
+                      <p> {{ post.summary }} </p>
+                      <p class="blog-section-bottom">
+                        <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="">
+                        {{ post.date | date: "%b %d, %Y" }} by {{ bauthor.full_name }}
+                    </div>
+                </div>
+              </div>
+
+              {% endfor %}
+            </div>
+            <div class="blog-holder">
+
+              {% for post in site.posts offset: 3 limit: 1%}
+
+                {% assign bname = post.author %}
+                {% assign bauthor = site.data.members[bname] %}
+              <div onclick="location.href='{{ post.url }}';" class="blog-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                         rgba(0, 0, 0, 0.5)), url({{post.picture}}); cursor: pointer;">
+                <div class="blog-section-side">
+                    <div class="blog-section-text">
+                      <p><a href="{{ post.url }}">{{post.title}}</a></p>
+                      <p> {{ post.summary }} </p>
+                      <p class="blog-section-bottom">
+                        <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="">
+                        {{ post.date | date: "%b %d, %Y" }} by {{ bauthor.full_name }}
+                    </div>
+                </div>
+              </div>
+
+              {% endfor %}
+            </div>
+        </div>
+
+        <br>
+        <br>
+      </div>

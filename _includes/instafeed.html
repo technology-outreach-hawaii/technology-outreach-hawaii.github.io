@@ -1,0 +1,51 @@
+<div class="ig-container">
+  <div class="ig-container-space">
+    <div class="stand-heading">
+      <h1 class="stand-section"><a href="https://www.instagram.com/techoutreachhawaii/" target=“_blank”>Instagram</a></h1>
+    </div>
+    <div id="instafeed"></div>
+  </div>
+</div>
+<script src="/assets/instafeed/instafeed.min.js"></script>
+<script type="text/javascript">
+  fetch("https://ig.instant-tokens.com/users/3f03ff7e-18e5-484f-afa5-ab1bb3635b3b/instagram/17841445099624568/token?userSecret=z7b54wsrxo1w0bkikcu3e")
+.then(resp => resp.json())
+.then(data => {
+      var feed = new Instafeed({
+          accessToken: data.Token,
+          limit: 5,
+          sortBy: 'most-recent',
+          success: function(response){
+                      // Author: Benjamin Hull
+                      var maxLength = 30;
+                      response.data.forEach(function(e){
+                        if (!e.caption) {
+                          return false; //Skip if there's no caption
+                        }
+                        e.shortCaption = ''; //Initialize to an empty string
+                        var textParts = e.caption.split(' '); //Split the caption into words
+
+                        while(true) {
+                          var nextWord = textParts.shift();
+
+                          if (!nextWord) {
+                            break; //If we hit the end of the caption before we hit the limit, bail out
+                          }
+
+                          if (e.shortCaption.length + nextWord.length < maxLength - 1){ //Check if the next word will fit into the limit (minus 1 includes the space)
+                            e.shortCaption += ' ' + nextWord; //If so, append it with a space
+                          } else {
+                            e.shortCaption = e.shortCaption.trim() + '…'; //If not, finish with an ellipsis and bail out
+                            break;
+                          }
+                        }
+                      });
+                    },
+
+          template: {% raw %}
+          '<a href="{{link}}" target="_blank" ><div class="post" style="background-image: url({{image}});"><div class="caption">{{model.shortCaption}}</div></div></a>'
+          {% endraw %},
+      });
+      feed.run();
+  });
+  </script>

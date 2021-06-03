@@ -1,0 +1,122 @@
+---
+layout: default
+title: Community
+---
+<div class="resources-container">
+  <!-- Banner Section -->
+  <div class="resources-banner">
+
+    <div class="resources-banner-text">
+      <div class="resources-banner-text-box">
+        <div class="resources-banner-text-box-word">
+          <h2>Community Spotlight</h2>
+          {% for sources in site.sources %}
+              {% if sources.spotlight != NULL %}
+              <h2> {{sources.title}}</h2>
+              <br>
+              <div class="tags-horizontal">
+                {% for tag in sources.tags %}
+                <p class='tags'>
+                  {{tag}}
+                </p>
+                {% endfor %}
+              </div>
+              <br>
+              <p>{{sources.summary}}</p>
+              <a href="{{sources.url}}" target=“_blank”>read more</a>
+              {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- temporary spacing once submit button as form -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Submit Section -->
+    <!-- <div class="resources-submit">
+      <div class="resources-submit-text">
+        <p>Know of a great resources not listed here?  Want to nominate an organization for our next community spotlight? </p>
+      </div>
+      <br>
+      <div class="resources-submit-button">
+        <button type="button" name="button">Submit a Resource</button>
+      </div>
+    </div> -->
+  </div>
+
+  <div class="resources-box">
+
+    <br>
+    {% include researchSearch.html %}
+  </div>
+    <!-- Online Section -->
+    <div class="resources-online">
+      <div class="resources-box">
+        <div class="resources-online-text">
+          <h2>National Resources</h2>
+        </div>
+        <div class="resources-online-bar">
+          <a id="link-basic" style="color: #E4FCFF;">Basic Digital Skills</a>
+          <a id="link-intermediate">Intermediate</a>
+          <a id="link-hard">Advance</a>
+        </div>
+        <hr>
+
+          <!-- BASIC -->
+          <div id="basic" class="resources-online-summary">
+            <p class="resources-online-summary-intro">Learning how to use the computer for the first time? This section includes online resources on basic digital skills for the beginner.</p>
+            <br>
+            <div class="resources-online-summary">
+              {% for online in site.onlines %}
+                {% if online.level == 'basic' %}
+                  <div class="resources-online-summary-section">
+                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
+                    <p>{{online.excerpt}}</p>
+                    <br>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- INTERMEDIATE -->
+          <div id="intermediate" class="resources-online-summary" style="display: none;">
+            <p class="resources-online-summary-intro">Are you familiar with everyday technologies but are interested in learning more? This section includes online resources to explore a variety of tech interests (e.g. coding, intermediate to advanced usage of Excel). </p>
+            <br>
+            <div class="resources-online-summary">
+              {% for online in site.onlines %}
+                {% if online.level == 'intermediate' %}
+                  <div class="resources-online-summary-section">
+                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
+                    <p>{{online.excerpt}}</p>
+                    <br>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- HARD -->
+          <div id="hard" class="resources-online-summary" style="display: none;">
+            <p class="resources-online-summary-intro">Are you looking for more in-depth courses or resources to understand the fundamentals of technology? This section includes online resources that dive deeper into the nitty gritty details of technology, research, and interdisciplinary uses. </p>
+            <br>
+            <div class="resources-online-summary">
+              {% for online in site.onlines %}
+                {% if online.level == 'hard' %}
+                  <div class="resources-online-summary-section">
+                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
+                    <p>{{online.excerpt}}</p>
+                    <br>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+      </div>
+    </div>
+</div>
+<script src="/assets/js/hideOnline.js"></script>
