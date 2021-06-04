@@ -7,5 +7,4 @@ collections:
   events:
     output: true
   sass:
-    sass_dir: assets/css
-    style:    compressed
+    sass_dir: /assets/css
