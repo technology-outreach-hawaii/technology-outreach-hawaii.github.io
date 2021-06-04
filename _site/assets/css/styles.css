@@ -6830,7 +6830,7 @@ nav {
     width: 100%; }
     .main .ig-container .ig-container-space {
       padding-left: 150px;
-      padding-right: 150px; }
+      padding-right: 100px; }
       .main .ig-container .ig-container-space .stand-heading {
         width: 100%;
         float: left; }
@@ -7322,13 +7322,12 @@ nav {
     .blog-container .blog-topic .blog-topic-des {
       width: 70%; }
       .blog-container .blog-topic .blog-topic-des p {
-        color: black;
-        font-size: 18px; }
+        color: black; }
     .blog-container .blog-topic .blog-topic-but {
       text-align: right;
       width: 20%; }
   .blog-container .blog-holder {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -7337,8 +7336,9 @@ nav {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
   .blog-container .blog-section {
     margin: 10px;
-    width: 25vw;
-    height: 25vw;
+    min-width: 355px;
+    min-height: 355px;
+    max-width: 355px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -7359,8 +7359,6 @@ nav {
         align-items: flex-start;
         width: 90%;
         padding-bottom: 20px; }
-        .blog-container .blog-section .blog-section-side .blog-section-text p {
-          font-size: 18px; }
         .blog-container .blog-section .blog-section-side .blog-section-text .blog-section-bottom {
           display: flex;
           flex-direction: row;
@@ -7424,12 +7422,6 @@ nav {
     width: 70%;
     min-height: 455px;
     max-width: none; } }
-hr {
-  border: 1px solid white; }
-
-a {
-  cursor: pointer; }
-
 .template-resource-img {
   object-fit: cover;
   width: 100%;
@@ -7586,7 +7578,7 @@ a {
           .resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar input {
             float: right;
             width: 100%;
-            height: 35px; }
+            height: 30px; }
           .resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar #submit {
             background-image: url("/assets/images/resources/search.png");
             background-repeat: no-repeat;
