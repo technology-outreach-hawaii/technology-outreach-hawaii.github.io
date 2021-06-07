@@ -279,17 +279,23 @@
         }
 
         .profile-section {
+          padding-left: 0;
           @include flex(row, space-between, flex-start);
 
             .prev, .next {
-              height: 100px;
+              height: 13vw;
             }
+          }
+
+          .place-dot{
+            height: 2vw;
+            width: 2vw;
           }
 
         .profile-section .profile {
               img {
-                height: 110px;
-                width: 110px;
+                height: 13vw;
+                width: 13vw;
               }
             }
       }
@@ -306,10 +312,13 @@
         padding: 0;
     }
 
-    #stand-section .stand-box {
-      padding: 0px;
-      padding-top: 150px;
-      padding-left: $text-margin;
+    #stand-section {
+
+      .stand-box {
+        padding: 0px;
+        padding-top: 150px;
+        padding-left: $text-margin;
+      }
     }
   }
 }

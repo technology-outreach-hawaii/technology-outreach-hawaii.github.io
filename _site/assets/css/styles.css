@@ -7035,15 +7035,19 @@ nav {
   .main #team .profile-header h2 {
     justify-content: left; }
   .main #team .profile-section {
+    padding-left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start; }
     .main #team .profile-section .prev, .main #team .profile-section .next {
-      height: 100px; }
+      height: 13vw; }
+  .main #team .place-dot {
+    height: 2vw;
+    width: 2vw; }
   .main #team .profile-section .profile img {
-    height: 110px;
-    width: 110px; }
+    height: 13vw;
+    width: 13vw; }
   .main #news, .main #team {
     border-left: none; }
   .main #update, .main .left {
