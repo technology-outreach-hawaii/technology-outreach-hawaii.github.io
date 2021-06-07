@@ -26,15 +26,15 @@
       width: 60%;
 
       img {
-        width: 100%;
-        height: 100%;
+        width: 45vw;
+        height: 25vw;
       }
     }
 
     .submit-project-text {
       padding: 0px 10px 0px 10px;
       @include flex(column, space-between, center);
-      height: 400px;
+      height: 300px;
       width: 38%;
       color: #E4FCFF;
 
@@ -45,7 +45,7 @@
         line-height: 1.2;
         letter-spacing: 1px;
         font-weight: 700;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
       }
 
       #body{
@@ -127,22 +127,38 @@
   }
 
   .project-container {
+
+    .box {
+      width: 100%;
+      background-image: url("");
+    }
+
+    .submit-box {
+      padding: 0;
+    }
+
     .cards {
-      padding: 0px 150px 40px 150px;
+      padding: 0px;
+      margin: 10px;
+      @include flex(column, center, center);
     }
     .submit-project {
       width: 100%;
       @include flex(column, center, center);
 
       .submit-project-img {
-        padding: 0px;
-        width: 100%;
-        height: 100%;
+        padding: 5px;
+        width: 80%;
+        height: 80%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
       }
 
       .submit-project-text {
-        padding: 0px;
-        @include flex(column, center, center);
         width: 100%;
         height: 100%;
         color: black;
@@ -169,6 +185,8 @@
     }
 
     .side-project {
+      width: 80%;
+      padding: 10px;
       .side-project-text {
         .side-project-text-row{
           @include flex(column-reverse, flex-start, flex-start);
