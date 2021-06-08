@@ -127,6 +127,7 @@
   }
 
   .project-container {
+    padding-top: $text-margin;
 
     .box {
       width: 100%;
@@ -139,7 +140,8 @@
 
     .cards {
       padding: 0px;
-      margin: 10px;
+      margin-top: $text-margin;
+      margin-bottom: $text-margin;
       @include flex(column, center, center);
     }
     .submit-project {
