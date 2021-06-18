@@ -139,6 +139,14 @@
 
   }
 
+  .event-grid {
+    width: 100%;
+
+    .event-grid-card {
+      padding-bottom: 20px;
+    }
+  }
+
   .event-icons {
     @include flex(row, center, center);
     width: 100%;
@@ -166,9 +174,17 @@
     height: 100%;
   }
 
+  .event-grid {
+
+    .event-grid-container {
+      padding: 50px 50px;
+
+    }
+  }
+
   .event-icons {
     position: none;
-    top: 0px;
+    top: -30px;
 
     .icon {
       margin: 0px 5px;
