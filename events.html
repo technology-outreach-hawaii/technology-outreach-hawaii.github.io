@@ -32,18 +32,20 @@ title: Events
           {% if post.event != NULL %}
           <div class="col-sm-12 col-md-4">
             <div class="event-grid-card">
-              <div class="event-grid-card-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                         rgba(0, 0, 0, 0.5)), url({{post.picture}}); cursor: pointer;">
-                  <div class="event-grid-card-image-overlay">
-                    <p>{{ post.range }}</p>
-                  </div>
-              </div>
-              <div class="event-grid-card-body">
-                  <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-                  <br/>
-                  <p>{{ post.setting }}</p>
-                  <br/>
-                  <p>{{ post.summary }}</p>
+              <div class="event-grid-card-click" style="cursor: pointer;" onclick="location.href='{{ post.url }}';">
+                <div class="event-grid-card-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                           rgba(0, 0, 0, 0.5)), url({{post.picture}}); cursor: pointer;">
+                    <div class="event-grid-card-image-overlay">
+                      <p>{{ post.range }}</p>
+                    </div>
+                </div>
+                <div class="event-grid-card-body">
+                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                    <br/>
+                    <p>{{ post.setting }}</p>
+                    <br/>
+                    <p>{{ post.summary }}</p>
+                </div>
               </div>
               <div class="event-grid-card-footer">
                   <div class="event-grid-card-footer-social">
