@@ -7,6 +7,7 @@ caption: More information coming soon.
 setting: Hybrid
 target: Teens
 level: Beginner
+event: yes
 ---
 
 More information coming soon.

@@ -110,7 +110,7 @@
 
   // Blog Section
   .blog-holder {
-    width: 90%;
+    width: 100%;
     @include flex(row, flex-start, flex-start);
   }
 
@@ -120,9 +120,8 @@
 
   .blog-section {
     margin: 10px;
-    min-width: 355px;
-    min-height: 355px;
-    max-width: 355px;
+    width: 24vw;
+    height: 25vw;
     background-repeat: no-repeat;
     background-size: cover;
     @include flex(column, flex-end, center);

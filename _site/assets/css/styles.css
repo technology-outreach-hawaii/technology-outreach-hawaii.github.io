@@ -7334,7 +7334,7 @@ nav {
       text-align: right;
       width: 20%; }
   .blog-container .blog-holder {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -7343,9 +7343,8 @@ nav {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
   .blog-container .blog-section {
     margin: 10px;
-    min-width: 355px;
-    min-height: 355px;
-    max-width: 355px;
+    width: 24vw;
+    height: 25vw;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -7675,6 +7674,9 @@ nav {
     .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body {
       margin: 0px;
       height: 100%; } }
+.event-img {
+  width: 100%; }
+
 .event-container {
   display: flex;
   flex-direction: column;
@@ -7713,7 +7715,9 @@ nav {
     margin: 0px 20px; }
   .event-icons img {
     height: 150px;
-    width: 150px; }
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white; }
 
 .event-grid {
   width: 100%; }
@@ -7756,6 +7760,9 @@ nav {
       align-items: center;
       height: 100%;
       width: 25%; }
+      .event-grid .event-grid-card .event-grid-card-footer .event-grid-card-footer-social .social-event-icon {
+        border-radius: 50%;
+        margin: 0px 5px; }
     .event-grid .event-grid-card .event-grid-card-footer .event-grid-card-footer-difficulty {
       display: flex;
       flex-direction: row;
@@ -7782,7 +7789,6 @@ nav {
 
 @media only screen and (max-width: 1100px) {
   .event-banner {
-    border: 5px solid red;
     background-image: url("../../assets/images/home/index-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -7823,15 +7829,17 @@ nav {
   .event-banner {
     width: 100%;
     height: 100%; }
+    .event-banner .event-banner-body {
+      padding-bottom: 40px; }
 
   .event-grid .event-grid-container {
     padding: 50px 50px; }
 
   .event-icons {
     position: none;
-    top: -30px; }
+    top: -40px; }
     .event-icons .icon {
       margin: 0px 5px; }
     .event-icons img {
-      height: 50px;
-      width: 50px; } }
+      height: 75px;
+      width: 75px; } }
