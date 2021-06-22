@@ -1,14 +1,14 @@
 ---
 layout: post
 author: gina
-title: Virtual Technology Workshop
+title: Splash into Technology
 tags: event
 update:
 picture: assets/images/blog/virtualWorkshop.png
 summary: A morning of technology fun for children and teens.
 quote: Splash into technology with us at our Virtual Technology Workshop!
 event: yes
-setting: Virtual
+setting: Virtual Technology Workshop
 target: Teens
 level: Beginner
 range: Saturday <br/> June 26 <br/> 9 am - 11 am

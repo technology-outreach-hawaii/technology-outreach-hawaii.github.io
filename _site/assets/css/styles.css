@@ -7741,7 +7741,7 @@ nav {
       padding: 20px; }
   .event-grid .event-grid-card .event-grid-card-body {
     background-color: #0A303B;
-    padding: 10px; }
+    padding: 10px 20px; }
     .event-grid .event-grid-card .event-grid-card-body p {
       color: white; }
   .event-grid .event-grid-card .event-grid-card-footer {
@@ -7761,7 +7761,8 @@ nav {
       justify-content: flex-start;
       align-items: center;
       height: 100%;
-      width: 25%; }
+      width: 25%;
+      margin-left: 20px; }
       .event-grid .event-grid-card .event-grid-card-footer .event-grid-card-footer-social .social-event-icon {
         border-radius: 50%;
         margin: 0px 5px; }
@@ -7809,8 +7810,6 @@ nav {
 
   .event-grid {
     width: 100%; }
-    .event-grid .event-grid-card {
-      padding-bottom: 20px; }
 
   .event-icons {
     display: flex;
