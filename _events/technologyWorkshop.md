@@ -1,8 +1,12 @@
 ---
 title: Virtual Technology Workshop
-range: June 26 from 9 AM - 11 AM
+range: Saturday <br/> June 26 <br/> 9 am - 11 am
 picture: assets/images/projects/virtualWorkshop.png
 link: http://bit.ly/torch-tech-workshop
+caption: Splash into technology with us at our Virtual Technology Workshop!
+setting: Virtual
+target: Teens
+level: Beginner
 ---
 
 Splash into technology with us at our Virtual Technology Workshop!

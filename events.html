@@ -2,58 +2,74 @@
 layout: default
 title: Events
 ---
-
-<div class="project-container">
-
-  <!-- Submit Event -->
-  <div class="box">
-    <div class="submit-box">
-      <div class="submit-project">
-        <div class="submit-project-img">
-          <img src="/assets/images/projects/banner.jpg" alt="">
+<div class="event-container">
+  <div class="event-banner">
+    <div class="event-banner-text">
+        <div class="event-banner-body">
+          <h2>Events</h2>
+          <br/>
+          <p>Explore technology events created and lead by our team of students.
+            We strive to make our activities interactive and engaging.
+            No one is ever too young or too old to learn something new.
+            We are open to ideas and suggestions for future events! </p>
         </div>
-        <div class="submit-project-text">
-          <div class="submit-project-text-sum">
-            <p id="title">Our Events</p>
-            <p id="body">We take on events that can promote technology education, make resources accessible, and empower our youth to be skilled technology users, creators, and leaders of change. Projects must be manageable for our team of students. </p>
+    </div>
+  </div>
+
+  <div class="event-icons">
+    <div class="event-icons-container">
+      <img class="icon" src="/assets/images/event/icons/1.png" alt="">
+      <img class="icon" src="/assets/images/event/icons/2.png" alt="">
+      <img class="icon" src="/assets/images/event/icons/3.png" alt="">
+      <img class="icon" src="/assets/images/event/icons/4.png" alt="">
+      <img class="icon" src="/assets/images/event/icons/5.png" alt="">
+    </div>
+  </div>
+
+  <div class="event-grid">
+    <div class="event-grid-container">
+      <div class="row">
+        {% for post in site.posts limit: 1%}
+          {% if post.event != NULL %}
+          <div class="col-sm-12 col-md-4">
+            <div class="event-grid-card">
+              <div class="event-grid-card-click" style="cursor: pointer;" onclick="location.href='{{ post.url }}';">
+                <div class="event-grid-card-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                           rgba(0, 0, 0, 0.5)), url({{post.picture}}); cursor: pointer;">
+                    <div class="event-grid-card-image-overlay">
+                      <p>{{ post.range }}</p>
+                    </div>
+                </div>
+                <div class="event-grid-card-body">
+                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                    <br/>
+                    <p>{{ post.setting }}</p>
+                    <br/>
+                    <p>{{ post.summary }}</p>
+                </div>
+              </div>
+              <div class="event-grid-card-footer">
+                  <div class="event-grid-card-footer-social">
+                    <a href="{{ post.IG }}" target=“_blank”><img class="social-event-icon" src="/assets/images/logo/ig-white.png" alt=""></a>
+                    <a href="{{ post.facebook }}" target=“_blank”><img class="social-event-icon" src="/assets/images/logo/fb-white.png" alt=""></a>
+                  </div>
+                  <div class="event-grid-card-footer-difficulty">
+                    <div class="event-grid-card-footer-difficulty-left">
+                      <p>{{ post.target }}</p>
+                    </div>
+                    <div class="event-grid-card-footer-difficulty-right">
+                      <p>{{ post.level }}</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </div>
-          <!-- once we have form -->
-          <!-- <div class="submit-project-text-button">
-            <button type="button" name="button">Submit an Idea</button>
-          </div> -->
-        </div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
-  <br>
-  <br>
-  <!-- Side Project -->
-  {% for event in site.events %}
-  <div class="cards">
-    <div class="side-project">
-      <div class="side-project-text">
-        <p class="c1">{{event.title}}</p>
 
-        <div class="side-project-text-row">
-          <div class="side-project-text-row-left">
-            <p class="c2">{{event.range}}</p>
-            <p>{{event.excerpt}}</p>
-            <br>
-            <!-- <a href="{{event.link}}">Read more about this on our blog post</a> -->
-          </div>
-          <div class="side-project-text-row-right">
-            <img src="{{event.picture}}" alt="">
-          </div>
-        </div>
-        <!-- <br>
-        <p class="c2">Status: {{event.status}}</p> -->
-        <br>
-        {% if event.link != NULL %}
-        <button type="button" name="button" onclick="window.open('{{ event.link }}', '_blank')">Sign Up</button>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-  {% endfor %}
+
 
 </div>
