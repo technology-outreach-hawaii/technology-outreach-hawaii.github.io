@@ -13,7 +13,7 @@ target: Teens
 level: Beginner
 range: Saturday <br/> June 26 <br/> 9 am - 11 am
 IG: https://www.instagram.com/p/CPTzaWHjdfP/
-facebook: https://www.facebook.com/techoutreachhi
+facebook: https://www.facebook.com/techoutreachhi/posts/118900097021175
 ---
 A morning of technology fun for children and teens. Content is geared towards high school students but younger students may also sign up. Activities are lead by our team of students from the University of Hawaii at Manoa.
 <br/>
