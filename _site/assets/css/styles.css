@@ -7100,12 +7100,18 @@ nav {
   justify-content: center;
   align-items: center; }
   .team-container .team-box {
-    padding-top: 100px;
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
+  .team-container .banner-box {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px; }
   .team-container .team-about {
     display: flex;
     flex-direction: row;
@@ -7134,15 +7140,19 @@ nav {
       align-items: space-between;
       width: 35%;
       height: 100%; }
+  .team-container .wave {
+    background-image: url("../../assets/images/about/about-bg.svg");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    background-size: cover; }
   .team-container .background {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url("../../assets/images/about/team-bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%; }
+    height: 100%;
+    background-color: #0A303B; }
   .team-container .team-display {
     display: flex;
     flex-direction: column;
@@ -7151,7 +7161,6 @@ nav {
     width: 90%;
     color: #E4FCFF; }
     .team-container .team-display .team-display-head {
-      padding-top: 100px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -7215,7 +7224,7 @@ nav {
     .team-container .team-about .team-about-img {
       width: 100%; }
     .team-container .team-about .team-about-text {
-      padding-top: 20px;
+      padding-top: 0px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -7228,7 +7237,6 @@ nav {
   .team-container .team-display {
     height: 100%; }
     .team-container .team-display .team-display-head {
-      color: black;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
