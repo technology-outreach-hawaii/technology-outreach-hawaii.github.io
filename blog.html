@@ -16,7 +16,7 @@ title: Blog
 
           <!-- Featured Section -->
           <div class="blog-main">
-            <div onclick="location.href='{{ site.posts[1].url }}';" class="blog-main-card"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            <div onclick="location.href='{{ site.posts[2].url }}';" class="blog-main-card"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                        rgba(0, 0, 0, 0.5)), url({{site.posts[1].picture}}); cursor: pointer;">
             <!-- <a href="{{ site.posts[0].url }}" id="clickable"></a> -->
               <!-- <div class="blog-main-img">
@@ -27,14 +27,14 @@ title: Blog
                   <p> {{ site.posts[2].summary }} </p>
                   <p class="blog-main-center">
                     <img class="blog-main-profile" src="../../../{{ author.profile }}" alt="">
-                    {{ site.posts[1].date | date: "%b %d, %Y" }} by {{ author.full_name }}
+                    {{ site.posts[2].date | date: "%b %d, %Y" }} by {{ author.full_name }}
                   </p>
                 </div>
             </div>
 
             <div class="blog-main-summary">
               <p>{{site.posts[2].excerpt}}</p>
-              <a id="blog-main-link" href="{{ site.posts[1].url }}" target=“_blank”>read more</a>
+              <a id="blog-main-link" href="{{ site.posts[2].url }}" target=“_blank”>read more</a>
             </div>
         </div>
       </div>
