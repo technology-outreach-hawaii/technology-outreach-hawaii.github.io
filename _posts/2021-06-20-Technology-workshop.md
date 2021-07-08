@@ -22,7 +22,3 @@ Learn the basics of building a website from scratch and analyzing data from spre
 <br/>
 <br/>
 <button type="button" name="button" onclick="window.open('http://bit.ly/torch-tech-workshop', '_blank')">Sign Up</button>
-<br/>
-<br/>
-Schedule:
-<img class="event-img" src="/assets/images/projects/schedule.png">

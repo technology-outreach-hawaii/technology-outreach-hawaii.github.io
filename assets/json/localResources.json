@@ -1,7 +1,7 @@
 ---
 ---
 [
-  {% for source in site.sources %}
+  {% for source in site.localResources %}
     {
 
       "title"    : "{{ source.title | strip_html | escape }}",

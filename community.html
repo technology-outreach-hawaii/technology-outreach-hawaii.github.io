@@ -10,20 +10,20 @@ title: Community
       <div class="resources-banner-text-box">
         <div class="resources-banner-text-box-word">
           <h2>Community Spotlight</h2>
-          {% for sources in site.sources %}
-              {% if sources.spotlight != NULL %}
-              <h2> {{sources.title}}</h2>
+          {% for resource in site.localResources %}
+              {% if resource.spotlight != NULL %}
+              <h2> {{resource.title}}</h2>
               <br>
               <div class="tags-horizontal">
-                {% for tag in sources.tags %}
+                {% for tag in resource.tags %}
                 <p class='tags'>
                   {{tag}}
                 </p>
                 {% endfor %}
               </div>
               <br>
-              <p>{{sources.summary}}</p>
-              <a href="{{sources.url}}" target=“_blank”>read more</a>
+              <p>{{resource.summary}}</p>
+              <a href="{{resource.url}}" target=“_blank”>read more</a>
               {% endif %}
           {% endfor %}
         </div>
@@ -50,7 +50,7 @@ title: Community
   <div class="resources-box">
 
     <br>
-    {% include researchSearch.html %}
+    {% include communityResearch.html %}
   </div>
     <!-- Online Section -->
     <div class="resources-online">
@@ -70,11 +70,11 @@ title: Community
             <p class="resources-online-summary-intro">Learning how to use the computer for the first time? This section includes online resources on basic digital skills for the beginner.</p>
             <br>
             <div class="resources-online-summary">
-              {% for online in site.onlines %}
-                {% if online.level == 'basic' %}
+              {% for resource in site.onlineResources %}
+                {% if resource.level == 'basic' %}
                   <div class="resources-online-summary-section">
-                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
-                    <p>{{online.excerpt}}</p>
+                    <a href={{resource.link}} target=“_blank”>{{resource.title}}</a>
+                    <p>{{resource.excerpt}}</p>
                     <br>
                   </div>
                 {% endif %}
@@ -87,11 +87,11 @@ title: Community
             <p class="resources-online-summary-intro">Are you familiar with everyday technologies but are interested in learning more? This section includes online resources to explore a variety of tech interests (e.g. coding, intermediate to advanced usage of Excel). </p>
             <br>
             <div class="resources-online-summary">
-              {% for online in site.onlines %}
-                {% if online.level == 'intermediate' %}
+              {% for resource in site.onlineResources %}
+                {% if resource.level == 'intermediate' %}
                   <div class="resources-online-summary-section">
-                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
-                    <p>{{online.excerpt}}</p>
+                    <a href={{resource.link}} target=“_blank”>{{resource.title}}</a>
+                    <p>{{resource.excerpt}}</p>
                     <br>
                   </div>
                 {% endif %}
@@ -104,11 +104,11 @@ title: Community
             <p class="resources-online-summary-intro">Are you looking for more in-depth courses or resources to understand the fundamentals of technology? This section includes online resources that dive deeper into the nitty gritty details of technology, research, and interdisciplinary uses. </p>
             <br>
             <div class="resources-online-summary">
-              {% for online in site.onlines %}
-                {% if online.level == 'hard' %}
+              {% for resource in site.onlineResources %}
+                {% if resource.level == 'hard' %}
                   <div class="resources-online-summary-section">
-                    <a href={{online.link}} target=“_blank”>{{online.title}}</a>
-                    <p>{{online.excerpt}}</p>
+                    <a href={{resource.link}} target=“_blank”>{{resource.title}}</a>
+                    <p>{{resource.excerpt}}</p>
                     <br>
                   </div>
                 {% endif %}
@@ -119,4 +119,4 @@ title: Community
       </div>
     </div>
 </div>
-<script src="/assets/js/hideOnline.js"></script>
+<script src="/assets/js/hideOnlineResources.js"></script>

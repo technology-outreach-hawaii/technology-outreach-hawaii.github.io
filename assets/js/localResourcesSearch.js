@@ -81,7 +81,7 @@ bkauai.addEventListener("click", function(){
 
 const loadSources = async (island) => {
     try {
-        const res = await fetch('/search.json');
+        const res = await fetch('/assets/json/localResources.json');
         sources = await res.json();
         let i = 0;
         const list = [];
