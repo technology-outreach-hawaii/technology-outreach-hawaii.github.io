@@ -7159,6 +7159,7 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     width: 90%;
+    height: 100%;
     color: #E4FCFF; }
     .team-container .team-display .team-display-head {
       display: flex;
@@ -7172,18 +7173,14 @@ nav {
         font-weight: 700;
         letter-spacing: 3px; }
     .team-container .team-display .team-display-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%; }
+      height: 100%;
+      margin-bottom: 50px; }
     .team-container .team-display .team-display-all {
       padding: 20px;
       width: 33%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      float: left;
+      min-height: 400px;
+      height: 450px; }
       .team-container .team-display .team-display-all .team-display-all-img {
         display: flex;
         flex-direction: column;

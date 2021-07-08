@@ -67,6 +67,7 @@
   .team-display {
     @include flex(column, flex-start, flex-start);
     width: 90%;
+    height: 100%;
     color: #E4FCFF;
 
 
@@ -82,14 +83,17 @@
       }
     }
     .team-display-row {
-      @include flex(row, flex-start, flex-start);
-      width: 100%;
+      height: 100%;
+      margin-bottom: 50px;
     }
 
     .team-display-all {
       padding: 20px;
       width: 33%;
-      @include flex(column, center, center);
+      float: left;
+      min-height: 400px;
+      height: 450px;
+
       .team-display-all-img {
         @include flex(column, center, center);
         width: 100%;
