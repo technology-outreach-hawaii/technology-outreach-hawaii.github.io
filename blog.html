@@ -62,7 +62,7 @@ title: Blog
         <div class="blog-box">
             <div class="blog-holder">
 
-              {% for post in site.posts limit: 3%}
+              {% for post in site.posts %}
 
                 {% assign bname = post.author %}
                 {% assign bauthor = site.data.members[bname] %}
@@ -81,7 +81,7 @@ title: Blog
 
               {% endfor %}
             </div>
-            <div class="blog-holder">
+            <!-- <div class="blog-holder">
 
               {% for post in site.posts offset: 3 limit: 2%}
 
@@ -101,7 +101,7 @@ title: Blog
               </div>
 
               {% endfor %}
-            </div>
+            </div> -->
         </div>
 
         <br>

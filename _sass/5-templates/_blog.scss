@@ -20,7 +20,8 @@
 
   .blog-box {
     width: 80%;
-    @include flex(column, space-between, flex-start);
+    border: 5px solid green;
+    // @include flex(column, space-between, flex-start);
   }
 
   // Header Section
@@ -111,7 +112,9 @@
   // Blog Section
   .blog-holder {
     width: 100%;
-    @include flex(row, flex-start, flex-start);
+    // @include flex(row, flex-start, flex-start);
+    float: left;
+    border: 5px solid red;
   }
 
   .blog-section:hover {
@@ -120,8 +123,9 @@
 
   .blog-section {
     margin: 10px;
-    width: 24vw;
+    width: 33%;
     height: 25vw;
+
     background-repeat: no-repeat;
     background-size: cover;
     @include flex(column, flex-end, center);
