@@ -7725,7 +7725,8 @@ nav {
     border: 3px solid white; }
 
 .event-grid {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   .event-grid .event-grid-container {
     padding: 50px 100px; }
   .event-grid .event-grid-card:hover {
@@ -7815,6 +7816,10 @@ nav {
 
   .event-grid {
     width: 100%; }
+    .event-grid .event-grid-card {
+      margin-bottom: 40px; }
+      .event-grid .event-grid-card .event-grid-card-body {
+        height: auto; }
 
   .event-icons {
     display: flex;
