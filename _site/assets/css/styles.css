@@ -6821,6 +6821,9 @@ nav {
   width: 100%; }
   .IGcontainer .IGcontainer-space {
     padding: 0px 100px 0px 150px; }
+    @media (max-width: 950px) {
+      .IGcontainer .IGcontainer-space {
+        padding: 0px 30px 0px 30px; } }
   .IGcontainer .IGcontainer-space-heading {
     width: 100%;
     float: left; }
@@ -6833,16 +6836,16 @@ nav {
   width: 100%;
   height: 100%; }
   #instafeed .IGpost {
-    border: 5px solid white;
-    opacity: 0.7;
-    width: 225px;
-    height: 225px;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    width: 225px;
+    height: 225px;
+    border: 5px solid white;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 40px; }
   #instafeed .IGpost:hover {
     opacity: 1;
@@ -6858,14 +6861,14 @@ nav {
     opacity: 0; }
 
 .main {
-  width: 100%;
   background-image: url("../../assets/images/home/index-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
   .main h1 {
     color: #E4FCFF;
     margin-bottom: 30px; }
@@ -6874,191 +6877,211 @@ nav {
   .main .main-inner {
     width: 80%; }
   .main .section {
-    height: 300px;
-    margin: 100px 0px 100px 0px;
-    color: #E4FCFF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
-  .main .text {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; }
-  .main #news {
-    width: 50%;
-    height: 100%;
-    border-left: 1px solid #B8CED1;
-    overflow-y: scroll; }
-    .main #news li {
-      text-align: left;
-      margin-top: 30px;
-      padding-left: 30px;
-      line-height: 1.5;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start; }
+    align-items: center;
+    height: 300px;
+    margin: 100px 0px 100px 0px;
+    color: #E4FCFF; }
+    @media (max-width: 950px) {
+      .main .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        height: 100%; } }
   .main button {
     margin-top: 30px; }
     .main button a {
       color: #0A303B;
       font-size: 30px; }
-  .main #goal {
-    width: 40%;
-    height: 100%; }
-  .main #team {
-    width: 60%;
-    height: 100%;
-    border-left: 1px solid #B8CED1;
+
+.visionSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+  @media (max-width: 950px) {
+    .visionSection {
+      width: 100%;
+      margin-bottom: 30px; } }
+
+#newSection {
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid #B8CED1;
+  overflow-y: scroll; }
+  #newSection li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    .main #team .profile-header {
-      width: 100%;
-      text-align: center; }
-      .main #team .profile-header p {
-        width: 100%;
-        padding-left: 30px; }
-    .main #team .place {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-    .main #team .place-dot {
-      width: 20px;
-      height: 20px;
-      margin: 5px;
-      border-radius: 50%;
-      background-color: black;
-      opacity: 50%; }
-    .main #team .profile-section {
-      width: 100%;
-      height: 100%;
-      padding-left: 30px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .main #team .profile-section .prev, .main #team .profile-section .next {
-        cursor: pointer;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-        user-select: none; }
-      .main #team .profile-section .profile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%; }
-        .main #team .profile-section .profile h4 {
-          font-size: 15px;
-          color: #f0f2f5; }
-        .main #team .profile-section .profile img {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-          border: 1px white solid;
-          margin: 0px 10px; }
-  .main #stand-section {
-    width: 100%;
-    height: 800px;
-    background-image: url("../../assets/images/home/weDo-bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; }
-    .main #stand-section .stand-layout {
-      width: 100%; }
-    .main #stand-section .stand-box {
-      padding: 150px; }
-    .main #stand-section .stand-individual {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-    .main #stand-section img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: 5px solid white; }
-    .main #stand-section .stand-heading {
-      width: 100%;
-      float: left; }
-      .main #stand-section .stand-heading a {
-        font-size: 30px;
-        float: left;
-        margin: 10px; }
-    .main #stand-section .stand-img {
-      float: left; }
-    .main #stand-section .stand-body {
-      float: right;
-      margin-left: 30px;
-      width: 100%;
-      text-align: left; }
-      .main #stand-section .stand-body a {
-        width: 100%; }
-
-@media only screen and (max-width: 960px) {
-  .IGcontainer .IGcontainer-space {
-    padding: 0px 30px 0px 30px; }
-
-  .main .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 0px;
-    margin-top: 30px; }
-  .main #team, .main #news, .main #goal, .main .text, .main .left {
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 30px;
+    line-height: 1.5; }
+    @media (max-width: 950px) {
+      #newSection li {
+        padding: 0; } }
+  @media (max-width: 950px) {
+    #newSection {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 30px;
+      border-left: none; }
+      #newSection #update {
+        float: left; } }
+
+#goalSection {
+  width: 40%;
+  height: 100%; }
+  @media (max-width: 950px) {
+    #goalSection {
+      width: 100%;
+      margin-bottom: 30px; } }
+
+#teamSection {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #B8CED1; }
+  @media (max-width: 950px) {
+    #teamSection {
+      width: 100%;
+      margin-bottom: 30px;
+      border-left: none; } }
+  #teamSection .profile-header {
     width: 100%;
-    margin-bottom: 30px; }
-  .main .section, .main #resource-links {
-    height: 100%; }
-  .main #team .profile-header {
-    text-align: left; }
-    .main #team .profile-header p {
-      padding-left: 0; }
-  .main #team .profile-header h2 {
-    justify-content: left; }
-  .main #team .profile-section {
-    padding-left: 0;
+    text-align: center; }
+    @media (max-width: 950px) {
+      #teamSection .profile-header {
+        text-align: left; }
+        #teamSection .profile-header h2 {
+          justify-content: left; } }
+    #teamSection .profile-header p {
+      width: 100%;
+      padding-left: 30px; }
+      @media (max-width: 950px) {
+        #teamSection .profile-header p {
+          padding-left: 0; } }
+  #teamSection .place {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  #teamSection .place-dot {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 50%; }
+    @media (max-width: 950px) {
+      #teamSection .place-dot {
+        width: 2vw;
+        height: 2vw; } }
+  #teamSection .profile-section {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; }
-    .main #team .profile-section .prev, .main #team .profile-section .next {
-      height: 13vw; }
-  .main #team .place-dot {
-    height: 2vw;
-    width: 2vw; }
-  .main #team .profile-section .profile img {
-    height: 13vw;
-    width: 13vw; }
-  .main #news, .main #team {
-    border-left: none; }
-  .main #update, .main .left {
-    float: left; }
-  .main #news li {
-    padding: 0; }
-  .main #stand-section {
+    align-items: flex-start;
+    padding-left: 30px; }
+    @media (max-width: 950px) {
+      #teamSection .profile-section {
+        padding-left: 0; }
+        #teamSection .profile-section img {
+          width: 13vw;
+          height: 13vw; } }
+  #teamSection .prev, #teamSection .next {
+    cursor: pointer;
     height: 100%;
-    padding-bottom: 50px; }
-    .main #stand-section .stand-box {
-      padding: 0px;
-      padding-top: 150px;
-      padding-left: 30px; } }
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    user-select: none; }
+    @media (max-width: 950px) {
+      #teamSection .prev, #teamSection .next {
+        height: 13vw; } }
+  #teamSection .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    #teamSection .profile h4 {
+      font-size: 15px;
+      color: #f0f2f5; }
+    #teamSection .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px white solid;
+      margin: 0px 10px; }
+      @media (max-width: 950px) {
+        #teamSection .profile img {
+          width: 13vw;
+          height: 13vw; } }
+
+#stand-section {
+  width: 100%;
+  height: 800px;
+  background-image: url("../../assets/images/home/weDo-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0; }
+  @media (max-width: 950px) {
+    #stand-section {
+      height: 100%;
+      padding-bottom: 50px; } }
+  #stand-section .stand-layout {
+    width: 100%; }
+  #stand-section .stand-box {
+    padding: 150px; }
+    @media (max-width: 950px) {
+      #stand-section .stand-box {
+        padding: 150px 0px 0px 30px; } }
+  #stand-section .stand-individual {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  #stand-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white; }
+  #stand-section .stand-heading {
+    width: 100%;
+    float: left; }
+    #stand-section .stand-heading a {
+      font-size: 30px;
+      float: left;
+      margin: 10px; }
+  #stand-section .stand-img {
+    float: left; }
+  #stand-section .stand-body {
+    float: right;
+    margin-left: 30px;
+    width: 100%;
+    text-align: left; }
+    #stand-section .stand-body a {
+      width: 100%; }
+
 #post {
   background-color: #f0f2f5;
   height: 100%;
