@@ -1,64 +1,63 @@
-.main {
+// BEGIN INSTAFEED CSS ========================================================
+
+// INSTAFEED CONTAINER
+.IGcontainer {
+  background-color: $dark-blue;
   width: 100%;
-  background-image: url('../../assets/images/home/index-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  @include flex(column, center, center);
 
-  .ig-container {
-    background-color: $dark-blue;
-    width: 100%;
+  .IGcontainer-space {
+    padding: 0px 100px 0px 150px;
 
-    .ig-container-space {
-      padding-left: 150px;
-      padding-right: 100px;
-
-      .stand-heading {
-        width: 100%;
+    .IGcontainer-space-heading {
+      width: 100%;
+      float: left;
+      a {
+        font-size: 30px;
         float: left;
-        a {
-          font-size: 30px;
-          float: left;
-          margin: 10px;
-        }
+        margin: 10px;
       }
     }
   }
+}
 
-  #instafeed {
-   width: 100%;
-   height: 100%;
+// INSTAFEED INDIVIDUAL POST
+#instafeed {
+  @include size(100%, 100%);
 
-   .post {
-     border: 5px solid white;
-     opacity: 0.7;
-     width: 225px;
-     height: 225px;
-     background-repeat: no-repeat;
-     background-size: cover;
-     @include flex(column, flex-end, flex-start);
-     margin-bottom: 40px;
-   }
-
-   .post:hover {
-     opacity: 1;
-     -webkit-transform: scale(1.1);
-     transform: scale(1.1);
-     -webkit-transition: all 0.8s;
-     transition: all 0.8s;
-   }
-
-   .post:hover .caption {
-       opacity: 1;
-   }
-
-   .caption {
-     color: white;
-     padding-left: 10px;
-     padding-bottom: 10px;
-     opacity: 0;
-   }
+ .IGpost {
+   border: 5px solid white;
+   opacity: 0.7;
+   @include size(225px, 225px);
+   background-repeat: no-repeat;
+   background-size: cover;
+   @include flex(column, flex-end, flex-start);
+   margin-bottom: 40px;
  }
+
+ .IGpost:hover {
+   opacity: 1;
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+   -webkit-transition: all 0.8s;
+   transition: all 0.8s;
+ }
+
+ .IGpost:hover .IGcaption {
+     opacity: 1;
+ }
+
+ .IGcaption {
+   color: white;
+   padding: 0px 0px 10px 10px;
+   opacity: 0;
+ }
+}
+// END INSTAFEED CSS ========================================================
+
+.main {
+  width: 100%;
+  @include background('../../assets/images/home/index-bg.png', no-repeat, cover);
+  @include flex(column, center, center);
 
   h1 {
     color: $light-blue;
@@ -113,13 +112,11 @@
   }
 
   #goal {
-    width: 40%;
-    height: 100%;
+    @include size(40%, 100%);
   }
 
   #team {
-    width: 60%;
-    height: 100%;
+    @include size(60%, 100%);
     border-left: 1px solid $grey;
     @include flex(column, center, center);
 
@@ -138,19 +135,17 @@
     }
 
     .place-dot{
+      @include size(20px, 20px);
       margin: 5px;
-      height: 20px;
-      width: 20px;
       border-radius: 50%;
       background-color: black;
       opacity: 50%;
     }
 
     .profile-section {
+      @include size(100%, 100%);
       padding-left: $text-margin;
       // border: red 5px solid;
-      width: 100%;
-      height: 100%;
       @include flex(row, space-between, flex-start);
 
       .prev, .next {
@@ -171,8 +166,7 @@
           color: $light-grey;
         }
         img {
-          width: 120px;
-          height: 120px;
+          @include size(120px, 120px);
           border-radius: 50%;
           border: 1px white solid;
           margin: 0px 10px;
@@ -182,11 +176,8 @@
   }
 
   #stand-section {
-    width: 100%;
-    height: 800px;
-    background-image: url('../../assets/images/home/weDo-bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include size(100%, 800px);
+    @include background('../../assets/images/home/weDo-bg.svg', no-repeat, cover);
     margin-bottom: 0px;
     margin-top: 0px;
 
@@ -206,8 +197,7 @@
     }
 
     img {
-      width: 100px;
-      height: 100px;
+      @include size(100px, 100px);
       border-radius: 50%;
       border: 5px solid white;
     }
@@ -242,18 +232,49 @@
 }
 
 @media only screen and (max-width: 960px) {
+  // BEGIN INSTAFEED CSS ========================================================
+
+  // INSTAFEED CONTAINER
+  .IGcontainer {
+
+    .IGcontainer-space {
+      padding: 0px $text-margin 0px $text-margin;
+
+      .IGcontainer-space-heading {
+
+        a {
+
+        }
+      }
+    }
+  }
+
+  // INSTAFEED INDIVIDUAL POST
+  #instafeed {
+
+   .IGpost {
+
+   }
+
+   .IGpost:hover {
+
+   }
+
+   .IGpost:hover .IGcaption {
+
+   }
+
+   .IGcaption {
+
+   }
+  }
+  // END INSTAFEED CSS ========================================================
+
   .main{
     .section {
       @include flex(column, space-between, flex-start);
       margin-bottom: 0px;
       margin-top: $text-margin;
-    }
-
-    .ig-container {
-      .ig-container-space {
-        padding-left: $text-margin;
-        padding-right: $text-margin;
-      }
     }
 
     #team, #news, #goal, .text, .left {
