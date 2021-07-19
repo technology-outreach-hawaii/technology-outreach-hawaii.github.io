@@ -1,171 +1,155 @@
-.team-container {
-  width: 100%;
+.about-container {
   @include flex(column, center, center);
+  width: 100%;
+}
 
-  .team-box {
-    width: 90%;
-    @include flex(row, center, center);
+// BEGIN ABOUT SECTION =====================================================
+
+.banner-box {
+  @include flex(row, center, center);
+  width: 90%;
+  padding: 50px 0px;
+}
+
+.about {
+  @include flex(row, center, center);
+  @include laptop {
+    @include flex(column, center, center);
   }
 
-  .banner-box {
-    width: 90%;
-    @include flex(row, center, center);
-    padding: 50px 0px;
+  .about-img {
+    @include size(65%, 440px);
+    @include laptop {
+      width: 100%;
+    }
+
+    img {
+      @include size(100%, 100%);
+    }
   }
 
-  // ABOUT SECTION
-  .team-about {
-    @include flex(row, center, center);
+  .about-img {
+    @include background("/assets/images/about/team-1.png", no-repeat, contain);
+    background-position: center center;
+  }
+  .about-img:hover {
+    background-image: url("/assets/images/about/team-2.png");
+  }
+  .about-img:active {
+    background-image: url("/assets/images/about/team-3.png");
+  }
 
-    .team-about-img {
-      width: 65%;
-      height: 440px;
+  .about-text {
+    @include flex(column, space-between, space-between);
+    @include size(35%, 100%);
+    padding-left: 60px;
+
+    @include laptop {
+      @include flex(column, center, center);
+      @include size(100%, 100%);
+      padding-top: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+.wave {
+  @include background('../../assets/images/about/about-bg.svg', no-repeat, cover);
+  @include size(100%, 150px);
+}
+
+// END ABOUT SECTION ======================================================
+
+// BEGIN TEAM SECTION =====================================================
+.background {
+  @include flex(column, flex-start, center);
+  height: 100%;
+  background-color: $dark-blue;
+
+  @include laptop {
+    background-position: none;
+  }
+}
+
+.team-display {
+  @include flex(column, flex-start, flex-start);
+  @include size(90%, 100%);
+  color: #E4FCFF;
+
+  @include laptop {
+    height: 100%;
+  }
+
+  .team-display-head {
+  @include flex(column, flex-start, flex-start);
+  width: 50%;
+  padding-left: 45px;
+
+  @include laptop {
+    @include flex(column, flex-start, flex-start);
+    width: 80%;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+
+    h2 {
+      font-family: "Archivo Narrow", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+  }
+
+  .team-display-row {
+    height: 100%;
+    margin-bottom: 50px;
+    @include laptop {
+      @include flex(column, flex-start, flex-start);
+    }
+  }
+
+  .team-display-all {
+    @include size(33%, 450px);
+    padding: 20px;
+    float: left;
+    min-height: 400px;
+
+      @include laptop {
+        @include flex(column, center, center);
+        width: 100%;
+      }
+    }
+
+    .team-display-all-img {
+      @include flex(column, center, center);
+      width: 100%;
+
+      img{
+        @include size(180px, 180px);
+        border-radius: 50%;
+      }
+    }
+
+    .team-display-all-text {
+      @include flex(column, center, center);
+      padding-top: 5px;
+      width: 90%;
+
+      #padding {
+        text-align: center;
+        padding-top: 17px;
+      }
+    }
+
+    .team-display-all-icon {
+      @include flex(row, center, center);
 
       img {
-        width: 100%;
-        height: 100%;
+        @include size(40px, 40px);
+        padding: 5px;
+        border-radius: 25px;
       }
     }
-
-    .team-about-img {
-      background-image: url("/assets/images/about/team-1.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-    .team-about-img:hover {
-      background-image: url("/assets/images/about/team-2.png");
-    }
-    .team-about-img:active {
-      background-image: url("/assets/images/about/team-3.png");
-    }
-
-    .team-about-text {
-      padding-left: 60px;
-      @include flex(column, space-between, space-between);
-      width: 35%;
-      height: 100%;
-    }
-  }
-
-  .wave {
-    background-image: url('../../assets/images/about/about-bg.svg');
-    background-repeat: no-repeat;
-    height: 150px;
-    width: 100%;
-    background-size: cover;
-  }
-
-  // TEAM SECTION
-  .background {
-    @include flex(column, flex-start, center);
-    height: 100%;
-    background-color: $dark-blue;
-
-  }
-
-  .team-display {
-    @include flex(column, flex-start, flex-start);
-    width: 90%;
-    height: 100%;
-    color: #E4FCFF;
-
-
-    .team-display-head {
-    @include flex(column, flex-start, flex-start);
-    width: 50%;
-
-      h2 {
-        font-family: "Archivo Narrow", sans-serif;
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 3px;
-      }
-    }
-    .team-display-row {
-      height: 100%;
-      margin-bottom: 50px;
-    }
-
-    .team-display-all {
-      padding: 20px;
-      width: 33%;
-      float: left;
-      min-height: 400px;
-      height: 450px;
-
-      .team-display-all-img {
-        @include flex(column, center, center);
-        width: 100%;
-        img{
-          height: 180px;
-          width: 180px;
-          border-radius: 50%;
-        }
-      }
-      .team-display-all-text {
-        padding-top: 5px;
-        @include flex(column, center, center);
-        width: 90%;
-
-        #padding {
-          text-align: center;
-          padding-top: 17px;
-        }
-      }
-
-      .team-display-all-icon {
-        @include flex(row, center, center);
-        img {
-          padding: 5px;
-          height: 40px;
-          width: 40px;
-          border-radius: 25px;
-        }
-      }
-    }
-  }
 }
 
-@media only screen and (max-width: 960px) {
-  .team-container {
-    // ABOUT SECTION
-    .team-about {
-      @include flex(column, center, center);
-
-      .team-about-img {
-        width: 100%;
-      }
-
-      .team-about-text {
-        padding-top: 0px;
-        @include flex(column, center, center);
-        width: 100%;
-        height: 100%;
-        padding-left: 0px;
-      }
-    }
-
-    // TEAM SECTION
-    .background {
-      background-position: none;
-    }
-    .team-display {
-      height: 100%;
-      .team-display-head {
-      @include flex(column, flex-start, flex-start);
-      width: 80%;
-      padding-top: 0px;
-      }
-
-      .team-display-row {
-        @include flex(column, flex-start, flex-start);
-      }
-
-      .team-display-all {
-        width: 100%;
-        @include flex(column, center, center);
-      }
-    }
-  }
-}
+// END TEAM SECTION ========================================================
