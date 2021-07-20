@@ -6633,7 +6633,7 @@ button {
   padding-bottom: 20px;
   padding-top: 20px;
   display: none; }
-  @media (max-width: 768px) {
+  @media (max-width: 650px) {
     #nav-mobile {
       display: flex; } }
   #nav-mobile ul {
@@ -6654,7 +6654,7 @@ nav {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   position: relative;
   z-index: 1; }
-  @media (max-width: 768px) {
+  @media (max-width: 650px) {
     nav .nav-link {
       display: none; } }
   nav ul {
@@ -6664,7 +6664,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
-    @media (max-width: 768px) {
+    @media (max-width: 650px) {
       nav ul {
         width: 80%; } }
   nav li {
@@ -6679,7 +6679,7 @@ nav {
     align-items: center; }
   nav #logo {
     width: 45%; }
-    @media (max-width: 768px) {
+    @media (max-width: 650px) {
       nav #logo {
         width: 100%; }
         nav #logo .nav-link {
@@ -7726,14 +7726,24 @@ nav {
   height: 250px;
   color: white;
   padding: 20px 20px; }
+  @media (max-width: 1100px) {
+    .event-banner {
+      height: 300px; } }
+  @media (max-width: 650px) {
+    .event-banner {
+      width: 100%;
+      height: 100%; } }
   .event-banner .event-banner-text {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    .event-banner .event-banner-text .event-banner-body {
-      width: 80%; }
+    align-items: center;
+    width: 100%; }
+  .event-banner .event-banner-body {
+    width: 80%; }
+    @media (max-width: 650px) {
+      .event-banner .event-banner-body {
+        padding-bottom: 40px; } }
 
 .event-icons {
   display: flex;
@@ -7743,143 +7753,115 @@ nav {
   width: 100%;
   top: -80px;
   position: relative; }
+  @media (max-width: 1100px) {
+    .event-icons {
+      width: 100%;
+      top: -60px;
+      position: relative; } }
+  @media (max-width: 650px) {
+    .event-icons {
+      position: none;
+      top: -40px; } }
   .event-icons .event-icon-container {
     width: 100%; }
   .event-icons .icon {
     margin: 0px 20px; }
+    @media (max-width: 1100px) {
+      .event-icons .icon {
+        margin: 0px 10px; } }
+    @media (max-width: 650px) {
+      .event-icons .icon {
+        margin: 0px 5px; } }
   .event-icons img {
-    height: 150px;
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 3px solid white; }
+    @media (max-width: 1100px) {
+      .event-icons img {
+        width: 100px;
+        height: 100px; } }
+    @media (max-width: 650px) {
+      .event-icons img {
+        width: 75px;
+        height: 75px; } }
 
 .event-grid {
   width: 100%;
   height: 100%; }
   .event-grid .event-grid-container {
     padding: 50px 100px; }
+    @media (max-width: 650px) {
+      .event-grid .event-grid-container {
+        padding: 50px 50px; } }
   .event-grid .event-grid-card:hover {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
-  .event-grid .event-grid-card .event-grid-card-image {
+  @media (max-width: 1100px) {
+    .event-grid .event-grid-card {
+      margin-bottom: 40px; } }
+  .event-grid .event-grid-card-image {
     width: 100%;
     height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     color: white; }
-    .event-grid .event-grid-card .event-grid-card-image .event-grid-card-image-overlay {
-      width: 50%;
-      padding: 20px; }
-  .event-grid .event-grid-card .event-grid-card-body {
+  .event-grid .event-grid-card-image-overlay {
+    width: 50%;
+    padding: 20px; }
+  .event-grid .event-grid-card-body {
     background-color: #0A303B;
     padding: 10px 20px; }
-    .event-grid .event-grid-card .event-grid-card-body p {
+    @media (max-width: 1100px) {
+      .event-grid .event-grid-card-body {
+        height: auto; } }
+    .event-grid .event-grid-card-body p {
       color: white; }
-  .event-grid .event-grid-card .event-grid-card-footer {
-    background-color: #0A303B;
+  .event-grid .event-grid-card-footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     height: 50px;
     background-color: #051A20; }
-    .event-grid .event-grid-card .event-grid-card-footer img {
-      height: 35px;
-      width: 35px; }
-    .event-grid .event-grid-card .event-grid-card-footer .event-grid-card-footer-social {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      height: 100%;
-      width: 25%;
-      margin-left: 20px; }
-      .event-grid .event-grid-card .event-grid-card-footer .event-grid-card-footer-social .social-event-icon {
-        border-radius: 50%;
-        margin: 0px 5px; }
-    .event-grid .event-grid-card .event-grid-card-footer .event-grid-card-footer-difficulty {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      color: white;
-      height: 100%;
-      width: 75%; }
-      .event-grid .event-grid-card .event-grid-card-footer .event-grid-card-footer-difficulty .event-grid-card-footer-difficulty-left {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 10px;
-        width: 50%; }
-      .event-grid .event-grid-card .event-grid-card-footer .event-grid-card-footer-difficulty .event-grid-card-footer-difficulty-right {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        background-color: #19728C;
-        height: 50px; }
-
-@media only screen and (max-width: 1100px) {
-  .event-banner {
-    background-image: url("../../assets/images/home/index-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    color: white;
-    padding: 20px 20px; }
-    .event-banner .event-banner-text {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .event-banner .event-banner-text .event-banner-body {
-        width: 80%; }
-
-  .event-grid {
-    width: 100%; }
-    .event-grid .event-grid-card {
-      margin-bottom: 40px; }
-      .event-grid .event-grid-card .event-grid-card-body {
-        height: auto; }
-
-  .event-icons {
+    .event-grid .event-grid-card-footer img {
+      width: 35px;
+      height: 35px; }
+  .event-grid .event-grid-card-footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    margin-left: 20px; }
+  .event-grid .social-event-icon {
+    border-radius: 50%;
+    margin: 0px 5px; }
+  .event-grid .event-grid-card-footer-difficulty {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    color: white; }
+  .event-grid .event-grid-card-footer-difficulty-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    width: 50%; }
+  .event-grid .event-grid-card-footer-difficulty-right {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    top: -60px;
-    position: relative; }
-    .event-icons .event-icon-container {
-      width: 100%; }
-    .event-icons .icon {
-      margin: 0px 10px; }
-    .event-icons img {
-      height: 100px;
-      width: 100px; } }
-@media only screen and (max-width: 650px) {
-  .event-banner {
-    width: 100%;
-    height: 100%; }
-    .event-banner .event-banner-body {
-      padding-bottom: 40px; }
-
-  .event-grid .event-grid-container {
-    padding: 50px 50px; }
-
-  .event-icons {
-    position: none;
-    top: -40px; }
-    .event-icons .icon {
-      margin: 0px 5px; }
-    .event-icons img {
-      height: 75px;
-      width: 75px; } }
+    width: 50%;
+    height: 50px;
+    background-color: #19728C; }
