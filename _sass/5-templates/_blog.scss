@@ -1,218 +1,205 @@
 .blog-container {
-    width: 100%;
+  @include flex(column, center, center);
+  width: 100%;
+
+  h1, p {
+    color: #E4FCFF;
+  }
+
+  a {
+    font-size: $h4;
+  }
+}
+
+.blog-background {
+  @include flex(column, center, center);
+  @include background('../../assets/images/blog/banner-bg.png', no-repeat, cover);
+  width: 100%;
+
+  @include laptop {
+    height: 50%;
+  }
+}
+
+.blog-box {
+  @include flex(column, space-between, flex-start);
+  width: 80%;
+
+  @include laptop {
     @include flex(column, center, center);
+    width: 90%;
+  }
+}
 
-    h1, p {
-      color: #E4FCFF;
-    }
+// Header Section
+.blog-header{
+  padding: 40px 0px;
+  width: 100%;
 
-    a {
-      font-size: $h4;
-    }
+h1 {
+  width: 100%;
+  text-align: center;
+  }
+}
 
-  .blog-background {
+// Featured Section
+.blog-main {
+  width: 100%;
+  display: flex;
+
+  @include laptop {
     @include flex(column, center, center);
-    width: 100%;
-    background-image: url('../../assets/images/blog/banner-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
+    color: black;
   }
 
-  .blog-box {
-    width: 80%;
-    @include flex(column, space-between, flex-start);
-  }
-
-  // Header Section
-  .blog-header{
-    padding: 40px 0px;
-    width: 100%;
-
-    h1 {
-      width: 100%;
-      text-align: center;
-    }
-  }
-
-  // Featured Section
-  .blog-main {
-    width: 100%;
-    display: flex;
-
-    .blog-main-card:hover {
-      box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-    }
-
-      .blog-main-card  {
-        min-width: 455px;
-        min-height: 455px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        @include flex(column, flex-end, center);
-
-            img {
-              width: 100%;
-            }
-
-            .blog-main-img {
-              width: 100%;
-              height: 250px;
-              display: flex;
-            }
-
-            .blog-main-text {
-              padding: 20px;
-
-                .blog-main-center {
-                  @include flex(row, flex-start, center);
-
-                .blog-main-profile {
-                    border-radius: 50%;
-                    height: 50px;
-                    width: 50px;
-                    margin: 10px 10px 0 0;
-                    }
-                  }
-              }
-      }
-
-      .blog-main-summary {
-        padding-left: 30px;
-        width: 55%;
-        @include flex(column, flex-start, flex-start);
-
-          #blog-main-link{
-            width: 100%;
-            text-align: right;
-          }
-      }
-  }
-
-  // Topic Section
-  .blog-topic {
-    padding: 50px 0px;
-    width: 100%;
-    @include flex(row, center, center);
-
-    .blog-topic-des {
-      width: 70%;
-
-      p {
-        color: black;
-      }
-    }
-
-    .blog-topic-but {
-      text-align: right;
-      width: 20%;
-    }
-  }
-
-  // Blog Section
-  .blog-holder {
-    width: 100%;
-    @include flex(row, flex-start, flex-start);
-  }
-
-  .blog-section:hover {
+  .blog-main-card:hover {
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
   }
 
-  .blog-section {
-    margin: 10px;
-    width: 24vw;
-    height: 25vw;
+  .blog-main-card  {
+    @include flex(column, flex-end, center);
+    min-width: 455px;
+    min-height: 455px;
     background-repeat: no-repeat;
     background-size: cover;
-    @include flex(column, flex-end, center);
-    border: black 1px solid;
 
-    .blog-section-side {
-      width: 100%;
-      @include flex(column, flex-start, center);
-
-        .blog-section-text {
-          @include flex(column, space-between, flex-start);
-          width: 90%;
-          padding-bottom: 20px;
-
-            .blog-section-bottom {
-            @include flex(row, flex-start, center);
-            opacity: 0.9;
-
-                  .blog-section-profile {
-                    border-radius: 50%;
-                    height: 50px;
-                    width: 50px;
-                    margin: 10px 10px 0px 0px;
-                  }
-              }
-        }
-
-
+    @include laptop {
+      width: 70%;
+      margin-right: 0px;
     }
   }
 
-}
+  .blog-main-img {
+    @include size(100%, 250px);
+    display: flex;
+  }
 
-@media only screen and (max-width: 960px) {
-  .blog-container {
+  .blog-main-text {
+    padding: 20px;
+  }
 
-    .blog-background {
-      height: 50%;
+  .blog-main-center {
+    @include flex(row, flex-start, center);
+    width: 100%;
+  }
+
+  .blog-main-profile {
+    @include size(50px, 50px);
+    border-radius: 50%;
+    margin: 10px 10px 0 0;
+  }
+
+  .blog-main-summary {
+    @include flex(column, flex-start, flex-start);
+    padding-left: 30px;
+    width: 55%;
+
+    #blog-main-link{
+      width: 100%;
+      text-align: right;
     }
 
-    .blog-box {
-      width: 90%;
-      @include flex(column, center, center);
-    }
-
-    // Featured Section
-    .blog-main {
-      height: 100%;
-      @include flex(column, center, center);
-      color: black;
-
-      .blog-main-card {
-        width: 70%;
-        margin-right: 0px;
-      }
-
-      .blog-main-summary {
-        padding-top: 20px;
-        padding-left: 0;
+    @include laptop {
+      padding-top: 20px;
+      padding-left: 0;
 
         p {
           color: black;
         }
       }
     }
+  }
 
-    // Topic Section
-    .blog-topic {
+// Topic Section
+.blog-topic {
+  @include flex(row, center, center);
+  padding: 50px 0px;
+  width: 100%;
+
+  @include laptop {
+    @include flex(column, center, center);
+    width: 70%;
+    padding: 20px 0px;
+    margin: 0;
+  }
+
+  .blog-topic-des {
+    width: 70%;
+
+    p {
+      color: black;
+    }
+
+    @include laptop {
       @include flex(column, center, center);
-      width: 70%;
-      padding: 20px 0px;
-      margin: 0;
-
-      .blog-topic-des, .blog-topic-but {
-        @include flex(column, center, center);
-        padding-bottom: 5px;
-        width: 100%;
-      }
+      padding-bottom: 5px;
+      width: 100%;
     }
+  }
 
-    // Blog Section
-    .blog-holder {
+  .blog-topic-but {
+    text-align: right;
+    width: 20%;
+
+    @include laptop {
       @include flex(column, center, center);
-      min-width: 455px;
-      min-height: 455px;
+      padding-bottom: 5px;
+      width: 100%;
     }
-    .blog-section {
-      margin-top: 40px;
-      width: 70%;
-      min-height: 455px;
-      max-width: none;
-    }
+  }
+}
+
+// Blog Section
+.blog-holder {
+  @include flex(row, flex-start, flex-start);
+  width: 100%;
+
+  @include laptop {
+    @include flex(column, center, center);
+    min-width: 455px;
+    min-height: 455px;
+  }
+}
+
+.blog-section:hover {
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+.blog-section {
+  @include size(24vw, 25vw);
+  @include flex(column, flex-end, center);
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: black 1px solid;
+
+  .blog-section-side {
+    @include flex(column, flex-start, center);
+    width: 100%;
+  }
+
+  .blog-section-text {
+      @include flex(column, space-between, flex-start);
+      width: 90%;
+      padding-bottom: 20px;
+  }
+
+  .blog-section-bottom {
+    @include flex(row, flex-start, center);
+    opacity: 0.9;
+  }
+
+  .blog-section-profile {
+    @include size(50px, 50px);
+    border-radius: 50%;
+    margin: 10px 10px 0px 0px;
+  }
+
+  @include laptop {
+    margin-top: 40px;
+    width: 70%;
+    min-height: 455px;
+    max-width: none;
   }
 }
