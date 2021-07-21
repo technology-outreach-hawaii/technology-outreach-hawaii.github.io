@@ -1,0 +1,251 @@
+// BEGIN RESOURCE LAYOUT SECTION ===========================================
+.template-resource-img {
+  @include size(100%, 400px);
+  object-fit: cover;
+}
+.template-resource-italic {
+  font-style: italic;
+  font-size: 19px;
+}
+// END RESOURCE LAYOUT SECTION ============================================
+
+
+.resources-container {
+  @include flex(column, center, center);
+  width: 100%;
+  color: $dark-blue;
+
+    hr {
+      border: 1px solid white;
+      width: 100%;
+    }
+
+    a  {
+      cursor: pointer;
+      font-size: $h4;
+    }
+
+  .resources-box {
+    @include flex(column, space-between, flex-start);
+    width: 80%;
+  }
+
+  .tags {
+    @include flex(row, flex-start, flex-start);
+    color: $dark-blue;
+    padding: 0px 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #D5D5D5;
+    margin-right: 10px;
+  }
+
+  .tags-horizontal {
+    @include flex(row, flex-start, flex-start);
+    width: 100%;
+  }
+}
+
+// BEGIN BANNER SECTION ===================================================
+.resources-banner {
+  @include flex(column, flex-start, flex-start);
+  @include size(100%, 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #E4FCFF;
+
+  .resources-banner-text {
+    @include background("/assets/images/resources/banner.jpg", no-repeat, cover);
+    @include size(100%, 500px);
+    background-position: center center;
+
+  }
+
+  .resources-banner-text-box {
+    @include background("/assets/images/resources/banner-bg.svg", no-repeat, contain);
+    @include flex(column, flex-start, flex-start);
+    @include size(750px, 650px);
+    padding: 40px;
+    }
+
+  .resources-banner-text-box-word {
+    @include flex(column, flex-start, flex-start);
+    @include size(50%, 300px);
+  }
+
+  a {
+    font-size: 22px;
+  }
+}
+// END BANNER SECTION ======================================================
+
+
+// START SUBMIT SECTION ====================================================
+.resources-submit {
+  @include flex(column, center, center);
+  @include size(100%, 100%);
+  padding: 20px 0px;
+  // border: 5px solid green;
+
+  .resources-submit-text {
+    text-align: center;
+    width: 45%;
+    color: black;
+  }
+}
+// END SUBMIT SECTION ======================================================
+
+// START ISLAND SECTION ====================================================
+.resources-island {
+  @include flex(column, flex-start, flex-start);
+  width: 100%;
+
+  .resources-island-bar {
+    @include flex(row, space-between, center);
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .resources-island-bar-list {
+    @include flex(row, space-between, flex-start);
+    width: 40%;
+
+    @include laptop {
+      width: 300px;
+    }
+
+    a {
+      @include flex(row, flex-start, flex-start);
+      background: -webkit-linear-gradient($yellow, orange);
+      -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .resources-island-bar-img {
+    @include flex(row, flex-end, flex-end);
+
+    img {
+      float: right;
+    }
+  }
+
+  .resources-island-section {
+    @include flex(column, flex-start, flex-start);
+    width: 100%;
+    padding-bottom: 20px;
+
+    img {
+      @include size(200px, 170px);
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+  }
+
+  .resources-island-section-search {
+    @include flex(row, flex-end, flex-end);
+    border-radius: 10px;
+    background-color: $dark-blue;
+    width: 40%;
+    padding: 10px 0px;
+    margin-bottom: 50px;
+
+    @include laptop {
+      width: 300px;
+    }
+  }
+
+  .resources-island-section-search-bar {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding-right: 20px;
+
+    input {
+      @include size(100%, 35px);
+      float: right;
+    }
+
+    #submit {
+      @include background("/assets/images/resources/search.png", no-repeat, contain);
+      @include size(20%, 36px);
+      background-position: center center;
+      background-color: $yellow;
+    }
+  }
+
+  .resources-island-section-container:hover {
+     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+     cursor: pointer;
+  }
+
+  .resources-island-section-container {
+    @include flex(row, flex-start, flex-start);
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    width: 100%;
+
+    @include laptop {
+      @include flex(column, center, center);
+    }
+  }
+
+  .resources-island-section-container-img {
+    float: left;
+  }
+
+  .resources-island-section-container-body {
+    @include flex(column, space-between, flex-start);
+    padding: 10px 5px;
+    padding-right: 15px;
+    height: 100%;
+    float: right;
+    margin-left: 30px;
+
+    @include laptop {
+      margin: 0px;
+      height: 100%;
+    }
+  }
+
+  .resources-island-section-container-body-top {
+    @include flex(column, flex-start, flex-start);
+  }
+}
+// END ISLAND SECTION =====================================================
+
+// START ONLINE SECTION ===================================================
+.resources-online {
+  @include flex(column, center, center);
+  @include background('../../assets/images/resources/national-bg.svg', no-repeat, cover);
+  width: 100.1%;
+  padding: 70px 0px;
+
+  .resources-box {
+    color: #E4FCFF;
+  }
+
+  .resources-online-text {
+    padding: 100px 0px 50px 0px;
+  }
+
+  .resources-online-bar {
+    @include flex(row, space-between, flex-start);
+    width: 100%;
+
+    a {
+        @include flex(row, flex-start, flex-start);
+    }
+  }
+
+  .resources-online-summary {
+    @include flex(column, flex-start, flex-start);
+    width: 100%;
+    }
+
+  .resources-online-summary-intro {
+    padding-bottom: 20px;
+  }
+}
+
+// END ONLINE SECTION =====================================================

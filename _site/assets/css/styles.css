@@ -7486,25 +7486,33 @@ nav {
       max-width: none; } }
 
 .template-resource-img {
-  object-fit: cover;
   width: 100%;
-  height: 400px; }
+  height: 400px;
+  object-fit: cover; }
 
 .template-resource-italic {
   font-style: italic;
   font-size: 19px; }
 
 .resources-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   color: #0A303B; }
   .resources-container hr {
-    border: 1px solid white; }
+    border: 1px solid white;
+    width: 100%; }
   .resources-container a {
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 25px; }
+  .resources-container .resources-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%; }
   .resources-container .tags {
     display: flex;
     flex-direction: row;
@@ -7522,215 +7530,210 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%; }
-  .resources-container hr {
-    width: 100%; }
-  .resources-container a {
-    font-size: 25px; }
-  .resources-container .resources-box {
-    width: 80%;
+
+.resources-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #E4FCFF; }
+  .resources-banner .resources-banner-text {
+    background-image: url("/assets/images/resources/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background-position: center center; }
+  .resources-banner .resources-banner-text-box {
+    background-image: url("/assets/images/resources/banner-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 750px;
+    height: 650px;
+    padding: 40px; }
+  .resources-banner .resources-banner-text-box-word {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    height: 300px; }
+  .resources-banner a {
+    font-size: 22px; }
+
+.resources-submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px; }
+  .resources-submit .resources-submit-text {
+    text-align: center;
+    width: 45%;
+    color: black; }
+
+.resources-island {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%; }
+  .resources-island .resources-island-bar {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; }
-  .resources-container .resources-banner {
+    align-items: center;
+    padding: 20px 0;
+    width: 100%; }
+  .resources-island .resources-island-bar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%; }
+    @media (max-width: 950px) {
+      .resources-island .resources-island-bar-list {
+        width: 300px; } }
+    .resources-island .resources-island-bar-list a {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background: -webkit-linear-gradient(#F8CF1E, orange);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  .resources-island .resources-island-bar-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    .resources-island .resources-island-bar-img img {
+      float: right; }
+  .resources-island .resources-island-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    color: #E4FCFF; }
-    .resources-container .resources-banner .resources-banner-text {
-      background-image: url("/assets/images/resources/banner.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+    padding-bottom: 20px; }
+    .resources-island .resources-island-section img {
+      width: 200px;
+      height: 170px;
+      border-radius: 50%;
+      border: 1px solid black; }
+  .resources-island .resources-island-section-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-color: #0A303B;
+    width: 40%;
+    padding: 10px 0px;
+    margin-bottom: 50px; }
+    @media (max-width: 950px) {
+      .resources-island .resources-island-section-search {
+        width: 300px; } }
+  .resources-island .resources-island-section-search-bar {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding-right: 20px; }
+    .resources-island .resources-island-section-search-bar input {
       width: 100%;
-      height: 500px; }
-      .resources-container .resources-banner .resources-banner-text .resources-banner-text-box {
-        background-image: url("/assets/images/resources/banner-bg.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding: 40px;
+      height: 35px;
+      float: right; }
+    .resources-island .resources-island-section-search-bar #submit {
+      background-image: url("/assets/images/resources/search.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20%;
+      height: 36px;
+      background-position: center center;
+      background-color: #F8CF1E; }
+  .resources-island .resources-island-section-container:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+  .resources-island .resources-island-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    width: 100%; }
+    @media (max-width: 950px) {
+      .resources-island .resources-island-section-container {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 750px;
-        height: 650px; }
-        .resources-container .resources-banner .resources-banner-text .resources-banner-text-box .resources-banner-text-box-word {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          width: 50%;
-          height: 300px; }
-      .resources-container .resources-banner .resources-banner-text a {
-        font-size: 22px; }
-  .resources-container .resources-submit {
-    padding: 20px 0px;
-    width: 100%;
-    height: 100%;
+        justify-content: center;
+        align-items: center; } }
+  .resources-island .resources-island-section-container-img {
+    float: left; }
+  .resources-island .resources-island-section-container-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .resources-container .resources-submit .resources-submit-text {
-      text-align: center;
-      width: 45%;
-      color: black; }
-  .resources-container .resources-island {
-    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 5px;
+    padding-right: 15px;
+    height: 100%;
+    float: right;
+    margin-left: 30px; }
+    @media (max-width: 950px) {
+      .resources-island .resources-island-section-container-body {
+        margin: 0px;
+        height: 100%; } }
+  .resources-island .resources-island-section-container-body-top {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start; }
-    .resources-container .resources-island .resources-island-bar {
-      padding: 20px 0;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center; }
-      .resources-container .resources-island .resources-island-bar .resources-island-bar-list {
-        width: 40%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start; }
-        .resources-container .resources-island .resources-island-bar .resources-island-bar-list a {
-          background: -webkit-linear-gradient(#F8CF1E, orange);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: flex-start; }
-      .resources-container .resources-island .resources-island-bar .resources-island-bar-img {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end; }
-        .resources-container .resources-island .resources-island-bar .resources-island-bar-img img {
-          float: right; }
-    .resources-container .resources-island .resources-island-section {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
-      padding-bottom: 20px; }
-      .resources-container .resources-island .resources-island-section img {
-        width: 200px;
-        height: 170px;
-        border-radius: 50%;
-        border: 1px solid black; }
-      .resources-container .resources-island .resources-island-section .resources-island-section-search {
-        border-radius: 10px;
-        background-color: #0A303B;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        width: 40%;
-        padding: 10px 0px;
-        margin-bottom: 50px; }
-        .resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar {
-          display: flex;
-          flex-direction: row;
-          width: 80%;
-          padding-right: 20px; }
-          .resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar input {
-            float: right;
-            width: 100%;
-            height: 35px; }
-          .resources-container .resources-island .resources-island-section .resources-island-section-search .resources-island-section-search-bar #submit {
-            background-image: url("/assets/images/resources/search.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center center;
-            background-color: #F8CF1E;
-            height: 36px;
-            width: 20%; }
-      .resources-container .resources-island .resources-island-section .resources-island-section-container:hover {
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-        cursor: pointer; }
-      .resources-container .resources-island .resources-island-section .resources-island-section-container {
-        padding: 10px 0px;
-        margin-bottom: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start; }
-        .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-img {
-          float: left; }
-        .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body {
-          padding: 10px 5px;
-          padding-right: 15px;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: flex-start;
-          float: right;
-          margin-left: 30px; }
-          .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body .resources-island-section-container-body-top {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start; }
-  .resources-container .resources-online {
-    background-image: url("../../assets/images/resources/national-bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100.1%;
-    padding: 70px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .resources-container .resources-online .resources-box {
-      color: #E4FCFF; }
-    .resources-container .resources-online .resources-online-text {
-      padding: 100px 0px 50px 0px; }
-    .resources-container .resources-online .resources-online-bar {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .resources-container .resources-online .resources-online-bar a {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start; }
-    .resources-container .resources-online .resources-online-summary {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start; }
-      .resources-container .resources-online .resources-online-summary .resources-online-summary-intro {
-        padding-bottom: 20px; }
 
-@media only screen and (max-width: 960px) {
-  .resources-container .resources-banner {
-    height: 100%; }
-  .resources-container .resources-island .resources-island-bar .resources-island-bar-list {
-    width: 300px; }
-  .resources-container .resources-island .resources-island-section .resources-island-section-search {
-    width: 300px; }
-  .resources-container .resources-island .resources-island-section .resources-island-section-container {
+.resources-online {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/images/resources/national-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100.1%;
+  padding: 70px 0px; }
+  .resources-online .resources-box {
+    color: #E4FCFF; }
+  .resources-online .resources-online-text {
+    padding: 100px 0px 50px 0px; }
+  .resources-online .resources-online-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; }
+    .resources-online .resources-online-bar a {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start; }
+  .resources-online .resources-online-summary {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .resources-container .resources-island .resources-island-section .resources-island-section-container .resources-island-section-container-body {
-      margin: 0px;
-      height: 100%; } }
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%; }
+  .resources-online .resources-online-summary-intro {
+    padding-bottom: 20px; }
+
 .event-img {
   width: 100%; }
 
