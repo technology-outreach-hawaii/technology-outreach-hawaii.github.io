@@ -6,6 +6,19 @@
   align-items: $vertical;
 }
 
+// BACKGROUND
+@mixin background($image: image, $repeat: no-repeat, $size: cover) {
+  background-image: url($image);
+  background-repeat: $repeat;
+  background-size: $size;
+}
+
+// SIZE
+@mixin size($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
 // BREAKPOINTS
 @mixin desktop {
   @media (max-width: #{$desktop}) {

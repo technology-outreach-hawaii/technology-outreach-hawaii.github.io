@@ -1,0 +1,155 @@
+.about-container {
+  @include flex(column, center, center);
+  width: 100%;
+}
+
+// BEGIN ABOUT SECTION =====================================================
+
+.banner-box {
+  @include flex(row, center, center);
+  width: 90%;
+  padding: 50px 0px;
+}
+
+.about {
+  @include flex(row, center, center);
+  @include laptop {
+    @include flex(column, center, center);
+  }
+
+  .about-img {
+    @include size(65%, 440px);
+    @include laptop {
+      width: 100%;
+    }
+
+    img {
+      @include size(100%, 100%);
+    }
+  }
+
+  .about-img {
+    @include background("/assets/images/about/team-1.png", no-repeat, contain);
+    background-position: center center;
+  }
+  .about-img:hover {
+    background-image: url("/assets/images/about/team-2.png");
+  }
+  .about-img:active {
+    background-image: url("/assets/images/about/team-3.png");
+  }
+
+  .about-text {
+    @include flex(column, space-between, space-between);
+    @include size(35%, 100%);
+    padding-left: 60px;
+
+    @include laptop {
+      @include flex(column, center, center);
+      @include size(100%, 100%);
+      padding-top: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+.wave {
+  @include background('../../assets/images/about/about-bg.svg', no-repeat, cover);
+  @include size(100%, 150px);
+}
+
+// END ABOUT SECTION ======================================================
+
+// BEGIN TEAM SECTION =====================================================
+.background {
+  @include flex(column, flex-start, center);
+  height: 100%;
+  background-color: $dark-blue;
+
+  @include laptop {
+    background-position: none;
+  }
+}
+
+.team-display {
+  @include flex(column, flex-start, flex-start);
+  @include size(90%, 100%);
+  color: #E4FCFF;
+
+  @include laptop {
+    height: 100%;
+  }
+
+  .team-display-head {
+  @include flex(column, flex-start, flex-start);
+  width: 50%;
+  padding-left: 45px;
+
+  @include laptop {
+    @include flex(column, flex-start, flex-start);
+    width: 80%;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+
+    h2 {
+      font-family: "Archivo Narrow", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+  }
+
+  .team-display-row {
+    height: 100%;
+    margin-bottom: 50px;
+    @include laptop {
+      @include flex(column, flex-start, flex-start);
+    }
+  }
+
+  .team-display-all {
+    @include size(33%, 450px);
+    padding: 20px;
+    float: left;
+    min-height: 400px;
+
+      @include laptop {
+        @include flex(column, center, center);
+        width: 100%;
+      }
+    }
+
+    .team-display-all-img {
+      @include flex(column, center, center);
+      width: 100%;
+
+      img{
+        @include size(180px, 180px);
+        border-radius: 50%;
+      }
+    }
+
+    .team-display-all-text {
+      @include flex(column, center, center);
+      padding-top: 5px;
+      width: 90%;
+
+      #padding {
+        text-align: center;
+        padding-top: 17px;
+      }
+    }
+
+    .team-display-all-icon {
+      @include flex(row, center, center);
+
+      img {
+        @include size(40px, 40px);
+        padding: 5px;
+        border-radius: 25px;
+      }
+    }
+}
+
+// END TEAM SECTION ========================================================

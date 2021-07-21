@@ -3,16 +3,22 @@ layout: default
 title: Home
 ---
 <div class="main">
+
+  <!-- SECTION 1 -->
   <div class="main-inner">
 
+    <!-- SECTION 1A -->
     <div class="section">
-      <div class="text">
+
+      <!-- Bridging the digital divide section -->
+      <div class="visionSection">
         <h1>Bridging the digital divide</h1>
         <p>A community interested in technology, mentorship and service events to promote digital literacy across Hawaii.</p>
         <button><a href="/about.html">Learn more</a></button>
       </div>
 
-      <div id="news">
+      <!-- Updates section -->
+      <div id="newSection">
         <h2 id="update">UPDATES</h2>
         <br>
         <ul>
@@ -28,12 +34,17 @@ title: Home
       </div>
     </div>
 
+    <!-- SECTION 1B -->
     <div class="section">
-      <div id="goal">
+
+      <!-- Our goal section -->
+      <div id="goalSection">
         <h1>Our goal</h1>
         <p>Technology Outreach Hawaii aims to guide Hawaii towards confidence in being users and/or creators of technology while empowering youth. We are working to partner with libraries and community organizations across the state to offer student-driven digital literacy initiatives.</p>
       </div>
-      <div id="team">
+
+      <!-- Our team section -->
+      <div id="teamSection">
         <div class="profile-header">
           <h2>OUR TEAM</h2>
           <p>Meet our mix of undergraduate and graduate students with interests in computer science, physics, math, and medicine.</p>
@@ -74,13 +85,15 @@ title: Home
       </div>
     </div>
   </div>
+
+  <!-- Section 2 -->
   <div class="section" id="stand-section">
     <div class="stand-box">
       <div class="stand-heading">
         <h1>What we do</h1>
       </div>
 
-      <!-- First section -->
+      <!-- Section 2 - repeat A -->
       <div class="stand-layout">
         <div class="stand-heading">
           <h1><a href="/events.html">Promote technology education</a></h1>
@@ -96,7 +109,7 @@ title: Home
         </div>
       </div>
 
-      <!-- Second section -->
+      <!-- Section 2 - repeat B -->
       <div class="stand-layout">
         <div class="stand-heading">
           <h1><a href="/community.html">Make resources accessible </a></h1>
@@ -112,7 +125,7 @@ title: Home
         </div>
       </div>
 
-      <!-- Third section -->
+      <!-- Section 2 - repeat C -->
       <div class="stand-layout">
         <div class="stand-heading">
           <h1><a href="{{ site.posts[3].url }}">Empower youth</a></h1>
@@ -129,6 +142,8 @@ title: Home
       </div>
     </div>
   </div>
+  <!-- End of Section 2 -->
     {% include instafeed.html %}
   </div>
+  <!-- End of File -->
   <script src="/assets/js/slideshow.js"></script>

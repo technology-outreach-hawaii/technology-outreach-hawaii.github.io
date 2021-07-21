@@ -1,64 +1,69 @@
-.main {
+// BEGIN INSTAFEED CSS ========================================================
+
+// INSTAFEED CONTAINER
+.IGcontainer {
+  background-color: $dark-blue;
   width: 100%;
-  background-image: url('../../assets/images/home/index-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  @include flex(column, center, center);
 
-  .ig-container {
-    background-color: $dark-blue;
-    width: 100%;
+  .IGcontainer-space {
+    padding: 0px 100px 0px 150px;
 
-    .ig-container-space {
-      padding-left: 150px;
-      padding-right: 100px;
-
-      .stand-heading {
-        width: 100%;
-        float: left;
-        a {
-          font-size: 30px;
-          float: left;
-          margin: 10px;
-        }
-      }
+    @include laptop {
+      padding: 0px $text-margin 0px $text-margin;
     }
   }
 
-  #instafeed {
-   width: 100%;
-   height: 100%;
+  .IGcontainer-space-heading {
+    width: 100%;
+    float: left;
 
-   .post {
-     border: 5px solid white;
-     opacity: 0.7;
-     width: 225px;
-     height: 225px;
-     background-repeat: no-repeat;
-     background-size: cover;
-     @include flex(column, flex-end, flex-start);
-     margin-bottom: 40px;
-   }
+    a {
+      font-size: 30px;
+      float: left;
+      margin: 10px;
+    }
+  }
+}
 
-   .post:hover {
-     opacity: 1;
-     -webkit-transform: scale(1.1);
-     transform: scale(1.1);
-     -webkit-transition: all 0.8s;
-     transition: all 0.8s;
-   }
+// INSTAFEED INDIVIDUAL POST
+#instafeed {
+  @include size(100%, 100%);
 
-   .post:hover .caption {
-       opacity: 1;
-   }
-
-   .caption {
-     color: white;
-     padding-left: 10px;
-     padding-bottom: 10px;
-     opacity: 0;
-   }
+ .IGpost {
+   @include flex(column, flex-end, flex-start);
+   @include size(225px, 225px);
+   border: 5px solid white;
+   opacity: 0.7;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-bottom: 40px;
  }
+
+ .IGpost:hover {
+   opacity: 1;
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+   -webkit-transition: all 0.8s;
+   transition: all 0.8s;
+ }
+
+ .IGpost:hover .IGcaption {
+     opacity: 1;
+ }
+
+ .IGcaption {
+   color: white;
+   padding: 0px 0px 10px 10px;
+   opacity: 0;
+ }
+}
+// END INSTAFEED CSS ========================================================
+
+// BEGIN MAIN SECTION (CSS PROPERTIES THAT APPLY TO ALL) ====================
+.main {
+  @include background('../../assets/images/home/index-bg.png', no-repeat, cover);
+  @include flex(column, center, center);
+  width: 100%;
 
   h1 {
     color: $light-blue;
@@ -74,32 +79,16 @@
   }
 
   .section {
-    height: 300px;
-    margin-top: $section-margin;
-    margin-bottom: $section-margin;
-    color: $light-blue;
     @include flex(row, space-between, center);
-  }
+    height: 300px;
+    margin: $section-margin 0px $section-margin 0px;
+    color: $light-blue;
 
-  .text {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    @include flex(column, center, flex-start);
-  }
-
-  #news {
-    width: 50%;
-    height: 100%;
-    border-left: 1px solid $grey;
-    overflow-y: scroll;
-
-    li {
-      text-align: left;
+    @include laptop {
+      @include flex(column, space-between, flex-start);
+      margin-bottom: 0px;
       margin-top: $text-margin;
-      padding-left: $text-margin;
-      line-height: 1.5;
-      @include flex(column, center, flex-start);
+      height: 100%;
     }
   }
 
@@ -109,218 +98,217 @@
     a {
       color: $dark-blue;
       font-size: $h3;
-    }
+   }
   }
+}
+// END MAIN SECTION =========================================================
 
-  #goal {
-    width: 40%;
-    height: 100%;
-  }
+// SECTION 1A ===============================================================
 
-  #team {
-    width: 60%;
-    height: 100%;
-    border-left: 1px solid $grey;
-    @include flex(column, center, center);
-
-    .profile-header {
-      width: 100%;
-      text-align: center;
-
-      p {
-        width: 100%;
-        padding-left: $text-margin;
-      }
-    }
-
-    .place {
-      @include flex(row, center, center);
-    }
-
-    .place-dot{
-      margin: 5px;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      background-color: black;
-      opacity: 50%;
-    }
-
-    .profile-section {
-      padding-left: $text-margin;
-      // border: red 5px solid;
-      width: 100%;
-      height: 100%;
-      @include flex(row, space-between, flex-start);
-
-      .prev, .next {
-        cursor: pointer;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-        user-select: none;
-      }
-
-      .profile {
-        @include flex(column, center, center);
-        height: 100%;
-
-        h4 {
-          font-size: $small;
-          color: $light-grey;
-        }
-        img {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-          border: 1px white solid;
-          margin: 0px 10px;
-        }
-      }
-    }
-  }
-
-  #stand-section {
+// Bridging the digital divide section
+.visionSection {
+  @include size(50%, 100%);
+  @include flex(column, center, flex-start);
+  @include laptop {
     width: 100%;
-    height: 800px;
-    background-image: url('../../assets/images/home/weDo-bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 0px;
-    margin-top: 0px;
-
-    @include flex(column, flex-start, flex-start);
-
-    .stand-layout {
-      width: 100%;
-    }
-
-    .stand-box {
-      padding: 150px;
-    }
-
-    .stand-individual {
-      width: 100%;
-      @include flex(row, center, center);
-    }
-
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: 5px solid white;
-    }
-
-    .stand-heading {
-      width: 100%;
-      float: left;
-      a {
-        font-size: 30px;
-        float: left;
-        margin: 10px;
-      }
-    }
-
-    .stand-img {
-      float: left;
-    }
-
-    .stand-body {
-      float: right;
-      margin-left: 30px;
-      width: 100%;
-      text-align: left;
-
-      a {
-        width: 100%;
-      }
-    }
+    margin-bottom: $text-margin;
   }
-
-
 }
 
-@media only screen and (max-width: 960px) {
-  .main{
-    .section {
-      @include flex(column, space-between, flex-start);
-      margin-bottom: 0px;
-      margin-top: $text-margin;
-    }
+// Updates section
+#newSection {
+  @include size(50%, 100%);
+  border-left: 1px solid $grey;
+  overflow-y: scroll;
 
-    .ig-container {
-      .ig-container-space {
-        padding-left: $text-margin;
-        padding-right: $text-margin;
-      }
-    }
-
-    #team, #news, #goal, .text, .left {
-      width: 100%;
-      margin-bottom: $text-margin;
-    }
-
-    .section, #resource-links {
-      height: 100%;
-    }
-
-      #team {
-        .profile-header {
-          text-align: left;
-
-          p {
-            padding-left: 0;
-          }
-        }
-
-        .profile-header h2 {
-          justify-content: left;
-        }
-
-        .profile-section {
-          padding-left: 0;
-          @include flex(row, space-between, flex-start);
-
-            .prev, .next {
-              height: 13vw;
-            }
-          }
-
-          .place-dot{
-            height: 2vw;
-            width: 2vw;
-          }
-
-        .profile-section .profile {
-              img {
-                height: 13vw;
-                width: 13vw;
-              }
-            }
-      }
-
-    #news, #team {
-      border-left: none;
-    }
-
-    #update, .left {
-        float: left;
-    }
-
-    #news li {
+  li {
+    @include flex(column, center, flex-start);
+    text-align: left;
+    margin-top: $text-margin;
+    padding-left: $text-margin;
+    line-height: 1.5;
+    @include laptop {
         padding: 0;
+      }
     }
 
-    #stand-section {
-      height: 100%;
-      padding-bottom: 50px;
+    @include laptop {
+      @include size(100%, 300px);
+      margin-bottom: $text-margin;
+      border-left: none;
 
-      .stand-box {
-        padding: 0px;
-        padding-top: 150px;
-        padding-left: $text-margin;
+      #update {
+          float: left;
       }
     }
   }
+// END SECTION 1A ===========================================================
+
+// BEGIN SECTION 1B =========================================================
+
+// goal section
+#goalSection {
+  @include size(40%, 100%);
+  @include laptop {
+    width: 100%;
+    margin-bottom: $text-margin;
+  }
+}
+
+// our team section
+#teamSection {
+  @include size(60%, 100%);
+  @include flex(column, center, center);
+  border-left: 1px solid $grey;
+  @include laptop {
+    width: 100%;
+    margin-bottom: $text-margin;
+    border-left: none;
+  }
+
+  .profile-header {
+    width: 100%;
+    text-align: center;
+    @include laptop {
+      text-align: left;
+
+      h2 {
+        justify-content: left;
+      }
+    }
+
+    p {
+      width: 100%;
+      padding-left: $text-margin;
+      @include laptop {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .place {
+    @include flex(row, center, center);
+  }
+
+  .place-dot{
+    @include size(20px, 20px);
+    margin: 5px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 50%;
+
+    @include laptop {
+      @include size(2vw, 2vw);
+    }
+  }
+
+  .profile-section {
+    @include size(100%, 100%);
+    @include flex(row, space-between, flex-start);
+    padding-left: $text-margin;
+    @include laptop {
+      padding-left: 0;
+
+      img {
+        @include size(13vw, 13vw);
+      }
+    }
+
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    user-select: none;
+
+    @include laptop{
+      height: 13vw;
+    }
+  }
+
+  .profile {
+    @include flex(column, center, center);
+    height: 100%;
+
+    h4 {
+      font-size: $small;
+      color: $light-grey;
+    }
+    img {
+      @include size(120px, 120px);
+      border-radius: 50%;
+      border: 1px white solid;
+      margin: 0px 10px;
+
+      @include laptop {
+        @include size(13vw, 13vw);
+      }
+    }
+  }
+}
+
+// END SECTION 1B ===========================================================
+
+// BEGIN SECTION 2 ==========================================================
+#stand-section {
+  @include size(100%, 800px);
+  @include background('../../assets/images/home/weDo-bg.svg', no-repeat, cover);
+  @include flex(column, flex-start, flex-start);
+  margin: 0;
+  @include laptop {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+
+  .stand-layout {
+    width: 100%;
+  }
+
+  .stand-box {
+    padding: 150px;
+    @include laptop {
+      padding: 150px 0px 0px $text-margin
+    }
+  }
+
+  .stand-individual {
+    @include flex(row, center, center);
+    width: 100%;
+  }
+
+  img {
+    @include size(100px, 100px);
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+
+  .stand-heading {
+    width: 100%;
+    float: left;
+    a {
+      font-size: 30px;
+      float: left;
+      margin: 10px;
+    }
+  }
+
+  .stand-img {
+    float: left;
+  }
+
+  .stand-body {
+    float: right;
+    margin-left: 30px;
+    width: 100%;
+    text-align: left;
+
+    a {
+      width: 100%;
+    }
+  }
+
+  // END SECTION 2 ==========================================================
 }

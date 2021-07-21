@@ -1,6 +1,6 @@
-<div class="ig-container">
-  <div class="ig-container-space">
-    <div class="stand-heading">
+<div class="IGcontainer">
+  <div class="IGcontainer-space">
+    <div class="IGcontainer-space-heading">
       <h1 class="stand-section"><a href="https://www.instagram.com/techoutreachhawaii/" target=“_blank”>Instagram</a></h1>
     </div>
     <div id="instafeed" class="row"></div>
@@ -43,7 +43,7 @@
                     },
 
           template: {% raw %}
-          '<div class="col"><a href="{{link}}" target="_blank" ><div class="post" style="background-image: url({{image}});"><div class="caption">{{model.shortCaption}}</div></div></a></div>'
+          '<div class="col"><a href="{{link}}" target="_blank" ><div class="IGpost" style="background-image: url({{image}});"><div class="IGcaption">{{model.shortCaption}}</div></div></a></div>'
           {% endraw %},
       });
       feed.run();
