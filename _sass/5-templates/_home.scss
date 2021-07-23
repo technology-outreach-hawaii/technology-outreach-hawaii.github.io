@@ -103,7 +103,7 @@
 }
 // END MAIN SECTION =========================================================
 
-// SECTION 1A ===============================================================
+// BEGIN PANEL SECTION ======================================================
 
 // Bridging the digital divide section
 .visionSection {
@@ -142,9 +142,6 @@
       }
     }
   }
-// END SECTION 1A ===========================================================
-
-// BEGIN SECTION 1B =========================================================
 
 // goal section
 #goalSection {
@@ -250,11 +247,41 @@
   }
 }
 
-// END SECTION 1B ===========================================================
+// END PANEL SECTION ========================================================
 
-// BEGIN SECTION 2 ==========================================================
+// BEGIN OUR VISION SECTION =================================================
+.spacing {
+  height: 150px;
+}
+.vision-container {
+  @include background('../../assets/images/home/zip.png', no-repeat, contain);
+  padding: 80px 150px;
+  width: 85%;
+  background-position: right;
+
+  .vision-text {
+    width: 80%;
+  }
+
+  .vision-link {
+    @include size(60%, 100%);
+
+    a {
+      font-size: 30px;
+      float: left;
+    }
+  }
+
+  .vision-body {
+    float: left;
+    padding-top: 10px;
+  }
+}
+// END OUR VISION SECTION ===================================================
+
+// BEGIN WHAT WE DO =========================================================
 #stand-section {
-  @include size(100%, 800px);
+  @include size(100%, 1200px);
   @include background('../../assets/images/home/weDo-bg.svg', no-repeat, cover);
   @include flex(column, flex-start, flex-start);
   margin: 0;
@@ -268,9 +295,9 @@
   }
 
   .stand-box {
-    padding: 150px;
+    padding: 0px 150px 0px 150px;
     @include laptop {
-      padding: 150px 0px 0px $text-margin
+      padding: 150px 0px 0px $text-margin;
     }
   }
 
@@ -310,5 +337,5 @@
     }
   }
 
-  // END SECTION 2 ==========================================================
+// END WHAT WE DO ==========================================================
 }

@@ -7032,9 +7032,31 @@ nav {
           width: 13vw;
           height: 13vw; } }
 
+.spacing {
+  height: 150px; }
+
+.vision-container {
+  background-image: url("../../assets/images/home/zip.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 80px 150px;
+  width: 85%;
+  background-position: right; }
+  .vision-container .vision-text {
+    width: 80%; }
+  .vision-container .vision-link {
+    width: 60%;
+    height: 100%; }
+    .vision-container .vision-link a {
+      font-size: 30px;
+      float: left; }
+  .vision-container .vision-body {
+    float: left;
+    padding-top: 10px; }
+
 #stand-section {
   width: 100%;
-  height: 800px;
+  height: 1200px;
   background-image: url("../../assets/images/home/weDo-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -7050,7 +7072,7 @@ nav {
   #stand-section .stand-layout {
     width: 100%; }
   #stand-section .stand-box {
-    padding: 150px; }
+    padding: 0px 150px 0px 150px; }
     @media (max-width: 950px) {
       #stand-section .stand-box {
         padding: 150px 0px 0px 30px; } }
