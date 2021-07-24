@@ -7,7 +7,6 @@ update:
 picture: assets/images/blog/Browser-extensions/banner.png
 summary: Extensions can give you faster, more secure browsing experience.
 quote: Having a more Secure and Productive Browser
-event:
 setting:
 target:
 level:
