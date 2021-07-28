@@ -27,7 +27,7 @@ title: Blog
                   <p><a href="{{ bannerBlog[0].url }}">{{bannerBlog[0].title}}</a></p>
                   <p> {{ bannerBlog[0].summary }} </p>
                   <p class="blog-main-center">
-                    <img class="blog-main-profile" src="../../../{{ author.profile }}" alt="">
+                    <img class="blog-main-profile" src="../../../{{ author.profile }}" alt="author-profile-image">
                     {{ bannerBlog[0].date | date: "%b %d, %Y" }} by {{ author.full_name }}
                   </p>
                 </div>
@@ -74,7 +74,7 @@ title: Blog
                       <p><a href="{{ post.url }}">{{post.title}}</a></p>
                       <p> {{ post.summary }} </p>
                       <p class="blog-section-bottom">
-                        <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="">
+                        <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="author-profile-image">
                         {{ post.date | date: "%b %d, %Y" }} by {{ bauthor.full_name }}
                     </div>
                 </div>

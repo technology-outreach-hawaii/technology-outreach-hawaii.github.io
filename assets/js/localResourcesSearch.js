@@ -126,7 +126,7 @@ const displaySources = (sources) => {
             total+= `
             <li onclick="window.open('${source.link}')" class="resources-island-section-container">
                 <div class="resources-island-section-container-img">
-                  <img src="${source.picture}"/>
+                  <img src="${source.picture}" alt="resource-image"/>
                 </div>
                 <div class="resources-island-section-container-body">
                   <h2>${source.title}</h2>

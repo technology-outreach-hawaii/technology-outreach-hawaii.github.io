@@ -35,7 +35,7 @@ title: About
           {% for member in site.data.members %}
             <div class="team-display-all">
               <div class="team-display-all-img">
-                <img src="{{ member[1].profile }}" alt="">
+                <img src="{{ member[1].profile }}" alt="profile-image">
               </div>
               <div class="team-display-all-text">
                     <h3>{{ member[1].full_name }}</h3>
@@ -46,12 +46,12 @@ title: About
               <div class="team-display-all-icon">
                 {% if member[1].github != NULL %}
                   <a href="{{ member[1].github }}">
-                    <img src="/assets/images/logo/github-white.png" alt="">
+                    <img src="/assets/images/logo/github-white.png" alt="github-logo">
                   </a>
                 {% endif %}
                 {% if member[1].linkedin != NULL %}
                   <a href="{{ member[1].linkedin }}">
-                    <img src="/assets/images/logo/in-white.png" alt="">
+                    <img src="/assets/images/logo/in-white.png" alt="linkedin-logo">
                   </a>
                 {% endif %}
               </div>
