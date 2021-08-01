@@ -18,10 +18,15 @@
     #post-info {
       text-align: center;
 
+      #blog-h1 {
+        font-size: 40px;
+      }
+
       .author-date_container {
+        margin-top: 15px;
         @include flex(row, center, center);
         img {
-          width: 50px;
+          width: 30px;
           border-radius: 100px;
           margin-right: 10px;
         }
@@ -29,8 +34,10 @@
 
       #quote {
         padding: 40px 0;
-        font-size: 30px;
+        font-size: 20px;
         font-family: $shippori-mincho;
+        color: #5c5c5c;
+
       }
     }
   }

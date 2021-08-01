@@ -7100,19 +7100,23 @@ nav {
     padding: 3% 5%; }
     #post #post-section #post-info {
       text-align: center; }
+      #post #post-section #post-info #blog-h1 {
+        font-size: 40px; }
       #post #post-section #post-info .author-date_container {
+        margin-top: 15px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center; }
         #post #post-section #post-info .author-date_container img {
-          width: 50px;
+          width: 30px;
           border-radius: 100px;
           margin-right: 10px; }
       #post #post-section #post-info #quote {
         padding: 40px 0;
-        font-size: 30px;
-        font-family: "Shippori Mincho B1", sans-serif; }
+        font-size: 20px;
+        font-family: "Shippori Mincho B1", sans-serif;
+        color: #5c5c5c; }
 
 .about-container {
   display: flex;
@@ -7802,6 +7806,9 @@ nav {
       .event-icons img {
         width: 75px;
         height: 75px; } }
+
+#gcal {
+  margin-top: 30px; }
 
 .event-grid {
   width: 100%;
