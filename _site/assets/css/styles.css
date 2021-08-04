@@ -7032,12 +7032,46 @@ nav {
           width: 13vw;
           height: 13vw; } }
 
-#stand-section {
-  width: 100%;
-  height: 800px;
+.spacing {
   background-image: url("../../assets/images/home/weDo-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 150px; }
+
+.vision-container {
+  background-image: url("../../assets/images/home/zip.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 80px 150px;
+  width: 90%;
+  background-position: right; }
+  @media (max-width: 950px) {
+    .vision-container {
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      padding: 20px 0px 0px 30px; } }
+  .vision-container .vision-text {
+    width: 80%; }
+    @media (max-width: 950px) {
+      .vision-container .vision-text {
+        width: 100%; } }
+  .vision-container .vision-link {
+    width: 60%;
+    height: 100%; }
+    .vision-container .vision-link a {
+      font-size: 25px;
+      float: left; }
+  .vision-container .vision-body {
+    float: left;
+    padding-top: 10px; }
+
+#stand-section {
+  width: 100%;
+  height: 1200px;
+  background-color: #0A303B;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -7050,10 +7084,10 @@ nav {
   #stand-section .stand-layout {
     width: 100%; }
   #stand-section .stand-box {
-    padding: 150px; }
+    padding: 0px 150px 0px 150px; }
     @media (max-width: 950px) {
       #stand-section .stand-box {
-        padding: 150px 0px 0px 30px; } }
+        padding: 20px 0px 0px 30px; } }
   #stand-section .stand-individual {
     display: flex;
     flex-direction: row;
