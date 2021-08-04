@@ -4,12 +4,12 @@ layout: default
 {% assign author = site.data.members[page.author] %}
 
 <div id="post">
-  <img id="background" src="../../../{{ page.picture }}" alt="">
+  <img id="background" src="../../../{{ page.picture }}" alt="background-image">
   <div id="post-section">
     <div id="post-info">
-      <h1>{{ page.title }}</h1>
+      <h1 id="blog-h1">{{ page.title }}</h1>
       <div class="author-date_container">
-        <img class="profile" src="../../../{{ author.profile }}" alt="">
+        <img class="profile" src="../../../{{ author.profile }}" alt="author-profile-image">
         <p>{{ page.date | date: "%b %d, %Y" }} by {{ author.full_name }}</p>
       </div>
       <div id="quote">

@@ -2,7 +2,8 @@
 layout: default
 title: Blog
 ---
-{% assign name = site.posts[3].author %}
+{% assign bannerBlog = site.posts | where:'update', 'banner' %}
+{% assign name = bannerBlog[0].author %}
 {% assign author = site.data.members[name] %}
 
 <div class="blog-container">
@@ -16,25 +17,25 @@ title: Blog
 
           <!-- Featured Section -->
           <div class="blog-main">
-            <div onclick="location.href='{{ site.posts[3].url }}';" class="blog-main-card"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                       rgba(0, 0, 0, 0.5)), url({{site.posts[3].picture}}); cursor: pointer;">
+            <div onclick="location.href='{{ bannerBlog[0].url }}';" class="blog-main-card"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url({{bannerBlog[0].picture}}); cursor: pointer;">
             <!-- <a href="{{ site.posts[0].url }}" id="clickable"></a> -->
               <!-- <div class="blog-main-img">
                 <img src="{{site.posts[0].picture}}" alt="">
               </div> -->
                 <div class="blog-main-text">
-                  <p><a href="{{ site.posts[3].url }}">{{site.posts[3].title}}</a></p>
-                  <p> {{ site.posts[3].summary }} </p>
+                  <p><a href="{{ bannerBlog[0].url }}">{{bannerBlog[0].title}}</a></p>
+                  <p> {{ bannerBlog[0].summary }} </p>
                   <p class="blog-main-center">
-                    <img class="blog-main-profile" src="../../../{{ author.profile }}" alt="">
-                    {{ site.posts[3].date | date: "%b %d, %Y" }} by {{ author.full_name }}
+                    <img class="blog-main-profile" src="../../../{{ author.profile }}" alt="author-profile-image">
+                    {{ bannerBlog[0].date | date: "%b %d, %Y" }} by {{ author.full_name }}
                   </p>
                 </div>
             </div>
 
             <div class="blog-main-summary">
-              <p>{{site.posts[3].excerpt}}</p>
-              <a id="blog-main-link" href="{{ site.posts[3].url }}" target=“_blank”>read more</a>
+              <p>{{bannerBlog[0].excerpt}}</p>
+              <a id="blog-main-link" href="{{ bannerBlog[0].url }}" target=“_blank”>read more</a>
             </div>
         </div>
       </div>
@@ -62,7 +63,7 @@ title: Blog
         <div class="blog-box">
             <div class="blog-holder">
 
-              {% for post in site.posts limit: 3%}
+              {% for post in site.posts %}
 
                 {% assign bname = post.author %}
                 {% assign bauthor = site.data.members[bname] %}
@@ -73,28 +74,7 @@ title: Blog
                       <p><a href="{{ post.url }}">{{post.title}}</a></p>
                       <p> {{ post.summary }} </p>
                       <p class="blog-section-bottom">
-                        <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="">
-                        {{ post.date | date: "%b %d, %Y" }} by {{ bauthor.full_name }}
-                    </div>
-                </div>
-              </div>
-
-              {% endfor %}
-            </div>
-            <div class="blog-holder">
-
-              {% for post in site.posts offset: 3 limit: 2%}
-
-                {% assign bname = post.author %}
-                {% assign bauthor = site.data.members[bname] %}
-              <div onclick="location.href='{{ post.url }}';" class="blog-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                         rgba(0, 0, 0, 0.5)), url({{post.picture}}); cursor: pointer;">
-                <div class="blog-section-side">
-                    <div class="blog-section-text">
-                      <p><a href="{{ post.url }}">{{post.title}}</a></p>
-                      <p> {{ post.summary }} </p>
-                      <p class="blog-section-bottom">
-                        <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="">
+                        <img class="blog-section-profile" src="../../../{{ bauthor.profile }}" alt="author-profile-image">
                         {{ post.date | date: "%b %d, %Y" }} by {{ bauthor.full_name }}
                     </div>
                 </div>

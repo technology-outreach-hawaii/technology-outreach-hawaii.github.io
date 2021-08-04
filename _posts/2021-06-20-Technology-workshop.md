@@ -7,7 +7,6 @@ update:
 picture: assets/images/blog/virtualWorkshop.png
 summary: A morning of technology fun for children and teens.
 quote: Splash into technology with us at our Virtual Technology Workshop!
-event: yes
 setting: Virtual Technology Workshop
 target: Teens
 level: Beginner

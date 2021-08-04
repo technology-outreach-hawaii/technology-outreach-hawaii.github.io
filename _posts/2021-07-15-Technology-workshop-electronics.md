@@ -7,7 +7,6 @@ update:
 picture: assets/images/blog/ws-electricity.png
 summary: A hour-long thrilling experience.
 quote: Take charge with us at our Virtual Technology Workshop!
-event: yes
 setting: Virtual Technology Workshop
 target: Teens
 level: Beginner

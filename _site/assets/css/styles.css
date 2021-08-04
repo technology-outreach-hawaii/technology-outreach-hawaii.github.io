@@ -7134,19 +7134,23 @@ nav {
     padding: 3% 5%; }
     #post #post-section #post-info {
       text-align: center; }
+      #post #post-section #post-info #blog-h1 {
+        font-size: 40px; }
       #post #post-section #post-info .author-date_container {
+        margin-top: 15px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center; }
         #post #post-section #post-info .author-date_container img {
-          width: 50px;
+          width: 30px;
           border-radius: 100px;
           margin-right: 10px; }
       #post #post-section #post-info #quote {
         padding: 40px 0;
-        font-size: 30px;
-        font-family: "Shippori Mincho B1", sans-serif; }
+        font-size: 20px;
+        font-family: "Shippori Mincho B1", sans-serif;
+        color: #5c5c5c; }
 
 .about-container {
   display: flex;
@@ -7339,17 +7343,9 @@ nav {
       height: 50%; } }
 
 .blog-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 80%; }
   @media (max-width: 950px) {
     .blog-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       width: 90%; } }
 
 .blog-header {
@@ -7460,10 +7456,6 @@ nav {
         width: 100%; } }
 
 .blog-holder {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
   width: 100%; }
   @media (max-width: 950px) {
     .blog-holder {
@@ -7478,7 +7470,7 @@ nav {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
 
 .blog-section {
-  width: 24vw;
+  width: 30%;
   height: 25vw;
   display: flex;
   flex-direction: column;
@@ -7487,7 +7479,9 @@ nav {
   margin: 10px;
   background-repeat: no-repeat;
   background-size: cover;
-  border: black 1px solid; }
+  border: black 1px solid;
+  float: left;
+  box-sizing: border-box; }
   .blog-section .blog-section-side {
     display: flex;
     flex-direction: column;
@@ -7776,7 +7770,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 30px; }
 
 .event-banner {
   background-image: url("../../assets/images/home/index-bg.png");
@@ -7845,6 +7840,9 @@ nav {
       .event-icons img {
         width: 75px;
         height: 75px; } }
+
+#gcal {
+  margin-top: 30px; }
 
 .event-grid {
   width: 100%;

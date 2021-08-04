@@ -22,13 +22,13 @@ title: Home
         <h2 id="update">UPDATES</h2>
         <br>
         <ul>
-          {% for post in site.posts %}
-              {% if post.update != NULL %}
+          {% assign news = site.posts | where:'tags', 'update' %}
+
+          {% for post in news %}
               <li>
                 <h2><a href="{{ post.url }}">{{ post.title }}, {{ post.date | date: "%b %d, %Y" }}</a></h2>
                 {{ post.excerpt }}
               </li>
-              {% endif %}
           {% endfor %}
         </ul>
       </div>
@@ -54,7 +54,7 @@ title: Home
           <a id="prev1" class="prev">&#10094;</a>
           {% for member in site.data.members limit: 4 %}
             <div class="profile">
-              <img src="{{ member[1].profile }}" alt="">
+              <img src="{{ member[1].profile }}" alt="team-profile">
             </div>
           {% endfor %}
           <a id="next1" class="next">&#10095;</a>
@@ -63,7 +63,7 @@ title: Home
           <a id="prev2" class="prev">&#10094;</a>
           {% for member in site.data.members offset:4 limit: 4 %}
             <div class="profile">
-              <img src="{{ member[1].profile }}" alt="">
+              <img src="{{ member[1].profile }}" alt="team-profile">
             </div>
           {% endfor %}
           <a id="next2" class="next">&#10095;</a>
@@ -72,7 +72,7 @@ title: Home
           <a id="prev3" class="prev">&#10094;</a>
           {% for member in site.data.members offset:8 limit: 4 %}
             <div class="profile">
-              <img src="{{ member[1].profile }}" alt="">
+              <img src="{{ member[1].profile }}" alt="team-profile">
             </div>
           {% endfor %}
           <a id="next3" class="next">&#10095;</a>
@@ -119,7 +119,7 @@ title: Home
         </div>
         <div class="stand-individual">
           <div class="stand-img">
-            <img src="{{site.url}}/assets/images/home/education.png" alt="">
+            <img src="{{site.url}}/assets/images/home/education.png" alt="education-icon">
           </div>
           <div class="stand-body">
             <p>We start and support events related to technology education. </p>
@@ -135,7 +135,7 @@ title: Home
         </div>
         <div class="stand-individual">
           <div class="stand-img">
-            <img src="{{site.url}}/assets/images/home/access.png" alt="">
+            <img src="{{site.url}}/assets/images/home/access.png" alt="access-icon">
           </div>
           <div class="stand-body">
             <p>We aim to be the hub for all free community technology resources across the state.  </p>
@@ -147,15 +147,15 @@ title: Home
       <!-- What We Do Section - repeat C -->
       <div class="stand-layout">
         <div class="stand-heading">
-          <h1><a href="{{ site.posts[3].url }}">Empower youth</a></h1>
+              <h1><a href="{% link _posts/2021-01-22-Volunteers.md %}">Empower youth</a></h1>
         </div>
         <div class="stand-individual">
           <div class="stand-img">
-            <img src="{{site.url}}/assets/images/home/empower.png" alt="">
+            <img src="{{site.url}}/assets/images/home/empower.png" alt="empower-icon">
           </div>
           <div class="stand-body">
             <p>We encourage mentorship, service, and character building activities for youth. </p>
-            <h2><a href="{{ site.posts[3].url }}">Join our volunteer network </a></h2>
+            <h2><a href="{% link _posts/2021-01-22-Volunteers.md %}">Join our volunteer network </a></h2>
           </div>
         </div>
       </div>

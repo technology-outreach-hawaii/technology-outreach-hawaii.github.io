@@ -3,7 +3,6 @@ layout: default
 title: Events
 ---
 <div class="event-container">
-
   <!-- Header Section -->
   <div class="event-banner">
     <div class="event-banner-text">
@@ -11,68 +10,20 @@ title: Events
           <h2>Events</h2>
           <br/>
           <p>Explore technology events created and lead by our team of students.
-            We strive to make our activities interactive and engaging.
-            No one is ever too young or too old to learn something new.
-            We are open to ideas and suggestions for future events! </p>
+            We strive to make our activities interactive and are open to ideas and suggestions for future events! Events are generally geared towards teens and young adults but all ages are welcome. Sign up for any of our events <a href="https://bit.ly/torch-tech-workshop" target=“_blank”>here</a>. The form is updated
+            weekly with confirmed events for that week. Learn more about our <a href="{% link _posts/2021-07-31-New-live-coding-and-workshop-events.md %}">live coding sessions</a> and <a href="{% link _posts/2021-07-31-Saturday-workshops.md %}">Saturday workshops</a>.</p>
         </div>
     </div>
   </div>
 
   <div class="event-icons">
     <div class="event-icons-container">
-      <img class="icon" src="/assets/images/event/icons/1.png" alt="">
-      <img class="icon" src="/assets/images/event/icons/2.png" alt="">
-      <img class="icon" src="/assets/images/event/icons/3.png" alt="">
-      <img class="icon" src="/assets/images/event/icons/4.png" alt="">
-      <img class="icon" src="/assets/images/event/icons/5.png" alt="">
+      <!-- <img class="icon" src="/assets/images/event/icons/1.png" alt="person-icon">
+      <img class="icon" src="/assets/images/event/icons/2.png" alt="person-icon">
+      <img class="icon" src="/assets/images/event/icons/3.png" alt="person-icon">
+      <img class="icon" src="/assets/images/event/icons/4.png" alt="person-icon">
+      <img class="icon" src="/assets/images/event/icons/5.png" alt="person-icon"> -->
     </div>
   </div>
-
-  <!-- Event Card Section -->
-  <div class="event-grid">
-    <div class="event-grid-container">
-      <div class="row">
-        {% for post in site.posts limit: 2%}
-          {% if post.event != NULL %}
-          <div class="col-sm-12 col-md-4">
-            <div class="event-grid-card">
-              <div class="event-grid-card-click" style="cursor: pointer;" onclick="location.href='{{ post.url }}';">
-                <div class="event-grid-card-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                           rgba(0, 0, 0, 0.5)), url({{post.picture}}); cursor: pointer;">
-                    <div class="event-grid-card-image-overlay">
-                      <p>{{ post.range }}</p>
-                    </div>
-                </div>
-                <div class="event-grid-card-body">
-                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-                    <br/>
-                    <p>{{ post.setting }}</p>
-                    <br/>
-                    <p>{{ post.summary }}</p>
-                </div>
-              </div>
-              <div class="event-grid-card-footer">
-                  <div class="event-grid-card-footer-social">
-                    <a href="{{ post.IG }}" target=“_blank”><img class="social-event-icon" src="/assets/images/logo/ig-white.png" alt=""></a>
-                    <a href="{{ post.facebook }}" target=“_blank”><img class="social-event-icon" src="/assets/images/logo/fb-white.png" alt=""></a>
-                  </div>
-                  <div class="event-grid-card-footer-difficulty">
-                    <div class="event-grid-card-footer-difficulty-left">
-                      <p>{{ post.target }}</p>
-                    </div>
-                    <div class="event-grid-card-footer-difficulty-right">
-                      <p>{{ post.level }}</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-
-
-
+  <iframe id="gcal" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Pacific%2FHonolulu&amp;src=MGhzY2JyYzEzdTkzN3ZqbzRwZmJiOWNxZW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161" style="border:solid 1px #777" width="80%" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
