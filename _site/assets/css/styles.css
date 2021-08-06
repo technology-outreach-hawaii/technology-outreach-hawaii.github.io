@@ -7265,6 +7265,13 @@ nav {
       font-size: 40px;
       font-weight: 700;
       letter-spacing: 3px; }
+  .team-display .team-display-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .team-display .team-display-nav a {
+      padding-right: 20px; }
   .team-display .team-display-role {
     display: flex;
     flex-direction: column;
