@@ -30,34 +30,53 @@ title: About
           <h2>OUR TEAM</h2>
           <p>Our members share a passion for technology and social change in their professional and academic endeavors.  </p>
           <br>
+          <div class="team-display-nav">
+            <a href="#Directors">Directors</a>
+            <a href="#Creative">Creative Media Team</a>
+            <a href="#Volunteers">Volunteers</a>
+          </div>
         </div>
-        <div class="team-display-row">
-          {% for member in site.data.members %}
-            <div class="team-display-all">
-              <div class="team-display-all-img">
-                <img src="{{ member[1].profile }}" alt="profile-image">
+        {% assign offset = 0 %}
+        {% assign possibleRoles = "Directors,Creative Media Team,Volunteers" | split: ',' %}
+        {% for role in possibleRoles %}
+          {% assign roleSplit = role | split:' ' %}
+          {% assign id = roleSplit[0] %}
+          <div class="team-display-role" id={{id}}>
+            <h2> {{ role }} </h2>
+          </div>
+          <div class="team-display-row">
+            {% for member in site.data.members offset: offset %}
+              {% if member[1].role != role %}
+                {% break %}
+              {% endif %}
+              {% assign offset = offset | plus: 1 %}
+              <div class="team-display-all">
+                <div class="team-display-all-img">
+                  <img src="{{ member[1].profile }}" alt="profile-image">
+                </div>
+                <div class="team-display-all-text">
+                  <h3>{{ member[1].full_name }}</h3>
+                  <p style="font-style: italic;">{{ member[1].title }}</p>
+                  <p id="padding">{{ member[1].bio }}</p>
+                </div>
+                <!-- ICONS -->
+                <div class="team-display-all-icon">
+                  {% if member[1].github != NULL %}
+                    <a href="{{ member[1].github }}">
+                      <img src="/assets/images/logo/github-white.png" alt="github-logo">
+                    </a>
+                  {% endif %}
+                  {% if member[1].linkedin != NULL %}
+                    <a href="{{ member[1].linkedin }}">
+                      <img src="/assets/images/logo/in-white.png" alt="linkedin-logo">
+                    </a>
+                  {% endif %}
+                </div>
+                  <!-- END ICONS -->
               </div>
-              <div class="team-display-all-text">
-                    <h3>{{ member[1].full_name }}</h3>
-                    <p style="font-style: italic;">{{ member[1].title }}</p>
-                    <p id="padding">{{ member[1].bio }}</p>
-              </div>
-              <!-- ICONS -->
-              <div class="team-display-all-icon">
-                {% if member[1].github != NULL %}
-                  <a href="{{ member[1].github }}">
-                    <img src="/assets/images/logo/github-white.png" alt="github-logo">
-                  </a>
-                {% endif %}
-                {% if member[1].linkedin != NULL %}
-                  <a href="{{ member[1].linkedin }}">
-                    <img src="/assets/images/logo/in-white.png" alt="linkedin-logo">
-                  </a>
-                {% endif %}
-              </div>
-              <!-- END ICONS -->
-            </div>
-          {%  endfor %}
+            {% endfor %}
+          </div>
+        {% endfor %}
         </div>
       </div>
     </div>
