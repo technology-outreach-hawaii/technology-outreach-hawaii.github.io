@@ -1,5 +1,6 @@
 gina:
   full_name: Gina Watanabe
+  role: Directors
   title: Director - CEO
   github:
   linkedin:
@@ -10,6 +11,7 @@ gina:
 
 boyang:
   full_name: Boyang Zhang
+  role: Directors
   title: Director
   github:
   linkedin:
@@ -19,6 +21,7 @@ boyang:
 
 kanai:
   full_name: Kanai Gooding
+  role: Directors
   title: Director - CCO
   github: https://github.com/kanaigooding
   linkedin: https://www.linkedin.com/in/kanaigooding/
@@ -29,6 +32,7 @@ kanai:
 
 patrick:
   full_name: Patrick McCrindle
+  role: Directors
   title: Director - CHRO
   github: https://github.com/pmccrind/
   linkedin: https://www.linkedin.com/in/patrick-mccrindle/
@@ -39,6 +43,7 @@ patrick:
 
 robert:
   full_name: Robert Lemon
+  role: Directors
   title: Director - COO
   github: https://github.com/robert-lemon-uhm
   linkedin: https://www.linkedin.com/in/robertlemon/
@@ -49,6 +54,7 @@ robert:
 
 timothy:
   full_name: Timothy Huo
+  role: Directors
   title: Director - CIO
   github: https://github.com/timothyhuo1
   linkedin: https://www.linkedin.com/in/timothy-huo-087b121b5/
@@ -59,6 +65,7 @@ timothy:
 
 jennifer:
   full_name: Jennifer Watanabe
+  role: Creative Media Team
   title: Creative Media Manager
   github:
   linkedin:
@@ -69,6 +76,7 @@ jennifer:
 
 christyn:
   full_name: Christyn Mellor
+  role: Creative Media Team
   title: Creative Media Associates
   github:
   linkedin:
@@ -79,6 +87,7 @@ christyn:
 
 krizhna:
   full_name: Krizhna Bayudan
+  role: Creative Media Team
   title: Creative Media Associates
   github:
   linkedin:
@@ -89,6 +98,7 @@ krizhna:
 
 nikki:
   full_name: Nikki Zamani
+  role: Creative Media Team
   title: Creative Media Associates
   github:
   linkedin:
@@ -96,3 +106,36 @@ nikki:
   interests:
   bio: Hi, I am a 3rd year undergraduate student at UH Manoa. I am pursuing Biology with a Public Health minor. My dream is to become a physician and practice medicine on my home island of Maui.
   profile: assets/images/profiles/nikki_zamani.jpg
+
+kelcie:
+  full_name: Kelcie Lee
+  role: Volunteers
+  title: Volunteer
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: My name is Kelcie Lee and I am a graduate from the University of Hawaii at Manoa. I majored in Communications with a focus in Information Communication Technology.
+  profile: assets/images/profiles/kelcie_lee.jpg
+
+preston:
+  full_name: Preston Garcia
+  role: Volunteers
+  title: Volunteer
+  github: https://github.com/PrestonTGarcia
+  linkedin: https://www.linkedin.com/in/preston-garcia-371112204/
+  website:
+  interests:
+  bio: Hi! My name is Preston and I am a UH Manoa student transferred from Leeward Community College. My major is Computer Science - Data Science with a Physics minor.
+  profile: assets/images/profiles/preston_garcia.jpg
+
+taylor:
+  full_name: Taylor Gabatino
+  role: Volunteers
+  title: Volunteer
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: My name is Taylor and I am an undergraduate student at UH Manoa studying Computer Science & Quantitative Economics. I aspire to be a Software Engineer in the future.
+  profile: assets/images/profiles/taylor_gabatino.jpg
