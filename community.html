@@ -10,22 +10,19 @@ title: Community
       <div class="resources-banner-text-box">
         <div class="resources-banner-text-box-word">
           <h2>Community Spotlight</h2>
-          {% for resource in site.localResources %}
-              {% if resource.spotlight != NULL %}
-              <h2> {{resource.title}}</h2>
-              <br>
-              <div class="tags-horizontal">
-                {% for tag in resource.tags %}
-                <p class='tags'>
-                  {{tag}}
-                </p>
-                {% endfor %}
-              </div>
-              <br>
-              <p>{{resource.summary}}</p>
-              <a href="{{resource.url}}" target=“_blank”>read more</a>
-              {% endif %}
-          {% endfor %}
+          {% assign communitySL = site.localResources | where:"spotlight", "include" %}
+            <h2> {{communitySL[0].title}}</h2>
+            <br>
+            <div class="tags-horizontal">
+              {% for tag in communitySL[0].tags %}
+              <p class='tags'>
+                {{tag}}
+              </p>
+              {% endfor %}
+            </div>
+            <br>
+            <p>{{communitySL[0].summary}}</p>
+            <a href="{{communitySL[0].url}}" target=“_blank”>read more</a>
         </div>
       </div>
     </div>
@@ -65,57 +62,30 @@ title: Community
         </div>
         <hr>
 
-          <!-- BASIC -->
-          <div id="basic" class="resources-online-summary">
-            <p class="resources-online-summary-intro">Learning how to use the computer for the first time? This section includes online resources on basic digital skills for the beginner.</p>
-            <br>
-            <div class="resources-online-summary">
-              {% for resource in site.onlineResources %}
-                {% if resource.level == 'basic' %}
-                  <div class="resources-online-summary-section">
-                    <a href={{resource.link}} target=“_blank”>{{resource.title}}</a>
-                    <p>{{resource.excerpt}}</p>
-                    <br>
-                  </div>
-                {% endif %}
+          {% assign possibleLevels = "basic,intermediate,hard" | split: ',' %}
+          {% for level in possibleLevels %}
+            {% assign levelResources = site.onlineResources | where:'level', level %}
+            {% assign levelSplit = level | split:' ' %}
+            {% assign id = levelSplit[0] %}
+            <div id={{id}} class="resources-online-summary">
+              {% case level %}
+                {% when "basic" %}
+                  <p class="resources-online-summary-intro">Learning how to use the computer for the first time? This section includes online resources on basic digital skills for the beginner.</p>
+                {% when "intermediate" %}
+                  <p class="resources-online-summary-intro">Are you familiar with everyday technologies but are interested in learning more? This section includes online resources to explore a variety of tech interests (e.g. coding, intermediate to advanced usage of Excel). </p>
+                {% when "hard" %}
+                  <p class="resources-online-summary-intro">Are you looking for more in-depth courses or resources to understand the fundamentals of technology? This section includes online resources that dive deeper into the nitty gritty details of technology, research, and interdisciplinary uses. </p>
+              {% endcase %}
+              <br>
+              {% for resource in levelResources %}
+                <div class="resources-online-summary-section">
+                  <a href={{resource.link}} target=“_blank”>{{resource.title}}</a>
+                  <p>{{resource.excerpt}}</p>
+                  <br>
+                </div>
               {% endfor %}
             </div>
-          </div>
-
-          <!-- INTERMEDIATE -->
-          <div id="intermediate" class="resources-online-summary" style="display: none;">
-            <p class="resources-online-summary-intro">Are you familiar with everyday technologies but are interested in learning more? This section includes online resources to explore a variety of tech interests (e.g. coding, intermediate to advanced usage of Excel). </p>
-            <br>
-            <div class="resources-online-summary">
-              {% for resource in site.onlineResources %}
-                {% if resource.level == 'intermediate' %}
-                  <div class="resources-online-summary-section">
-                    <a href={{resource.link}} target=“_blank”>{{resource.title}}</a>
-                    <p>{{resource.excerpt}}</p>
-                    <br>
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          </div>
-
-          <!-- HARD -->
-          <div id="hard" class="resources-online-summary" style="display: none;">
-            <p class="resources-online-summary-intro">Are you looking for more in-depth courses or resources to understand the fundamentals of technology? This section includes online resources that dive deeper into the nitty gritty details of technology, research, and interdisciplinary uses. </p>
-            <br>
-            <div class="resources-online-summary">
-              {% for resource in site.onlineResources %}
-                {% if resource.level == 'hard' %}
-                  <div class="resources-online-summary-section">
-                    <a href={{resource.link}} target=“_blank”>{{resource.title}}</a>
-                    <p>{{resource.excerpt}}</p>
-                    <br>
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          </div>
-
+          {% endfor %}
       </div>
     </div>
 </div>
