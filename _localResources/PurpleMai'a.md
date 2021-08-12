@@ -1,6 +1,6 @@
 ---
 island: all
-title: Purple Maiʻi
+title: Purple Maiʻa
 tags: ["classes", "resources", "competition"]
 spotlight: no
 picture: assets/images/resources/PurpleMaia/purple.png
