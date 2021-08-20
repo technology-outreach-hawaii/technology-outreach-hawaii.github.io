@@ -5,3 +5,7 @@ collections:
     output: true
   sass:
     sass_dir: /assets/css
+
+url: "https://techoutreachhi.org/"
+plugins:
+  - jekyll-sitemap
