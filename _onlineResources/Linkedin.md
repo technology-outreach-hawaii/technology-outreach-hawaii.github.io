@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: Linkedin
 link: https://www.linkedin.com/
 level: hard

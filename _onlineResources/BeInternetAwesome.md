@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: Be Internet Awesome
 link: https://beinternetawesome.withgoogle.com/en_us
 level: basic

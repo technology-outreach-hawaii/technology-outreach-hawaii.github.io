@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: NorthStar
 link: https://www.digitalliteracyassessment.org/
 level: basic

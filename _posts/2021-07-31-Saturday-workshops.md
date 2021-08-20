@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: post
 author: gina
 title: Saturday workshops exploring technology in broader contexts

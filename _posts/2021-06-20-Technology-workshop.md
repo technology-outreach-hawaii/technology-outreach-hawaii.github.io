@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: post
 author: gina
 title: Splash into Technology

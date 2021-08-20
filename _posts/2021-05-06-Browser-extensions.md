@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: post
 author: patrick
 title: Browser Extensions

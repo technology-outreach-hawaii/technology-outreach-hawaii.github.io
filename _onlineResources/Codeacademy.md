@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: Codecademy
 link: https://www.codecademy.com/
 level: intermediate

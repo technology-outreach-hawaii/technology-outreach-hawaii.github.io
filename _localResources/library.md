@@ -1,4 +1,5 @@
 ---
+sitemap: false
 island: all
 title: Hawaii Libraries
 tags: ["classes", "resources"]

@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: HackerRank
 link: https://www.hackerrank.com/
 level: intermediate

@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: post
 author: jennifer
 title: Experimenting with Electronics

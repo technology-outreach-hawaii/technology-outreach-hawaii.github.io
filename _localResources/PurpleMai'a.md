@@ -1,4 +1,5 @@
 ---
+sitemap: false
 island: all
 title: Purple Maiʻa
 tags: ["classes", "resources", "competition"]

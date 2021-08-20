@@ -1,5 +1,6 @@
 ---
-title: NSA Codebreaker 
+sitemap: false
+title: NSA Codebreaker
 link: https://nsa-codebreaker.org/home
 level: hard
 ---

@@ -1,4 +1,5 @@
 ---
+sitemap: false
 island: oahu
 title: Digital Ready Hawaii
 tags: ["classes", "resources"]

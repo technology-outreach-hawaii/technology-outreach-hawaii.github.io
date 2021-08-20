@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: OpenVIM
 link: https://www.openvim.com/
 level: intermediate

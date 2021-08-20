@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: KhanAcademy
 link: https://www.khanacademy.org/
 level: basic

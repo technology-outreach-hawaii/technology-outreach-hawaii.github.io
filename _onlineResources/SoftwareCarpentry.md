@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: Software Carpentry
 link: https://software-carpentry.org/
 level: hard

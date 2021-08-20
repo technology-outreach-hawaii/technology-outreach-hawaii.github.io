@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: FreeCodeCamp
 link: https://www.freecodecamp.org/learn/
 level: intermediate

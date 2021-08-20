@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: resource
 island: oahu
 title: ICSpark

@@ -1,4 +1,5 @@
 ---
+sitemap: false
 island: oahu
 title: GenCyber
 tags: ["cybersecurity", "resources"]
