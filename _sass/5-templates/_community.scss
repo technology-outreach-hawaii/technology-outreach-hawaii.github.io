@@ -236,6 +236,15 @@
     a {
         @include flex(row, flex-start, flex-start);
     }
+
+    @include tablet {
+      @include flex(column, flex-start, flex-start);
+
+      a {
+          @include flex(column, flex-start, flex-start);
+          padding-bottom: 5px;
+      }
+    }
   }
 
   .resources-online-summary {
