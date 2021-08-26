@@ -73,23 +73,24 @@
 
 .team-display {
   @include flex(column, flex-start, flex-start);
-  @include size(90%, 100%);
+  @include size(100%, 100%);
   color: #E4FCFF;
+  padding: 0px 40px;
 
   @include laptop {
     height: 100%;
   }
 
   .team-display-head {
-  @include flex(column, flex-start, flex-start);
-  width: 50%;
-  padding-left: 45px;
+  @include flex(column, center, center);
+  width: 100%;
 
   @include laptop {
-    @include flex(column, flex-start, flex-start);
-    width: 80%;
     padding-top: 0px;
-    padding-left: 20px;
+
+    p {
+      width: 100%;
+    }
   }
 
     h2 {
@@ -98,19 +99,33 @@
       font-weight: 700;
       letter-spacing: 3px;
     }
+
+    p {
+      @include flex(column, center, center);
+      width: 50%;
+      text-align: center;
+    }
   }
 
   .team-display-nav {
-    @include flex(row, flex-start, flex-start);
+    @include flex(row, center, center);
     a {
-      padding-right: 20px;
+      padding: 0px 10px;
+    }
+
+    @include laptop {
+      @include flex(column, center, center);
+
+      a {
+        padding: 10px 0px;
+      }
     }
   }
 
   .team-display-role {
   @include flex(column, flex-start, flex-start);
   width: 50%;
-  padding-left: 45px;
+  padding-left: 20px;
   margin-top: 40px;
 
   @include laptop {
@@ -118,6 +133,7 @@
     width: 80%;
     padding-top: 0px;
     padding-left: 20px;
+    padding-bottom: 20px;
   }
 
     h2 {
@@ -145,6 +161,7 @@
       @include laptop {
         @include flex(column, center, center);
         width: 100%;
+        padding: 10px;
       }
     }
 
@@ -161,7 +178,7 @@
     .team-display-all-text {
       @include flex(column, center, center);
       padding-top: 5px;
-      width: 90%;
+      width: 100%;
 
       #padding {
         text-align: center;
@@ -173,9 +190,9 @@
       @include flex(row, center, center);
 
       img {
-        @include size(40px, 40px);
+        @include size(45px, 45px);
         padding: 5px;
-        border-radius: 25px;
+        border-radius: 100%;
       }
     }
 }
