@@ -1,21 +1,26 @@
-<!-- <html lang='en'>
+<html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <link href='{{site.url}}/node_modules/fullcalendar/main.css' rel='stylesheet' />
-    <script src='{{site.url}}/node_modules/fullcalendar/main.js'></script>
+    <link href='/fullcalendar/main.css' rel='stylesheet' />
+    <script src='/fullcalendar/main.js'></script>
     <script>
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
-        });
-        calendar.render();
-      });
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  let calendar = new FullCalendar.Calendar(calendarEl, {
+    googleCalendarApiKey: 'AIzaSyBpxwvJJj_6oxkjoH6iWLwkL6McedLGt0Y',
+    events: {
+      googleCalendarId: '0hscbrc13u937vjo4pfbb9cqeo@group.calendar.google.com',
+      className: 'gcal-event' // an option!
+    }
+});
+  calendar.render();
+});
+
 
     </script>
   </head>
   <body>
     <div id='calendar'></div>
   </body>
-</html> -->
+</html>
