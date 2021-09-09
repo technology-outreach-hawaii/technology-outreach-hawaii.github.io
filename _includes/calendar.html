@@ -11,8 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
     googleCalendarApiKey: 'AIzaSyBpxwvJJj_6oxkjoH6iWLwkL6McedLGt0Y',
     events: {
       googleCalendarId: '0hscbrc13u937vjo4pfbb9cqeo@group.calendar.google.com',
+      borderColor: "#F8CF1E",
       className: 'gcal-event' // an option!
-    }
+    },
+    eventClick: function(arg) {
+
+      // opens events in a popup window
+      window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+      // prevents current tab from navigating
+      arg.jsEvent.preventDefault();
+    },
 });
   calendar.render();
 });
@@ -21,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
     </script>
   </head>
   <body>
-    <div id='calendar'></div>
+    <div class="calendar-size">
+      <div id='calendar'></div>
+    </div>
   </body>
 </html>

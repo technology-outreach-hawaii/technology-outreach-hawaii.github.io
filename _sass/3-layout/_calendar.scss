@@ -1,0 +1,9 @@
+#calendar {
+  @include size(80%, 600px);
+  padding-top: 20px;
+}
+
+.calendar-size {
+  @include flex(row, center, center);
+  width: 100%;
+}
