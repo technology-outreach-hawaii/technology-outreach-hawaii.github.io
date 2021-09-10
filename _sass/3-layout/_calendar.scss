@@ -4,6 +4,18 @@
 }
 
 .calendar-size {
-  @include flex(row, center, center);
+  @include flex(column, center, center);
   width: 100%;
+}
+
+.add-calendar {
+  @include flex(column, flex-end, flex-end);
+  padding-top: 20px;
+  width: 80%;
+}
+
+#add-button {
+  a {
+    color: black;
+  }
 }

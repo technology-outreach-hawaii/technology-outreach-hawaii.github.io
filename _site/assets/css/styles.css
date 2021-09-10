@@ -6837,10 +6837,21 @@ nav {
 
 .calendar-size {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%; }
+
+.add-calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 20px;
+  width: 80%; }
+
+#add-button a {
+  color: black; }
 
 .IGcontainer {
   background-color: #0A303B;
