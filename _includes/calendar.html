@@ -1,0 +1,46 @@
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link href='/fullcalendar/main.css' rel='stylesheet' />
+    <script src='/fullcalendar/main.js'></script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  let calendar = new FullCalendar.Calendar(calendarEl, {
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,listYear'
+    },
+    googleCalendarApiKey: 'AIzaSyBpxwvJJj_6oxkjoH6iWLwkL6McedLGt0Y',
+    events: {
+      googleCalendarId: '0hscbrc13u937vjo4pfbb9cqeo@group.calendar.google.com',
+      borderColor: "#F8CF1E",
+      className: 'gcal-event' // an option!
+    },
+    eventClick: function(arg) {
+
+      // opens events in a popup window
+      window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+      // prevents current tab from navigating
+      arg.jsEvent.preventDefault();
+    },
+
+  })
+  calendar.render();
+});
+
+
+    </script>
+  </head>
+  <body>
+    <div class="calendar-size">
+      <div id='calendar'></div>
+      <div class="add-calendar">
+        <button id='add-button'><a href="https://calendar.google.com/calendar/u/0?cid=MGhzY2JyYzEzdTkzN3ZqbzRwZmJiOWNxZW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target=“_blank”>Add To Google Calendar</a></button>
+      </div>
+    </div>
+  </body>
+</html>

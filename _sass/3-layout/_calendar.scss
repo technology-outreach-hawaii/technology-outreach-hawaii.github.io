@@ -1,0 +1,21 @@
+#calendar {
+  @include size(80%, 600px);
+  padding-top: 20px;
+}
+
+.calendar-size {
+  @include flex(column, center, center);
+  width: 100%;
+}
+
+.add-calendar {
+  @include flex(column, flex-end, flex-end);
+  padding-top: 20px;
+  width: 80%;
+}
+
+#add-button {
+  a {
+    color: black;
+  }
+}
