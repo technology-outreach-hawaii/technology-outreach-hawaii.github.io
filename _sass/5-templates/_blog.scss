@@ -57,15 +57,22 @@ h1 {
 
   .blog-main-card  {
     @include flex(column, flex-end, center);
-    min-width: 455px;
-    min-height: 455px;
+    height: 455px;
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include laptop {
-      width: 70%;
-      margin-right: 0px;
-    }
+    // @include laptop {
+    //   width: 70%;
+    //   margin-right: 0px;
+    //   min-height: none;
+    //   min-width: none;
+    // }
+    //
+    // @include mobile {
+    //   width: 50%;
+    //   min-height: none;
+    //   min-width: none;
+    // }
   }
 
   .blog-main-img {
@@ -153,9 +160,9 @@ h1 {
   width: 100%;
 
   @include laptop {
-    @include flex(column, center, center);
-    min-width: 455px;
-    min-height: 455px;
+    @include flex(column, flex-start, flex-start);
+    // min-width: 455px;
+    // min-height: 455px;
   }
 }
 
@@ -196,9 +203,10 @@ h1 {
   }
 
   @include laptop {
+    @include flex(column, center, center);
     margin-top: 40px;
+    height: 100%;
     width: 70%;
-    min-height: 455px;
-    max-width: none;
+    height: 300px;
   }
 }
