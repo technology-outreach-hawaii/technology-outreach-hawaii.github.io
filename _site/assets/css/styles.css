@@ -7666,6 +7666,10 @@ nav {
     width: 750px;
     height: 650px;
     padding: 40px; }
+    @media (max-width: 950px) {
+      .resources-banner .resources-banner-text-box {
+        width: 100%;
+        height: 650px; } }
   .resources-banner .resources-banner-text-box-word {
     display: flex;
     flex-direction: column;
@@ -7673,6 +7677,9 @@ nav {
     align-items: flex-start;
     width: 50%;
     height: 300px; }
+    @media (max-width: 650px) {
+      .resources-banner .resources-banner-text-box-word #SLSummary {
+        display: none; } }
   .resources-banner a {
     font-size: 22px; }
 

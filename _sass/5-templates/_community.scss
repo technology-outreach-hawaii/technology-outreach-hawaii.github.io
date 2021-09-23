@@ -66,11 +66,20 @@
     @include flex(column, flex-start, flex-start);
     @include size(750px, 650px);
     padding: 40px;
+
+    @include laptop {
+      @include size(100%, 650px);
+    }
     }
 
   .resources-banner-text-box-word {
     @include flex(column, flex-start, flex-start);
     @include size(50%, 300px);
+    #SLSummary {
+      @include tablet {
+        display: none;
+      }
+    }
   }
 
   a {
