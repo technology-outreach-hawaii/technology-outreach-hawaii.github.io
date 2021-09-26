@@ -2,7 +2,7 @@
 sitemap: false
 layout: post
 author: gina
-title: Saturday workshops exploring technology in broader contexts
+title: Saturday workshops
 tags: update
 update: youth
 picture: assets/images/blog/2021-08-01.jpg

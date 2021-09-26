@@ -6,7 +6,7 @@ title: New live coding and workshop event schedule
 tags: update
 update: youth
 picture: assets/images/blog/2021-07-31.jpg
-summary: Join us on Tuesdays and Thursdays for 30-minute rapid live coding sessions
+summary: Join us on Tuesdays and Thursdays for 30-min live coding sessions
 quote: Quick weekly coding sessions with our mentors
 setting:
 target:
