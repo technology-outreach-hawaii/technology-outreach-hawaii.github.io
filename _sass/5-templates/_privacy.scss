@@ -1,0 +1,10 @@
+.privacy {
+  padding: 50px 100px;
+  @include flex(column, flex-start, flex-start);
+  background-color: $dark-blue;
+  color: white;
+
+  p {
+    font-family: $archivo-narrow;
+  }
+}
