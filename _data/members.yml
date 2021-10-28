@@ -38,7 +38,7 @@ patrick:
   linkedin: https://www.linkedin.com/in/patrick-mccrindle/
   website:
   interests: Cybersecurity, Arduinos, Raspberry Pi
-  bio: I am currently a Junior majoring in Computer Science and pursuing a minor in mathematics.
+  bio: I am currently a Senior majoring in Computer Science and pursuing a minor in mathematics.
   profile: assets/images/profiles/patrick_mccrindle.jpg
 
 robert:
@@ -60,7 +60,7 @@ timothy:
   linkedin: https://www.linkedin.com/in/timothy-huo-087b121b5/
   website: https://timothyhuo1.github.io/
   interests: Web Development
-  bio: Hello! I am a Sophomore majoring in Computer Science at the University of Hawaii at Manoa.
+  bio: Hello! I am a Junior majoring in Computer Science at the University of Hawaii at Manoa.
   profile: assets/images/profiles/timothy_huo.jpg
 
 jennifer:
@@ -110,7 +110,7 @@ nikki:
 kelcie:
   full_name: Kelcie Lee
   role: Volunteers
-  title: Volunteer
+  title: Communications Associate
   github:
   linkedin: https://www.linkedin.com/in/kelcie-lee-882634211/
   website:
@@ -121,7 +121,7 @@ kelcie:
 preston:
   full_name: Preston Garcia
   role: Volunteers
-  title: Volunteer
+  title: Program Associate
   github: https://github.com/PrestonTGarcia
   linkedin: https://www.linkedin.com/in/preston-garcia-371112204/
   website:
