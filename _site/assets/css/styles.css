@@ -7895,31 +7895,49 @@ nav {
 .program-card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
   height: 100%;
   padding: 50px; }
+  @media (max-width: 650px) {
+    .program-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
   .program-card .program-body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    height: 100%;
-    border: 5px solid black; }
+    height: 100%; }
+    @media (max-width: 650px) {
+      .program-card .program-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
   .program-card .program-image {
-    width: 50%;
+    width: 30%;
     height: 100%;
-    padding-right: 20px;
-    border: 5px solid red; }
+    padding-right: 20px; }
+    @media (max-width: 650px) {
+      .program-card .program-image {
+        width: 100%;
+        height: 100%;
+        padding-right: 0px; } }
     .program-card .program-image img {
       width: 100%;
       height: 100%; }
   .program-card .program-text {
-    border: 5px solid blue;
-    width: 50%;
+    width: 70%;
     height: 100%; }
+    @media (max-width: 650px) {
+      .program-card .program-text {
+        width: 100%;
+        height: 100%; } }
 
 .privacy {
   padding: 50px 100px;

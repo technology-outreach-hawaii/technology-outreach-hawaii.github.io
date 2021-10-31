@@ -35,28 +35,43 @@
 
 // CARD SECTION ==========================================================
 .program-card {
-  @include flex(row, center, center);
-  @include size(100%, 100%);
+  @include flex(row, flex-start, flex-start);
+  @include size(80%, 100%);
   padding: 50px;
+
+  @include tablet {
+    @include flex(column, center, center);
+  }
 
   .program-body {
     @include flex(row, flex-start, flex-start);
     @include size(100%, 100%);
-    border: 5px solid black;
+
+    @include tablet {
+      @include flex(column, center, center);
+    }
   }
 
   .program-image {
-    @include size(50%, 100%);
+    @include size(30%, 100%);
     padding-right: 20px;
-    border: 5px solid red;
+
+    @include tablet {
+      @include size(100%, 100%);
+      padding-right: 0px;
+    }
+
     img {
       @include size(100%, 100%);
     }
   }
 
   .program-text {
-    border: 5px solid blue;
-    @include size(50%, 100%);
+    @include size(70%, 100%);
+
+    @include tablet {
+      @include size(100%, 100%);
+    }
   }
 
 }
