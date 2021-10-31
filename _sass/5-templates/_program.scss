@@ -36,7 +36,7 @@
 // CARD SECTION ==========================================================
 .program-card {
   @include flex(row, flex-start, flex-start);
-  @include size(100%, 100%);
+  @include size(80%, 100%);
   padding: 50px;
 
   @include laptop {
@@ -53,7 +53,7 @@
   }
 
   .program-image {
-    @include size(30%, 100%);
+    @include size(250px, 250px);
     padding-right: 20px;
 
     @include laptop {

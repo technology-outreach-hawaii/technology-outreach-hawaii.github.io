@@ -7897,7 +7897,7 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 50px; }
   @media (max-width: 950px) {
@@ -7920,8 +7920,8 @@ nav {
         justify-content: center;
         align-items: center; } }
   .program-card .program-image {
-    width: 30%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     padding-right: 20px; }
     @media (max-width: 950px) {
       .program-card .program-image {
