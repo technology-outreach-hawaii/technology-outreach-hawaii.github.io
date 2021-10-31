@@ -1,0 +1,36 @@
+.program-container {
+  @include flex(column, center, center);
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+// HEADER SECTION ==========================================================
+
+// BANNER SECTION ==========================================================
+.program-banner {
+  @include background('../../assets/images/home/index-bg.png', no-repeat, cover);
+  @include size(100%, 250px);
+  color: white;
+  padding: 20px 20px;
+  @include desktop {
+    height: 300px;
+  }
+  @include tablet {
+    @include size(100%, 100%);
+  }
+
+  .program-banner-text {
+    @include flex(column, center, center);
+    width: 100%;
+  }
+
+  .program-banner-body {
+    width: 80%;
+
+    @include tablet {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+// CARD SECTION ==========================================================

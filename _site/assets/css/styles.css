@@ -7857,10 +7857,7 @@ nav {
   .resources-online .resources-online-summary-intro {
     padding-bottom: 20px; }
 
-.event-img {
-  width: 100%; }
-
-.event-container {
+.program-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7868,7 +7865,7 @@ nav {
   width: 100%;
   padding-bottom: 30px; }
 
-.event-banner {
+.program-banner {
   background-image: url("../../assets/images/home/index-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -7877,147 +7874,23 @@ nav {
   color: white;
   padding: 20px 20px; }
   @media (max-width: 1100px) {
-    .event-banner {
+    .program-banner {
       height: 300px; } }
   @media (max-width: 650px) {
-    .event-banner {
+    .program-banner {
       width: 100%;
       height: 100%; } }
-  .event-banner .event-banner-text {
+  .program-banner .program-banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%; }
-  .event-banner .event-banner-body {
+  .program-banner .program-banner-body {
     width: 80%; }
     @media (max-width: 650px) {
-      .event-banner .event-banner-body {
+      .program-banner .program-banner-body {
         padding-bottom: 40px; } }
-
-.event-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  top: -80px;
-  position: relative; }
-  @media (max-width: 1100px) {
-    .event-icons {
-      width: 100%;
-      top: -60px;
-      position: relative; } }
-  @media (max-width: 650px) {
-    .event-icons {
-      position: none;
-      top: -40px; } }
-  .event-icons .event-icon-container {
-    width: 100%; }
-  .event-icons .icon {
-    margin: 0px 20px; }
-    @media (max-width: 1100px) {
-      .event-icons .icon {
-        margin: 0px 10px; } }
-    @media (max-width: 650px) {
-      .event-icons .icon {
-        margin: 0px 5px; } }
-  .event-icons img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white; }
-    @media (max-width: 1100px) {
-      .event-icons img {
-        width: 100px;
-        height: 100px; } }
-    @media (max-width: 650px) {
-      .event-icons img {
-        width: 75px;
-        height: 75px; } }
-
-#gcal {
-  margin-top: 30px; }
-
-.event-grid {
-  width: 100%;
-  height: 100%; }
-  .event-grid .event-grid-container {
-    padding: 50px 100px; }
-    @media (max-width: 650px) {
-      .event-grid .event-grid-container {
-        padding: 50px 50px; } }
-  .event-grid .event-grid-card:hover {
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
-  @media (max-width: 1100px) {
-    .event-grid .event-grid-card {
-      margin-bottom: 40px; } }
-  .event-grid .event-grid-card-image {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: white; }
-  .event-grid .event-grid-card-image-overlay {
-    width: 50%;
-    padding: 20px; }
-  .event-grid .event-grid-card-body {
-    background-color: #0A303B;
-    padding: 10px 20px; }
-    @media (max-width: 1100px) {
-      .event-grid .event-grid-card-body {
-        height: auto; } }
-    .event-grid .event-grid-card-body p {
-      color: white; }
-  .event-grid .event-grid-card-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 50px;
-    background-color: #051A20; }
-    .event-grid .event-grid-card-footer img {
-      width: 35px;
-      height: 35px; }
-  .event-grid .event-grid-card-footer-social {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 25%;
-    height: 100%;
-    margin-left: 20px; }
-  .event-grid .social-event-icon {
-    border-radius: 50%;
-    margin: 0px 5px; }
-  .event-grid .event-grid-card-footer-difficulty {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 75%;
-    height: 100%;
-    color: white; }
-  .event-grid .event-grid-card-footer-difficulty-left {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
-    width: 50%; }
-  .event-grid .event-grid-card-footer-difficulty-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 50px;
-    background-color: #19728C; }
 
 .privacy {
   padding: 50px 100px;
