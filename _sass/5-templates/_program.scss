@@ -34,3 +34,29 @@
 }
 
 // CARD SECTION ==========================================================
+.program-card {
+  @include flex(row, center, center);
+  @include size(100%, 100%);
+  padding: 50px;
+
+  .program-body {
+    @include flex(row, flex-start, flex-start);
+    @include size(100%, 100%);
+    border: 5px solid black;
+  }
+
+  .program-image {
+    @include size(50%, 100%);
+    padding-right: 20px;
+    border: 5px solid red;
+    img {
+      @include size(100%, 100%);
+    }
+  }
+
+  .program-text {
+    border: 5px solid blue;
+    @include size(50%, 100%);
+  }
+
+}
