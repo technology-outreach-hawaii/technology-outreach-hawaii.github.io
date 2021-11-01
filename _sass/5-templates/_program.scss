@@ -53,7 +53,7 @@
   }
 
   .program-image {
-    @include size(475px, 280px);
+    @include size(475px, 310px);
     padding-right: 20px;
 
     @include laptop {
@@ -67,7 +67,7 @@
   }
 
   .program-text {
-    @include size(50%, 100%);
+    @include size(45%, 100%);
     @include flex(column, center, flex-start);
 
     @include laptop {

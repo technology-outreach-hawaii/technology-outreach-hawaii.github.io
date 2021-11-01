@@ -7921,7 +7921,7 @@ nav {
         align-items: center; } }
   .program-card .program-image {
     width: 475px;
-    height: 280px;
+    height: 310px;
     padding-right: 20px; }
     @media (max-width: 950px) {
       .program-card .program-image {
@@ -7932,7 +7932,7 @@ nav {
       width: 100%;
       height: 100%; }
   .program-card .program-text {
-    width: 50%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction: column;
