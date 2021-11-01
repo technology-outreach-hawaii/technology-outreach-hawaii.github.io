@@ -35,16 +35,16 @@
 
 // CARD SECTION ==========================================================
 .program-card {
-  @include flex(row, flex-start, flex-start);
-  @include size(80%, 100%);
-  padding: 50px;
+  @include flex(row, center, center);
+  @include size(100%, 100%);
+  padding: 70px;
 
   @include laptop {
     @include flex(column, center, center);
   }
 
   .program-body {
-    @include flex(row, flex-start, flex-start);
+    @include flex(row, center, flex-start);
     @include size(100%, 100%);
 
     @include laptop {
@@ -53,7 +53,7 @@
   }
 
   .program-image {
-    @include size(250px, 250px);
+    @include size(475px, 280px);
     padding-right: 20px;
 
     @include laptop {
@@ -67,7 +67,8 @@
   }
 
   .program-text {
-    @include size(70%, 100%);
+    @include size(50%, 100%);
+    @include flex(column, center, flex-start);
 
     @include laptop {
       @include size(100%, 100%);
@@ -75,91 +76,20 @@
   }
 
 }
-// ICSPARK-TEAM SECTION =======================================================
-
-.icspark-box {
-  @include flex(column, center, center);
-  @include size(100%, 100%);
-}
 
 .icspark-display {
-  @include flex(column, center, center);
+  @include flex(column, flex-start, flex-start);
   @include size(100%, 100%);
   color: #E4FCFF;
-  padding: 0px 40px;
 
   @include laptop {
     height: 100%;
-  }
-
-  .icspark-display-head {
-  @include flex(column, center, center);
-  width: 100%;
-
-  @include laptop {
-    padding-top: 0px;
-
-    p {
-      width: 100%;
-    }
-  }
-
-    h2 {
-      font-family: "Archivo Narrow", sans-serif;
-      font-size: 40px;
-      font-weight: 700;
-      letter-spacing: 3px;
-    }
-
-    p {
-      @include flex(column, center, center);
-      width: 50%;
-      text-align: center;
-    }
-  }
-
-  .icspark-display-nav {
-    @include flex(row, center, center);
-    a {
-      padding: 0px 10px;
-    }
-
-    @include laptop {
-      @include flex(column, center, center);
-
-      a {
-        padding: 10px 0px;
-      }
-    }
-  }
-
-  .icspark-display-role {
-  @include flex(column, flex-start, flex-start);
-  width: 50%;
-  padding-left: 20px;
-  margin-top: 40px;
-
-  @include laptop {
-    @include flex(column, flex-start, flex-start);
-    width: 80%;
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-  }
-
-    h2 {
-      font-family: "Archivo Narrow", sans-serif;
-      font-size: 40px;
-      font-weight: 700;
-      letter-spacing: 3px;
-    }
   }
 
   .icspark-display-row {
     height: 100%;
-    margin-bottom: 50px;
     @include laptop {
-      @include flex(column, flex-start, flex-start);
+      @include flex(row, flex-start, flex-start);
     }
   }
 
@@ -171,7 +101,7 @@
       @include laptop {
         @include flex(column, center, center);
         width: 100%;
-        padding: 10px;
+        padding: 0 0 0 5px;
       }
     }
 
@@ -180,13 +110,22 @@
       width: 100%;
 
       img{
-        @include size(180px, 180px);
+        @include size(110px, 110px);
         border-radius: 50%;
+        border: 1px solid $dark-blue;
+
+        @include laptop {
+          @include size(90px, 90px);
+        }
+
+        @include tablet {
+          @include size(65px, 65px);
+        }
       }
     }
 
     .icspark-display-all-text {
-      @include flex(column, center, center);
+      @include flex(column, flex-start, flex-start);
       padding-top: 5px;
       width: 100%;
 
@@ -201,16 +140,6 @@
 
       p {
         color: black;
-      }
-    }
-
-    .icspark-display-all-icon {
-      @include flex(row, center, center);
-
-      img {
-        @include size(45px, 45px);
-        padding: 5px;
-        border-radius: 100%;
       }
     }
 }
