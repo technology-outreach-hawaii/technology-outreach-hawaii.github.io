@@ -1,0 +1,145 @@
+.program-container {
+  @include flex(column, center, center);
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+// HEADER SECTION ==========================================================
+
+// BANNER SECTION ==========================================================
+.program-banner {
+  @include background('../../assets/images/home/index-bg.png', no-repeat, cover);
+  @include size(100%, 250px);
+  color: white;
+  padding: 20px 20px;
+  @include desktop {
+    height: 300px;
+  }
+  @include tablet {
+    @include size(100%, 100%);
+  }
+
+  .program-banner-text {
+    @include flex(column, center, center);
+    width: 100%;
+  }
+
+  .program-banner-body {
+    width: 80%;
+
+    @include tablet {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+// CARD SECTION ==========================================================
+.program-card {
+  @include flex(row, center, center);
+  @include size(100%, 100%);
+  padding: 70px;
+
+  @include laptop {
+    @include flex(column, center, center);
+  }
+
+  .program-body {
+    @include flex(row, center, flex-start);
+    @include size(100%, 100%);
+
+    @include laptop {
+      @include flex(column, center, center);
+    }
+  }
+
+  .program-image {
+    @include size(475px, 310px);
+    padding-right: 20px;
+
+    @include laptop {
+      @include size(100%, 100%);
+      padding-right: 0px;
+    }
+
+    img {
+      @include size(100%, 100%);
+    }
+  }
+
+  .program-text {
+    @include size(45%, 100%);
+    @include flex(column, center, flex-start);
+
+    @include laptop {
+      @include size(100%, 100%);
+    }
+  }
+
+}
+
+.icspark-display {
+  @include flex(column, flex-start, flex-start);
+  @include size(100%, 100%);
+  color: #E4FCFF;
+
+  @include laptop {
+    height: 100%;
+  }
+
+  .icspark-display-row {
+    height: 100%;
+    @include laptop {
+      @include flex(row, flex-start, flex-start);
+    }
+  }
+
+  .icspark-display-all {
+    @include size(20%, 50%);
+    padding: 10px;
+    float: left;
+
+      @include laptop {
+        @include flex(column, center, center);
+        width: 100%;
+        padding: 0 0 0 5px;
+      }
+    }
+
+    .icspark-display-all-img {
+      @include flex(column, center, center);
+      width: 100%;
+
+      img{
+        @include size(110px, 110px);
+        border-radius: 50%;
+        border: 1px solid $dark-blue;
+
+        @include laptop {
+          @include size(90px, 90px);
+        }
+
+        @include tablet {
+          @include size(65px, 65px);
+        }
+      }
+    }
+
+    .icspark-display-all-text {
+      @include flex(column, flex-start, flex-start);
+      padding-top: 5px;
+      width: 100%;
+
+      #padding {
+        text-align: center;
+        padding-top: 17px;
+      }
+
+      h3 {
+        color: black;
+      }
+
+      p {
+        color: black;
+      }
+    }
+}
