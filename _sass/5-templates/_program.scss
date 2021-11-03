@@ -37,7 +37,7 @@
 .program-card {
   @include flex(row, center, center);
   @include size(100%, 100%);
-  padding: 70px;
+  padding: 35px 70px;
 
   @include laptop {
     @include flex(column, center, center);
@@ -87,7 +87,7 @@
   }
 
   .icspark-display-row {
-    height: 100%;
+    @include size(100%, 100%);
     @include laptop {
       @include flex(row, flex-start, flex-start);
     }
