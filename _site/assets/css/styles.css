@@ -8013,6 +8013,15 @@ nav {
     .icspark-display .icspark-display-all-text p {
       color: black; }
 
+.special-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 35px 70px; }
+
 .privacy {
   padding: 50px 100px;
   display: flex;
