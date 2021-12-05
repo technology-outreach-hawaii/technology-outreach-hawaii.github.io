@@ -139,3 +139,14 @@ taylor:
   interests:
   bio: My name is Taylor and I am an undergraduate student at UH Manoa studying Computer Science & Quantitative Economics. I aspire to be a Software Engineer in the future.
   profile: assets/images/profiles/taylor_gabatino.jpg
+
+joshua:
+  full_name: Joshua Galeria
+  role: Volunteers
+  title: Volunteer
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: Hi everyone! My name is Joshua and I'm a current sophomore pursuing my BS in Computer Engineering. I'm hoping to become a software engineer in the future!
+  profile: assets/images/profiles/joshua_galeria.jpg
