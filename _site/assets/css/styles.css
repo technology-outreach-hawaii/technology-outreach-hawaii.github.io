@@ -7192,6 +7192,46 @@ nav {
         font-family: "Shippori Mincho B1", sans-serif;
         color: #5c5c5c; }
 
+#quote-post {
+  padding: 40px 0;
+  font-size: 20px;
+  font-family: "Shippori Mincho B1", sans-serif;
+  line-height: 30px; }
+
+#description {
+  font-size: 15px;
+  font-style: italic; }
+
+#post-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  @media (max-width: 650px) {
+    #post-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+#post-img1 {
+  width: 50%;
+  height: 100%;
+  margin-right: 10px; }
+  @media (max-width: 650px) {
+    #post-img1 {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 10px; } }
+
+#post-img2 {
+  width: 50%;
+  height: 100%; }
+  @media (max-width: 650px) {
+    #post-img2 {
+      width: 100%; } }
+
 .about-container {
   display: flex;
   flex-direction: column;
