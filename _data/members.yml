@@ -166,11 +166,11 @@ ashten:
   full_name: Ashten Akemoto
   role: Volunteers
   title: Volunteer
-  github:
-  linkedin:
+  github: https://github.com/ashtencodes
+  linkedin: https://www.linkedin.com/in/ashtenakemoto
   website:
   interests:
-  bio: My name is Ashten Akemoto and I am a freshman majoring in computer engineering. I'm super interested in space exploration, programming, machine learning, and other cool tech stuff. In my free time I run, hike, and I recently started rock climbing!
+  bio: My name is Ashten Akemoto and I am a freshman majoring in computer engineering. I'm super interested in space exploration and programming. In my free time I run, hike, and rock climb!
   profile: assets/images/profiles/ashten_akemoto.jpg
 
 michael:
