@@ -129,16 +129,16 @@ preston:
   bio: Hi! My name is Preston and I am a UH Manoa student transferred from Leeward Community College. My major is Computer Science - Data Science with a Physics minor.
   profile: assets/images/profiles/preston_garcia.jpg
 
-taylor:
-  full_name: Taylor Gabatino
-  role: Volunteers
-  title: Volunteer
-  github:
-  linkedin: https://www.linkedin.com/in/taylor-gabatino/
-  website:
-  interests:
-  bio: My name is Taylor and I am an undergraduate student at UH Manoa studying Computer Science & Quantitative Economics. I aspire to be a Software Engineer in the future.
-  profile: assets/images/profiles/taylor_gabatino.jpg
+# taylor:
+#   full_name: Taylor Gabatino
+#   role: Volunteers
+#   title: Volunteer
+#   github:
+#   linkedin: https://www.linkedin.com/in/taylor-gabatino/
+#   website:
+#   interests:
+#   bio: My name is Taylor and I am an undergraduate student at UH Manoa studying Computer Science & Quantitative Economics. I aspire to be a Software Engineer in the future.
+#   profile: assets/images/profiles/taylor_gabatino.jpg
 
 joshua:
   full_name: Joshua Galeria
@@ -161,3 +161,25 @@ skyla:
   interests:
   bio: Hi there! My name is Skyla and I’m a student at UHM, my major is in Political Science. In my free time I like to cook, binge watch anime, and brush up on my Korean and Japanese.
   profile: assets/images/profiles/skyla.jpg
+
+ashten:
+  full_name: Ashten Akemoto
+  role: Volunteers
+  title: Volunteer
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: My name is Ashten Akemoto and I am a freshman majoring in computer engineering. I'm super interested in space exploration, programming, machine learning, and other cool tech stuff. In my free time I run, hike, and I recently started rock climbing!
+  profile: assets/images/profiles/ashten_akemoto.jpg
+
+michael:
+  full_name: Michael Hui
+  role: Volunteers
+  title: Volunteer
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: Hello! My name is Michael and I'm a current senior majoring in Computer Science. I am interested in software engineering and database administration.
+  profile: assets/images/profiles/michael_hui.jpg
