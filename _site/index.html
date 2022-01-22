@@ -12,6 +12,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <!-- Start CauseVox Embed Code -->
+  <script type="text/javascript">
+    (function (w, d, s, o, f, js, fjs) {
+      w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', '_cv', 'https://js.causevox.com/v4'));
+    _cv('init', {
+      account_id: 'V6EjN4vMEvW1Zgxl',
+    });
+  </script>
+  <!-- End CauseVox Embed Code -->
   
 </head>
 <body>
@@ -29,11 +41,10 @@
 
    -->
   <nav>
+  <a href="/"><img id="logo" src="/assets/images/logo/logo.svg" alt="TORCH-logo"></a>
   <ul>
-    <li class="nav-link"><a href="/" style="color: #E4FCFF;">HOME</a></li>
     <li class="nav-link"><a href="/programs.html" >PROGRAMS</a></li>
-    <img id="logo" src="/assets/images/logo/logo.svg" alt="TORCH-logo">
-    <li><a href="/community.html" >RESOURCES</a></li>
+    <li class="nav-link"><a href="/community.html" >RESOURCES</a></li>
     <!-- <div class="dropdown nav-link">
       <li><a href="/community.html" >RESOURCES</a></li>
       <div class="dropdown-content">
@@ -43,12 +54,12 @@
       </div>
     </div> -->
     <li class="nav-link"><a href="/about.html" >ABOUT</a></li>
+    <li class="nav-link"><a class="cv-button" href="#">DONATE</a></li>
   </ul>
 </nav>
 
 <nav id="nav-mobile">
   <ul>
-    <li><a href="/" style="color: #E4FCFF;">HOME</a></li>
     <li><a href="/programs.html" >PROGRAMS</a></li>
     <li><a href="/community.html" >RESOURCES</a></li>
     <!-- <div class="dropdown">
@@ -59,8 +70,17 @@
       </div>
     </div> -->
     <li><a href="/about.html" >ABOUT</a></li>
+    <li><a class="cv-button" href="#">DONATE</a></li>
   </ul>
 </nav>
+
+<script type="text/javascript">
+_cv('bindButton', {
+  selector: '.cv-button',
+  type: 'donation',
+  campaign_id: '6gKl1Ayae7AMNvLQ',
+});
+</script>
 
   <div class="main">
 
