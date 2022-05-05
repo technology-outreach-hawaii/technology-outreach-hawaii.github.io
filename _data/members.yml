@@ -183,3 +183,14 @@ michael:
   interests:
   bio: Hello! My name is Michael and I'm a current senior majoring in Computer Science. I am interested in software engineering and database administration.
   profile: assets/images/profiles/michael_hui.jpg
+
+scott:
+  full_name: Scott Yuk
+  role: Volunteers
+  title: Volunteer
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: My name is Scott and I'm a junior majoring in Computer Science. 
+  profile: assets/images/profiles/scott_yuk.jpg
