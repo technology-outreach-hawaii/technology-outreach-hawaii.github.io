@@ -5,7 +5,7 @@ author: gina
 title: Splash into Technology
 tags: event
 update:
-picture: assets/images/blog/virtualWorkshop.png
+picture: assets/images/blog/virtualWorkshop.jpg
 summary: A morning of technology fun for children and teens.
 quote: Splash into technology with us at our Virtual Technology Workshop!
 setting: Virtual Technology Workshop

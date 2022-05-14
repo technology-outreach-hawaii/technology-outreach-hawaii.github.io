@@ -5,7 +5,7 @@ author: jennifer
 title: Experimenting with Electronics
 tags: event
 update:
-picture: assets/images/blog/ws-electricity.png
+picture: assets/images/blog/ws-electricity.jpg
 summary: A hour-long thrilling experience.
 quote: Take charge with us at our Virtual Technology Workshop!
 setting: Virtual Technology Workshop

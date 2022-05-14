@@ -2,9 +2,9 @@
 sitemap: false
 layout: post
 author: gina
-title: Library Workshops
-tags: 
-update: classes, coding
+title: Library Workshops &#9733
+tags: spotlight
+update: banner
 picture: assets/images/blog/library.jpg
 summary: In-person technology workshops at libraries near you
 quote: In-person technology workshops at libraries near you
@@ -15,7 +15,9 @@ range:
 IG:
 facebook:
 ---
-We are excited to be offering in-person coding or technology workshops at libraries across the islands! Event topics will vary based on volunteer interest. Currently we plan to hold 1 workshop every 1 – 2 months depending on volunteer availability. All workshops are led by college students willing to share their knowledge and time. The maximum number of students per session depends on the library meeting room’s maximum capacity and will be announced on our social media, website, and other communication channels. In-person workshops will begin in June 2022.
+We are excited to be offering in-person coding or technology workshops at libraries across the islands! Event topics will vary based on volunteer interest. Currently we plan to hold 1 workshop every 1 – 2 months depending on volunteer availability.
+
+All workshops are led by college students willing to share their knowledge and time. The maximum number of students per session depends on the library meeting room’s maximum capacity and will be announced on our social media, website, and other communication channels. In-person workshops will begin in June 2022.
 
 <br/>
 

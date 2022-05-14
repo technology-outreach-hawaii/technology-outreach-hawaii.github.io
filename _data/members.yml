@@ -72,7 +72,7 @@ jennifer:
   website:
   interests:
   bio: Hi! I’m a junior majoring in Elementary Education and Multilingual Learning at UH Manoa.
-  profile: assets/images/profiles/jennifer_watanabe.jpg
+  profile: assets/images/profiles/jennifer_watanabe.png
 
 christyn:
   full_name: Christyn Mellor
@@ -83,7 +83,7 @@ christyn:
   website:
   interests:
   bio: Hey! I go to UH Manoa And am studying biology with the ultimate aspiration of becoming a doctor!
-  profile: assets/images/profiles/christyn_mellor.jpg
+  profile: assets/images/profiles/christyn_mellor.png
 
 krizhna:
   full_name: Krizhna Bayudan
@@ -192,5 +192,5 @@ scott:
   linkedin:
   website:
   interests:
-  bio: My name is Scott and I'm a junior majoring in Computer Science. 
+  bio: My name is Scott and I'm a junior majoring in Computer Science.
   profile: assets/images/profiles/scott_yuk.jpg

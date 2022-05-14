@@ -5,7 +5,7 @@ author: patrick
 title: Browser Extensions
 tags: security, web surfing
 update:
-picture: assets/images/blog/Browser-extensions/banner.png
+picture: assets/images/blog/Browser-extensions/banner.jpg
 summary: Extensions can give you faster, more secure browsing experience.
 quote: Having a more Secure and Productive Browser
 setting:
@@ -53,7 +53,7 @@ Speaking for me here are some other security minded extensions that I use to try
 Another reminder to look them up for yourself to see if they sound like something you want to use.
 <br/>
 <br/>
-<img class="template-resource-img" src="/assets/images/blog/Browser-extensions/body.png" alt="browser-example-image">
+<img class="template-resource-img" src="/assets/images/blog/Browser-extensions/body.jpg" alt="browser-example-image">
 <!-- Credit to Forbes Article: https://www.forbes.com/sites/nicolefisher/2020/07/28/covid-////crimes-espionage-hackers-and-why-america-is-vulnerable/?sh=611272525873 -->
 <br/>
 <br/>
