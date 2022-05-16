@@ -3,7 +3,7 @@ sitemap: false
 layout: post
 author: gina
 title: Library Workshops &#9733
-tags: spotlight
+tags: update
 update: banner
 picture: assets/images/blog/library.jpg
 summary: In-person technology workshops at libraries near you
