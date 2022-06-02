@@ -32,7 +32,7 @@ Who: 6th – 12th grade students
 <br/>
 What: Intro to Web Development Workshop
 <br/>
-When: Saturday, June 18, 2022, 9am – 11am or 1pm – 3pm
+When: Saturday, June 18, 2022, 1pm – 3pm
 <br/>
 Where: Waianae Public Library
 
