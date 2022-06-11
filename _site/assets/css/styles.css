@@ -7879,7 +7879,8 @@ nav {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      align-items: flex-start; }
+      align-items: flex-start;
+      color: #F8CF1E; }
     @media (max-width: 650px) {
       .resources-online .resources-online-bar {
         display: flex;

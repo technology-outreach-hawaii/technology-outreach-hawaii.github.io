@@ -244,6 +244,7 @@
 
     a {
         @include flex(row, flex-start, flex-start);
+        color: #F8CF1E;
     }
 
     @include tablet {
