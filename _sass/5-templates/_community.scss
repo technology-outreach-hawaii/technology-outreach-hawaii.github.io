@@ -227,7 +227,7 @@
 .resources-online {
   @include flex(column, center, center);
   @include background('../../assets/images/resources/national-bg.svg', no-repeat, cover);
-  width: 100.1%;
+  width: 100%;
   padding: 70px 0px;
 
   .resources-box {
