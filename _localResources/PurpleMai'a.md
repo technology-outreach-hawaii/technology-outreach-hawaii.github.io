@@ -1,6 +1,6 @@
 ---
 sitemap: false
-island: all
+island: oahu
 title: Purple Maiʻa
 tags: ["classes", "resources", "competition"]
 spotlight: no
