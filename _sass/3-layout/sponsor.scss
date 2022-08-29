@@ -1,0 +1,17 @@
+#sponsor {
+    margin: 20px;
+
+    h2 {
+        color: white;
+    }
+
+    #sponsor-gallery {
+        margin: 20px;
+        @include flex(column, center, center);
+    }
+
+    .sponsor-img {
+        width: 50%;
+    }
+
+}

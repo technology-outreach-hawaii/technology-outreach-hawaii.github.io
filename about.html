@@ -27,17 +27,17 @@ title: About
     <div class="team-box">
       <div class="team-display">
         <div class="team-display-head">
-          <h2>OUR TEAM</h2>
-          <p>Our members share a passion for technology and social change in their professional and academic endeavors.  </p>
+          <h2>Our Leadership</h2>
+          <!-- <p>Our members share a passion for technology and social change in their professional and academic endeavors.  </p>
           <br>
           <div class="team-display-nav">
             <a href="#Directors">Directors</a>
             <a href="#Creative">Creative Media Team</a>
             <a href="#Volunteers">Volunteers</a>
-          </div>
+          </div> -->
         </div>
         {% assign offset = 0 %}
-        {% assign possibleRoles = "Directors,Creative Media Team,Volunteers" | split: ',' %}
+        {% assign possibleRoles = "Directors" | split: ',' %}
         {% for role in possibleRoles %}
           {% assign roleSplit = role | split:' ' %}
           {% assign id = roleSplit[0] %}
@@ -79,6 +79,7 @@ title: About
         {% endfor %}
         </div>
       </div>
+      {% include sponsor.html %}
     </div>
   </div>
 </div>

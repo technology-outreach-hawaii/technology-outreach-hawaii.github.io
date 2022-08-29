@@ -6857,6 +6857,19 @@ nav {
 #add-button a {
   color: black; }
 
+#sponsor {
+  margin: 20px; }
+  #sponsor h2 {
+    color: white; }
+  #sponsor #sponsor-gallery {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #sponsor .sponsor-img {
+    width: 50%; }
+
 .IGcontainer {
   background-color: #0A303B;
   width: 100%; }

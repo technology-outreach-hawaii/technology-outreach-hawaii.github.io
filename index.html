@@ -33,48 +33,6 @@ title: Home
         </ul>
       </div>
     </div>
-
-    <!-- Panel Section - Second Row -->
-    <div class="section">
-
-      <!-- Our goal section -->
-      <div id="goalSection">
-        <h1>Our goal</h1>
-        <p>Technology Outreach Hawaii aims to guide Hawaii towards confidence in being users and/or creators of technology while empowering youth. We are working to partner with libraries and community organizations across the state to offer student-driven digital literacy initiatives.</p>
-      </div>
-
-      <!-- Our team section -->
-      <div id="teamSection">
-        <div class="profile-header">
-          <h2>OUR TEAM</h2>
-          <p>Meet our mix of undergraduate and graduate students with interests in computer science, physics, math, and medicine.</p>
-        </div>
-        <br>
-        {% assign totalRows = site.data.members | size | divided_by: 4.0 | ceil %}
-        {% assign offset = 0 %}
-        {% for i in (1..totalRows) %}
-          {% assign row = 'row' | append:i %}
-          {% assign prev = 'prev' | append:i %}
-          {% assign next = 'next' | append:i %}
-          <div id={{row}} class="profile-section">
-            <a id={{prev}} class="prev">&#10094;</a>
-            {% for member in site.data.members limit: 4 offset: offset %}
-            <div class="profile">
-              <img src="{{ member[1].profile }}" alt="TORCH-team-profile">
-            </div>
-          {% endfor %}
-          <a id={{next}} class="next">&#10095;</a>
-          </div>
-          {% assign offset = offset | plus: 4 %}
-        {% endfor %}
-        <div class="place">
-          {% for i in (1..totalRows) %}
-            {% assign dot = 'dot' | append:i %}
-            <div id={{dot}} class="place-dot"></div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- Wave Section -->
@@ -152,8 +110,6 @@ title: Home
       </div>
     </div>
   </div>
-  <!-- End of Section 2 -->
-    {% include instafeed.html %}
   </div>
   <!-- End of File -->
   <script src="/assets/js/slideshow.js"></script>
