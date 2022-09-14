@@ -2,12 +2,12 @@
 sitemap: false
 layout: post
 author: scott
-title: INIT Pilot Program
+title: New INIT() pilot program for HS students
 tags: update
 update: classes, coding
 picture: assets/images/blog/classroom.jpg
 summary: New INIT pilot program for highschool students
-quote:
+quote: Bringing CS mentors to the classroom in a new afterschool program
 setting:
 target:
 level:
@@ -32,4 +32,4 @@ The purpose of INIT() is to provide high school students with specialized guidan
 
 <br/>
 
-We will be sharing the results of this program towards the end of the academic year. If successful, we may open this program to additional schools next year. Subscribe to our newsletter for major updates! 
+We will be sharing the results of this program towards the end of the academic year. If successful, we may open this program to additional schools next year. [Subscribe to our newsletter](http://eepurl.com/hojSrv){:target="_blank"} for major updates! 
