@@ -16,14 +16,6 @@ IG:
 facebook:
 ---
 
-New INIT() pilot program for HS students
-
-<br/>
-
-Bringing CS mentors to the classroom in a new afterschool program 
-
-<br/>
-
 TORCH is excited to launch the Interactive Near-Peer Information and Technology (INIT) after school mentorship program. INIT() is an extracurricular program that involves collaboration between TORCH and a high school teacher to bring college students ("Mentors") to the after school classroom on a weekly basis to provide Computer Science (CS) education and guidance. Mentors provide guidance in the form of lectures, live-coding activities, and/or discussion on CS-related topics. 
 
 <br/>
