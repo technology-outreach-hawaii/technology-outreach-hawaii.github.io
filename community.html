@@ -59,7 +59,6 @@ title: Community
           <a id="link-basic" style="color: #E4FCFF;">Basic Digital Skills</a>
           <a id="link-intermediate">Intermediate</a>
           <a id="link-hard">Advanced</a>
-          <a id="link-helpful">Helpful Articles</a>
         </div>
         <hr>
 
@@ -76,8 +75,6 @@ title: Community
                   <p class="resources-online-summary-intro">Are you familiar with everyday technologies but are interested in learning more? This section includes online resources to explore a variety of tech interests (e.g. coding, intermediate to advanced usage of Excel). </p>
                 {% when "hard" %}
                   <p class="resources-online-summary-intro">Are you looking for more in-depth courses or resources to understand the fundamentals of technology? This section includes online resources that dive deeper into the nitty gritty details of technology, research, and interdisciplinary uses. </p>
-                {% when "helpful" %}
-                  <p class="resources-online-summary-intro">Helpful articles recommended by the community! </p>
               {% endcase %}
               <br>
               {% for resource in levelResources %}
