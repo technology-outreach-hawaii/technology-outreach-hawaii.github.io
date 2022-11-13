@@ -29,14 +29,14 @@
   }
 
   .about-img {
-    @include background("/assets/images/about/team-1.png", no-repeat, contain);
+    @include background("/assets/images/about/team-1.jpg", no-repeat, contain);
     background-position: center center;
   }
-  .about-img:hover {
-    background-image: url("/assets/images/about/team-2.png");
-  }
+  // .about-img:hover {
+  //   background-image: url("/assets/images/about/team-2.png");
+  // }
   .about-img:active {
-    background-image: url("/assets/images/about/team-3.png");
+    background-image: url("/assets/images/about/team-2.jpg");
   }
 
   .about-text {
@@ -63,7 +63,7 @@
 // BEGIN TEAM SECTION =====================================================
 .background {
   @include flex(column, flex-start, center);
-  height: 100%;
+  @include size(100%, 100%);
   background-color: $dark-blue;
 
   @include laptop {
@@ -75,7 +75,7 @@
   @include flex(column, flex-start, flex-start);
   @include size(100%, 100%);
   color: #E4FCFF;
-  padding: 0px 40px;
+  padding: 0px 0px;
 
   @include laptop {
     height: 100%;
@@ -153,7 +153,7 @@
   }
 
   .team-display-all {
-    @include size(33%, 450px);
+    @include size(33%, 300px);
     padding: 20px;
     float: left;
     min-height: 400px;
