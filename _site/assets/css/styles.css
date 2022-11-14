@@ -6870,6 +6870,10 @@ nav {
   #sponsor .sponsor-img {
     width: 50%; }
 
+.carousel {
+  width: 100%;
+  background-color: black; }
+
 .IGcontainer {
   background-color: #0A303B;
   width: 100%; }
