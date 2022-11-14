@@ -6874,6 +6874,13 @@ nav {
   width: 100%;
   background-color: black; }
 
+.carousel-image {
+  max-height: 600px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block; }
+
 .IGcontainer {
   background-color: #0A303B;
   width: 100%; }
