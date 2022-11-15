@@ -66,6 +66,10 @@ Classes are highly interactive and project-based. Brief mini-lectures are follow
 <br/>
 
 Week by week content will tentatively include the following:
+
+1. Intro to HTML and CSS
+2. CSS Layout and Text Editors
+
 <ol type="1">
 <li>Intro to HTML and CSS</li>
 <li>CSS Layout and Text Editors</li>
