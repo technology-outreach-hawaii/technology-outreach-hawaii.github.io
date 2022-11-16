@@ -5,7 +5,7 @@ author: scott
 title: 4th Annual ICSpark Program. Registration Opens December 1st! 
 tags: update
 update: classes, coding
-picture: assets/images/blog/pairLearning.JPG
+picture: assets/images/blog/2021-12-30.png
 summary: ICSparks fourth year with in-person and online options available!
 quote: Another round of free coding courses for 6th - 12th grade students this upcoming Spring
 setting:
