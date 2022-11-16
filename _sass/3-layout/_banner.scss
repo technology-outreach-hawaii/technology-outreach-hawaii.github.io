@@ -1,14 +1,18 @@
 .alert-banner {
   @include size(100%, 50px);
-  background-color: $dark-blue;
+  background-color: #8b0000;
 
   .message {
     @include flex(row, center, center);
     @include size(100%, 100%);
-    border-bottom: 1px solid white;
+    // border-bottom: 1px solid white;
     padding: 10px 20px;
     @include tablet {
       padding: 20px 10px;
     }
   }
+}
+
+#banner-link {
+  color: white;
 }
