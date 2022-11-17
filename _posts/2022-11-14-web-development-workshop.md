@@ -20,7 +20,7 @@ This year we are excited to offer a week of Intro to Web Development workshops p
 
 <br/>
 
-Each workshop will feature the same content, so please sign up for only 1 course in the week as limited space is available. Registration closes on December 10, 2022 and is on a first-sign-up, first-served basis. Students are asked to bring their own laptops to this event.
+Each workshop will feature the same content, so please sign up for only 1 course in the week as limited space is available. Registration closes on December 10, 2022 and is on a first-sign-up, first-served basis. <strong>Students are asked to bring their own laptops to this event</strong>.
 
 <div class="post-center">
 <a href="https://bit.ly/icsparkw" target="_blank" class="post-link"><button class="post-button">SIGN UP HERE</button></a>
