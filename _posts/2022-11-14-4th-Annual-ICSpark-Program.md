@@ -25,7 +25,7 @@ We are excited to launch our 4th year of ICSpark this upcoming Spring, this time
 <br/>
 
 ### Try a Workshop and Meet Our Mentors Before Signing Up!
-Students can sign up for an Intro to Web Development workshop on December 19, 21, or 23 from 9:30 am - 11:30 am at the Entrepreneur Sandbox to get a taste of what the ICSpark program will be like before signing up for the course. SIgn up for 1 workshop, as each workshop will feature the same content. Limited seats are available. Registration for this is currently OPEN and will close on December 10, 2022. Register now at [bit.ly/hitorch](https://bit.ly/hitorch){:target="_blank"}.<strong> Students are asked to bring their own laptops to this event.</strong>
+Students can sign up for an Intro to Web Development workshop on December 19, 21, or 23 from 9:30 am - 11:30 am at the Entrepreneur Sandbox to get a taste of what the ICSpark program will be like before signing up for the course. SIgn up for 1 workshop, as each workshop will feature the same content. Limited seats are available. Registration for this is currently OPEN and will close on December 10, 2022. Register now at [bit.ly/icsparkw](https://bit.ly/icsparkw){:target="_blank"}.<strong> Students are asked to bring their own laptops to this event.</strong>
 
 <br/>
 
