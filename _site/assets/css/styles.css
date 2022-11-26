@@ -6875,6 +6875,9 @@ nav {
 .carousel {
   width: 100%;
   margin: 20px; }
+  @media (max-width: 950px) {
+    .carousel {
+      display: none; } }
 
 .carousel-row {
   width: 100%;
@@ -6885,7 +6888,7 @@ nav {
 
 .carousel-image {
   border: 1px solid white;
-  height: 500px;
+  max-height: 500px;
   width: 50%;
   display: block; }
 
