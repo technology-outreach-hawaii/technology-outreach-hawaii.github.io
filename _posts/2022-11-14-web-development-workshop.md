@@ -20,17 +20,19 @@ This year we are excited to offer a week of Intro to Web Development workshops p
 
 <br/>
 
-Each workshop will feature the same content, so please sign up for only 1 course in the week as limited space is available. Registration closes on December 10, 2022 and is on a first-sign-up, first-served basis. Students are asked to bring their own laptops to this event.
+Each workshop will feature the same content, so please sign up for only 1 course in the week as limited space is available. Registration closes on December 10, 2022 and is on a first-sign-up, first-served basis. <strong>Students are asked to bring their own laptops to this event</strong>.
+
+<div class="post-center">
+<a href="https://bit.ly/icsparkw" target="_blank" class="post-link"><button class="post-button">SIGN UP HERE</button></a>
+</div>
 
 <br/>
 
-Register now at [bit.ly/hitorch](https://bit.ly/hitorch){:target="_blank"}!
-
-<br/>
-
-### Intro to Web Development Workshops 
-Entrepreneur Sandbox at Kakaako 
-December 19, 21, or 23 
-9:30 am - 11:30 am 
-Deadline to Register December 10, 2022
-Register now at [bit.ly/hitorch](https://bit.ly/hitorch){:target="_blank"}
+<div class="post-center">
+    <h3>Intro to Web Development Workshops </h3>
+    <p>Entrepreneur Sandbox at Kakaako </p>
+    <p>December 19, 21, or 23  </p>
+    <p>9:30 am - 11:30 am  </p>
+    <p>Deadline to Register December 10, 2022  </p>
+    <a href="https://bit.ly/icsparkw" target="_blank" class="post-link"><button class="post-button">REGISTER HERE</button></a>
+</div>

@@ -4,6 +4,10 @@
   @include flex(column, center, center);
   color: $black;
 
+  a {
+    color: $red;
+  }
+
   #background {
     object-fit: cover;
     width: 100%;
@@ -84,5 +88,23 @@
 
   @include tablet {
     width: 100%;
+  }
+}
+
+.post-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-button {
+  background-color: $red;
+  font-size: 19px;
+  color: white;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
