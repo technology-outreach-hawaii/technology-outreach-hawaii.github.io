@@ -1,6 +1,10 @@
 .carousel {
     width: 100%;
     margin: 20px;
+
+    @include laptop {
+        display: none;
+      }
 }
 
 .carousel-row {
@@ -10,7 +14,7 @@
 
 .carousel-image {
     border: 1px solid white;
-    height: 500px;
+    max-height: 500px;
     width: 50%;
     display: block;
 }
