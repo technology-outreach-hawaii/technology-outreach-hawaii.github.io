@@ -16,7 +16,7 @@ IG:
 facebook:
 ---
 
-We are excited to launch our 4th year of ICSpark this upcoming Spring, this time with both in-person and online options available! Registration opens on December 1st 2022 and closes on January 14, 2023. Limited seats are available on a first-sign-up, first-served basis. 
+We are excited to launch our 4th year of ICSpark this upcoming Spring, this time with both in-person and online options available! Registration opens on December 1st 2022 and closes on January 21, 2023. Limited seats are available on a first-sign-up, first-served basis. 
 
 <div class="post-center">
 <a href="https://bit.ly/icspark" target="_blank" class="post-link"><button class="post-button">SIGN UP HERE</button></a>
