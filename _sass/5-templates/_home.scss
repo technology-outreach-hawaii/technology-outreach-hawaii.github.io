@@ -292,7 +292,7 @@
 
 // BEGIN WHAT WE DO =========================================================
 #stand-section {
-  @include size(100%, 1200px);
+  @include size(100%, 1075px);
   // @include background('../../assets/images/home/weDo-bg.svg', no-repeat, cover);
   background-color: $dark-blue;
   @include flex(column, flex-start, flex-start);
