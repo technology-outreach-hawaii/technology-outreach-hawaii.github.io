@@ -18,14 +18,10 @@ facebook:
 
 We are excited to launch our 4th year of ICSpark this upcoming Spring, this time with both in-person and online options available! Registration opens on December 1st 2022 and closes on January 21, 2023. Limited seats are available on a first-sign-up, first-served basis. 
 
-<div class="post-center">
-<a href="https://bit.ly/icspark" target="_blank" class="post-link"><button class="post-button">SIGN UP HERE</button></a>
-</div>
-
 <br/>
 
 ### Try a Workshop and Meet Our Mentors Before Signing Up!
-Students can sign up for an Intro to Web Development workshop on December 19, 21, or 23 from 9:30 am - 11:30 am at the Entrepreneur Sandbox to get a taste of what the ICSpark program will be like before signing up for the course. SIgn up for 1 workshop, as each workshop will feature the same content. Limited seats are available. Registration for this is currently OPEN and will close on December 10, 2022. Register now at [bit.ly/icsparkw](https://bit.ly/icsparkw){:target="_blank"}.<strong> Students are asked to bring their own laptops to this event.</strong>
+Students can sign up for an Intro to Web Development workshop on December 19, 21, or 23 from 9:30 am - 11:30 am at the Entrepreneur Sandbox to get a taste of what the ICSpark program will be like before signing up for the course. SIgn up for 1 workshop, as each workshop will feature the same content. Limited seats are available. Registration for this is currently CLOSED. <strong> Students are asked to bring their own laptops to this event.</strong>
 
 <br/>
 
@@ -35,7 +31,6 @@ Students can sign up for an Intro to Web Development workshop on December 19, 21
     <p>December 19, 21, or 23  </p>
     <p>9:30 am - 11:30 am  </p>
     <p>Deadline to Register December 10, 2022  </p>
-    <a href="https://bit.ly/icsparkw" target="_blank" class="post-link"><button class="post-button">REGISTER HERE</button></a>
 </div>
 
 <br/>

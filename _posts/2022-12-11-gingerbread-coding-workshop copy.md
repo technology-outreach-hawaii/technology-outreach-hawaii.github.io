@@ -22,10 +22,6 @@ This year we are excited to offer a week of Intro to Web Development workshops p
 
 Each workshop will feature the same content, so please sign up for only 1 course in the week as limited space is available. Registration is on a first-sign-up, first-served basis. <strong>Students are asked to bring their own laptops to this event</strong>.
 
-<div class="post-center">
-<a href="https://bit.ly/icsparkw" target="_blank" class="post-link"><button class="post-button">SIGN UP HERE</button></a>
-</div>
-
 <br/>
 
 <div class="post-center">
@@ -33,5 +29,4 @@ Each workshop will feature the same content, so please sign up for only 1 course
     <p>Entrepreneur Sandbox at Kakaako </p>
     <p>December 19, 21, or 23  </p>
     <p>9:30 am - 11:30 am  </p>
-    <a href="https://bit.ly/icsparkw" target="_blank" class="post-link"><button class="post-button">REGISTER HERE</button></a>
 </div>
