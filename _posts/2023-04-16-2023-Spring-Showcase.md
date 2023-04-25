@@ -7,7 +7,7 @@ tags: update
 update: classes, coding
 picture: assets/images/blog/imin.jpeg
 summary: Join us for a morning of fun tech activity booths, amazing coding projects, and free food and refreshments at our first-ever Technology Outreach Hawaii (TORCH) Spring 2023 Showcase!
-quote:
+quote: Interact with technology projects created by our fantastic group of 6th - 12th grade students across all TORCH programs.
 setting:
 target:
 level:
@@ -15,9 +15,7 @@ range:
 IG:
 facebook:
 ---
-Join us for a morning of fun tech activity booths, amazing coding projects, and free food and refreshments at our first-ever Technology Outreach Hawaii (TORCH) Spring 2023 Showcase!
-
-Interact with technology projects created by our fantastic group of 6th - 12th grade students across all TORCH programs.We are excited to launch our 4th year of ICSpark this upcoming Spring, this time with both in-person and online options available! Registration opens on December 1st 2022 and closes on January 21, 2023. Limited seats are available on a first-sign-up, first-served basis
+Join us for a morning of fun tech activity booths, amazing coding projects, and free food and refreshments at our first-ever Technology Outreach Hawaii (TORCH) Spring 2023 Showcase.
 
 <br/>
 
