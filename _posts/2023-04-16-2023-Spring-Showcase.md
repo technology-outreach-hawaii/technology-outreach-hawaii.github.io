@@ -41,4 +41,4 @@ Parking is free on Sundays, available anywhere on campus
 
 <br/>
 
-Although not required, please [RSVP](https://forms.gle/dsKxBs8qrkGQX8GYA) here by May 6, 2023 with the number of guests in your party to help us plan for enough food.
+Please [RSVP](https://forms.gle/dsKxBs8qrkGQX8GYA) here by May 6, 2023 with the number of guests in your party to help us plan for enough food.
