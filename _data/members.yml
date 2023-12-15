@@ -19,33 +19,45 @@ boyang:
   bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I am doing data analysis with python.
   profile: assets/images/profiles/boyang_zhang.png
 
-kanai:
-  full_name: Kanai Gooding
+# kanai:
+#   full_name: Kanai Gooding
+#   role: Directors
+#   title: Director - CCO
+#   github: https://github.com/kanaigooding
+#   linkedin: https://www.linkedin.com/in/kanaigooding/
+#   website:
+#   interests: Data Science, Algorithms, Intelligence and Computer Vision
+#   bio: My name is Kana'i, I am junior in a Mathematics - Data Science Track at UH Manoa.
+#   profile: assets/images/profiles/kanai_gooding.jpg
+
+# patrick:
+#   full_name: Patrick McCrindle
+#   role: Directors
+#   title: Director - CHRO
+#   github: https://github.com/pmccrind/
+#   linkedin: https://www.linkedin.com/in/patrick-mccrindle/
+#   website:
+#   interests: Cybersecurity, Arduinos, Raspberry Pi
+#   bio: I am currently a Senior majoring in Computer Science and pursuing a minor in mathematics.
+#   profile: assets/images/profiles/patrick_mccrindle.jpg
+
+michelle:
+  full_name: Michelle Leano
   role: Directors
   title: Director - CCO
-  github: https://github.com/kanaigooding
-  linkedin: https://www.linkedin.com/in/kanaigooding/
+  github: 
+  linkedin: https://www.linkedin.com/in/michelle-leano
   website:
-  interests: Data Science, Algorithms, Intelligence and Computer Vision
-  bio: My name is Kana'i, I am junior in a Mathematics - Data Science Track at UH Manoa.
-  profile: assets/images/profiles/kanai_gooding.jpg
+  interests: 
+  bio: I graduated from the University of Hawaii at Manoa with a degree in Computer Science. I am passionate about technology, community service, data analytics, and people! I intend to find new ways to leverage my passion and help others.
+  profile: assets/images/profiles/michelle_leano.jpg
 
-patrick:
-  full_name: Patrick McCrindle
-  role: Directors
-  title: Director - CHRO
-  github: https://github.com/pmccrind/
-  linkedin: https://www.linkedin.com/in/patrick-mccrindle/
-  website:
-  interests: Cybersecurity, Arduinos, Raspberry Pi
-  bio: I am currently a Senior majoring in Computer Science and pursuing a minor in mathematics.
-  profile: assets/images/profiles/patrick_mccrindle.jpg
 
 robert:
   full_name: Robert Lemon
   role: Directors
   title: Director - COO
-  github: https://github.com/robert-lemon-uhm
+  github: 
   linkedin: https://www.linkedin.com/in/robertlemon/
   website:
   interests: Low-Level Programming, Machine Learning, Algorithms
@@ -56,7 +68,7 @@ timothy:
   full_name: Timothy Huo
   role: Directors
   title: Director - CIO
-  github: https://github.com/timothyhuo1
+  github: 
   linkedin: https://www.linkedin.com/in/timothy-huo-087b121b5/
   website: https://timothyhuo1.github.io/
   interests: Web Development
