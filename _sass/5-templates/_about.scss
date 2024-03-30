@@ -156,7 +156,7 @@
     @include size(33%, 300px);
     padding: 20px;
     float: left;
-    min-height: 400px;
+    min-height: 300px;
 
       @include laptop {
         @include flex(column, center, center);
