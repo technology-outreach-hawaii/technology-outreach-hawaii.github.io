@@ -37,7 +37,7 @@ title: About
           </div> -->
         </div>
         {% assign offset = 0 %}
-        {% assign possibleRoles = "Directors" | split: ',' %}
+        {% assign possibleRoles = "Directors, Advisor" | split: ',' %}
         {% for role in possibleRoles %}
           {% assign roleSplit = role | split:' ' %}
           {% assign id = roleSplit[0] %}
