@@ -7310,8 +7310,9 @@ nav {
         align-items: center; }
         #post #post-section #post-info .author-date_container img {
           width: 30px;
-          border-radius: 100px;
-          margin-right: 10px; }
+          margin-right: 10px;
+          margin-top: 0px;
+          border-radius: 100px; }
       #post #post-section #post-info #quote {
         padding: 40px 0;
         font-size: 20px;

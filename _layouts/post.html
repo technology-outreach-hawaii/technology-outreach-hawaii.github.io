@@ -13,9 +13,13 @@ sitemap: false
         <img class="profile" src="../../../{{ author.profile }}" alt="author-profile-image">
         <p>{{ page.date | date: "%b %d, %Y" }} by {{ author.full_name }}</p>
       </div>
-      <div id="quote">
-        {{page.quote}}
-      </div>
+      {% if page.quote %}
+        <div id="quote">
+          {{ page.quote }}
+        </div>
+      {% else %}
+      <br/>
+      {% endif %}
     </div>
     <div id="post-content">
       {{ content }}
