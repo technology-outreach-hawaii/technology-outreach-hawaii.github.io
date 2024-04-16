@@ -32,4 +32,8 @@ Candidates will first undergo an application review. Interview offers will be se
 
 <br/>
 
-<img class="template-resource-img" src="/assets/images/posts/Leadership-Application-Flyer.png" alt="leadership-image">
+<img class="template-resource-img" src="/assets/images/blog/leadership-application.png"/>
+
+<!-- <img id="post-img2" src="/assets/images/blog/icspark/icspark1.jpg" /> -->
+
+<!-- <img class="template-resource-img" src="/assets/images/posts/Leadership-Application-Flyer.png" alt="leadership-image"> -->
