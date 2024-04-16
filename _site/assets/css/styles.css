@@ -7373,6 +7373,9 @@ nav {
     text-decoration: underline;
     cursor: pointer; }
 
+#post a {
+  color: #F8CF1E; }
+
 .about-container {
   display: flex;
   flex-direction: column;
