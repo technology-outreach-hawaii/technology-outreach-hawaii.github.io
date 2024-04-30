@@ -38,6 +38,11 @@ Time: 9:00 AM - 12:00 PM
 
 Location: Entrepreneur Sandbox 
 
+<br/>
+
+Please RSVP here: <a target="_blank" href="https://bit.ly/hitorch-showcase">https://bit.ly/hitorch-showcase</a>
+
+<br/>
 For more information about ICSpark and the Spring Showcase event, please visit the website of its parent non-profit organization, Technology Outreach Hawaii (TORCH), at <a href="https://hitorch.org">https://hitorch.org</a> or contact info@hitorch.org.
 
 <br/>
