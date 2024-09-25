@@ -1,23 +1,91 @@
-gina:
-  full_name: Gina Watanabe
+kevin:
+  full_name: Kevin Mateo Lim
   role: Directors
   title: Director - CEO
   github:
   linkedin:
   website:
-  interests: Data Visualization, Image Navigation, Web Development
+  interests: 
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
-  profile: assets/images/profiles/gina_watanabe.jpg
+  profile: assets/images/profiles/kevin_lim.jpeg
 
-boyang:
-  full_name: Boyang Zhang
+robert:
+  full_name: Robert Lemon
   role: Directors
-  title: Director
+  title: Director - COO
+  github: 
+  linkedin: https://www.linkedin.com/in/robertlemon/
+  website:
+  interests: Low-Level Programming, Machine Learning, Algorithms
+  bio: Hey! I'm a UH Student studying Computer Science, expected to graduate in 2022 with a B.S. degree.
+  profile: assets/images/profiles/robert_lemon.png
+  
+passina: 
+  full_name: Passina Abe
+  role: Directors
+  title: Chief Operating Officer (COO)
   github:
   linkedin:
   website:
-  bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I am doing data analysis with python.
-  profile: assets/images/profiles/boyang_zhang.png
+  interests: 
+  bio: Hi! I am a medical student looking to incorporate more technology with medicine.
+  profile: assets/images/profiles/passina_abe.jpeg
+
+
+kory:
+  full_name: Kory Bromwell
+  role: Directors
+  title: Chief Technology Officer (CTO)
+  github: 
+  linkedin:
+  website:
+  interests: 
+  bio: Hi! I am a medical student looking to incorporate more technology with medicine.
+  profile: assets/images/profiles/kory_bromwell.jpeg
+
+michael: 
+  full_name: Michael Jake Sumaylo
+  role: Directors
+  title: Chief Finance Officer (CFO)
+  github: 
+  linkedin:
+  website:
+  interests: 
+  bio: Hi! I am a medical student looking to incorporate more technology with medicine.
+  profile: assets/images/profiles/michael_sumaylo.jpg
+
+taryn:
+  full_name: Taryn Nakamura
+  role: Directors
+  title: Chief Communications Officer (CCO) & Chief Philanthropy Officer (CPO)
+  github: 
+  linkedin:
+  website:
+  interests: 
+  bio: Hi! I am a medical student looking to incorporate more technology with medicine.
+  profile: assets/images/profiles/taryn_nakamura.jpg
+
+
+# gina:
+#  full_name: Gina Watanabe
+#  role: Directors
+#  title: Director - CEO
+#  github:
+#  linkedin:
+#  website:
+#  interests: Data Visualization, Image Navigation, Web Development
+#  bio: Hi! I am a medical student looking to incorporate more technology with medicine.
+#  profile: assets/images/profiles/gina_watanabe.jpg
+
+#boyang:
+#  full_name: Boyang Zhang
+#  role: Directors
+#  title: Director
+#  github:
+#  linkedin:
+#  website:
+#  bio: Aloha! My name is Boyang Zhang. I am studying physics at UH Manoa. I am doing data analysis with python.
+#  profile: assets/images/profiles/boyang_zhang.png
 
 # kanai:
 #   full_name: Kanai Gooding
@@ -41,39 +109,27 @@ boyang:
 #   bio: I am currently a Senior majoring in Computer Science and pursuing a minor in mathematics.
 #   profile: assets/images/profiles/patrick_mccrindle.jpg
 
-michelle:
-  full_name: Michelle Leano
-  role: Directors
-  title: CCO
-  github: 
-  linkedin: https://www.linkedin.com/in/michelle-leano
-  website:
-  interests: 
-  bio: I graduated from the University of Hawaii at Manoa with a degree in Computer Science. I am passionate about technology, community service, data analytics, and people! I intend to find new ways to leverage my passion and help others.
-  profile: assets/images/profiles/michelle_leano.jpg
+#michelle:
+#  full_name: Michelle Leano
+#  role: Directors
+#  title: CCO
+#  github: 
+#  linkedin: https://www.linkedin.com/in/michelle-leano
+#  website:
+# interests: 
+#  bio: I graduated from the University of Hawaii at Manoa with a degree in Computer Science. I am passionate about technology, community service, data analytics, and people! I intend to find new ways to leverage my passion and help others.
+ ## profile: assets/images/profiles/michelle_leano.jpg
 
-
-robert:
-  full_name: Robert Lemon
-  role: Directors
-  title: Director - COO
-  github: 
-  linkedin: https://www.linkedin.com/in/robertlemon/
-  website:
-  interests: Low-Level Programming, Machine Learning, Algorithms
-  bio: Hey! I'm a UH Student studying Computer Science, expected to graduate in 2022 with a B.S. degree.
-  profile: assets/images/profiles/robert_lemon.png
-
-timothy:
-  full_name: Timothy Huo
-  role: Directors
-  title: Director - CIO
-  github: 
-  linkedin: https://www.linkedin.com/in/timothy-huo-087b121b5/
-  website: https://timothyhuo1.github.io/
-  interests: Web Development
-  bio: Hello! I am a Junior majoring in Computer Science at the University of Hawaii at Manoa.
-  profile: assets/images/profiles/timothy_huo.png
+# timothy:
+#  full_name: Timothy Huo
+#  role: Directors
+#  title: Director - CIO
+#  github: 
+#  linkedin: https://www.linkedin.com/in/timothy-huo-087b121b5/
+#  website: https://timothyhuo1.github.io/
+#  interests: Web Development
+#  bio: Hello! I am a Junior majoring in Computer Science at the University of Hawaii at Manoa.
+#  profile: assets/images/profiles/timothy_huo.png
 
 # jennifer:
 #   full_name: Jennifer Watanabe
@@ -218,16 +274,16 @@ ed:
   bio: Ed Barnabas works as Vice President and Chief Technologist at Booz Allen’s regional headquarters in Honolulu, Hawaii, serving U.S. government clients in defense and civil agencies across the region. With over 20 years of experience leading complex technology solutions, Ed focuses on guiding, scaling, and overseeing the regional innovation agenda across key areas such as artificial intelligence and machine learning, cyber, infrastructure/cloud, augmented reality/virtual reality, and digital transformation. Outside of work, Ed actively engages in STEM advocacy efforts and serves on multiple boards and committees, including the Hawaii Technology Development Corporation (HTDC), TRUE, Cyber Hawaii, Hawaii Chamber of Commerce Technology Sector Partnership, and ClimbHI.
   profile: assets/images/profiles/ed_barnabas.jpg
 
-scott_r: 
-  full_name: Scott Robertson
+guylaine: 
+  full_name: Guylaine Poisson
   role: Advisors
   title: Advisor
   github:
   linkedin:
   website:
   interests:
-  bio: Scott Robertson, a distinguished academic, currently serves as Professor and Chair of the Information and Computer Sciences Department at the University of Hawaii at Mānoa. With a Ph.D. in Psychology/Cognitive Science from Yale University and over four decades of experience, Robertson's expertise lies in human-computer interaction (HCI) and related fields. Prior to his current role, he held various academic and corporate positions, contributing significantly to research and innovation in HCI. As the founder and Director of the Hawaii Computer-Human Interaction Lab (HICHI), Robertson continues to advance knowledge in HCI and digital government.
-  profile: assets/images/profiles/scott_robertsion.jpg
+  bio: Guylaine Poisson, a distinguished academic, currently serves as Professor and Chair of the Information and Computer Sciences Department at the University of Hawaii at Mānoa. With a Ph.D. in Cognitive Computer Science from the University of Quebec, Montreal and decades of experience, Poisson's expertise lies in Bioinformatics and Computational Biology. 
+  profile: assets/images/profiles/guylaine_poisson.jpg
 
 stacey: 
   full_name: Stacey Aldrich
