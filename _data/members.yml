@@ -3,7 +3,7 @@ kevin:
   role: Directors
   title: Director - CEO
   github:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/kevin-mateo-lim/
   website:
   interests: 
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
@@ -25,7 +25,7 @@ passina:
   role: Directors
   title: Chief Operating Officer (COO)
   github:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/passina
   website:
   interests: 
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
@@ -37,7 +37,7 @@ kory:
   role: Directors
   title: Chief Technology Officer (CTO)
   github: 
-  linkedin:
+  linkedin: https://www.linkedin.com/in/kory-bromwell-b68046201/
   website:
   interests: 
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
@@ -48,7 +48,7 @@ michael:
   role: Directors
   title: Chief Finance Officer (CFO)
   github: 
-  linkedin:
+  linkedin: https://www.linkedin.com/in/msumaylo/
   website:
   interests: 
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
@@ -59,7 +59,7 @@ taryn:
   role: Directors
   title: Chief Communications Officer (CCO) & Chief Philanthropy Officer (CPO)
   github: 
-  linkedin:
+  linkedin: https://www.linkedin.com/in/tarynnakamura
   website:
   interests: 
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
