@@ -13,8 +13,9 @@
 }
 
 .carousel-image {
-    border: 1px solid white;
+    border: none;
     max-height: 500px;
     width: 50%;
-    display: block;
+    object-fit: contain;
+    height: auto;
 }
