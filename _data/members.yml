@@ -32,16 +32,16 @@ passina:
   profile: assets/images/profiles/passina_abe.jpeg
 
 
-kory:
-  full_name: Kory Bromwell
+sierra:
+  full_name: Sierra Dizon
   role: Directors
   title: Chief Technology Officer (CTO)
   github: 
-  linkedin: https://www.linkedin.com/in/kory-bromwell-b68046201/
+  linkedin: https://www.linkedin.com/in/sierra-dizon/
   website:
   interests: 
   bio: Hi! I am a medical student looking to incorporate more technology with medicine.
-  profile: assets/images/profiles/kory_bromwell.jpeg
+  profile: assets/images/profiles/sierra_dizon.jpeg
 
 michael: 
   full_name: Michael Jake Sumaylo
