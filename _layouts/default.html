@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Technology Outreach Hawaii (TORCH) is a student-driven non-profit that aims to bridge the digital divide by promoting technology education, making resources accessible, and empowering youth across Hawaii">
+  <title>Technology Outreach Hawaii - {{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Start CauseVox Embed Code -->
+  <script type="text/javascript">
+    (function (w, d, s, o, f, js, fjs) {
+      w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', '_cv', 'https://js.causevox.com/v4'));
+    _cv('init', {
+      account_id: 'V6EjN4vMEvW1Zgxl',
+    });
+  </script>
+  <!-- End CauseVox Embed Code -->
+  {% if jekyll.environment == 'production' %}
+  {% endif %}
+</head>
+<body>
+  {% include header.html %}
+  {% include navigation.html %}
+  {{ content }}
+  {% include footer.html %}
+  <script src='/assets/js/app.js'></script>
+</body>
+</html>

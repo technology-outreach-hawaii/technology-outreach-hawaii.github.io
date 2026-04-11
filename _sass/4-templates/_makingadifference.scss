@@ -1,0 +1,163 @@
+// main class is located in the _home.scss file ===============================
+
+.content-body {
+  @include size(100%, auto);
+  background-color: $dark-blue;
+  @include flex(column, flex-start, flex-start);
+  margin: 0;
+
+  @include laptop {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+// CARD SECTION ===========================================================
+.program-card {
+  @include flex(row, center, center);
+  @include size(100%, 100%);
+  padding: 35px 70px;
+
+  @include laptop {
+    @include flex(column, center, center);
+    padding: 24px;
+  }
+
+  .program-body {
+    @include flex(row, center, flex-start);
+    @include size(100%, 100%);
+
+    @include laptop {
+      @include flex(column, center, center);
+    }
+  }
+
+  .program-image {
+    @include size(600px, 390px);
+    padding-right: 20px;
+
+    @include laptop {
+      @include size(100%, auto);
+      padding-right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .program-text {
+    flex: 1 1 450px;
+    min-width: 350px;
+
+    h1 {
+      font-size: 3rem !important; // bump font size, !important to override
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: $yellow;
+
+      a {
+        font-size: inherit !important; // make sure link inherits size
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: $light-blue;
+    }
+  }
+
+  .icspark-feature {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .icspark-copy {
+    position: relative;
+    background: linear-gradient(rgba($dark-blue, 0.12), rgba($dark-blue, 0.12)),
+      url('../../assets/images/ICSpark/Sticker%201.png') right 16px top 16px / 180px auto no-repeat;
+    border: 1px solid rgba($light-blue, 0.25);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+
+    .icspark-header {
+      margin-bottom: 14px;
+    }
+
+    .icspark-title {
+      font-size: 3rem !important;
+      font-weight: 700;
+      color: $yellow;
+      margin-bottom: 20px;
+    }
+
+    .icspark-subtitle {
+      color: $light-blue;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: $light-blue;
+      line-height: 1.6;
+    }
+
+    .icspark-cta a {
+      color: $yellow;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  .icspark-collage {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-auto-rows: 86px;
+    gap: 10px;
+    align-content: stretch;
+
+    .icspark-tile {
+      position: relative;
+      overflow: hidden;
+      border-radius: 14px;
+      background: rgba($light-blue, 0.08);
+      border: 1px solid rgba($light-blue, 0.25);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .span-3-2 { grid-column: span 3; grid-row: span 2; }
+    .span-2-2 { grid-column: span 2; grid-row: span 2; }
+    .span-3-1 { grid-column: span 3; grid-row: span 1; }
+    .span-2-1 { grid-column: span 2; grid-row: span 1; }
+
+    @include laptop {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-auto-rows: 90px;
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-auto-rows: 100px;
+    }
+  }
+}
+
+// END CARD SECTION =======================================================

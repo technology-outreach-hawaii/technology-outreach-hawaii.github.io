@@ -1,0 +1,211 @@
+// main class is located in the _home.scss file =================================
+// content-body class is located in the _makingadifference.scss file =============
+
+// Intro section for About page
+  .intro-container {
+    width: 100%;
+    height: auto;
+  }
+
+.aboutSection {
+  width: 100%;
+ padding: 0rem 1rem;
+  margin-bottom: auto;
+
+  .aboutContent {
+    width: auto;
+    padding: 0 8rem;          // Add side padding (left/right spacing)
+    color: $light-blue;
+    line-height: 1.6;
+    text-align: left;
+
+    h1 {
+      color: $light-blue;
+      margin-bottom: $text-margin;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+// END ABOUT INTRO SECTION ==================================================
+
+// BEGIN TEAM SECTION =====================================================
+.background {
+  @include flex(column, flex-start, center);
+  @include size(100%, 100%);
+  background-color: $dark-blue;
+
+  @include laptop {
+    background-position: none;
+  }
+}
+
+.team-display {
+  @include flex(column, flex-start, flex-start);
+  @include size(100%, 100%);
+  color: #E4FCFF;
+  padding: 25px;
+
+  @include laptop {
+    height: 100%;
+  }
+
+  .team-display-head {
+    @include flex(column, center, center);
+    width: 100%;
+
+    @include laptop {
+      padding-top: 0px;
+
+      p {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-family: "Archivo Narrow", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    p {
+      @include flex(column, center, center);
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .team-display-role {
+    @include flex(column, flex-start, flex-start);
+    width: 50%;
+    padding-left: 20px;
+    margin-top: 40px;
+
+    @include laptop {
+      @include flex(column, flex-start, flex-start);
+      width: 80%;
+      padding-top: 0px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      font-family: "Archivo Narrow", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+  }
+
+  .team-display-row {
+    height: 100%;
+    margin-bottom: 50px;
+
+    @include laptop {
+      @include flex(column, flex-start, flex-start);
+    }
+  }
+
+  .team-display-all {
+    @include size(33%, 300px);
+    padding: 20px;
+    float: left;
+    min-height: 300px;
+
+    @include laptop {
+      @include flex(column, center, center);
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .team-display-all-img {
+    @include flex(column, center, center);
+    width: 100%;
+
+    img {
+      @include size(180px, 180px);
+      border-radius: 50%;
+    }
+  }
+
+  .team-display-all-text {
+    @include flex(column, center, center);
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+
+    #padding {
+      text-align: center;
+      padding-top: 17px;
+    }
+  }
+
+  .team-display-all-icon {
+    @include flex(row, center, center);
+
+    img {
+      @include size(45px, 45px);
+      padding: 5px;
+      border-radius: 100%;
+    }
+  }
+}
+
+// END TEAM SECTION ========================================================
+
+.advisory {
+  margin-left: 5%;
+  width: 80%;
+
+  h2 {
+    color: white;
+  }
+}
+
+.profile {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-top: $vertical-section-margin;
+  border: 1px solid white;
+  @include flex(row, space-around, center);
+
+  /* Author: Jennifer Hsu, 11/2019 */
+  @media screen and (max-width: 850px) {
+    @include flex(column, space-around, center);
+  }
+
+
+  /* Author: Jennifer Hsu, 11/2019 */
+  .profile-text {
+    width: 80%;
+    margin: $vertical-section-margin;
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+    color: white;
+
+    h4,
+    h5 {
+      margin-bottom: $vertical-section-margin;
+    }
+  }
+
+  img {
+    margin: $vertical-section-margin;
+    width: 150px;
+    border-radius: 200px;
+    -webkit-box-ordinal-group: 3;
+    order: 1;
+  }
+
+  @media screen and (max-width: 850px) {
+    img {
+      order: 0;
+      margin: 20px 0px 0px 0px;
+    }
+  }
+
+}

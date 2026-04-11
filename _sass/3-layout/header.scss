@@ -1,0 +1,59 @@
+.site-header {
+  width: 100%;
+  background-color: $dark-blue;
+   padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#logo {
+    width: 450px;
+    @include tablet {
+      width: 100%;
+      .nav-link {
+        display: none;
+      }
+    }
+  }
+
+.header-social {
+	padding-top: 20px;
+	@include flex(column, center, flex-start);
+	width: 20%;
+	
+	.header-social-title {
+		width: 100%;
+		@include flex(column, center, center);
+    margin-bottom: 0.5rem;
+	}
+
+	.header-social-icon {
+		width: 100%;
+		@include flex(row, center, flex-start);
+		img {
+		width: 40px;
+		border-radius: 50%;
+		margin: 5px;
+		}
+	}
+
+	@include laptop {
+		width: 100%;
+	}
+}
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+
+  .social-icon-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin: 0 8px;
+  }

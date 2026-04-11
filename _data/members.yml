@@ -1,0 +1,100 @@
+kevin:
+  full_name: Kevin Mateo Lim
+  role: Directors
+  title: Director - CEO
+  github:
+  linkedin: https://www.linkedin.com/in/kevin-mateo-lim/
+  website:
+  interests: 
+  bio: 
+  profile: /assets/images/profiles/kevin_lim.jpeg 
+
+robert:
+  full_name: Robert Lemon
+  role: Directors
+  title: Director - COO
+  github: 
+  linkedin: https://www.linkedin.com/in/robertlemon/
+  website:
+  interests: Low-Level Programming, Machine Learning, Algorithms
+  bio: 
+  profile: /assets/images/profiles/robert_lemon.png
+  
+passina: 
+  full_name: Passina Abe
+  role: Directors
+  title: Chief Operating Officer (COO)
+  github:
+  linkedin: https://www.linkedin.com/in/passina
+  website:
+  interests: 
+  bio: 
+  profile: /assets/images/profiles/passina_abe.jpeg
+
+sierra:
+  full_name: Sierra Jansons
+  role: Directors
+  title: Chief Technology Officer (CTO)
+  github: 
+  linkedin: https://www.linkedin.com/in/sierra-dizon/
+  website:
+  interests: 
+  bio: 
+  profile: /assets/images/profiles/sierra_dizon.png
+
+michael: 
+  full_name: Michael Jake Sumaylo
+  role: Directors
+  title: Chief Finance Officer (CFO)
+  github: 
+  linkedin: https://www.linkedin.com/in/msumaylo/
+  website:
+  interests: 
+  bio:
+  profile: /assets/images/profiles/michael_sumaylo.jpg
+
+taryn:
+  full_name: Taryn Nakamura
+  role: Directors
+  title: Chief Communications Officer (CCO) & Chief Philanthropy Officer (CPO)
+  github: 
+  linkedin: https://www.linkedin.com/in/tarynnakamura
+  website:
+  interests: 
+  bio: 
+  profile: /assets/images/profiles/taryn_nakamura.jpg
+  
+
+guylaine: 
+  full_name: Guylaine Poisson
+  role: Advisors
+  title: Advisor
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: Guylaine Poisson, a distinguished academic, currently serves as Professor and Chair of the Information and Computer Sciences Department at the University of Hawaii at Mānoa. With a Ph.D. in Cognitive Computer Science from the University of Quebec, Montreal and decades of experience, Poisson's expertise lies in Bioinformatics and Computational Biology. 
+  profile: /assets/images/profiles/guylaine_poisson.jpg
+
+stacey: 
+  full_name: Stacey Aldrich
+  role: Advisors
+  title: Advisor
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: Stacey Aldrich has more than 30 years of library experience, and is currently the State Librarian of Hawaii. Prior to Hawaii, she served as the Deputy Secretary for the Office of Commonwealth Libraries in Pennsylvania and State Librarian of California. Stacey has also worked in public and academic libraries. In between, she took a detour to work as a Senior Associate at the futuring think tank of Coates & Jarratt, Inc., where she began to sharpen her futurist thinking skills. Stacey has worked on broadband and digital literacy since the early-mid 1990s when the Maryland Sailor Network was created, and in 2012 she was awarded the LINK AMERICAS Foundation Knowledge Award for leadership in the area of digital literacy.
+  profile: /assets/images/profiles/stacey_aldrich.jpg
+
+brett: 
+  full_name: Brett Tanaka
+  role: Advisors
+  title: Advisor
+  github:
+  linkedin:
+  website:
+  interests:
+  bio: Brett Tanaka - Educational Specialist – Computer Science Program Manager - Hawaii State Department of Education. Brett is the Educational Specialist for Computer Science and provides statewide K-12 computer science education-related support. Brett has also worked in a variety of technology related positions including desktop publishing, Apple/Epson repair technician, network/systems administrator, software applications trainer and technical support. Brett has served as Past-President for the Hawai’i Society for Technology in Education (HSTE) ISTE-affiliate chapter and is the current President and founding member for the Computer Science Teachers Association (CSTA) Hawaii CSTA-affiliate chapter. He has a Master’s of Science in Information Systems (MSIS) from Hawaii Pacific University.
+  profile: /assets/images/profiles/brett_tanaka.png
+

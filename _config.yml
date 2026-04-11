@@ -1,0 +1,18 @@
+collections:
+  localResources:
+    output: true
+  onlineResources:
+    output: true
+  sass:
+    sass_dir: /assets/css
+
+url:
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path:            "assets/**/*.pdf"
+    values:
+      sitemap:         false

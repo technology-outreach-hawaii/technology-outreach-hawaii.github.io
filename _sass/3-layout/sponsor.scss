@@ -1,0 +1,18 @@
+#sponsor {
+    margin: 50px; // space around the section
+    padding-top: 30px; // space above the section;
+
+    h2 {
+        color: $yellow;
+    }
+
+    #sponsor-gallery {
+        margin: 35px;
+        @include flex(column, center, center);
+    }
+
+    .sponsor-img {
+        width: 50%;
+    }
+
+}

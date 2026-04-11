@@ -1,0 +1,147 @@
+// main class is located in the _home.scss file ===============================
+// content-body class is located in the _makingadifference.scss file =============
+
+/* ========== Events Archive ========== */
+.events-archive {
+  max-width: 1100px;
+  margin: 3rem auto 2rem;
+  padding: 0 1rem;
+  color: $light-blue;
+}
+
+.events-archive__intro {
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  h2 {
+    color: $yellow;
+    margin-bottom: 0.35rem;
+  }
+
+  p {
+    margin: 0;
+    color: lighten($light-blue, 8%);
+  }
+}
+
+.events-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+}
+
+@media (max-width: 900px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.event-card {
+  background: linear-gradient(145deg, rgba($dark-blue, 0.24), rgba($light-blue, 0.08));
+  border: 1px solid rgba($light-blue, 0.25);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.26);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -30%;
+    background: radial-gradient(circle at 30% 30%, rgba($yellow, 0.08), transparent 45%);
+    pointer-events: none;
+  }
+}
+
+.event-card__header {
+  margin-bottom: 8px;
+
+  h3 {
+    margin: 0 0 4px 0;
+    color: $yellow;
+  }
+
+  .event-card__meta {
+    margin: 0;
+    color: lighten($light-blue, 10%);
+    font-size: 0.95rem;
+  }
+}
+
+.event-card__summary {
+  margin: 0 0 12px 0;
+  color: $light-blue;
+}
+
+.event-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba($light-blue, 0.25);
+  background: rgba($light-blue, 0.08);
+  box-shadow: inset 0 0 0 1px rgba($light-blue, 0.05);
+}
+
+.event-carousel__track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.event-slide {
+  position: relative;
+  min-width: 100%;
+  padding-top: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba($light-blue, 0.12);
+  background: rgba($light-blue, 0.08);
+  color: rgba($light-blue, 0.8);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.event-slide.placeholder {
+  background: radial-gradient(circle at 30% 30%, rgba($yellow, 0.22), rgba($dark-blue, 0.2));
+}
+
+.event-carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.event-carousel__btn:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.event-carousel__btn.prev { left: 12px; }
+.event-carousel__btn.next { right: 12px; }
+
+/* ========== Responsive Design ========== */
+@media (max-width: 600px) {
+  .events-archive {
+    margin-top: 2rem;
+  }
+}
